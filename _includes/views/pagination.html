@@ -1,0 +1,33 @@
+{%- if page.paginator -%}
+  {%- assign paginator = page.paginator -%}
+{%- elsif paginator == nil -%}
+  {%- assign paginator = site -%}
+{%- endif -%}
+
+{%- if paginator.posts.size > 0 -%}
+<div class="pagination">
+  <!-- Post list links -->
+  <ul class="post-list">
+    {%- for post in paginator.posts -%}
+    <li>
+      {%- assign date_format = site.yat.date_format | default: "%b %-d, %Y" -%}
+      <span class="post-meta">{{ post.date | date: date_format }}</span>
+      <h3>
+        {%- assign post_url = post.url | relative_url -%}
+        <a class="post-link" href="{{ post_url }}">
+          {{ post.title | escape }}
+        </a>
+      </h3>
+      <p class="post-excerpt">
+        {{ post.content | strip_html | truncatewords: 50 }}
+      </p>
+    </li>
+    {%- endfor -%}
+  </ul>
+
+  <!-- Pagination links -->
+  {%- if paginator.posts.size < site.posts.size -%}
+    {%- include views/paginator.html -%}
+  {%- endif -%}
+</div>
+{%- endif -%}

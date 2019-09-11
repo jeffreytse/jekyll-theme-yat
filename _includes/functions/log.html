@@ -1,0 +1,17 @@
+{% if include.level %}
+  {% assign level = include.level %}
+{% endif %}
+
+{% if include.msg %}
+  {% assign msg = include.msg %}
+{% endif %}
+
+{% if site.debug == true %}
+  {% if level == 'debug' %}
+    {% if jekyll.environment == "development" %}
+      <!-- {{ msg }} -->
+    {% endif %}
+  {% else %}
+      <!-- {{ msg }} -->
+  {% endif %}
+{% endif %}

@@ -2,18 +2,22 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-theme-yat"
-  spec.version       = "0.1.0"
-  spec.authors       = ["Jeffrey Tse"]
+  spec.version       = "1.0.0"
+  spec.authors       = ["jeffreytse"]
   spec.email         = ["jeffreytse.mail@gmail.com"]
 
-  spec.summary       = "TODO: Write a short summary, because Rubygems requires one."
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = "Yet another theme."
+  spec.homepage      = "https://github.com/jeffreytse/jekyll-theme-yat"
   spec.license       = "MIT"
 
-  spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_layouts|_includes|_sass|LICENSE|README)!i) }
-
-  spec.add_runtime_dependency "jekyll", "~> 3.8"
+  spec.files         = `git ls-files -z`.split("\x0").select do |f|
+    f.match(%r!^(assets|_layouts|_includes|_sass|LICENSE|README)!i)
+  end
 
   spec.add_development_dependency "bundler", "~> 1.16"
   spec.add_development_dependency "rake", "~> 12.0"
+
+  spec.add_runtime_dependency "jekyll", "~> 3.8"
+  spec.add_runtime_dependency "jekyll-feed", "~> 0.9"
+  spec.add_runtime_dependency "jekyll-seo-tag", "~> 2.1"
 end

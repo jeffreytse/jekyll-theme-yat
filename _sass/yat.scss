@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+// Define defaults for each variable.
+
+$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif, Oswald,
+"Apple Color Emoji", "Open Sans", "FontAwesome", !default;
+$base-font-size:   14px !default;
+$base-font-weight: 400 !default;
+$small-font-size:  $base-font-size * 0.875 !default;
+$base-line-height: 1.5 !default;
+
+$spacing-unit:     30px !default;
+
+$text-color:       #333 !default;
+$background-color: #fefefe !default;
+$brand-color:      #2a7ae2 !default;
+
+$grey-color:       #828282 !default;
+$grey-color-light: lighten($grey-color, 40%) !default;
+$grey-color-dark:  darken($grey-color, 25%) !default;
+
+// Themes
+$theme-cool: #222 !default;
+$theme-violet: #543581 !default;
+$theme-aquablue: #00aaa0 !default;
+$theme-azure: #2863b1 !default;
+$theme-gracered: #a12a50 !default;
+$theme-aloe: #3d9e56 !default;
+$theme-brown: #795548 !default;
+
+// Current theme
+$theme: $theme-cool;
+
+
+$white-color: #fdfdfd !default;
+$theme-color: $theme;
+
+$table-text-align: left !default;
+
+$header-height: $base-line-height * $base-font-size * 2.85 !default;
+$header-text-color: lighten($white-color, 10%) !default;
+$header-background-color: $theme-color !default;
+
+$footer-height: $header-height * 1.05 !default;
+$footer-text-color: rgba(lighten(invert($theme-color), 30%), 50%) !default;
+$footer-background-color: darken($theme-color, 5%) !default;
+
+$banner-height: 350px !default;
+$banner-text-color: lighten($white-color, 0%) !default;
+$banner-background: darken(#333, 5%) !default;
+
+// Width of the content area
+$content-width:    920px !default;
+
+$on-palm:          600px !default;
+$on-laptop:        800px !default;
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//   .wrapper {
+//     padding-right: $spacing-unit / 2;
+//     padding-left: $spacing-unit / 2;
+//   }
+// }
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+@mixin relative-font-size($ratio) {
+  font-size: $base-font-size * $ratio;
+}
+
+// Import partials.
+@import
+  "yat/base",
+  "yat/layout",
+  "yat/syntax-highlighting",
+  "misc/article-menu",
+  "misc/common-list",
+  "misc/google-translate"
+;

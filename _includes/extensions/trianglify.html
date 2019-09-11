@@ -1,0 +1,23 @@
+{% if include.selector %}
+  {% assign selector = include.selector %}
+{% endif %}
+
+{% if include.seed %}
+  {% assign seed = include.seed %}
+{% endif %}
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/2.0.0/trianglify.min.js"></script>
+<script>
+  function setRandomBgImage(selector, seed) {
+    var element = document.querySelector(selector);
+    if (!element) return;
+    var pattern = Trianglify({
+      width: screen.width,
+      height: element.offsetHeight,
+      seed: seed
+    });
+    element.appendChild(pattern.canvas());
+  }
+
+  setRandomBgImage('{{ selector }}', '{{ seed }}');
+</script>

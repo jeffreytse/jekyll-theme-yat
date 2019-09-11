@@ -1,0 +1,17 @@
+{%- if include.name -%}
+  {%- assign name = include.name -%}
+{%- endif -%}
+
+{%- assign return = include.return -%}
+
+{%- if page[name] -%}
+  {%- assign return = page[name] -%}
+{%- elsif site.data[name] -%}
+  {%- assign return = site.data[name] -%}
+{%- elsif site.defaults[page.layout][name] -%}
+  {%- assign return = site.defaults[page.layout][name] -%}
+{%- elsif site.data.defaults[page.layout][name] -%}
+  {%- assign return = site.data.defaults[page.layout][name] -%}
+{%- elsif layout[name] -%}
+  {%- assign return = layout[name] -%}
+{%- endif -%}

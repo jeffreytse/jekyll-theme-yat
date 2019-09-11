@@ -1,0 +1,39 @@
+<script>
+  function hashLocate(hashValue) {
+    hashValue = hashValue.replace(/^.*#h-/, '');
+    var element = document.getElementById(hashValue);
+
+    if (!element) {
+      return;
+    }
+
+    var headerHeight = 0;
+    var header = document.querySelector('header');
+    if (header) {
+      headerHeight = header.offsetHeight;
+    }
+    var supportPageOffset = window.pageXOffset !== undefined;
+    var isCSS1Compat = ((document.compatMode || "") === "CSS1Compat");
+
+    var x = supportPageOffset ? window.pageXOffset : isCSS1Compat ? document.documentElement.scrollLeft : document.body.scrollLeft;
+    var y = supportPageOffset ? window.pageYOffset : isCSS1Compat ? document.documentElement.scrollTop : document.body.scrollTop;
+
+    var offsetY = element.offsetTop - headerHeight - 12;
+    if (y === offsetY) {
+      return;
+    }
+
+    window.scrollTo(x, offsetY);
+  }
+
+  // The first event occurred
+  if (window.location.hash) {
+    hashLocate(window.location.hash);
+  }
+
+  window.addEventListener('click', function(event) {
+    if (event.target.matches('a')) {
+      hashLocate(event.target.getAttribute('href'));
+    }
+  });
+</script>

@@ -1,0 +1,189 @@
+/* OVERRIDE GOOGLE TRANSLATE WIDGET CSS BEGIN */
+
+%goog-te-menu {
+  a.goog-te-menu-value {
+    vertical-align: top !important;
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    span {
+      color: #aaa;
+    }
+
+    span:hover {
+      color: white;
+    }
+
+    /* Remove the down arrow */
+    /* when dropdown open */
+    span[style="color: rgb(213, 213, 213);"] {
+      display: none;
+    }
+    /* after clicked/touched */
+    span[style="color: rgb(118, 118, 118);"] {
+      display: none;
+    }
+    /* on page load (not yet touched or clicked) */
+    span[style="color: rgb(155, 155, 155);"] {
+      display: none;
+    }
+
+    /* Remove span with left border line | (next to the arrow) in Chrome & Firefox */
+    span[style="border-left: 1px solid rgb(187, 187, 187);"] {
+      display: none;
+    }
+    /* Remove span with left border line | (next to the arrow) in Edge & IE11 */
+    span[style="border-left-color: rgb(187, 187, 187); border-left-width: 1px; border-left-style: solid;"] {
+      display: none;
+    }
+  }
+}
+
+div#google_translate_element {
+  display: inline;
+
+  div.goog-te-gadget {
+    display: inline;
+    font-size: 0;
+  }
+
+  div[id=':0.targetLanguage'] {
+    display: inline;
+  }
+
+  div.goog-te-gadget-simple {
+    border: none;
+    background-color: transparent;
+
+    @extend %goog-te-menu;
+  }
+
+  a.goog-logo-link {
+    display: none;
+  }
+
+  .goog-te-gadget-icon {
+    display: none !important;
+    /*background: url("url for the icon") 0 0 no-repeat !important;*/
+  }
+
+  a.goog-te-menu-value {
+    margin: 0;
+
+    span:first-child {
+      display: none;
+    }
+
+    &:before {
+      content: "\f1ab  \f0d7";
+      font-family: FontAwesome;
+      font-size: initial;
+      color: #fefefe;
+      border: 1px solid #fefefe85;
+      border-radius: 3px;
+      padding: 3px 6px;
+    }
+  }
+}
+
+.goog-te-menu-frame .goog-te-menu2 {
+  max-width: 100%;
+  overflow-x: auto;
+  box-sizing: border-box;
+  height: auto;
+}
+
+/* HIDE the google translate toolbar */
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+  border: none;
+  box-shadow: 0 0;
+  -webkit-box-shadow: 0 0;
+}
+
+body {
+  top: 0px !important;
+}
+
+/* OVERRIDE GOOGLE TRANSLATE WIDGET CSS END */
+
+
+// Main look
+
+.ct-language-selected {
+  background: lighten($theme-color, 10%) !important;
+}
+
+.ct-language-dropdown {
+  overflow: hidden;
+  max-height: 0;
+  position: absolute;
+  top: 110%;
+  right: -10px;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  width: 100px;
+  text-align: center;
+  padding-top: 0;
+  z-index: 200;
+
+  li {
+    background: lighten($theme-color, 5%);
+    padding: 5px;
+
+    a {
+      display: block;
+
+      img {
+        width: 24px;
+        max-height: 24px;
+      }
+    }
+
+    &:first-child {
+      padding-top: 10px;
+      border-radius: 3px 3px 0 0;
+    }
+
+    &:last-child {
+      padding-bottom: 10px;
+      border-radius: 0 0 3px 3px;
+    }
+
+    &:hover {
+      @extend .ct-language-selected;
+    }
+  }
+
+}
+
+.list-unstyled {
+  display: inline-block;
+  list-style: none;
+  margin-left: 0;
+}
+
+.ct-language {
+  display: inline-block;
+  position: relative;
+  background: #fefefe2b;
+  padding: 3px 10px;
+  border-radius: 3px;
+
+  &:hover {
+    cursor: pointer;
+
+    .ct-language-dropdown {
+      padding-top: 8px;
+      max-height: 10000px;
+    }
+  }
+
+  &:before {
+    content: "\f1ab  \f0d7";
+    font-family: FontAwesome;
+  }
+}
+

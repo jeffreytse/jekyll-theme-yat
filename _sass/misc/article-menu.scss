@@ -1,0 +1,47 @@
+/*
+ * Post menu
+ */
+
+.post-menu {
+  padding: 0 20px;
+  max-width: 250px;
+
+  .post-menu-title {
+    font-size: $base-font-size * 1.35;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #4e4e4e;
+
+    &:before {
+      content: '\f02e';
+      margin-right: 5px;
+      font-size: $base-font-size * 1.15;
+    }
+  }
+
+  .post-menu-content {
+    ul {
+      @for $i from 2 to 7 {
+        .h-h#{$i} {
+          padding-left: ($i - 2) * $base-font-size * 0.9;
+          font-size: (7 - $i) + $base-font-size * 0.9;
+        }
+      }
+
+      a {
+        display: flex;
+        padding: 0px 8px;
+
+        * {
+          pointer-events: none;
+        }
+      }
+
+      .active {
+        color: white;
+        background: mix(invert($theme-color), darkorange);
+        transition: background 0.5s;
+      }
+    }
+  }
+}
