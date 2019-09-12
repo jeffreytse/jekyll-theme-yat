@@ -24,6 +24,21 @@ yat:
 # If you want more debug log, you can set true
 # debug: true
 
+# You can choose a theme color
+# Default theme colors as below:
+# spacegrey: #222222
+# inkpurple: #543581
+# aquablue: #00aaa0
+# azureblue: #2863b1
+# gracered: #a12a50
+# aloegreen: #3d9e56
+# rustbrown: #795548
+#
+# theme_color: spacegrey
+#
+# Custom color as below:
+# theme_color: "#882250"
+
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
 # header_pages:
@@ -40,7 +55,7 @@ yat:
 #     banner: "Your image url"
 
 # Pagination setting
-paginate: 5
+# paginate: 5
 
 # Disqus comments
 # disqus:

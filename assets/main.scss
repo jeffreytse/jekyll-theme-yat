@@ -2,4 +2,24 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
+// Default theme colors
+$theme-colors: (
+  spacegrey: #222222,
+  inkpurple: #543581,
+  aquablue: #00aaa0,
+  azureblue: #2863b1,
+  gracered: #a12a50,
+  aloegreen: #3d9e56,
+  rustbrown: #795548,
+);
+
+$theme-name: "{{ site.theme_color }}";
+$theme-color: map-get($theme-colors, "spacegrey");
+
+@if map-has-key($theme-colors, $theme-name) {
+  $theme-color: map-get($theme-colors, $theme-name);
+} @else if str-index($theme-name, "#") == 1 {
+  $theme-color: {{ site.theme_color | default: '#222' }};
+}
+
 @import "yat";

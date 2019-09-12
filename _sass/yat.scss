@@ -19,21 +19,7 @@ $grey-color:       #828282 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
 $grey-color-dark:  darken($grey-color, 25%) !default;
 
-// Themes
-$theme-cool: #222 !default;
-$theme-violet: #543581 !default;
-$theme-aquablue: #00aaa0 !default;
-$theme-azure: #2863b1 !default;
-$theme-gracered: #a12a50 !default;
-$theme-aloe: #3d9e56 !default;
-$theme-brown: #795548 !default;
-
-// Current theme
-$theme: $theme-cool;
-
-
 $white-color: #fdfdfd !default;
-$theme-color: $theme;
 
 $table-text-align: left !default;
 
