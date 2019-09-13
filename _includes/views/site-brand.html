@@ -1,1 +1,7 @@
-<a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+<a class="site-title" rel="author" href="{{ "/" | relative_url }}">
+  {%- if site.favicon -%}
+    <img class="site-favicon" title="{{ site.title | escape }}" src="{{
+    site.favicon }}">
+  {%- endif -%}
+  {{ site.title | escape }}
+</a>
