@@ -135,6 +135,7 @@ body {
 
     a {
       display: block;
+      color: invert($theme-color);
 
       img {
         width: 24px;

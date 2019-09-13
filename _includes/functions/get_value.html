@@ -6,6 +6,8 @@
 
 {%- if page[name] -%}
   {%- assign return = page[name] -%}
+{%- elsif site[name] -%}
+  {%- assign return = site[name] -%}
 {%- elsif site.data[name] -%}
   {%- assign return = site.data[name] -%}
 {%- elsif site.defaults[page.layout][name] -%}

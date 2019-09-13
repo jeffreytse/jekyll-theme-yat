@@ -24,6 +24,36 @@ yat:
 # If you want more debug log, you can set true
 # debug: true
 
+# Translate languges
+# langs refer to https://cloud.google.com/translate/docs/languages
+# translate_langs:
+#   - lang: en
+#     text: English
+#
+#   - lang: fr
+#     img: https://www.countryflags.io/fr/flat/64.png
+#     text: Franch
+#
+#   - lang: zh-CN
+#     img: https://www.countryflags.io/cn/flat/64.png
+#     text: Chinese(Simple)
+#
+#   - lang: zh-TW
+#     img: https://www.countryflags.io/tw/flat/64.png
+#     text: Chinese(Traditional)
+#
+#   - lang: ja
+#     img: https://www.countryflags.io/jp/flat/64.png
+#     text: Japan
+#
+#   - lang: ko
+#     img: https://www.countryflags.io/kr/flat/64.png
+#     text: Korean
+#
+#   - lang: ru
+#     img: https://www.countryflags.io/ru/flat/64.png
+#     text: Russia
+
 # You can choose a theme color
 # Default theme colors as below:
 # spacegrey: #222222
@@ -71,7 +101,6 @@ yat:
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-yat
 
 plugins:
   - jekyll-feed
