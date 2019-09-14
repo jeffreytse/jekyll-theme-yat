@@ -28,6 +28,9 @@ yat:
 # Google analytics
 # google_analytics: [Tracking ID]
 
+# If you want to generate website sitemap, you can set true
+# sitemap: true
+
 # Translate languges
 # langs refer to https://cloud.google.com/translate/docs/languages
 # translate_langs:
@@ -109,4 +112,5 @@ markdown: kramdown
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
   - jekyll-paginate
