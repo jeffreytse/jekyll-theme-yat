@@ -25,6 +25,9 @@ yat:
 # If you want more debug log, you can set true
 # debug: true
 
+# Google analytics
+# google_analytics: [Tracking ID]
+
 # Translate languges
 # langs refer to https://cloud.google.com/translate/docs/languages
 # translate_langs:
