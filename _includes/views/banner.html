@@ -21,7 +21,7 @@
 {% if banner %}
 
   {% assign auto_banner = true %}
-  {% assign array = banner | split: '//' %}
+  {% assign array = banner | split: '/' %}
   {% assign protocol = array[0]  %}
 
   {% if array.size > 1 and (protocol == '' or protocol == 'http:' or protocol == 'https:') %}
@@ -57,9 +57,23 @@
   </section>
 
   {%- if auto_banner -%}
+
     {%- assign selector = ".page-banner-img" -%}
-    {%- assign seed = page.id | append: '-seed-' | append: banner -%}
+
+    {%- if banner == "default" -%}
+
+      {%- assign heading = page.heading | default: page.title | escape -%}
+      {%- assign subheading = page.subheading | default: page.subtitle | escape -%}
+      {%- assign seed = page.date | append: heading | append: subheading -%}
+
+    {%- else -%}
+
+      {%- assign seed = 'theme-' | append: banner -%}
+
+    {%- endif -%}
+
     {%- include extensions/trianglify.html -%}
+
   {%- endif -%}
 
 {%- endif -%}

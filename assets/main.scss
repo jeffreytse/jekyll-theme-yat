@@ -4,7 +4,7 @@
 
 // Default theme colors
 $theme-colors: (
-  spacegrey: #222222,
+  spacegrey: #353535,
   inkpurple: #543581,
   aquablue: #00aaa0,
   azureblue: #2863b1,
@@ -19,7 +19,7 @@ $theme-color: map-get($theme-colors, "spacegrey");
 @if map-has-key($theme-colors, $theme-name) {
   $theme-color: map-get($theme-colors, $theme-name);
 } @else if str-index($theme-name, "#") == 1 {
-  $theme-color: {{ site.theme_color | default: '#222' }};
+  $theme-color: {{ site.theme_color | default: '#353535' }};
 }
 
 @import "yat";

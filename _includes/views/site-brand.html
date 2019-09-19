@@ -1,7 +1,4 @@
-<a class="site-title" rel="author" href="{{ "/" | relative_url }}">
-  {%- if site.favicon -%}
-    <img class="site-favicon" title="{{ site.title | escape }}" src="{{
-    site.favicon }}">
-  {%- endif -%}
+<a class="site-brand-inner" rel="author" href="{{ "/" | relative_url }}">
+  <img class="site-favicon" title="{{ site.title | escape }}" src="{{ site.favicon }}" onerror="this.style.display='none'">
   {{ site.title | escape }}
 </a>
