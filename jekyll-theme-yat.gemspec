@@ -2,13 +2,15 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-theme-yat"
-  spec.version       = "1.0.1"
+  spec.version       = "1.1.0"
   spec.authors       = ["jeffreytse"]
   spec.email         = ["jeffreytse.mail@gmail.com"]
 
   spec.summary       = "Yet another theme for personal writers."
   spec.homepage      = "https://github.com/jeffreytse/jekyll-theme-yat"
   spec.license       = "MIT"
+
+  spec.metadata["plugin_type"] = "theme"
 
   spec.files         = `git ls-files -z`.split("\x0").select do |f|
     f.match(%r!^(assets|_data|_layouts|_includes|_sass|LICENSE|README)!i)
