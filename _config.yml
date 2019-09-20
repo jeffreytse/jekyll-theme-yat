@@ -34,6 +34,9 @@ yat:
 # If you want to generate website sitemap, you can set true
 # sitemap: false
 
+# If you want to change site language, you can set lang option
+# lang: "en"  # default lang is en
+
 # Translate languges
 # langs refer to https://cloud.google.com/translate/docs/languages
 # translate_langs:
