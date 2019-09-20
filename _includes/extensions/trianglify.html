@@ -8,16 +8,19 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/2.0.0/trianglify.min.js"></script>
 <script>
-  function setRandomBgImage(selector, seed) {
+  function setRandomBgImage(selector, seed, zoom = 1) {
     var element = document.querySelector(selector);
     if (!element) return;
     var pattern = Trianglify({
-      width: screen.width,
-      height: element.offsetHeight,
+      width: screen.width * zoom,
+      height: element.offsetHeight * zoom,
       seed: seed
     });
-    element.appendChild(pattern.canvas());
+
+    var image = document.createElement("div");
+    image.style.backgroundImage = "url(" + pattern.png() + ")";
+    element.appendChild(image);
   }
 
-  setRandomBgImage('{{ selector }}', '{{ seed }}');
+  setRandomBgImage('{{ selector }}', '{{ seed }}', {{ zoom | default: 1}});
 </script>

@@ -23,13 +23,16 @@ yat:
   date_format: "%b %-d, %Y"
 
 # If you want more debug log, you can set true
-# debug: true
+# debug: false
+
+# If you want transparent header, you can set true
+# header_transparent: false
 
 # Google analytics
 # google_analytics: [Tracking ID]
 
 # If you want to generate website sitemap, you can set true
-# sitemap: true
+# sitemap: false
 
 # Translate languges
 # langs refer to https://cloud.google.com/translate/docs/languages

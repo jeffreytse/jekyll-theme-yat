@@ -44,12 +44,14 @@
 
         {%- else -%}
 
-        <h1 class="page-banner-heading">
-          {{ heading | default: page.title | escape }}
-        </h1>
-        <h3 class="page-banner-subheading">
-          {{ subheading | default: page.subtitle | escape }}
-        </h3>
+          <div class="page-banner-default">
+            <h1 class="page-banner-heading">
+              {{ heading | default: page.title | escape }}
+            </h1>
+            <h3 class="page-banner-subheading">
+              {{ subheading | default: page.subtitle | escape }}
+            </h3>
+          <div>
 
         {%- endif -%}
       </div>
@@ -72,6 +74,7 @@
 
     {%- endif -%}
 
+    {%- assign zoom = 1.5 -%}
     {%- include extensions/trianglify.html -%}
 
   {%- endif -%}

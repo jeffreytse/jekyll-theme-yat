@@ -1,4 +1,19 @@
-<header class="site-header" role="banner">
+
+{%- include functions.html func='log' level='debug' msg='Get banner value' -%}
+{% assign name = 'banner' %}
+{%- include functions.html func='get_value' -%}
+{% assign banner = return %}
+
+{%- include functions.html func='log' level='debug' msg='Get header_transparent value' -%}
+{% assign name = 'header_transparent' %}
+{%- include functions.html func='get_value' -%}
+{% assign header_transparent = return %}
+
+{%- if banner and header_transparent -%}
+  {%- assign header_transparent_class = "site-header-transparent" -%}
+{%- endif -%}
+
+<header class="site-header {{ header_transparent_class }}" role="banner">
 
   <div class="wrapper">
     {%- assign default_paths = site.pages | where: "dir", "/" | map: "path" -%}
@@ -42,3 +57,45 @@
     {%- endif -%}
   </div>
 </header>
+
+<script>
+  (function() {
+    var supportPageOffset = window.pageXOffset !== undefined;
+    var isCSS1Compat = ((document.compatMode || "") === "CSS1Compat");
+
+    function scrollY() {
+      return supportPageOffset ? window.pageYOffset : isCSS1Compat ? document.documentElement.scrollTop : document.body.scrollTop;
+    }
+
+    var lastScrollY = scrollY();
+    var dataset = document.documentElement.dataset;
+
+    function storeScrollData() {
+      var y = scrollY();
+
+      {%- if banner and header_transparent -%}
+      dataset.headerTransparent = "";
+      {%- endif -%}
+
+      var scrollStatus = "";
+
+      if (y <= 0) {
+        scrollStatus = "top";
+      } else if ((window.innerHeight + y) >= document.body.offsetHeight) {
+        scrollStatus = "bottom";
+      } else {
+        var isScrollDown = (y - lastScrollY > 0) ? true : false;
+        scrollStatus = isScrollDown ? "down" : "up";
+      }
+
+      lastScrollY = y;
+      dataset.scrollStatus = scrollStatus;
+    }
+
+    window.addEventListener('scroll', function(e) {
+      storeScrollData();
+    });
+
+    storeScrollData();
+  })();
+</script>

@@ -1,10 +1,53 @@
 /**
+ * Animation for transparent header
+ */
+html {
+  &[data-header-transparent] {
+    header.site-header {
+      position: fixed;
+    }
+  }
+
+  &[data-scroll-status='top'] {
+    header.site-header-transparent {
+      height: 0;
+      text-shadow: 0 0 3px #08080880;
+    }
+
+    header.site-header .page-link {
+      text-shadow: 0 0 2px #080808d0;
+      filter: drop-shadow(0 0 2px #08080880);
+    }
+
+    footer.site-footer {
+      color: #888;
+      background-color: transparent;
+
+      .site-footer-inner {
+        border-top: solid 1px #eee;
+      }
+    }
+  }
+
+  &[data-scroll-status='down'] {
+    header.site-header {
+      top: -$header-height;
+    }
+
+    .framework .sidebar {
+      top: 20px;
+    }
+  }
+}
+
+/**
  * Site header
  */
 .site-header {
-  background: $header-background-color;
+  background-color: $header-background-color;
   height: $header-height;
   width: 100%;
+  transition: height 0.2s, text-shadow 0.2s, top 0.2s;
 
   // Positioning context for the mobile navigation icon
   @include flex-sticky(0);
@@ -16,7 +59,7 @@
 }
 
 .site-brand {
-  @include vertical-center(absolute);
+  line-height: $header-height;
   margin-right: 50px;
 
   .site-brand-inner {
@@ -68,6 +111,7 @@
 
   @include media-query($on-palm) {
     position: absolute;
+    top: 0;
     right: $spacing-unit / 2;
     text-align: left;
 
@@ -113,9 +157,14 @@
 .site-footer {
   @include relative-font-size(0.9);
   color: $footer-text-color;
-  background: $footer-background-color;
-  padding: $spacing-unit * 0.8 0;
+  background-color: $footer-background-color;
   text-align: left;
+  transition: background-color 0.2s;
+
+  .site-footer-inner {
+    transition: border-top 0.2s;
+    padding: $spacing-unit * 0.8 0;
+  }
 
   a {
     $a-color: invert(mix(invert($theme-color), #0030ae));
@@ -184,7 +233,7 @@
     @include relative-font-size(1.5);
 
     display: block;
-    font-weight: 600;
+    font-weight: $base-font-weight * 1.5;
   }
 }
 
@@ -271,6 +320,7 @@
   position: relative;
   height: $banner-height;
   background-color: $banner-background;
+  transition: height 0.2s;
 
   .page-banner-img {
     position: absolute;
@@ -294,22 +344,28 @@
     padding: 10px 5px;
     text-shadow: 1px 1px 2px #333;
 
-    .page-banner-heading {
-      @include relative-font-size(2.825);
-      letter-spacing: -1px;
-      line-height: 1;
-      margin-bottom: 10px;
+    & > *:first-child {
+      margin: 0;
 
-      @include media-query($on-palm) {
-        @include relative-font-size(2.425);
+      > :nth-child(1) {
+        @include relative-font-size(2.825);
+        letter-spacing: -1px;
+        line-height: 1;
+        margin-bottom: 10px;
+
+        @include media-query($on-palm) {
+          @include relative-font-size(2.425);
+        }
+      }
+
+      > :nth-child(2) {
+        font-weight: $base-font-weight * 1.5;
       }
     }
+  }
 
-    @extend %post-header;
-
-    .post-title {
-      @include relative-font-size(2.925);
-    }
+  @include media-query($on-palm) {
+    height: $banner-height / 1.5;
   }
 }
 
@@ -326,6 +382,7 @@
 
   .sidebar {
     padding-left: 8px;
+    transition: top 0.2s, display 0.2s;
 
     @include flex-sticky($header-height + 20px);
 
@@ -347,7 +404,7 @@
   }
 
   .segment-name {
-    font-weight: 600;
+    font-weight: $base-font-weight * 1.5;
     margin-bottom: 8px;
     position: relative;
 
