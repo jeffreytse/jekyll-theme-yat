@@ -11,12 +11,10 @@ html {
   &[data-scroll-status='top'] {
     header.site-header-transparent {
       height: 0;
-      text-shadow: 0 0 3px #08080880;
-    }
 
-    header.site-header .page-link {
-      text-shadow: 0 0 2px #080808d0;
-      filter: drop-shadow(0 0 2px #08080880);
+      &.site-header {
+        text-shadow: 0 0 2px #505050a0;
+      }
     }
 
     footer.site-footer {
@@ -56,6 +54,10 @@ html {
   a {
     text-decoration: none;
   }
+
+  .site-header-inner {
+    position: relative;
+  }
 }
 
 .site-brand {
@@ -65,17 +67,15 @@ html {
   .site-brand-inner {
     @include relative-font-size(1.125);
     font-weight: $base-font-weight;
-    filter: drop-shadow(0 0 2px #08080880);
-    text-shadow: 0 0 2px #080808d0;
     letter-spacing: -1px;
-    transition: drop-shadow 0.2s;
+    transition: filter 0.2s;
 
     &, &:visited {
       color: $header-text-color;
     }
 
     &:hover {
-      filter: drop-shadow(0 0 3px #080808a0);
+      filter: drop-shadow(0 0 2px #08080880);
     }
 
     .site-favicon {
@@ -88,8 +88,10 @@ html {
 
 .site-nav {
   @include relative-font-size(1.025);
-  float: right;
   line-height: $header-height;
+  position: absolute;
+  right: 0;
+  top: 0;
 
   .nav-trigger {
     display: none;
@@ -112,12 +114,10 @@ html {
   @include media-query($on-palm) {
     position: absolute;
     top: 0;
-    right: $spacing-unit / 2;
     text-align: left;
 
     label[for="nav-trigger"] {
       display: block;
-      float: right;
       z-index: 2;
       cursor: pointer;
     }
@@ -360,6 +360,10 @@ html {
 
       > :nth-child(2) {
         font-weight: $base-font-weight * 1.5;
+      }
+
+      > :last-child {
+        margin-bottom: 0;
       }
     }
   }
