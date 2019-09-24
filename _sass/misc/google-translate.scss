@@ -122,15 +122,19 @@ body {
   position: absolute;
   top: 110%;
   right: -10px;
+  background-color: lighten($theme-color, 5%);
   -webkit-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
   width: 100px;
   text-align: center;
-  padding-top: 0;
+  margin-top: 0;
   z-index: 200;
+  border-radius: 3px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  visibility: hidden;
 
   li {
-    background: lighten($theme-color, 5%);
     padding: 5px;
 
     a {
@@ -140,24 +144,14 @@ body {
       img {
         width: 24px;
         max-height: 24px;
+        border: none;
       }
-    }
-
-    &:first-child {
-      padding-top: 10px;
-      border-radius: 3px 3px 0 0;
-    }
-
-    &:last-child {
-      padding-bottom: 10px;
-      border-radius: 0 0 3px 3px;
     }
 
     &:hover {
       @extend .ct-language-selected;
     }
   }
-
 }
 
 .list-unstyled {
@@ -169,7 +163,7 @@ body {
 .ct-language {
   display: inline-block;
   position: relative;
-  background: #fefefe2b;
+  background-color: #fefefe2b;
   padding: 3px 10px;
   border-radius: 3px;
 
@@ -177,8 +171,9 @@ body {
     cursor: pointer;
 
     .ct-language-dropdown {
-      padding-top: 8px;
+      margin-top: 8px;
       max-height: 10000px;
+      visibility: visible;
     }
   }
 

@@ -7,30 +7,31 @@
       return;
     }
 
-    var headerHeight = 0;
     var header = document.querySelector('header');
-    if (header) {
-      headerHeight = header.offsetHeight;
-    }
-    var supportPageOffset = window.pageXOffset !== undefined;
-    var isCSS1Compat = ((document.compatMode || "") === "CSS1Compat");
+    var scrollPos = getScrollPos();
+    var offsetY = element.offsetTop - (header.offsetTop + header.offsetHeight + 20);
 
-    var x = supportPageOffset ? window.pageXOffset : isCSS1Compat ? document.documentElement.scrollLeft : document.body.scrollLeft;
-    var y = supportPageOffset ? window.pageYOffset : isCSS1Compat ? document.documentElement.scrollTop : document.body.scrollTop;
-
-    var offsetY = element.offsetTop - headerHeight - 12;
-    if (y === offsetY) {
+    if (offsetY  == scrollPos.y) {
       return;
     }
 
-    window.scrollTo(x, offsetY);
+    if (header.offsetTop == 0  && offsetY > scrollPos.y) {
+      offsetY += header.offsetHeight;
+    } else if (header.offsetTop < 0  && offsetY < scrollPos.y) {
+      offsetY -= header.offsetHeight;
+    }
+
+    smoothScrollTo(offsetY);
   }
 
   // The first event occurred
-  if (window.location.hash) {
-    hashLocate(window.location.hash);
-  }
+  window.addEventListener('load', function(event) {
+    if (window.location.hash) {
+      hashLocate(window.location.hash);
+    }
+  });
 
+  // The first event occurred
   window.addEventListener('click', function(event) {
     if (event.target.matches('a')) {
       hashLocate(event.target.getAttribute('href'));

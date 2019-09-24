@@ -200,6 +200,7 @@ html {
  */
 .page-content {
   @extend %flex-1; /* <-- Keep footer on the bottom */
+  -ms-flex: none; /* <-- Fix IE footer issue */
   padding: $spacing-unit * 1.5 0;
 }
 
@@ -378,7 +379,7 @@ html {
  * Layout and sidebar
  */
 .framework {
-    @extend %flex-layout;
+    @extend %flex;
 
   .main {
     @extend %flex-1;

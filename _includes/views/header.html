@@ -62,21 +62,14 @@
 
 <script>
   (function() {
-    var supportPageOffset = window.pageXOffset !== undefined;
-    var isCSS1Compat = ((document.compatMode || "") === "CSS1Compat");
-
-    function scrollY() {
-      return supportPageOffset ? window.pageYOffset : isCSS1Compat ? document.documentElement.scrollTop : document.body.scrollTop;
-    }
-
-    var lastScrollY = scrollY();
-    var dataset = document.documentElement.dataset;
+    var lastScrollY = getScrollPos().y;
+    var documentElement = document.documentElement;
 
     function storeScrollData() {
-      var y = scrollY();
+      var y = getScrollPos().y;
 
       {%- if banner and header_transparent -%}
-      dataset.headerTransparent = "";
+      documentElement.setAttribute("data-header-transparent", "");
       {%- endif -%}
 
       var scrollStatus = "";
@@ -91,7 +84,7 @@
       }
 
       lastScrollY = y;
-      dataset.scrollStatus = scrollStatus;
+      documentElement.setAttribute("data-scroll-status", scrollStatus);
     }
 
     window.addEventListener('scroll', function(e) {
