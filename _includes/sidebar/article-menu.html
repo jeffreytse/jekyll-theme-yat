@@ -36,9 +36,12 @@
       var changed = true;
       for (var i = headings.length - 1; i >= 0; i--) {
         var h = headings[i];
-        var clientRect = h.getBoundingClientRect();
-        var headerHeight = header.offsetTop + header.offsetHeight + 20;
-        if (clientRect.top <= headerHeight) {
+        var headingRect = h.getBoundingClientRect();
+        var headerRect = header.getBoundingClientRect();
+        var headerTop = Math.floor(headerRect.top);
+        var headerHeight = Math.floor(headerRect.height);
+        var headerHeight = headerTop + headerHeight + 20;
+        if (headingRect.top <= headerHeight) {
           var id = 'h-' + h.getAttribute('id');
           var curActive = menu.querySelector('a[href="#' + id  + '"]');
           if (curActive) {

@@ -7,18 +7,21 @@
       return;
     }
 
-    var header = document.querySelector('header');
+    var header = document.querySelector('header.site-header');
+    var headerRect = header.getBoundingClientRect();
+    var headerTop = Math.floor(headerRect.top);
+    var headerHeight = Math.floor(headerRect.height);
     var scrollPos = getScrollPos();
-    var offsetY = element.offsetTop - (header.offsetTop + header.offsetHeight + 20);
+    var offsetY = element.offsetTop - (headerTop + headerHeight + 20);
 
-    if (offsetY  == scrollPos.y) {
+    if (offsetY == scrollPos.y) {
       return;
     }
 
-    if (header.offsetTop == 0  && offsetY > scrollPos.y) {
-      offsetY += header.offsetHeight;
-    } else if (header.offsetTop < 0  && offsetY < scrollPos.y) {
-      offsetY -= header.offsetHeight;
+    if (headerTop == 0  && offsetY > scrollPos.y) {
+      offsetY += headerHeight + 2;
+    } else if (headerTop < 0  && offsetY < scrollPos.y) {
+      offsetY -= headerHeight - 2;
     }
 
     smoothScrollTo(offsetY);
