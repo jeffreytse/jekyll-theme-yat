@@ -7,47 +7,45 @@ sidebar:
 ---
 
 <div class="post">
-    <section>
+  <section>
 
-      {%- assign name = 'banner' -%}
-      {%- include functions.html func='get_value' -%}
-      {%- assign banner = return -%}
+    {%- assign name = 'banner' -%}
+    {%- include functions.html func='get_value' -%}
+    {%- assign banner = return -%}
 
-      {%- if banner == nil -%}
-      {%- include views/post-header.html -%}
+    {%- if banner == nil -%}
+    {%- include views/post-header.html -%}
+    {%- endif -%}
+
+    {%- include views/article.html -%}
+
+    <div class="post-nav">
+      {%- if page.previous -%}
+      <a href="{{ page.previous.url }}" title="{{ page.previous.title | escape }}">&laquo; Prev</a>
+      {%- else -%}
+      <span></span>
       {%- endif -%}
 
-      {%- include views/article.html -%}
-
-      <div class="post-nav">
-        {%- if page.previous -%}
-          <a href="{{ page.previous.url }}" title="{{ page.previous.title | escape }}">&laquo; Prev</a>
-        {%- else -%}
-          <span></span>
-        {%- endif -%}
-
-        {%- if page.next -%}
-          <a href="{{ page.next.url }}" title="{{ page.next.title | escape }}">Next &raquo;</a>
-        {%- else -%}
-          <span></span>
-        {%- endif -%}
-      </div>
-
-      {%- if page.comments != false -%}
-
-        {%- if site.disqus.shortname -%}
-        {%- include extensions/comments/disqus.html -%}
-        {%- endif -%}
-
-        {%- if site.gitment.username -%}
-        {%- include extensions/comments/gitment.html -%}
-        {%- endif -%}
-
+      {%- if page.next -%}
+      <a href="{{ page.next.url }}" title="{{ page.next.title | escape }}">Next &raquo;</a>
+      {%- else -%}
+      <span></span>
       {%- endif -%}
+    </div>
 
-    </section>
+    {%- if page.comments != false -%}
 
-    {%- include extensions/mathjax.html -%}
+    {%- if site.disqus.shortname -%}
+    {%- include extensions/comments/disqus.html -%}
+    {%- endif -%}
+
+    {%- if site.gitment.username -%}
+    {%- include extensions/comments/gitment.html -%}
+    {%- endif -%}
+
+    {%- endif -%}
+
+  </section>
 </div>
 
 
