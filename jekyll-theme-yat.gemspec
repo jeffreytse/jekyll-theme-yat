@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-theme-yat"
-  spec.version       = "1.3.0"
+  spec.version       = "1.3.1"
   spec.authors       = ["jeffreytse"]
   spec.email         = ["jeffreytse.mail@gmail.com"]
 
@@ -24,5 +24,5 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "jekyll-seo-tag", "~> 2.1"
   spec.add_runtime_dependency "jekyll-sitemap", "~> 1.3"
   spec.add_runtime_dependency "jekyll-paginate", "~> 1.1"
-  spec.add_runtime_dependency "jekyll-spaceship", "~> 0.1"
+  spec.add_runtime_dependency "jekyll-spaceship", "~> 0.2"
 end
