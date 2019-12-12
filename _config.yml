@@ -20,7 +20,7 @@ favicon: "" # the favicon for your site
 # Yat date format
 # refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
 yat:
-  date_format: "%b %-d, %Y"
+  date_format: "%b %d, %Y"
 
 # If you want more debug log, you can set true
 # debug: false
