@@ -19,20 +19,9 @@
 {% assign subheading = return %}
 
 {% if banner %}
-
-  {% assign auto_banner = true %}
-  {% assign array = banner | split: '/' %}
-  {% assign protocol = array[0]  %}
-
-  {% if array.size > 1 and (protocol == '' or protocol == 'http:' or protocol == 'https:') %}
-    {% assign auto_banner = false %}
-  {% endif %}
-
   <section class="page-banner">
     <div class="page-banner-img">
-      {%- if auto_banner == false -%}
-        <div style="background-image: url({{ banner }})"></div>
-      {%- endif  -%}
+      <div style="background-image: url({{ banner }})"></div>
     </div>
     <div class="wrapper">
       <div class="page-banner-inner">
@@ -48,36 +37,14 @@
             <h1 class="page-banner-heading">
               {{ heading | default: page.title | escape }}
             </h1>
-            <h3 class="page-banner-subheading">
+            <h2 class="page-banner-subheading">
               {{ subheading | default: page.subtitle | escape }}
-            </h3>
+            </h2>
           </div>
 
         {%- endif -%}
       </div>
     </div>
   </section>
-
-  {%- if auto_banner -%}
-
-    {%- assign selector = ".page-banner-img" -%}
-
-    {%- if banner == "default" -%}
-
-      {%- assign heading = page.heading | default: page.title | escape -%}
-      {%- assign subheading = page.subheading | default: page.subtitle | escape -%}
-      {%- assign seed = page.date | append: heading | append: subheading -%}
-
-    {%- else -%}
-
-      {%- assign seed = 'theme-' | append: banner -%}
-
-    {%- endif -%}
-
-    {%- assign zoom = 1.5 -%}
-    {%- include extensions/trianglify.html -%}
-
-  {%- endif -%}
-
 {%- endif -%}
 
