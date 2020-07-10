@@ -7,7 +7,7 @@
 {%- include functions.html func='log' level='debug' msg='Get header_transparent value' -%}
 {% assign name = 'header_transparent' %}
 {%- include functions.html func='get_value' -%}
-{% assign header_transparent = return %}
+{% assign header_transparent = return | default: true %}
 
 {%- if banner and header_transparent -%}
   {%- assign header_transparent_class = "site-header-transparent" -%}
@@ -39,9 +39,7 @@
             {%- for path in page_paths -%}
               {%- assign my_page = site.pages | where: "path", path | first -%}
               {%- if my_page.title -%}
-              <a class="page-link" href="{{ my_page.url | relative_url }}">
-                {{ my_page.title | upcase | escape }}
-              </a>
+              <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | upcase | escape }}</a>
               {%- endif -%}
             {%- endfor -%}
 
