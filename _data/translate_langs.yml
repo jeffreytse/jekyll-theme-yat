@@ -13,10 +13,6 @@
   img: https://www.countryflags.io/cn/flat/64.png
   text: Chinese(Simple)
 
-- lang: zh-TW
-  img: https://www.countryflags.io/tw/flat/64.png
-  text: Chinese(Traditional)
-
 - lang: ja
   img: https://www.countryflags.io/jp/flat/64.png
   text: Japan
