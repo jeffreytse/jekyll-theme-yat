@@ -25,8 +25,8 @@ yat:
 # If you want more debug log, you can set true
 # debug: false
 
-# If you want transparent header, you can set true
-# header_transparent: false
+# If you don't want transparent header, you can set false
+# header_transparent: true
 
 # Google analytics
 # google_analytics: [Tracking ID]
@@ -69,15 +69,11 @@ yat:
 
 # You can choose a theme color
 # Default theme colors as below:
+# coolblack: #090a0b
 # spacegrey: #353535
-# inkpurple: #543581
-# aquablue: #00aaa0
-# azureblue: #2863b1
-# gracered: #a12a50
-# aloegreen: #3d9e56
-# rustbrown: #795548
+# snowwhite: #ffffff
 #
-# theme_color: spacegrey
+# theme_color: snowwhite
 #
 # Custom color as below:
 # theme_color: "#882250"
@@ -113,7 +109,10 @@ yat:
 #   redirect_uri: "Your redirect url"   # If you use a custom domain name
 
 # Build settings
+# highlighter: none
 markdown: kramdown
+kmarkdown:
+  input: GFM
 
 plugins:
   - jekyll-feed
