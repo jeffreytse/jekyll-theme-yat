@@ -113,7 +113,7 @@ body {
 // Main look
 
 .ct-language-selected {
-  background: lighten($theme-color, 10%) !important;
+  background: darken($theme-color, 5%) !important;
 }
 
 .ct-language-dropdown {
@@ -130,12 +130,22 @@ body {
   margin-top: 0;
   z-index: 200;
   border-radius: 3px;
-  padding-top: 8px;
-  padding-bottom: 8px;
   visibility: hidden;
 
   li {
     padding: 5px;
+
+    &:first-child {
+      padding-top: 12px;
+    }
+
+    &:last-child {
+      padding-bottom: 12px;
+    }
+
+    &:not(:last-child) {
+      border-bottom: 1px solid rgba(0, 0, 0, .04);
+    }
 
     a {
       display: block;
@@ -174,6 +184,7 @@ body {
       margin-top: 8px;
       max-height: 10000px;
       visibility: visible;
+      box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .06);
     }
   }
 
