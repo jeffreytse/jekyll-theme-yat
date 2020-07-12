@@ -3,10 +3,6 @@
  */
 .common-list {
   @include relative-font-size(1.0);
-
-  background: #eaeaea;
-  box-shadow: 0px 0px 3px 0px #a9a9a9;
-  border-radius: 3px;
   min-width: 200px;
 
   ul {
@@ -15,7 +11,7 @@
   }
 
   li {
-    border-bottom: solid 1px #fff;
+    border-bottom: solid 1px #00000018;
 
     &:last-child {
       border-bottom: none;
@@ -26,8 +22,8 @@
       justify-content: space-between;
       padding: 8px 12px;
       text-decoration: none;
-      font-weight: 600;
-      color: mix($theme-color, #666);
+      font-weight: normal;
+      color: $text-color;
       transition: background 0.2s;
 
       &:hover {
@@ -40,7 +36,7 @@
       display: inline-block;
       border-radius: 10px;
       align-self: center;
-      background: darken(invert($theme-color), 20%);
+      background: #000000bd;
       padding: 0px 8px;
       margin-left: 20px;
       color: $white-color;
