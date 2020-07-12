@@ -11,8 +11,6 @@ Some of you know that we occasionally play for weddings. As you can imagine, we 
 
 ![](//www.youtube.com/watch?v=Ptk_1Dc2iPY)
 
-<br>
-<br>
 ## GUCCI HALLUCINATION / THE LINE ANIMATION / GUCCI
 BACKGROUND /
 
@@ -25,8 +23,6 @@ Our aim was to ground and accentuate the outlandish scenarios with ambient sound
 ![](https://vimeo.com/263856289)
 
 
-<br>
-<br>
 ## FINNEAS Demos How He Builds Songs For Billie Eilish
 Grammy Award-winning musician and producer FINNEAS sits down with Pitchfork and closely examines his creative process while working on some of the biggest hit songs of the past couple years. FINNEAS explores the sounds that brought upon 
 some of his greatest musical breakthroughs in songs such as bad guy, bury a friend, ocean eyes, when the party's over, I Lost a Friend, Used to This and much more.
@@ -34,3 +30,8 @@ some of his greatest musical breakthroughs in songs such as bad guy, bury a frie
 ![][demo]  
 
 [demo]: https://dai.ly/x7tgcev
+
+## This is the poster image
+In modern browsers, adding a video to your page is as easy as adding an image. No longer do you need to deal with special plug-ins or require crazy markup, you can do it with a single element.
+![video](//www.html5rocks.com/en/tutorials/video/basics/devstories.webm)
+

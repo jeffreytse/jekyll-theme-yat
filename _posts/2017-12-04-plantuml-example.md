@@ -7,12 +7,6 @@ tags: [plantuml]
 
 ## My First PlantUML
 
-`` ini
-aaa = 123
-````
-``
-
-
 ### PlantUML Block-1
 @startuml
 Bob -> Alice : hello
@@ -20,7 +14,7 @@ Bob -> Alice : hello
 
 
 ### PlantUML Block-2
-``` plantuml
+``` plantuml!
 Bob -> Alice : hello world
 ```
 
@@ -46,17 +40,17 @@ endif
 skinparam handwritten true
 
 skinparam usecase {
-	BackgroundColor DarkSeaGreen
-	BorderColor DarkSlateGray
+  BackgroundColor DarkSeaGreen
+  BorderColor DarkSlateGray
 
-	BackgroundColor<< Main >> YellowGreen
-	BorderColor<< Main >> YellowGreen
-	
-	ArrowColor Olive
-	ActorBorderColor black
-	ActorFontName Courier
+  BackgroundColor<< Main >> YellowGreen
+  BorderColor<< Main >> YellowGreen
 
-	ActorBackgroundColor<< Human >> Gold
+  ArrowColor Olive
+  ActorBorderColor black
+  ActorFontName Courier
+
+  ActorBackgroundColor<< Human >> Gold
 }
 
 User << Human >>

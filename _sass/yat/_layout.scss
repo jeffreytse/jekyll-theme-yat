@@ -321,6 +321,44 @@ html {
       margin-left: 8px;
     }
   }
+
+  .paginator {
+    text-align: center;
+
+    .previous:before {
+      content: ' ';
+      border: solid #787878;
+      border-width: 0 2px 2px 0;
+      display: inline-block;
+      padding: 4px;
+      margin-right: 8px;
+      transform: rotate(135deg);
+      -webkit-transform: rotate(135deg);
+    }
+
+    .next:after {
+      content: ' ';
+      border: solid #787878;
+      border-width: 0 2px 2px 0;
+      display: inline-block;
+      padding: 4px;
+      margin-left: 8px;
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+    }
+
+    .previous span, .next span {
+      color: #b3b3b3;
+    }
+
+    a:hover {
+      color: #000;
+    }
+
+    .indicator {
+      padding: 0 15px;
+    }
+  }
 }
 
 
