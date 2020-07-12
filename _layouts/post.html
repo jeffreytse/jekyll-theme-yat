@@ -1,6 +1,6 @@
 ---
 layout: framework
-banner: 'default'
+banner:
 banner_html: post-header.html
 sidebar:
   - article-menu
@@ -21,16 +21,26 @@ sidebar:
 
     <div class="post-nav">
       {%- if page.previous -%}
-      <a href="{{ page.previous.url }}" title="{{ page.previous.title | escape }}">&laquo; Prev</a>
+        <a class="previous" href="{{ page.previous.url }}" title="{{ page.previous.title | escape }}">{{ page.previous.title | escape }}</a>
       {%- else -%}
       <span></span>
       {%- endif -%}
 
       {%- if page.next -%}
-      <a href="{{ page.next.url }}" title="{{ page.next.title | escape }}">Next &raquo;</a>
+        <a class="next" href="{{ page.next.url }}" title="{{ page.next.title | escape }}">{{ page.next.title | escape }}</a>
       {%- else -%}
       <span></span>
       {%- endif -%}
+    </div>
+
+    <div class="post-related">
+      <div>Related Articles</div>
+      <ul>
+        {% assign posts = site[page.collection] | sample:4 %}
+        {%- for post in posts -%}
+        <li><a class="post-link" href="{{post.url}}">{{post.title}}</a></li>
+        {%- endfor -%}
+      </ul>
     </div>
 
     {%- if page.comments != false -%}

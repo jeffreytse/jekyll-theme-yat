@@ -14,7 +14,10 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+  font-family: $base-font-family;
+  font-weight: $base-font-weight;
+  font-size: #{$base-font-size};
+  line-height: #{$base-line-height};
   color: $text-color;
   background-color: $background-color;
   -webkit-text-size-adjust: 100%;
@@ -107,7 +110,7 @@ a {
   text-decoration: none;
 
   &:visited {
-    color: darken($brand-color, 15%);
+    color: #606060;
   }
 
   &:hover {
@@ -149,22 +152,37 @@ blockquote {
 pre,
 code {
   @include relative-font-size(0.9375);
-  border-radius: 3px;
-  background-color: #3d3d3d;
 }
 
 code {
   padding: 1px 5px;
+  border-radius: 3px;
+  color: #fff;
+  background-color: $brand-color;
 }
 
 pre {
-  padding: 8px 12px;
   overflow-x: auto;
+  position: relative;
+
+  &:before {
+    content: attr(data-lang);
+    color: #fff;
+    background-color: #ff4e00;
+    padding: 0 .5em;
+    border-radius: 0 2px;
+    text-transform: uppercase;
+    text-align: center;
+    min-width: 32px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+  }
 
   > code {
     border: 0;
-    padding-right: 0;
-    padding-left: 0;
+    padding: 20px!important;
+    background-color: transparent;
   }
 }
 
@@ -179,11 +197,6 @@ pre {
   padding-right: $spacing-unit;
   padding-left: $spacing-unit;
   @extend %clearfix;
-
-  @include media-query($on-laptop) {
-    padding-right: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
-  }
 }
 
 
@@ -205,7 +218,7 @@ table {
   margin-bottom: $spacing-unit;
   width: 100%;
   text-align: $table-text-align;
-  color: lighten($text-color, 18%);
+  color: lighten($text-color, 5%);
   border-collapse: collapse;
 
   tr {

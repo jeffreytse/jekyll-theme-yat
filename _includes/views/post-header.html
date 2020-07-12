@@ -1,6 +1,6 @@
 <header class="post-header">
   <h1 class="post-title p-name" itemprop="name headline">{{ heading | default: page.title | escape }}</h1>
-  <h3>{{ subheading | default: page.subtitle | escape }}</h3>
+  <h3 class="post-subtitle">{{ subheading | default: page.subtitle | escape }}</h3>
 
   <p class="post-meta">
     <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
@@ -8,4 +8,13 @@
       {{ page.date | date: date_format }}
     </time>
   </p>
+
+  {%- if page.tags.size > 0 -%}
+  <div class="post-tags">
+    {%- for tag in page.tags -%}
+    <a class="post-tag" href="/tags.html#{{tag}}">#{{tag}}</a>
+    {%- endfor -%}
+  </div>
+  {%- endif -%}
+
 </header>

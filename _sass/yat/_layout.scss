@@ -11,14 +11,31 @@ html {
   &[data-scroll-status='top'] {
     header.site-header-transparent {
       height: 0;
+      margin-top: 20px;
+      background-color: transparent;
+      transition: 0.1s height,background-color,box-shadow;
 
       &.site-header {
-        text-shadow: 0 0 2px #505050a0;
+        .site-brand-inner, .page-link {
+          color: #fff;
+          transition: 0.1s color;
+        }
+
+        @include media-query($on-laptop) {
+          .page-link {
+            color: unset;
+          }
+
+          .menu-icon {
+            > svg {
+              fill: $white-color;
+            }
+          }
+        }
       }
     }
 
     footer.site-footer {
-      color: #888;
       background-color: transparent;
 
       .site-footer-inner {
@@ -46,10 +63,21 @@ html {
   height: $header-height;
   width: 100%;
   transition: height 0.2s, text-shadow 0.2s, top 0.2s;
+  box-shadow: 0 1px 0 0 rgba(0, 0, 0, .06);
 
   // Positioning context for the mobile navigation icon
   @include flex-sticky(0);
   z-index: 1000;
+
+  & > .wrapper {
+    margin: 0 60px;
+    max-width: 100%;
+
+    @include media-query(1024px) {
+      margin: unset;
+      max-width: unset;
+    }
+  }
 
   a {
     text-decoration: none;
@@ -68,14 +96,10 @@ html {
     @include relative-font-size(1.125);
     font-weight: $base-font-weight;
     letter-spacing: -1px;
-    transition: filter 0.2s;
+    transition: 0.1s filter color;
 
     &, &:visited {
       color: $header-text-color;
-    }
-
-    &:hover {
-      filter: drop-shadow(0 0 2px #08080880);
     }
 
     .site-favicon {
@@ -87,7 +111,7 @@ html {
 }
 
 .site-nav {
-  @include relative-font-size(1.025);
+  @include relative-font-size(1.125);
   line-height: $header-height;
   position: absolute;
   right: 0;
@@ -102,16 +126,20 @@ html {
   }
 
   .page-link {
-    color: $header-text-color;
     line-height: $base-line-height;
+    color: $header-text-color;
+    transition: 0.1s ease-in-out;
 
     // Gaps between nav items, but not on the last one
     &:not(:last-child) {
-      margin-right: 20px;
+      margin-right: 24px;
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 
-  @include media-query($on-palm) {
+  @include media-query($on-laptop) {
     position: absolute;
     top: 0;
     text-align: left;
@@ -128,13 +156,16 @@ html {
       text-align: center;
 
       > svg {
-        fill: $white-color;
+        fill: rgba($header-text-color, 80%);
+        transition: 0.1s fill;
       }
     }
 
     input ~ .trigger {
       clear: both;
       display: none;
+      border-radius: 3px;
+      box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .06);
     }
 
     input:checked ~ .trigger {
@@ -155,7 +186,7 @@ html {
  * Site footer
  */
 .site-footer {
-  @include relative-font-size(0.9);
+  @include relative-font-size(1.0);
   color: $footer-text-color;
   background-color: $footer-background-color;
   text-align: left;
@@ -163,11 +194,11 @@ html {
 
   .site-footer-inner {
     transition: border-top 0.2s;
-    padding: $spacing-unit * 0.8 0;
+    padding: $spacing-unit * 1.8 0;
   }
 
   a {
-    $a-color: invert(mix(invert($theme-color), #0030ae));
+    $a-color: $brand-color;
     color: $a-color;
 
     &:hover {
@@ -193,6 +224,15 @@ html {
       @include relative-font-size(2.25);
     }
   }
+
+  .post-tags {
+    display: inline-block;
+    padding-right: 150px;
+
+    .post-tag {
+      margin: 0 12px 0 0;
+    }
+  }
 }
 
 /**
@@ -201,7 +241,7 @@ html {
 .page-content {
   @extend %flex-1; /* <-- Keep footer on the bottom */
   -ms-flex: none; /* <-- Fix IE footer issue */
-  padding: $spacing-unit * 1.5 0;
+  padding: $spacing-unit * 2 0;
 }
 
 .page-heading {
@@ -221,20 +261,65 @@ html {
     list-style: none;
 
     > li {
-      margin-bottom: $spacing-unit;
+      margin-bottom: $spacing-unit * 1.5;
+      padding-bottom: 30px;
+
+      &:not(:last-child) {
+        border-bottom: 1px solid #e3e3e3;
+      }
+    }
+  }
+
+  .post-title {
+    margin-bottom: 2px;
+
+    a {
+      text-decoration: none;
+
+      &:after {
+        content: 'NEW';
+        position: absolute;
+        margin-left: 8px;
+        margin-top: 3px;
+        padding: 0px 3px;
+        background-color: $brand-color;
+        color: #fff;
+        font-size: 10px;
+        font-weight: 600;
+        border-radius: 2px;
+      }
+
+      &:visited:after {
+        background-color: #fff;
+      }
     }
   }
 
   .post-meta {
-    font-size: $small-font-size;
+    font-size: $base-font-size;
     color: $grey-color;
+    margin-bottom: $spacing-unit * 0.5;
   }
 
   .post-link {
     @include relative-font-size(1.5);
-
-    display: block;
     font-weight: $base-font-weight * 1.5;
+    color: #15171a;
+  }
+
+  .post-excerpt {
+    color: #777;
+  }
+
+  .post-tags .post-tag {
+    text-decoration: none;
+    border: 1px solid;
+    padding: 2px 4px;
+    border-radius: 2px;
+
+    &:not(:first-child) {
+      margin-left: 8px;
+    }
   }
 }
 
@@ -244,6 +329,20 @@ html {
  */
 .post {
   @extend %post-header;
+
+  .post-header {
+    margin: 50px auto 60px;
+    padding: 0 0 20px;
+    border-bottom: 1px solid #ebebeb;
+
+    .post-title {
+      margin-bottom: 2px;
+    }
+
+    .post-meta {
+      color: #808080;
+    }
+  }
 
   .post-content {
     margin-bottom: $spacing-unit;
@@ -271,6 +370,67 @@ html {
         @include relative-font-size(1.125);
       }
     }
+
+    img, iframe {
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+
+    h2, h3, h4, h5, h6 {
+      margin: 60px 0 19px;
+    }
+
+    p, hr {
+      margin-bottom: 24px;
+    }
+
+    hr {
+      height: 1px;
+      background-color: #ebebeb;
+      border: none;
+    }
+  }
+
+  .post-related {
+    &>*:first-child {
+      @include relative-font-size(1.425);
+      color: #333;
+      margin-bottom: 14px;
+    }
+
+    ul {
+      margin-left: 15px;
+      .post-link {
+        @include relative-font-size(1.075);
+      }
+
+      a {
+        text-decoration: none;
+        color: #666;
+
+        &:hover {
+          color: #333;
+        }
+
+        &:after {
+          content: 'NEW';
+          position: absolute;
+          margin-left: 8px;
+          margin-top: 3px;
+          padding: 0px 3px;
+          background-color: $brand-color;
+          color: #fff;
+          font-size: 10px;
+          font-weight: 600;
+          border-radius: 2px;
+        }
+
+        &:visited:after {
+          background-color: #fff;
+        }
+      }
+    }
   }
 }
 
@@ -281,9 +441,35 @@ html {
 .post-nav {
   display: flex;
   justify-content: space-between;
+  margin: 72px 0 59px;
+  padding: 31px 0 0;
 
   a {
-    display: flex;
+    @include relative-font-size(1.125);
+    line-height: 15px;
+    color: #666;
+  }
+
+  .previous:before {
+    content: ' ';
+    border: solid #787878;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 4px;
+    margin-right: 8px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+
+  .next:after {
+    content: ' ';
+    border: solid #787878;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 4px;
+    margin-left: 8px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
   }
 }
 
@@ -322,6 +508,7 @@ html {
   height: $banner-height;
   background-color: $banner-background;
   transition: height 0.2s;
+  margin-bottom: 32px;
 
   .page-banner-img {
     position: absolute;
@@ -343,16 +530,17 @@ html {
 
     color: $banner-text-color;
     padding: 10px 5px;
-    text-shadow: 1px 1px 2px #333;
+    text-shadow: 1px 1px 2px #33333355;
 
     & > *:first-child {
       margin: 0;
 
       > :nth-child(1) {
-        @include relative-font-size(2.825);
+        @include relative-font-size(3.9);
         letter-spacing: -1px;
-        line-height: 1;
-        margin-bottom: 10px;
+        line-height: 0.95;
+        margin-bottom: 18px;
+        font-weight: normal;
 
         @include media-query($on-palm) {
           @include relative-font-size(2.425);
@@ -360,11 +548,39 @@ html {
       }
 
       > :nth-child(2) {
-        font-weight: $base-font-weight * 1.5;
+        font-weight: normal;
+        margin-bottom: 0;
       }
 
       > :last-child {
         margin-bottom: 0;
+      }
+    }
+
+    .post-subtitle {
+      @include relative-font-size(1.525);
+      color: #ffffffcc;
+      padding-right: 280px;
+    }
+
+    .post-meta {
+      color: #ffffffcc;
+    }
+
+    .post-tags {
+      color: #999;
+      padding-right: 280px;
+
+      .post-tag {
+        @include relative-font-size(1.125);
+        display: inline-block;
+        text-decoration: none;
+        margin: 9px 12px 0 0;
+        color: #fff;
+
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
   }
@@ -391,7 +607,7 @@ html {
 
     @include flex-sticky($header-height + 20px);
 
-    @include media-query($on-palm) {
+    @include media-query($on-laptop) {
       display: none;
     }
 
@@ -419,7 +635,6 @@ html {
       margin-top: 28px;
     }
 
-
     &:hover:before {
       content: '#';
       left: -1em;
@@ -432,5 +647,33 @@ html {
     color: $grey-color;
   }
 
+  li a {
+    &.post-link {
+      margin-left: 5px;
+    }
+
+    color: #303030;
+
+    &:hover {
+      color: #000;
+    }
+
+    &:after {
+      content: 'NEW';
+      position: absolute;
+      margin-left: 8px;
+      margin-top: 3px;
+      padding: 0px 3px;
+      background-color: $brand-color;
+      color: #fff;
+      font-size: 10px;
+      font-weight: 600;
+      border-radius: 2px;
+    }
+
+    &:visited:after {
+      background-color: #fff;
+    }
+  }
 }
 
