@@ -71,6 +71,7 @@ html {
 
   & > .wrapper {
     margin: 0 60px;
+    padding: 0;
     max-width: 100%;
 
     @include media-query(1024px) {
