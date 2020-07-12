@@ -3,19 +3,23 @@
 {% endif %}
 
 {% if paginator.posts.size > 0 %}
-  <div class="pagination">
+  <div class="paginator">
+    <span class="previous">
     {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path }}">&laquo; Prev</a>
+      <a href="{{ paginator.previous_page_path }}">Prev</a>
     {% else %}
-      <span>&laquo; Prev</span>
+      <span>Prev</span>
     {% endif %}
+    </span>
 
-    <span> {{ paginator.page }}/{{ paginator.total_pages }}</span>
+    <span class="indicator"> {{ paginator.page }}/{{ paginator.total_pages }}</span>
 
+    <span class="next">
     {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path }}">Next &raquo;</a>
+      <a href="{{ paginator.next_page_path }}">Next</a>
     {% else %}
-      <span>Next &raquo;</span>
+      <span>Next</span>
     {% endif %}
+    </span>
   </div>
 {% endif %}
