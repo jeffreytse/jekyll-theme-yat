@@ -73,9 +73,10 @@ html {
     margin: 0 60px;
     padding: 0;
     max-width: 100%;
+    transition: 0.2s margin;
 
     @include media-query(1024px) {
-      margin: unset;
+      margin: 0 20px;
       max-width: unset;
     }
   }
