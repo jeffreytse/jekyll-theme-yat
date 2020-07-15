@@ -152,9 +152,10 @@ blockquote {
 pre,
 code {
   @include relative-font-size(0.9375);
+  color: $text-color;
 }
 
-code {
+*:not(pre) > code {
   padding: 1px 5px;
   border-radius: 3px;
   color: #fff;
@@ -164,7 +165,9 @@ code {
 pre {
   overflow-x: auto;
   position: relative;
+  background-color: #f0f0f0;
 
+  // code language badge
   &:before {
     content: attr(data-lang);
     color: #fff;
@@ -180,9 +183,10 @@ pre {
   }
 
   > code {
-    border: 0;
+    display: inline-block;
     padding: 20px!important;
     background-color: transparent;
+    border: 0;
   }
 }
 
