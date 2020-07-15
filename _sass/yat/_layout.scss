@@ -327,7 +327,7 @@ html {
   .paginator {
     text-align: center;
 
-    .previous:before {
+    & > .previous:before {
       content: ' ';
       border: solid #787878;
       border-width: 0 2px 2px 0;
@@ -338,7 +338,7 @@ html {
       -webkit-transform: rotate(135deg);
     }
 
-    .next:after {
+    & > .next:after {
       content: ' ';
       border: solid #787878;
       border-width: 0 2px 2px 0;
