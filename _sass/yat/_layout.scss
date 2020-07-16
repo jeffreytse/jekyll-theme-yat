@@ -274,6 +274,7 @@ html {
 
   .post-title {
     margin-bottom: 2px;
+    transition: 0.2s all;
 
     a {
       text-decoration: none;
@@ -446,7 +447,6 @@ html {
       }
 
       a {
-        text-decoration: none;
         color: #666;
 
         &:hover {
@@ -581,6 +581,7 @@ html {
         line-height: 0.95;
         margin-bottom: 18px;
         font-weight: normal;
+        transition: 0.2s all;
 
         @include media-query($on-palm) {
           @include relative-font-size(2.425);
