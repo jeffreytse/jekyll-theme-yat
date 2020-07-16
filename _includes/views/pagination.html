@@ -11,6 +11,11 @@
     {%- for post in paginator.posts -%}
     <li>
       {%- assign date_format = site.yat.date_format | default: "%b %-d, %Y" -%}
+
+      {% assign article = post.content %}
+      {%- include functions.html func='get_reading_time' -%}
+      {% assign reading_time = return %}
+
       <h2 class="post-title">
         {%- assign post_url = post.url | relative_url -%}
         <a class="post-link" href="{{ post_url }}">
@@ -18,7 +23,8 @@
         </a>
       </h2>
       <div class="post-meta">
-        <span class="post-date">{{ post.date | date: date_format }}</span>
+        <span class="post-date"><i class="fa fa-calendar"></i> {{ post.date | date: date_format }}</span>
+        <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> {{ reading_time }}</span>
       </div>
       <p class="post-excerpt">
         {{ post.content | strip_html | truncatewords: 50 }}
