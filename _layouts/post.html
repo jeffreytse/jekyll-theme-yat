@@ -22,15 +22,13 @@ sidebar:
     <div class="post-nav">
       {%- if page.previous -%}
         <a class="previous" href="{{ page.previous.url }}" title="{{
-          page.previous.title | escape }}">{{ page.previous.title | escape |
-          truncatewords: 6 }}</a>
+          page.previous.title | escape }}">{{ page.previous.title | escape | truncatewords: 6 }}</a>
       {%- else -%}
       <span></span>
       {%- endif -%}
 
       {%- if page.next -%}
-        <a class="next" href="{{ page.next.url }}" title="{{ page.next.title |
-          escape }}">{{ page.next.title | escape | truncatewords: 6 }}</a>
+        <a class="next" href="{{ page.next.url }}" title="{{ page.next.title | escape }}">{{ page.next.title | escape | truncatewords: 6 }}</a>
       {%- else -%}
       <span></span>
       {%- endif -%}
@@ -41,7 +39,7 @@ sidebar:
       <ul>
         {% assign posts = site[page.collection] | sample:4 %}
         {%- for post in posts -%}
-        <li><a class="post-link" href="{{post.url}}">{{post.title}}</a></li>
+        <li><a class="post-link" href="{{post.url}}" title="{{ page.next.title | escape }}">{{ post.title | escape | truncatewords: 12 }}</a></li>
         {%- endfor -%}
       </ul>
     </div>
