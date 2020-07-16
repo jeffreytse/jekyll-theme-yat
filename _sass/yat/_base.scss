@@ -188,6 +188,15 @@ pre {
     background-color: transparent;
     border: 0;
   }
+
+  table, pre {
+    margin-bottom: 0;
+
+    .gutter, .code {
+      padding: 6px;
+      border: none;
+    }
+  }
 }
 
 
