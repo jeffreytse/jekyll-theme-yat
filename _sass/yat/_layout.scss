@@ -607,6 +607,10 @@ html {
       color: #ffffffcc;
     }
 
+    .left-vsplit:before {
+      background: #e3e3e388;
+    }
+
     .post-tags {
       color: #999;
       padding-right: 280px;
@@ -717,3 +721,12 @@ html {
   }
 }
 
+.left-vsplit:before {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 10px;
+  margin: 0 10px;
+  background-color: #e3e3e3e3;
+  vertical-align: baseline;
+}
