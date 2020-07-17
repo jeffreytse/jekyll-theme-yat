@@ -25,6 +25,16 @@ $ \rho {\rm{FOD}} = \sum\limits{\sigma ,i} {(\delta _1 - \delta _2 n_i^\sigma )|
 $$ \rho {\rm{FOD}} = \sum\limits{\sigma ,i} {(\delta _1 - \delta _2 n_i^\sigma )|\phi _i^\sigma ({\bf{r}})|^2} $$
 
 
+{{ "here is a liquid filter." | capitalize }}
+
+{% capture test %}
+\`escape inline code\`  
+`inline code`  
+Here is a **capture block**.
+{% endcapture %}
+
+{{ test | markdownify }}
+
 :+1:
 :bolivia:
 
@@ -73,7 +83,6 @@ for (a, b), neighbors in common_neighbors.items():
     particle_counts[a].update([cna_signature])
 {% endhighlight %}
 
-
 |:                        |:                  :|: $$O_3 + C_2H_2 \rightarrow $$         :|||:  $$O_3 + C_2H_4 \rightarrow $$ :|||:       :| 
 |:  ^^ Method            :| ^^ $$\lambda^a$$  |    vdW |    TS |    cycloadd.           |  vdW  |  TS  |  cycloadd.           | ^^ MAE    |
 |-------------------------|-------------------|--------|-------|------------------------|-------|------|----------------------|-----------|
@@ -91,10 +100,11 @@ for (a, b), neighbors in common_neighbors.items():
 |^^ spancell1   ||   spancell2  || cell | spancell3 ||
 {:class="custom-table"}
 
-
+<script>
 |:-----:|:-----:|:-----:|:-----:|
 | (0,0) | (0,1) | (0,2) | (0,3) |
 |     (1,0)    || ^^    | (1,3) |
+</script>
 
 
 |:-----:|:-----:|:-----:|:-----:| ---- |
@@ -163,3 +173,4 @@ Tips:
 The two markdown examples below both create this table.
 
 Use pipes `{% raw %}(`|`){% endraw %}` to delineate columns, and dashes to delineate the header row from the rest of the table.
+
