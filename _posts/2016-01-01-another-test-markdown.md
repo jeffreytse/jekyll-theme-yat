@@ -35,6 +35,9 @@ Here is a **capture block**.
 
 {{ test | markdownify }}
 
+{% assign x = 100 %} {% assign x = x | divided_by: 3 %}
+100 / 3 = {{ x }}
+
 :+1:
 :bolivia:
 
@@ -136,8 +139,29 @@ for (a, b), neighbors in common_neighbors.items():
 |Citric acid cycle  | 2 ATP           ||
 |^^                 | 6 NADH | 15 ATP  |
 |^^                 | 2 FADH | 3 ATP   |
-| 30--32 ATP                         |||
+|                        30--32 ATP  |||
 
+
+{:color-style: style="background: black;" }
+{:color-style: style="color: white;" }
+{:font-style: style="font-weight: 900; text-decoration: underline;" }
+
+|:             Here's a Inline Attribute Lists example                 :||||
+| ------- | ------------------------- | -------------------- | ----------- |
+|:       :|:  <div style="color: red;"> &lt; Normal HTML Block > </div> :|||
+| ^^      |   Red    {: .cls style="background: orange" }                |||
+| ^^ IALs |   Green  {: #id style="background: green; color: white" }    |||
+| ^^      |   Blue   {: style="background: blue; color: white" }         |||
+| ^^      |   Black  {: color-style font-style}                          |||
+
+
+[cell image]: https://jekyllrb.com/img/octojekyll.png "An exemplary image"
+
+| Heading            | Column 1      | Column 2                           |
+|--------------------|---------------|------------------------------------|
+| Row 1              | Apple         | Orange                             |
+| Row 2 (merged)     | Blueberry     | Strawberry                         |
+| ^^         | [Plum](https://example.com) | Raspberry ![example][cell image]   |
 
 9 \* 9
 
