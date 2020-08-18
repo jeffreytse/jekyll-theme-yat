@@ -109,10 +109,6 @@ a {
   color: $brand-color;
   text-decoration: none;
 
-  &:visited {
-    color: #606060;
-  }
-
   &:hover {
     color: $text-color;
     text-decoration: underline;
