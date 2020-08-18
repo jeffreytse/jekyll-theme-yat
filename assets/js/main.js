@@ -59,13 +59,25 @@ function smoothScrollTo(y, time) {
 // Init highlight js
 document.addEventListener('DOMContentLoaded', function(event) {
   document.querySelectorAll('pre code').forEach((block) => {
-    hljs.highlightBlock(block);
+    var outer = block.parentElement.parentElement.parentElement;
     var lang = block.getAttribute('data-lang');
-    if (!lang) {
+    for (var cls of outer.classList) {
+      if (cls.startsWith('language-')) {
+        lang = cls;
+        break;
+      }
+    }
+    if (lang) {
+      block.setAttribute('class', 'hljs ' + lang);
+    } else {
       lang = block
         .getAttribute('class')
         .replace('hljs ', '');
     }
+    if (lang.startsWith('language-')) {
+      lang = lang.substr(9);
+    }
     block.parentNode.setAttribute('data-lang', lang);
+    hljs.highlightBlock(block);
   });
 });
