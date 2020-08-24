@@ -67,16 +67,14 @@ document.addEventListener('DOMContentLoaded', function(event) {
         break;
       }
     }
-    if (lang) {
-      block.setAttribute('class', 'hljs ' + lang);
-    } else {
-      lang = block
-        .getAttribute('class')
-        .replace('hljs ', '');
+    if (!lang) {
+      cls = block.getAttribute('class');
+      lang = cls ? cls.replace('hljs ', '') : '';
     }
     if (lang.startsWith('language-')) {
       lang = lang.substr(9);
     }
+    block.setAttribute('class', 'hljs ' + lang);
     block.parentNode.setAttribute('data-lang', lang);
     hljs.highlightBlock(block);
   });
