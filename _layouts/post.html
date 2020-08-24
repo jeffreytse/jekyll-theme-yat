@@ -44,17 +44,19 @@ sidebar:
       </ul>
     </div>
 
-    {%- if page.comments != false -%}
+    <div class="post-comments">
+      {%- if page.comments != false -%}
 
-    {%- if site.disqus.shortname -%}
-    {%- include extensions/comments/disqus.html -%}
-    {%- endif -%}
+      {%- if site.disqus.shortname -%}
+      {%- include extensions/comments/disqus.html -%}
+      {%- endif -%}
 
-    {%- if site.gitment.username -%}
-    {%- include extensions/comments/gitment.html -%}
-    {%- endif -%}
+      {%- if site.gitment.username -%}
+      {%- include extensions/comments/gitment.html -%}
+      {%- endif -%}
 
-    {%- endif -%}
+      {%- endif -%}
+    </div>
 
   </section>
 </div>
