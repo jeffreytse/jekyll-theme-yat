@@ -13,14 +13,18 @@ sidebar:
     {%- include functions.html func='get_value' -%}
     {%- assign banner = return -%}
 
-    {%- assign result = page.hidden | where_exp: "item", "item == 'header'" -%}
+    {%- assign name = 'hidden' -%}
+    {%- include functions.html func='get_value' -%}
+    {%- assign hidden = return -%}
+
+    {%- assign result = hidden | where_exp: "item", "item == 'header'" -%}
     {%- if banner == nil and result.size == 0 -%}
     {%- include views/post-header.html -%}
     {%- endif -%}
 
     {%- include views/article.html -%}
 
-    {%- assign result = page.hidden | where_exp: "item", "item == 'navigator'" -%}
+    {%- assign result = hidden | where_exp: "item", "item == 'navigator'" -%}
     {%- if result.size == 0 -%}
     <div class="post-nav">
       {%- if page.previous -%}
@@ -38,7 +42,7 @@ sidebar:
     </div>
     {%- endif -%}
 
-    {%- assign result = page.hidden | where_exp: "item", "item == 'related_posts'" -%}
+    {%- assign result = hidden | where_exp: "item", "item == 'related_posts'" -%}
     {%- if result.size == 0 -%}
     <div class="post-related">
       <div>Related Articles</div>
@@ -51,7 +55,7 @@ sidebar:
     </div>
     {%- endif -%}
 
-    {%- assign result = page.hidden | where_exp: "item", "item == 'comments'" -%}
+    {%- assign result = hidden | where_exp: "item", "item == 'comments'" -%}
     {%- if result.size == 0 -%}
     <div class="post-comments">
       {%- if page.comments != false -%}
