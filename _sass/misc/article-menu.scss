@@ -3,8 +3,9 @@
  */
 
 .post-menu {
-  padding: 0 20px;
-  max-width: 250px;
+  padding-left: 20px;
+  min-width: 200px;
+  max-width: 230px;
 
   .post-menu-title {
     font-size: $base-font-size * 1.5;
