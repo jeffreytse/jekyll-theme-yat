@@ -36,10 +36,49 @@
     // The header element
     var header = document.querySelector('header.site-header');
 
+    function doMenuCollapse(index) {
+      var items = menuContent.firstChild.children;
+      var activeItem = items[index];
+      var beginItem = activeItem
+      var endItem = activeItem
+      var beginIndex = index;
+      var endIndex = index + 1;
+      while (beginIndex >= 0
+        && !items[beginIndex].classList.contains('h-h2')) {
+        beginIndex -= 1;
+      }
+      while (endIndex < items.length
+        && !items[endIndex].classList.contains('h-h2')) {
+        endIndex += 1;
+      }
+      for (var i = 0; i < beginIndex; i++) {
+        item = items[i]
+        if (!item.classList.contains('h-h2')) {
+          item.style.display = 'none';
+        }
+      }
+      for (var i = beginIndex + 1; i < endIndex; i++) {
+        item = items[i]
+        // if (!item.classList.contains('h-h2')) {
+          item.style.display = '';
+        // }
+      }
+      for (var i = endIndex; i < items.length; i++) {
+        item = items[i]
+        if (!item.classList.contains('h-h2')) {
+          item.style.display = 'none';
+        }
+      }
+    }
+
+    // Init menu collapsed
+    doMenuCollapse(-1);
+
     // Active the menu item
     window.addEventListener('scroll', function (event) {
       var lastActive = menuContent.querySelector('.active');
       var changed = true;
+      var activeIndex = -1;
       for (var i = headings.length - 1; i >= 0; i--) {
         var h = headings[i];
         var headingRect = h.getBoundingClientRect();
@@ -53,6 +92,7 @@
           var curActive = a.parentNode;
           if (curActive) {
             curActive.classList.add('active');
+            activeIndex = i;
           }
           if (lastActive == curActive) {
             changed = false;
@@ -60,8 +100,11 @@
           break;
         }
       }
-      if (lastActive && changed) {
-        lastActive.classList.remove('active');
+      if (changed) {
+        if (lastActive) {
+          lastActive.classList.remove('active');
+        }
+        doMenuCollapse(activeIndex);
       }
       event.preventDefault();
     });
