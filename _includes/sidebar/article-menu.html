@@ -36,8 +36,13 @@
     // The header element
     var header = document.querySelector('header.site-header');
 
-    function doMenuCollapse(index) {
+    function doMenuCollapse(index, over_items=20) {
       var items = menuContent.firstChild.children;
+
+      if (items.length < over_items) {
+        return;
+      }
+
       var activeItem = items[index];
       var beginItem = activeItem
       var endItem = activeItem
