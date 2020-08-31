@@ -21,7 +21,7 @@
 {% if banner %}
   <section class="page-banner">
     <div class="page-banner-img">
-      <div style="background-image: url({{ banner }})"></div>
+      <div style="background-image: url({{ banner | relative_url }})"></div>
     </div>
     <div class="wrapper">
       <div class="page-banner-inner">
