@@ -14,7 +14,7 @@ Hey, nice to meet you, you found this Jekyll theme. Here the yet another theme i
 
 <p align="center">
 
-  <img src="https://user-images.githubusercontent.com/9413601/91711123-f169b280-ebb7-11ea-8f5e-0867c713cdfc.png" alt="demo-screenshot" width="720px"/>
+  <img src="https://user-images.githubusercontent.com/9413601/91842897-6a840b00-ec87-11ea-95ca-52abcc1ac063.png" alt="demo-screenshot" width="780px"/>
 
 </p>
 
