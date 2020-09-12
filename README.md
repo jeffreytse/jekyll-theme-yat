@@ -33,7 +33,7 @@ Hey, nice to meet you, you found this Jekyll theme. Here the yet another theme i
 - Google Translation support.
 - New post tag support.
 
-Also, visit the live [demo][yat-live-demo] site for the theme.
+Also, visit the [Live Demo][yat-live-demo] site for the theme.
 
 ## Installation
 
