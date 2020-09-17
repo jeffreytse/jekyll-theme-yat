@@ -590,8 +590,7 @@ html {
       > :nth-child(1) {
         @include relative-font-size(3.9);
         letter-spacing: -1px;
-        line-height: 0.95;
-        margin-bottom: 18px;
+        margin-bottom: 16px;
         font-weight: normal;
         transition: 0.2s all;
 
@@ -614,6 +613,10 @@ html {
       @include relative-font-size(1.525);
       color: #ffffffcc;
       padding-right: 280px;
+
+      @include media-query($on-palm) {
+        padding-right: 0;
+      }
     }
 
     .post-meta {
@@ -627,6 +630,10 @@ html {
     .post-tags {
       color: #999;
       padding-right: 280px;
+
+      @include media-query($on-palm) {
+        padding-right: 0;
+      }
 
       .post-tag {
         @include relative-font-size(1.125);
