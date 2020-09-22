@@ -4,7 +4,7 @@ title: Welcome to Jekyll!
 subheading: hello world!
 author: Jeffrey
 categories: jekyll
-banner: default
+banner: https://bit.ly/32PAjtM
 tags: jekyll theme yat
 ---
 
