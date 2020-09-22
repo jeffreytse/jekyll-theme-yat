@@ -394,7 +394,7 @@ html {
     margin-bottom: $spacing-unit;
     overflow-wrap: break-word;
     word-wrap: break-word;
-    word-break: break-all;
+    word-break: break-word;
 
     h2 {
       @include relative-font-size(2);
