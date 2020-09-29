@@ -392,9 +392,9 @@ html {
 
   .post-content {
     margin-bottom: $spacing-unit;
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    word-break: break-word;
+    overflow-wrap: normal;
+    word-wrap: normal;
+    word-break: normal;
 
     h2 {
       @include relative-font-size(2);
