@@ -1,9 +1,9 @@
-{% if include.article %}
-  {% assign article = include.article %}
+{% if include.params.article %}
+  {% assign article = include.params.article %}
 {% endif %}
 
-{% if include.speed %}
-  {% assign speed = include.speed %}
+{% if include.params.speed %}
+  {% assign speed = include.params.speed %}
 {% else %}
   {% assign speed = 160 %}
 {% endif %}

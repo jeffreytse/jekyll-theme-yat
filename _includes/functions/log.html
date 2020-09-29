@@ -1,9 +1,9 @@
-{% if include.level %}
-  {% assign level = include.level %}
+{% if include.params.level %}
+  {% assign level = include.params.level %}
 {% endif %}
 
-{% if include.msg %}
-  {% assign msg = include.msg %}
+{% if include.params.msg %}
+  {% assign msg = include.params.msg %}
 {% endif %}
 
 {% if site.debug == true %}

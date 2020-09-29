@@ -1,19 +1,19 @@
-{%- if include.name -%}
-  {%- assign name = include.name -%}
+{%- if include.params.name -%}
+  {%- assign name = include.params.name -%}
 {%- endif -%}
 
-{%- assign return = include.return -%}
-
-{%- if page[name] -%}
+{%- if page[name] != nil -%}
   {%- assign return = page[name] -%}
-{%- elsif site[name] -%}
+{%- elsif site[name] != nil -%}
   {%- assign return = site[name] -%}
-{%- elsif site.data[name] -%}
+{%- elsif site.data[name] != nil -%}
   {%- assign return = site.data[name] -%}
-{%- elsif site.defaults[page.layout][name] -%}
+{%- elsif site.defaults[page.layout][name] != nil -%}
   {%- assign return = site.defaults[page.layout][name] -%}
-{%- elsif site.data.defaults[page.layout][name] -%}
+{%- elsif site.data.defaults[page.layout][name] != nil -%}
   {%- assign return = site.data.defaults[page.layout][name] -%}
-{%- elsif layout[name] -%}
+{%- elsif layout[name] != nil -%}
   {%- assign return = layout[name] -%}
+{%- else -%}
+  {%- assign return = include.params.default -%}
 {%- endif -%}

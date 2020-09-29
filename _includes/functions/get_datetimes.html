@@ -1,5 +1,5 @@
-{% if include.filter %}
-  {% assign filter = include.filter %}
+{% if include.params.filter %}
+  {% assign filter = include.params.filter %}
 {% endif %}
 
 {% assign split_mark = '<|>' %}

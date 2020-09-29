@@ -1,5 +1,6 @@
-{%- if include.func -%}
-  {%- assign func = include.func -%}
+{%- assign params = include -%}
+{%- if params.func -%}
+  {%- assign func = params.func -%}
 {%- endif -%}
 
 {%- assign include_path = func -%}
@@ -12,7 +13,7 @@
   {%- include functions/log.html level=include.level msg=include.msg -%}
 {%- else -%}
   {%- assign include_path = 'functions/' | append: include_path -%}
-  {%- include {{ include_path }} -%}
+  {%- include {{ include_path }} params=params-%}
 {%- endif -%}
 
 {%- if func != 'log' -%}
