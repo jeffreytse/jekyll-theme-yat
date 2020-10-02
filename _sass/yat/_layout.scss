@@ -11,7 +11,7 @@ html {
   &[data-scroll-status='top'] {
     header.site-header-transparent {
       height: 0;
-      margin-top: 20px;
+      margin-top: 12px;
       background-color: transparent;
       transition: 0.1s height,background-color,box-shadow;
 
@@ -244,6 +244,7 @@ html {
   @extend %flex-1; /* <-- Keep footer on the bottom */
   -ms-flex: none; /* <-- Fix IE footer issue */
   padding: $spacing-unit * 2 0;
+  padding-top: 72px;
 }
 
 .page-heading {
@@ -326,7 +327,7 @@ html {
     }
 
     &:hover {
-      color: #777;
+      color: #787878;
     }
   }
 
@@ -357,10 +358,6 @@ html {
 
     .previous span, .next span {
       color: #b3b3b3;
-    }
-
-    a:hover {
-      color: #000;
     }
 
     .indicator {
@@ -560,7 +557,6 @@ html {
   height: $banner-height;
   background-color: $banner-background;
   transition: height 0.2s;
-  margin-bottom: 32px;
 
   .page-banner-img {
     position: absolute;
@@ -570,6 +566,7 @@ html {
 
     & > *:first-child {
       @include center-image;
+      transition: 0.1s all ease-in-out;
     }
   }
 

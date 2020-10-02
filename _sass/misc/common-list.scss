@@ -27,7 +27,7 @@
       transition: background 0.2s;
 
       &:hover {
-        background: mix($theme-color, #eaeaea, 20%);
+        background-color: mix($theme-color, #eaeaea, 20%);
       }
     }
 
