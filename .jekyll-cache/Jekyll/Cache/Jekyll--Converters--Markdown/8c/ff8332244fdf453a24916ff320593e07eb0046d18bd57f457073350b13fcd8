@@ -1,0 +1,347 @@
+I"�$<h2 id="table-example-as-below">Table example as below</h2>
+
+<p><strong>For now, these extended features are provided:</strong></p>
+
+<ul>
+  <li>Cells spanning multiple columns</li>
+  <li>Cells spanning multiple rows</li>
+  <li>Cells text align separately</li>
+  <li>Table header not required</li>
+  <li>Grouped table header rows or data rows</li>
+</ul>
+
+<h3 id="rowspan-and-colspan">Rowspan and Colspan</h3>
+<p>^^ in a cell indicates it should be merged with the cell above.<br />
+This feature is contributed by <a href="https://github.com/pmccloghrylaing">pmccloghrylaing</a>.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: right">Stage</th>
+      <th style="text-align: right">Direct Products</th>
+      <th style="text-align: right">ATP Yields</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: right">Glycolysis</td>
+      <td style="text-align: right">2 ATP                   |</td>
+      <td style="text-align: right"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: right">^^</td>
+      <td style="text-align: right">2 NADH</td>
+      <td style="text-align: right">3–5 ATP</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">Pyruvaye oxidation</td>
+      <td style="text-align: right">2 NADH</td>
+      <td style="text-align: right">5 ATP</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">Citric acid cycle</td>
+      <td style="text-align: right">2 ATP           |</td>
+      <td style="text-align: right"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: right">^^</td>
+      <td style="text-align: right">6 NADH</td>
+      <td style="text-align: right">15 ATP</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">^^</td>
+      <td style="text-align: right">2 FADH</td>
+      <td style="text-align: right">3 ATP</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">30–32 ATP                         ||</td>
+      <td style="text-align: right"> </td>
+      <td style="text-align: right"> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>[ Net ATP yields per hexose]</p>
+
+<h3 id="multiline">Multiline</h3>
+<p>A backslash at end to join cell contents with the following lines.<br />
+This feature is contributed by <a href="https://github.com/Lucas-C">Lucas-C</a>.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">:     Easy Multiline     :||</th>
+      <th style="text-align: left"> </th>
+      <th style="text-align: left"> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Apple</td>
+      <td style="text-align: left">Banana</td>
+      <td style="text-align: left">Orange  \</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Apple</td>
+      <td style="text-align: left">Banana</td>
+      <td style="text-align: left">Orange  \</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Apple</td>
+      <td style="text-align: left">Banana</td>
+      <td style="text-align: left">Orange</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Apple</td>
+      <td style="text-align: left">Banana</td>
+      <td style="text-align: left">Orange  \</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Apple</td>
+      <td style="text-align: left">Banana</td>
+      <td style="text-align: left">Orange</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Apple</td>
+      <td style="text-align: left">Banana</td>
+      <td style="text-align: left">Orange</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="headerless">Headerless</h3>
+<p>Table header can be eliminated.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>♜</td>
+      <td> </td>
+      <td>♝</td>
+      <td>♛</td>
+      <td>♚</td>
+      <td>♝</td>
+      <td>♞</td>
+      <td>♜</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>♟</td>
+      <td>♟</td>
+      <td>♟</td>
+      <td> </td>
+      <td>♟</td>
+      <td>♟</td>
+      <td>♟</td>
+    </tr>
+    <tr>
+      <td>♟</td>
+      <td> </td>
+      <td>♞</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>♗</td>
+      <td> </td>
+      <td> </td>
+      <td>♟</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>♙</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>♘</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>♙</td>
+      <td>♙</td>
+      <td>♙</td>
+      <td>♙</td>
+      <td> </td>
+      <td>♙</td>
+      <td>♙</td>
+      <td>♙</td>
+    </tr>
+    <tr>
+      <td>♖</td>
+      <td>♘</td>
+      <td>♗</td>
+      <td>♕</td>
+      <td>♔</td>
+      <td> </td>
+      <td> </td>
+      <td>♖</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>|:     Fruits <span class="se">\|\|</span> Food           :|||
+|:-------- |:-------- |:------------ |
+| Apple    |: Apple  :|    Apple     <span class="err">\</span>
+| Banana   |  Banana  |    Banana    <span class="err">\</span>
+| Orange   |  Orange  |    Orange    |
+|:   Rowspan is 5   :||:  How's it? :|
+|^^   A. Peach       ||^^ 1. Fine    |
+|^^   B. Orange      ||^^ 2. Bad  $I = <span class="se">\i</span>nt <span class="se">\r</span>ho R^{2} dV$     |
+|^^   C. Banana      ||   It's OK! !<span class="p">[</span><span class="nv">example image</span><span class="p">][</span><span class="ss">my-image</span><span class="p">]</span>  |
+</code></pre></div></div>
+
+<h3 id="text-alignment">Text Alignment</h3>
+<p>Table cell can be set alignment separately.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">\:Fruits         |</th>
+      <th style="text-align: left">Food   :</th>
+      <th style="text-align: left"> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Apple</td>
+      <td style="text-align: left">Banana</td>
+      <td style="text-align: left">Orange</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Apple</td>
+      <td style="text-align: left">Banana</td>
+      <td style="text-align: left">Orange</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left"> </th>
+      <th style="text-align: left">Fruits\::        |</th>
+      <th style="text-align: left"> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Apple</td>
+      <td style="text-align: left">Banana</td>
+      <td style="text-align: left">Orange</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Apple</td>
+      <td style="text-align: left">Banana</td>
+      <td style="text-align: left">Orange</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">: \:Fruits       :|</th>
+      <th style="text-align: left"> </th>
+      <th style="text-align: left">:       Food     :|</th>
+      <th style="text-align: left"> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Apple</td>
+      <td style="text-align: left">Banana</td>
+      <td style="text-align: left">Orange</td>
+      <td style="text-align: left">:   Strawberry    :</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Apple  &amp;  Banana |</td>
+      <td style="text-align: left">^^</td>
+      <td style="text-align: left">Peach        :|</td>
+      <td style="text-align: left"> </td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>: \:Fruits       :|</td>
+      <td> </td>
+      <td>:       Food     :|</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Apple</td>
+      <td>Banana</td>
+      <td>Orange</td>
+      <td>:   Strawberry    :</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">:     Fruits || Food           :||</th>
+      <th style="text-align: left"> </th>
+      <th style="text-align: left"> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Apple</td>
+      <td style="text-align: left">: Apple  :</td>
+      <td style="text-align: left">Apple     \</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Banana</td>
+      <td style="text-align: left">Banana</td>
+      <td style="text-align: left">Banana    \</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Orange</td>
+      <td style="text-align: left">Orange</td>
+      <td style="text-align: left">Orange</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">:   Rowspan is 5   :|</td>
+      <td style="text-align: left">:  How’s it? :</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">^^   A. Peach       |</td>
+      <td style="text-align: left">^^ 1. Fine</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">^^   B. Orange      |</td>
+      <td style="text-align: left">^^ 2. Bad  $I = \int \rho R^{2} dV$</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">^^   C. Banana      |</td>
+      <td style="text-align: left">It’s OK! ![](http://www.unexpected-vortices.com/sw/rippledoc/example-image.jpg "An exemplary image")</td>
+      <td style="text-align: left"> </td>
+    </tr>
+  </tbody>
+</table>
+
+:ET

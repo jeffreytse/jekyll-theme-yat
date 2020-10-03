@@ -1,0 +1,16 @@
+I"ª<h3 id="1-pie-chart">1. Pie chart</h3>
+
+<p><img class="mermaid" src="https://mermaid.ink/svg/eyJjb2RlIjoicGllIHRpdGxlIFBldHMgYWRvcHRlZCBieSB2b2x1bnRlZXJzXG5cIkRvZ3NcIiA6IDM4NlxuXCJDYXRzXCIgOiA4NVxuXCJSYXRzXCIgOiAzNSIsIm1lcm1haWQiOm51bGx9" /></p>
+
+<h3 id="2-sequence-diagram">2. sequence diagram</h3>
+
+<p><img class="mermaid" src="https://mermaid.ink/svg/eyJjb2RlIjoic2VxdWVuY2VEaWFncmFtXG5BbGljZSAtPj4gQm9iOiBIZWxsbyBCb2IsIGhvdyBhcmUgeW91P1xuQm9iLS0-PkpvaG46IEhvdyBhYm91dCB5b3UgSm9obj9cbkJvYi0teCBBbGljZTogSSBhbSBnb29kIHRoYW5rcyFcbkJvYi14IEpvaG46IEkgYW0gZ29vZCB0aGFua3MhXG5Ob3RlIHJpZ2h0IG9mIEpvaG46IEJvYiB0aGlua3MgYSBsb25nPGJyLz5sb25nIHRpbWUsIHNvIGxvbmc8YnIvPnRoYXQgdGhlIHRleHQgZG9lczxici8-bm90IGZpdCBvbiBhIHJvdy5cbkJvYi0tPkFsaWNlOiBDaGVja2luZyB3aXRoIEpvaG4uLi5cbkFsaWNlLT5Kb2huOiBZZXMuLi4gSm9obiwgaG93IGFyZSB5b3U_IiwibWVybWFpZCI6bnVsbH0" /></p>
+
+<p><img class="mermaid" src="https://mermaid.ink/svg/eyJjb2RlIjoiZ3JhcGggVERcbkFbQ2hyaXN0bWFzXSAtLT58R2V0IG1vbmV5fCBCKEdvIHNob3BwaW5nKVxuQiAtLT4gQ3tMZXQgbWUgdGhpbmt9XG5DIC0tPnxPbmV8IERbTGFwdG9wXVxuQyAtLT58VHdvfCBFW2lQaG9uZV1cbkMgLS0-fFRocmVlfCBGW2ZhOmZhLWNhciBDYXJdIiwibWVybWFpZCI6bnVsbH0" /></p>
+
+<h3 id="3-class-diagram">3. Class diagram</h3>
+<p><img class="mermaid" src="https://mermaid.ink/svg/eyJjb2RlIjoiY2xhc3NEaWFncmFtXG5BbmltYWwgPHwtLSBEdWNrXG5BbmltYWwgPHwtLSBGaXNoXG5BbmltYWwgPHwtLSBaZWJyYVxuQW5pbWFsIDogK2ludCBhZ2VcbkFuaW1hbCA6ICtTdHJpbmcgZ2VuZGVyXG5BbmltYWw6ICtpc01hbW1hbCgpXG5BbmltYWw6ICttYXRlKClcbmNsYXNzIER1Y2t7XG4rU3RyaW5nIGJlYWtDb2xvclxuK3N3aW0oKVxuK3F1YWNrKClcbn1cbmNsYXNzIEZpc2h7XG4taW50IHNpemVJbkZlZXRcbi1jYW5FYXQoKVxufVxuY2xhc3MgWmVicmF7XG4rYm9vbCBpc193aWxkXG4rcnVuKClcbn0iLCJtZXJtYWlkIjpudWxsfQ" /></p>
+
+<h3 id="4-state-diagram">4. State diagram</h3>
+<p><img class="mermaid" src="https://mermaid.ink/svg/eyJjb2RlIjoic3RhdGVEaWFncmFtXG5bKl0gLS0-IFN0aWxsXG5TdGlsbCAtLT4gWypdU3RpbGwgLS0-IE1vdmluZ1xuTW92aW5nIC0tPiBTdGlsbFxuTW92aW5nIC0tPiBDcmFzaFxuQ3Jhc2ggLS0-IFsqXSIsIm1lcm1haWQiOm51bGx9" /></p>
+:ET
