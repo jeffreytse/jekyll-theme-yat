@@ -18,8 +18,17 @@ Hey, nice to meet you, you found this Jekyll theme. Here the yet another theme i
 
 </p>
 
+<h3 align="center">Night Mode</h3>
+
+<p align="center">
+
+  <img src="https://user-images.githubusercontent.com/9413601/94983351-760f6e00-0574-11eb-9494-5303ad6228dc.gif" alt="demo-screenshot" width="780px"/>
+
+</p>
+
 ## Features
 
+- Support beautiful __Night Mode__.
 - Full layouts `home`, `post`, `tags`, `archive` and `about`.
 - Uses font awesome 5 for icons.
 - Beautiful Syntax Highlight using [hilight.js][hilight-js].
