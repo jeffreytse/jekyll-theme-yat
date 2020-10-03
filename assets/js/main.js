@@ -58,10 +58,12 @@ function smoothScrollTo(y, time) {
 
 // Init highlight js
 document.addEventListener('DOMContentLoaded', function(event) {
-  document.querySelectorAll('pre code').forEach((block) => {
+  var els = document.querySelectorAll('pre code')
+  function handle(block) {
     var outer = block.parentElement.parentElement.parentElement;
     var lang = block.getAttribute('data-lang');
-    for (var cls of outer.classList) {
+    for (var i = 0; i < outer.classList.length; i++) {
+      var cls = outer.classList[i];
       if (cls.startsWith('language-')) {
         lang = cls;
         break;
@@ -77,5 +79,9 @@ document.addEventListener('DOMContentLoaded', function(event) {
     block.setAttribute('class', 'hljs ' + lang);
     block.parentNode.setAttribute('data-lang', lang);
     hljs.highlightBlock(block);
-  });
+  }
+  for (var i = 0; i < els.length; i++) {
+    var el = els[i];
+    handle(el);
+  }
 });

@@ -36,7 +36,7 @@
 
   // The first event occurred
   window.addEventListener('click', function(event) {
-    if (event.target.matches('a')) {
+    if (event.target.tagName.toLowerCase() == 'a') {
       hashLocate(event.target.getAttribute('href'));
     }
   });
