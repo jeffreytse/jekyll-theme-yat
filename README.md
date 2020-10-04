@@ -46,6 +46,14 @@ Also, visit the [Live Demo][yat-live-demo] site for the theme.
 
 ## Installation
 
+There are three ways to install:
+
+- As a [gem-based theme](https://jekyllrb.com/docs/themes/#understanding-gem-based-themes).
+- As a [remote theme](https://blog.github.com/2017-11-29-use-any-theme-with-github-pages/) (GitHub Pages compatible).
+- Forking/directly copying all of the theme files into your project.
+
+### Gem-based Theme Method
+
 Add this line to your Jekyll site's `Gemfile`:
 
 ```ruby
@@ -60,20 +68,53 @@ theme: jekyll-theme-yat
 
 And then execute:
 
-    $ bundle
+```bash
+$ bundle
+```
 
 Or install it yourself as:
 
-    $ gem install jekyll-theme-yat
+```bash
+$ gem install jekyll-theme-yat
+```
+
+### Remote Theme Method with GitHub Pages
+
+Remote themes are similar to Gem-based themes, but do not require `Gemfile` changes or whitelisting making them ideal for sites hosted with GitHub Pages.
+
+To install:
+
+Add this line to your Jekyll site's `Gemfile`:
+
+```ruby
+gem "github-pages", group: :jekyll_plugins
+```
+
+And add this line to your Jekyll site's `_config.yml`:
+
+```yaml
+# theme: owner/name --> Don't forget to remove/comment the gem-based theme option
+remote_theme: "jeffreytse/jekyll-theme-yat"
+```
+
+And then execute:
+
+```bash
+$ bundle
+```
+
+## GitHub Pages without limitation
+
+GitHub Pages runs in `safe` mode and only allows [a set of whitelisted plugins/themes](https://pages.github.com/versions/). __In other words, the third-party gems will not work normally__.
+
+To use the third-party gem in GitHub Pages without limitation:
+
+Here is a GitHub Action named [jekyll-deploy-action](https://github.com/jeffreytse/jekyll-deploy-action) for Jekyll site deployment conveniently. 👍
+
 
 ## Usage
 
 Add or update your available layouts, includes, sass and/or assets.
-
-GitHub Pages runs in `safe` mode and only allows [a set of whitelisted plugins](https://pages.github.com/versions/).
-To use the third-party gem in GitHub Pages without limitation:
-
-* Here is a GitHub Action named [jekyll-deploy-action](https://github.com/jeffreytse/jekyll-deploy-action) for Jekyll site deployment conveniently. 👍
 
 ## Development
 
