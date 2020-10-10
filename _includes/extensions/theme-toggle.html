@@ -9,6 +9,10 @@
   </label>
 </div>
 
+{%- assign name = 'night_mode' -%}
+{%- include functions.html func='get_value' default='auto' -%}
+{%- assign night_mode = return -%}
+
 <script>
   (function() {
     var sw = document.getElementById('theme-switch');
@@ -24,7 +28,7 @@
       try {
         data = JSON.parse(data ? data : '');
       } catch(e) {
-        data = { nightShift: null, autoToggleAt: 0 };
+        data = { nightShift: false, autoToggleAt: 0 };
         saveThemeData(data);
       }
       return data;
@@ -72,19 +76,28 @@
       };
     }
 
-    var data = autoThemeToggle();
-
     // Listen the theme toggle event
     sw.addEventListener('change', function(event) {
       handleThemeToggle(event.target.checked);
     });
 
-    // Toggle theme by local setting
-    if (data.toggleAt > themeData.autoToggleAt) {
-      themeData.autoToggleAt = data.toggleAt;
-      handleThemeToggle(data.nightShift);
-    } else {
+    var nightModeOption = '{{ night_mode }}';
+    nightModeOption = nightModeOption.toLowerCase();
+
+    if (nightModeOption == 'auto') {
+      var data = autoThemeToggle();
+
+      // Toggle theme by local setting
+      if (data.toggleAt > themeData.autoToggleAt) {
+        themeData.autoToggleAt = data.toggleAt;
+        handleThemeToggle(data.nightShift);
+      } else {
+        handleThemeToggle(themeData.nightShift);
+      }
+    } else if (nightModeOption == 'mannual') {
       handleThemeToggle(themeData.nightShift);
+    } else {
+      handleThemeToggle(nightModeOption == 'on');
     }
   })();
 </script>
