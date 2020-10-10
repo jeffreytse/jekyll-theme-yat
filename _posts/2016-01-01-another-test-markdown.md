@@ -163,6 +163,14 @@ for (a, b), neighbors in common_neighbors.items():
 | Row 2 (merged)     | Blueberry     | Strawberry                         |
 | ^^         | [Plum](https://example.com) | Raspberry ![example][cell image]   |
 
+Not in table: `<Mail Gateway>`
+
+In table:
+
+Decision Point | Design Decision
+--- | ---
+Authoritative DNS MX Record | `<Mail Gateway>`
+
 9 \* 9
 
 | 1 \* 1 = 1 |
