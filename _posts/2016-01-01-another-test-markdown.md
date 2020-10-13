@@ -199,6 +199,13 @@ Bob -> Alice : hello
 
 [\[video link\]](//www.youtube.com/watch?v=Ptk_1Dc2iPY)
 
+
+# Special media links
+
+![]( {{ "/assets/devstories.webm" | relative_url }} )
+
+[![w:1100](https://i.imgur.com/bc9HOJU.png)](https://www.youtube.com/watch?v=kCHGDRHZ4eU)
+
 Tips:
 * Use pipes {% raw %}(`|`){% endraw %} to delineate columns, and dashes to delineate the header row from the rest of the table.
 * Spacing doesn't matter to the markdown processor, any extra white space is removed, but it can really help with readability.
