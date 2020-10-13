@@ -78,8 +78,10 @@ yat:
 # Custom color as below:
 # theme_color: "#882250"
 
-# Night mode, default is "auto", "auto" is for auto nightshift (19:00 - 07:00),
-# "manual" is for manual toggle, and "on/off" is for always on/off.
+# Night/Dark mode
+# Default mode is "auto", "auto" is for auto nightshift
+# (19:00 - 07:00), "manual" is for manual toggle, and
+# "on/off" is for always on/off.
 # night_mode: "auto"
 
 # If you want to link only specific pages in your header, uncomment
