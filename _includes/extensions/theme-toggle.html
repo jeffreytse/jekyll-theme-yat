@@ -81,7 +81,7 @@
       handleThemeToggle(event.target.checked);
     });
 
-    var nightModeOption = '{{ night_mode }}';
+    var nightModeOption = '{{ night_mode }}' || 'auto';
     nightModeOption = nightModeOption.toLowerCase();
 
     if (nightModeOption == 'auto') {
