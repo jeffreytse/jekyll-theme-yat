@@ -159,9 +159,11 @@ for (a, b), neighbors in common_neighbors.items():
 
 | Heading            | Column 1      | Column 2                           |
 |--------------------|---------------|------------------------------------|
-| Row 1              | Apple         | Orange                             |
+| Row 1              | Apple[^1]     | Orange                             |
 | Row 2 (merged)     | Blueberry     | Strawberry                         |
 | ^^         | [Plum](https://example.com) | Raspberry ![example][cell image]   |
+
+[^1]: Footnote
 
 Not in table: `<Mail Gateway>`
 
