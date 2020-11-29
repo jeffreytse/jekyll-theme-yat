@@ -1,4 +1,5 @@
 $dark-background-color:       #0e0e0e !default;
+$dark-text-color: #bbb !default;
 
 html[data-theme="dark"]  {
 
@@ -10,12 +11,13 @@ html[data-theme="dark"]  {
   }
 
   body {
-    color: #bbb;
+    color: $dark-text-color;
     background-color: $dark-background-color;
   }
 
   *:not(pre) > code {
-    background-color: #545454;
+    color: $dark-text-color;
+    background-color: #454545;
   }
 
   table {
@@ -74,7 +76,7 @@ html[data-theme="dark"]  {
 
   .pagination {
     .post-link {
-      color: #bbb;
+      color: $dark-text-color;
     }
 
     .post-title {
@@ -171,7 +173,7 @@ html[data-theme="dark"]  {
         }
 
         a {
-          color: #bbb;
+          color: $dark-text-color;
         }
 
         a:hover {
