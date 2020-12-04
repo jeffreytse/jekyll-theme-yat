@@ -9,6 +9,10 @@ $theme-colors: (
   snowwhite: #ffffff,
 );
 
+body {
+  font-family: "Georgia", Times, serif;
+}
+
 $theme-name: "{{ site.theme_color }}";
 $theme-color: map-get($theme-colors, "snowwhite");
 
