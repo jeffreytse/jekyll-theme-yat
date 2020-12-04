@@ -228,10 +228,10 @@ html {
   }
 
   .post-tags {
-    display: inline-block;
     padding-right: 150px;
 
     .post-tag {
+      display: inline-block;
       margin: 0 12px 0 0;
     }
   }
@@ -389,6 +389,7 @@ html {
 
   .post-content {
     margin-bottom: $spacing-unit;
+    overflow-x: auto;
     overflow-wrap: normal;
     word-wrap: normal;
     word-break: normal;
