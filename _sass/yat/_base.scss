@@ -160,7 +160,7 @@ pre {
   background-color: #f0f0f0;
 
   // code language badge
-  &:before {
+  &::before {
     content: attr(data-lang);
     color: #fff;
     background-color: #ff4e00;
@@ -172,6 +172,11 @@ pre {
     display: inline-block;
     position: absolute;
     right: 0;
+  }
+
+  // fix wrong badge display for firefox browser
+  code > table pre::before {
+    display: none;
   }
 
   > code {
