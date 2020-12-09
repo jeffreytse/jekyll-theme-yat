@@ -4,7 +4,7 @@
   margin-top: 10px;
   margin-right: 60px;
   margin-left: auto;
-  transition: 0.1s all ease-in-out;
+  transition: .3s cubic-bezier(.4,.03,0,1);
 
   label, .toggle {
     border-radius: 100px;
