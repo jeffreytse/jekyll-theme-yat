@@ -225,11 +225,13 @@ pre {
  * Tables
  */
 table {
+  display: block;
   margin-bottom: $spacing-unit;
   width: 100%;
   text-align: $table-text-align;
   color: lighten($text-color, 5%);
   border-collapse: collapse;
+  overflow: auto;
 
   tr {
     &:nth-child(even) {
