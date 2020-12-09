@@ -3,7 +3,7 @@
 
   <div class="wrapper">
     <div class="site-footer-inner">
-      <div>{{ site.copyright }} @{{ site.author | escape }}</div>
+      <div>{{ site.copyright }} {% if site.author %}@{{ site.author | escape }}{% endif %}</div>
       <div>Powered by <a title="Jekyll is a simple, blog-aware, static site
       generator." href="http://jekyllrb.com/">Jekyll</a> &amp; <a title="Yat, yet
       another theme." href="https://github.com/jeffreytse/jekyll-theme-yat">Yat Theme</a>.</div>
