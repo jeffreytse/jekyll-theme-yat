@@ -17,18 +17,22 @@
   (function() {
     var sw = document.getElementById('theme-switch');
     var html = document.getElementsByTagName('html')[0];
+    var nightModeOption = ('{{ night_mode }}' || 'auto').toLowerCase();
+    var storage = nightModeOption === 'manual'
+        ? localStorage
+        : sessionStorage;
     var themeData = loadThemeData();
 
     function saveThemeData(data) {
-      localStorage.setItem('theme', JSON.stringify(data));
+      storage.setItem('theme', JSON.stringify(data));
     }
 
     function loadThemeData() {
-      var data = localStorage.getItem('theme');
+      var data = storage.getItem('theme');
       try {
         data = JSON.parse(data ? data : '');
       } catch(e) {
-        data = { nightShift: false, autoToggleAt: 0 };
+        data = { nightShift: undefined, autoToggleAt: 0 };
         saveThemeData(data);
       }
       return data;
@@ -81,9 +85,6 @@
       handleThemeToggle(event.target.checked);
     });
 
-    var nightModeOption = '{{ night_mode }}' || 'auto';
-    nightModeOption = nightModeOption.toLowerCase();
-
     if (nightModeOption == 'auto') {
       var data = autoThemeToggle();
 
@@ -97,7 +98,11 @@
     } else if (nightModeOption == 'manual') {
       handleThemeToggle(themeData.nightShift);
     } else {
-      handleThemeToggle(nightModeOption == 'on');
+      var nightShift = themeData.nightShift;
+      if (nightShift === undefined) {
+        nightShift = nightModeOption === 'on';
+      }
+      handleThemeToggle(nightShift);
     }
   })();
 </script>
