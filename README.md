@@ -9,7 +9,10 @@
     alt="Donate (Ko-fi)" />
 </a>
 
-Hey, nice to meet you, you found this Jekyll theme. Here the yet another theme is a modern theme, and it's quiet clear, clean and neat for writers and posts.
+Hey, nice to meet you, you found this [Jekyll][jekyll] theme. Here the
+**Yet Another Theme** is a modern responsive theme, and it's quiet clear,
+clean and neat for writers and posts. **If you like the theme, give it
+a star!**
 
 
 <p align="center">
@@ -18,7 +21,7 @@ Hey, nice to meet you, you found this Jekyll theme. Here the yet another theme i
 
 </p>
 
-<h3 align="center">Night Mode</h3>
+<h3 align="center">🌌 Night Mode</h3>
 
 <p align="center">
 
@@ -29,6 +32,7 @@ Hey, nice to meet you, you found this Jekyll theme. Here the yet another theme i
 ## Features
 
 - Support beautiful __Night Mode__.
+- Modern responsive web design.
 - Full layouts `home`, `post`, `tags`, `archive` and `about`.
 - Uses font awesome 5 for icons.
 - Beautiful Syntax Highlight using [hilight.js][hilight-js].
