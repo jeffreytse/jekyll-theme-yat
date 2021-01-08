@@ -2,6 +2,9 @@
   {%- assign name = include.params.name -%}
 {%- endif -%}
 
+{%- assign keys = name | split:'.'- %}
+{%- assign name = keys.first -%}
+
 {%- if page[name] != nil -%}
   {%- assign return = page[name] -%}
 {%- elsif site[name] != nil -%}
@@ -17,3 +20,13 @@
 {%- else -%}
   {%- assign return = include.params.default -%}
 {%- endif -%}
+
+{%- assign keys = keys | shift -%}
+{%- for key in keys -%}
+  {%- assign return = return[key] -%}
+  {%- if return == nil -%}
+    {%- assign return = include.params.default -%}
+    {%- break -%}
+  {%- endif -%}
+{%- endfor -%}
+
