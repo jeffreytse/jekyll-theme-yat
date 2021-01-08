@@ -159,26 +159,6 @@ pre {
   position: relative;
   background-color: #f0f0f0;
 
-  // code language badge
-  &::before {
-    content: attr(data-lang);
-    color: #fff;
-    background-color: #ff4e00;
-    padding: 0 .5em;
-    border-radius: 0 2px;
-    text-transform: uppercase;
-    text-align: center;
-    min-width: 32px;
-    display: inline-block;
-    position: absolute;
-    right: 0;
-  }
-
-  // fix wrong badge display for firefox browser
-  code > table pre::before {
-    display: none;
-  }
-
   > code {
     display: inline-block;
     padding: 20px!important;
