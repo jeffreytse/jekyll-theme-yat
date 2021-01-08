@@ -6,7 +6,7 @@
         src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/languages/go.min.js"></script>
 
 {%- assign name = 'code_badge.enabled' -%}
-{%- include functions.html func='get_value' default='false' -%}
+{%- include functions.html func='get_value' default='true' -%}
 {%- assign badge_enabled = return -%}
 
 {%- assign name = 'code_badge.color' -%}
@@ -20,6 +20,11 @@
 {%- assign name = 'code_badge.text_transform' -%}
 {%- include functions.html func='get_value' default='uppercase' -%}
 {%- assign badge_text_transform = return -%}
+
+{{ badge_enabled }}
+{{ badge_color }}
+{{ badge_background_color }}
+{{ badge_text_transform }}
 
 <script>
 // Init highlight js
@@ -47,8 +52,17 @@ document.addEventListener('DOMContentLoaded', function(event) {
     block.parentNode.setAttribute('data-lang', lang);
   }
 
+  function addBadge(block) {
+    var enabled = ('{{ badge_enabled }}' || 'true').toLowerCase();
+    if (enabled == 'true') {
+      var pre = block.parentElement;
+      pre.classList.add('badge');
+    }
+  }
+
   function handle(block) {
     addLangData(block);
+    addBadge(block)
     hljs.highlightBlock(block);
   }
 
@@ -61,13 +75,13 @@ document.addEventListener('DOMContentLoaded', function(event) {
 
 <style>
   /* code language badge */
-  pre::before {
+  pre.badge::before {
     content: attr(data-lang);
-    color: #fff;
-    background-color: #ff4e00;
+    color: {{badge_color}};
+    background-color: {{badge_background_color}};
     padding: 0 .5em;
     border-radius: 0 2px;
-    text-transform: uppercase;
+    text-transform: {{badge_text_transform}};
     text-align: center;
     min-width: 32px;
     display: inline-block;
