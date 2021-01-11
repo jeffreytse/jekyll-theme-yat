@@ -20,11 +20,13 @@
 {% assign _article = article | strip_html %}
 {% assign _words = _article | size %}
 
+{% assign _size = excerpt_size %}
+
 {% if lang != "en" %}
   {% assign _size = words
     | times: 1.0
     | divided_by: _words
-    | times: excerpt_size
+    | times: _size
     | round %}
 {% endif %}
 
