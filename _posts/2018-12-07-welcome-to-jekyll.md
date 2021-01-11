@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Welcome to Jekyll!
-subheading: hello world!
+title: 개발블로그 입니다.
+subheading: 개발블로그 입니다.
 author: Jeffrey
 categories: jekyll
 banner: https://bit.ly/32PAjtM
