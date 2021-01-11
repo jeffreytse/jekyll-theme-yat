@@ -2,14 +2,34 @@
   {% assign article = include.params.article %}
 {% endif %}
 
+{% if include.params.lang %}
+  {% assign lang = include.params.lang %}
+{% else %}
+  {% assign lang = lang | default: site.lang | default: "en" %}
+{% endif %}
+
 {% if include.params.speed %}
   {% assign speed = include.params.speed %}
 {% else %}
   {% assign speed = 160 %}
 {% endif %}
 
-{% assign total_mins = article
-  | number_of_words
+{% assign words = article | number_of_words %}
+
+{% if lang != "en" %}
+  {% assign words = words
+    | times: 0.6
+    | round %}
+  {% assign words = article
+    | strip_html
+    | strip_newlines
+    | size
+    | times: 0.4
+    | plus: words
+    | round %}
+{% endif %}
+
+{% assign total_mins = words
   | divided_by: speed
   | at_least: 1 %}
 

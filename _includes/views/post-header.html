@@ -9,6 +9,7 @@
     </time>
 
     {% assign article = page.content %}
+    {% assign lang = page.lang %}
     {%- include functions.html func='get_reading_time' -%}
     {% assign reading_time = return %}
     <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> {{ reading_time }}</span>

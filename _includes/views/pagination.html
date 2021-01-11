@@ -13,6 +13,7 @@
       {%- assign date_format = site.yat.date_format | default: "%b %-d, %Y" -%}
 
       {% assign article = post.content %}
+      {% assign lang = post.lang %}
       {%- include functions.html func='get_reading_time' -%}
       {% assign reading_time = return %}
 
