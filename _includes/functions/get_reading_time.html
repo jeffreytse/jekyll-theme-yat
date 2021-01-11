@@ -14,20 +14,8 @@
   {% assign speed = 160 %}
 {% endif %}
 
-{% assign words = article | number_of_words %}
-
-{% if lang != "en" %}
-  {% assign words = words
-    | times: 0.6
-    | round %}
-  {% assign words = article
-    | strip_html
-    | strip_newlines
-    | size
-    | times: 0.4
-    | plus: words
-    | round %}
-{% endif %}
+{%- include functions.html func='get_article_words' -%}
+{% assign words = return %}
 
 {% assign total_mins = words
   | divided_by: speed
