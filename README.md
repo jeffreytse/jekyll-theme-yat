@@ -1,13 +1,57 @@
-# jekyll-theme-yat
-[![Github Pages](https://github.com/jeffreytse/jekyll-theme-yat/workflows/Github%20Pages/badge.svg)](https://jeffreytse.github.io/jekyll-theme-yat)
-[![Gem Version](https://badge.fury.io/rb/jekyll-theme-yat.svg)](http://badge.fury.io/rb/jekyll-theme-yat)
-[![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
-[![Donate (Liberapay)](http://img.shields.io/liberapay/goal/jeffreytse.svg?logo=liberapay)](https://liberapay.com/jeffreytse)
-[![Donate (Patreon)](https://img.shields.io/badge/support-patreon-F96854.svg?style=flat-square)](https://patreon.com/jeffreytse)
-<a href="https://ko-fi.com/jeffreytse">
+<div align="center">
+  <br>
+
+  <a href="https://github.com/jeffreytse/jekyll-theme-yat">
+    <img alt="jekyll-theme-yat →~ jekyll" src="https://user-images.githubusercontent.com/9413601/106478481-346fdf00-64e4-11eb-9385-1ab5329c3234.png" width="600">
+  </a>
+
+  <h1>🎨 JEKYLL YAT THEME 🎨</h1>
+
+</div>
+
+<h4 align="center">
+  <a href="https://jekyllrb.com/" target="_blank"><code>Jekyll</code></a> theme for elegant writers.
+</h4>
+
+<p align="center">
+  <a href="https://jeffreytse.github.io/jekyll-theme-yat">
+    <img src="https://github.com/jeffreytse/jekyll-theme-yat/workflows/Github%20Pages/badge.svg"
+      alt="Github Pages" />
+  </a>
+
+  <a href="http://badge.fury.io/rb/jekyll-theme-yat">
+    <img src="https://badge.fury.io/rb/jekyll-theme-yat.svg"
+      alt="Gem Version" />
+  </a>
+
+  <a href="https://opensource.org/licenses/MIT">
+    <img src="https://img.shields.io/badge/License-MIT-brightgreen.svg"
+      alt="License: MIT" />
+  </a>
+
+  <a href="https://liberapay.com/jeffreytse">
+    <img src="http://img.shields.io/liberapay/goal/jeffreytse.svg?logo=liberapay"
+      alt="Donate (Liberapay)" />
+  </a>
+
+  <a href="https://patreon.com/jeffreytse">
+    <img src="https://img.shields.io/badge/support-patreon-F96854.svg?style=flat-square"
+      alt="Donate (Patreon)" />
+  </a>
+
+  <a href="https://ko-fi.com/jeffreytse">
   <img height="20" src="https://www.ko-fi.com/img/githubbutton_sm.svg"
-    alt="Donate (Ko-fi)" />
-</a>
+  alt="Donate (Ko-fi)" />
+  </a>
+</p>
+
+<div align="center">
+  <sub>Built with ❤︎ by
+  <a href="https://jeffreytse.net">jeffreytse</a> and
+  <a href="https://github.com/jeffreytse/jekyll-theme-yat/graphs/contributors">contributors </a>
+</div>
+
+<br>
 
 Hey, nice to meet you, you found this [Jekyll][jekyll] theme. Here the
 **Yet Another Theme** is a modern responsive theme, and it's quiet clear,
@@ -29,7 +73,7 @@ a star!**
 
 </p>
 
-## Features
+## ✨ Features
 
 - Support beautiful __Night Mode__.
 - Modern responsive web design.
@@ -48,7 +92,7 @@ a star!**
 
 Also, visit the [Live Demo][yat-live-demo] site for the theme.
 
-## Installation
+## 🛠️  Installation
 
 There are three ways to install:
 
@@ -107,7 +151,7 @@ And then execute:
 $ bundle
 ```
 
-## GitHub Pages without limitation
+### GitHub Pages without limitation
 
 GitHub Pages runs in `safe` mode and only allows [a set of whitelisted plugins/themes](https://pages.github.com/versions/). __In other words, the third-party gems will not work normally__.
 
@@ -116,11 +160,11 @@ To use the third-party gem in GitHub Pages without limitation:
 Here is a GitHub Action named [jekyll-deploy-action](https://github.com/jeffreytse/jekyll-deploy-action) for Jekyll site deployment conveniently. 👍
 
 
-## Usage
+## 📚 Usage
 
 Add or update your available layouts, includes, sass and/or assets.
 
-## Development
+## ✏️  Development
 
 To set up your environment to develop this theme, run `bundle install`.
 
@@ -129,13 +173,13 @@ Your theme is setup just like a normal Jekyll site! To test your theme, run `bun
 When your theme is released, only the files in `_data`, `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
 To add a custom directory to your theme-gem, please edit the regexp in `jekyll-theme-yat.gemspec` accordingly.
 
-## Contributing
+## 🔫 Contributing
 
 Issues and Pull Requests are greatly appreciated. If you've never contributed to an open source project before I'm more than happy to walk you through how to create a pull request.
 
 You can start by [opening an issue](https://github.com/jeffreytse/jekyll-theme-yat/issues/new) describing the problem that you're looking to resolve and we'll go from there.
 
-## License
+## 🌈 License
 
 This theme is licensed under the [MIT license](https://opensource.org/licenses/mit-license.php) © JeffreyTse.
 
