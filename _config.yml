@@ -135,6 +135,9 @@ yat:
 #     subheading: "Your awesome subheading"
 #     banner: "Your image url"
 
+# Excerpt size setting
+# excerpt_size: 350
+
 # Pagination setting
 # paginate: 5
 
