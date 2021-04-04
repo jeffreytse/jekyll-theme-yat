@@ -24,7 +24,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: YJK's blog
+title: Yeji's blog - Deep AI
 email: imyjk729@gmail.com
 author: imyjk729
 copyright: Copyright © 1970-2010
