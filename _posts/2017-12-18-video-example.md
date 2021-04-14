@@ -31,6 +31,12 @@ some of his greatest musical breakthroughs in songs such as bad guy, bury a frie
 
 [demo]: https://dai.ly/x7tgcev
 
+## 2019 BMW Vision M NEXT Concept (HD)
+
+In future, drivers will be able to choose whether they wish to be driven or do the driving themselves. With the BMW Vision M NEXT, the BMW Group is revealing its take on how driving pleasure might look in future. It offers a foretaste of the BMW M brand’s electrified future by placing the focus squarely on the actively engaged driver. Intelligent technologies provide comprehensive yet carefully targeted assistance to turn them into the ultimate driver.
+
+![](https://www.dailymotion.com/video/x7bur2y)  
+
 ## This is the poster image
 In modern browsers, adding a video to your page is as easy as adding an image. No longer do you need to deal with special plug-ins or require crazy markup, you can do it with a single element.
 ![video](//www.html5rocks.com/en/tutorials/video/basics/devstories.webm)
