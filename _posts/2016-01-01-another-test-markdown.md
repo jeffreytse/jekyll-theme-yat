@@ -129,7 +129,7 @@ for (a, b), neighbors in common_neighbors.items():
 |     (1,0)           ||| ^^    |      |
 
 
-# Table
+## Table
 
 | Stage | Direct Products | ATP Yields |
 | ----: | --------------: | ---------: |
@@ -159,11 +159,21 @@ for (a, b), neighbors in common_neighbors.items():
 
 | Heading            | Column 1      | Column 2                           |
 |--------------------|---------------|------------------------------------|
-| Row 1              | Apple[^1]     | Orange                             |
-| Row 2 (merged)     | Blueberry     | Strawberry                         |
+| Row 1              | Apple[^1]     | [Youtube (Home)]                   |
+| Row 2              | Banana        | [Github][1]                        |
+| Row 3 (merged)     | Blueberry     | [Google] *****  [Github]           |
 | ^^         | [Plum](https://example.com) | Raspberry ![example][cell image]   |
+| Row 4      | <https://www.google.com>    |                              |
+|^^          |^^ <https://www.youtube.com> |                              |
+| Row 5      | <https://www.google.com>                                  ||
 
+[Youtube (Home)]: https://www.youtube.com
+[Google]: https://www.google.com
+[Github]: https://www.github.com
+[1]: https://www.github.com
 [^1]: Footnote
+
+<https://www.google.com>
 
 Not in table: `<Mail Gateway>`
 
@@ -180,20 +190,22 @@ Authoritative DNS MX Record | `<Mail Gateway>`
 | 1 \* 3 = 3 | 2 \* 3 = 6 | 3 \* 3 = 9  |
 | 1 \* 3 = 3 | 2 \* 3 = 6 | 3 \* 4 = 12 | 4 \* 4 = 16 |
 
-# Emoji
+## Emoji
 :+1:
 
-# Mathjax
+## Mathjax
 
 $\LaTeX{}$
 
-# PlantUML
+## PlantUML
 
 @startuml
 Bob -> Alice : hello
 @enduml
 
-# Video
+## Video
+
+![Flower](https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm)
 
 ![](//www.youtube.com/watch?v=Ptk_1Dc2iPY)
 
@@ -201,8 +213,43 @@ Bob -> Alice : hello
 
 [\[video link\]](//www.youtube.com/watch?v=Ptk_1Dc2iPY)
 
+## Audio
 
-# Special media links
+[HTML5 Audio Formats Test](https://hpr.dogphilosophy.net/test/)
+
+Opus Audio (".opus"):
+
+![](https://hpr.dogphilosophy.net/test/opus.opus)
+
+"MP3" file (".mp3") :
+
+![](https://hpr.dogphilosophy.net/test/mp3.mp3)
+
+WebM Audio (".weba"):
+
+![](https://hpr.dogphilosophy.net/test/weba.weba)
+
+WebMv2 Audio (".webm"):
+
+![](https://hpr.dogphilosophy.net/test/webmv2.webm)
+
+Ogg Vorbis (".ogg") :
+
+![](https://hpr.dogphilosophy.net/test/ogg.ogg)
+
+"wave" file(".wav") :
+
+![](https://hpr.dogphilosophy.net/test/wav.wav)
+
+FLAC file (".flac") :
+
+![](https://hpr.dogphilosophy.net/test/flac.flac)
+
+CAF file (".caf") :
+
+![](https://hpr.dogphilosophy.net/test/cafopus.caf)
+
+## Special media links
 
 ![]( {{ "/assets/devstories.webm" | relative_url }} )
 
