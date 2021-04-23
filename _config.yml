@@ -61,31 +61,28 @@ yat:
 # langs refer to https://cloud.google.com/translate/docs/languages
 # translate_langs:
 #   - lang: en
+#     img: https://cdn.countryflags.com/thumbs/united-states-of-america/flag-400.png
 #     text: English
 #
 #   - lang: fr
-#     img: https://www.countryflags.io/fr/flat/64.png
+#     img: https://cdn.countryflags.com/thumbs/france/flag-400.png
 #     text: Franch
 #
 #   - lang: zh-CN
-#     img: https://www.countryflags.io/cn/flat/64.png
+#     img: https://cdn.countryflags.com/thumbs/china/flag-400.png
 #     text: Chinese(Simple)
 #
-#   - lang: zh-TW
-#     img: https://www.countryflags.io/tw/flat/64.png
-#     text: Chinese(Traditional)
-#
 #   - lang: ja
-#     img: https://www.countryflags.io/jp/flat/64.png
-#     text: Japan
+#     img: https://cdn.countryflags.com/thumbs/japan/flag-400.png
+#     text: Japanese
 #
 #   - lang: ko
-#     img: https://www.countryflags.io/kr/flat/64.png
+#     img: https://cdn.countryflags.com/thumbs/south-korea/flag-400.png
 #     text: Korean
 #
 #   - lang: ru
-#     img: https://www.countryflags.io/ru/flat/64.png
-#     text: Russia
+#     img: https://cdn.countryflags.com/thumbs/russia/flag-400.png
+#     text: Russian
 
 # You can choose a theme color
 # Default theme colors as below:
