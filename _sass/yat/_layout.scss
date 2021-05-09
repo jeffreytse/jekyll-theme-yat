@@ -23,7 +23,7 @@ html {
 
         @include media-query($on-laptop) {
           .page-link {
-            color: unset;
+            color: $header-text-color;
           }
 
           .menu-icon {
@@ -36,7 +36,7 @@ html {
     }
 
     footer.site-footer {
-      background-color: transparent;
+      background-color: $theme-color;
 
       .site-footer-inner {
         border-top: solid 1px #eee;
