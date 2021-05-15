@@ -79,7 +79,7 @@ a star!**
 - Modern responsive web design.
 - Full layouts `home`, `post`, `tags`, `archive` and `about`.
 - Uses font awesome 5 for icons.
-- Beautiful Syntax Highlight using [hilight.js][hilight-js].
+- Beautiful Syntax Highlight using [highlight.js][highlight-js].
 - RSS support using [Jekyll Feed][jekyll-feed] gem.
 - Optimized for search engines using [Jekyll Seo Tag][jekyll-seo-tag] gem.
 - Sitemap support using [Jekyll Sitemap][jekyll-sitemap] gem.
@@ -191,4 +191,4 @@ This theme is licensed under the [MIT license](https://opensource.org/licenses/m
 [jekyll-seo-tag]: https://github.com/jekyll/jekyll-seo-tag
 [jekyll-sitemap]: https://github.com/jekyll/jekyll-sitemap
 [jekyll-feed]: https://github.com/jekyll/jekyll-feed
-[hilight-js]: https://github.com/highlightjs/highlight.js
+[highlight-js]: https://github.com/highlightjs/highlight.js
