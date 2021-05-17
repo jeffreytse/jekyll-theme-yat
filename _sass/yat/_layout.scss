@@ -36,7 +36,8 @@ html {
     }
 
     footer.site-footer {
-      background-color: $theme-color;
+      color: unset;
+      background-color: transparent;
 
       .site-footer-inner {
         border-top: solid 1px #eee;
