@@ -2,11 +2,12 @@ $dark-background-color:       #0e0e0e !default;
 $dark-text-color: #bbb !default;
 
 html[data-theme="dark"]  {
-
   &[data-scroll-status='top'] {
-    .site-footer-inner {
-      border-top: solid 1px #2f2f2f !important;
-      transition: 0s;
+    footer.site-footer {
+      .site-footer-inner {
+        border-top: solid 1px #2f2f2f !important;
+        transition: 0s;
+      }
     }
   }
 
