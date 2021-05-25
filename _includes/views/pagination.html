@@ -18,9 +18,9 @@
       {% assign reading_time = return %}
       {%- include functions.html func='get_article_excerpt' -%}
       {% assign excerpt = return %}
+      {%- assign post_url = post.url | relative_url -%}
 
       <h2 class="post-title">
-        {%- assign post_url = post.url | relative_url -%}
         <a class="post-link" href="{{ post_url }}">
           {{ post.title | escape }}
         </a>
@@ -29,9 +29,11 @@
         <span class="post-date"><i class="fa fa-calendar"></i> {{ post.date | date: date_format }}</span>
         <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> {{ reading_time }}</span>
       </div>
-      <p class="post-excerpt">
-        {{ excerpt }}
-      </p>
+      <a class="post-excerpt" href="{{ post_url }}">
+        <p>
+        {{ excerpt }} <span class="read_more">Read More</span>
+        </p>
+      </a>
       <div class="post-tags">
         {%- for tag in post.tags -%}
         <a class="post-tag" href="{{ '/tags.html ' | relative_url }}#{{tag}}">#{{tag}}</a>
