@@ -95,6 +95,17 @@ yat:
 # Custom color as below:
 # theme_color: "#882250"
 
+# You can choose a brand color
+# Default brand colors as below:
+# orangered: #ff5100
+# greatgold: #f2cb05
+# greenblue: #389092
+#
+# brand_color: orangered
+#
+# Custom color as below:
+# brand_color: "#1a8e42"
+
 # Night/Dark mode
 # Default mode is "auto", "auto" is for auto nightshift
 # (19:00 - 07:00), "manual" is for manual toggle, and
