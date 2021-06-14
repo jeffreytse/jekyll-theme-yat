@@ -86,6 +86,19 @@ for (a, b), neighbors in common_neighbors.items():
     particle_counts[a].update([cna_signature])
 {% endhighlight %}
 
+```cpp
+void insert(const char* key) {
+    if (*key == '\0') {
+        finish = true;
+    } else {
+        int idx = *key - 'A';
+        if (!next[idx])
+            next[idx] = new Trie();
+        next[idx]->insert(key + 1);
+    }
+}
+```
+
 |:                        |:                  :|: $$O_3 + C_2H_2 \rightarrow $$         :|||:  $$O_3 + C_2H_4 \rightarrow $$ :|||:       :| 
 |:  ^^ Method            :| ^^ $$\lambda^a$$  |    vdW |    TS |    cycloadd.           |  vdW  |  TS  |  cycloadd.           | ^^ MAE    |
 |-------------------------|-------------------|--------|-------|------------------------|-------|------|----------------------|-----------|
@@ -163,7 +176,7 @@ for (a, b), neighbors in common_neighbors.items():
 | Row 2              | Banana        | [Github][1]                        |
 | Row 3 (merged)     | Blueberry     | [Google] *****  [Github]           |
 | ^^         | [Plum](https://example.com) | Raspberry ![example][cell image]   |
-| Row 4      | <https://www.google.com>    |                              |
+| Row 4      | <https://www.google.com>    |  [test](https://www.google.com){:target="_blank"}                            |
 |^^          |^^ <https://www.youtube.com> |                              |
 | Row 5      | <https://www.google.com>                                  ||
 
