@@ -2,7 +2,7 @@
   {%- assign name = include.params.name -%}
 {%- endif -%}
 
-{%- assign keys = name | split:'.'- %}
+{%- assign keys = name | split:'.' -%}
 {%- assign name = keys.first -%}
 
 {%- if page[name] != nil -%}
