@@ -25,7 +25,14 @@
   {% endif %}
   {% if banner_height %}
   <style>
+    {% assign num = banner_height | times: 1 %}
+    {% assign unit = banner_height | replace_first: num %}
+    {% assign banner_min_height = banner_min_height | default: banner_height %}
     html .page-banner {
+      height:  {{ banner_height | times: 0.368 | append: unit }};
+      min-height: {{ banner_min_height }};
+    }
+    html[data-scroll-status="top"] .page-banner {
       height: {{ banner_height }};
     }
   </style>

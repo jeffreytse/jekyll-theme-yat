@@ -151,6 +151,7 @@ yat:
 #   opacity: 1.0
 #   background: "rgba(0, 0, 0, 0.8)"
 #   height: "640px"
+#   min_height: null
 
 # Excerpt size setting
 # excerpt_size: 350
