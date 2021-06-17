@@ -16,6 +16,13 @@
 {%- include functions.html func='get_banner' -%}
 
 {% if banner_image %}
+  {% if banner_background %}
+  <style>
+    html .page-banner {
+      background: {{ banner_background }};
+    }
+  </style>
+  {% endif %}
   {% if banner_height %}
   <style>
     html .page-banner {
