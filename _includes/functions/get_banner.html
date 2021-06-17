@@ -1,0 +1,28 @@
+{%- include functions.html func='log' level='debug' msg='Get banner value' -%}
+{% assign name = 'banner' %}
+{%- include functions.html func='get_value' -%}
+{% assign banner = return %}
+
+{%- if banner.first -%}
+  {%- include functions.html func='log' level='debug' msg='Get banner_image value' -%}
+  {% assign name = 'banner.image' %}
+  {%- include functions.html func='get_value' -%}
+  {% assign banner_image = return | relative_url %}
+{%- else -%}
+  {% assign banner_image = banner | relative_url %}
+{%- endif -%}
+
+{%- include functions.html func='log' level='debug' msg='Get banner_background value' -%}
+{% assign name = 'banner.background' %}
+{%- include functions.html func='get_value' -%}
+{% assign banner_background = return %}
+
+{%- include functions.html func='log' level='debug' msg='Get banner_opacity value' -%}
+{% assign name = 'banner.opacity' %}
+{%- include functions.html func='get_value' -%}
+{% assign banner_opacity = return %}
+
+{%- include functions.html func='log' level='debug' msg='Get banner_height value' -%}
+{% assign name = 'banner.height' %}
+{%- include functions.html func='get_value' -%}
+{% assign banner_height = return %}

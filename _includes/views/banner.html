@@ -3,11 +3,6 @@
 {%- include functions.html func='get_value' -%}
 {% assign banner_html = return %}
 
-{%- include functions.html func='log' level='debug' msg='Get banner value' -%}
-{% assign name = 'banner' %}
-{%- include functions.html func='get_value' -%}
-{% assign banner = return %}
-
 {%- include functions.html func='log' level='debug' msg='Get heading value' -%}
 {% assign name = 'heading' %}
 {%- include functions.html func='get_value' -%}
@@ -18,10 +13,25 @@
 {%- include functions.html func='get_value' -%}
 {% assign subheading = return %}
 
-{% if banner %}
+{%- include functions.html func='get_banner' -%}
+
+{% if banner_image %}
+  <style>
+    html .page-banner {
+      height: {{ banner_height }};
+    }
+
+    html .page-banner .page-banner-img > *:first-child {
+      opacity: {{ banner_opacity }};
+    }
+
+    html[data-theme="dark"] .page-banner .page-banner-img > *:first-child {
+      opacity: {{ banner_opacity | times: 0.6 }};
+    }
+  </style>
   <section class="page-banner">
     <div class="page-banner-img">
-      <div style="background-image: url({{ banner | relative_url }})"></div>
+      <div style="background-image: url({{ banner_image }})"></div>
     </div>
     <div class="wrapper">
       <div class="page-banner-inner">

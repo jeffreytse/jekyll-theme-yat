@@ -1,15 +1,12 @@
 
-{%- include functions.html func='log' level='debug' msg='Get banner value' -%}
-{%- assign name = 'banner' -%}
-{%- include functions.html func='get_value' -%}
-{% assign banner = return %}
+{%- include functions.html func='get_banner' -%}
 
 {%- include functions.html func='log' level='debug' msg='Get header_transparent value' -%}
 {%- assign name = 'header_transparent' -%}
 {%- include functions.html func='get_value' default=true -%}
 {%- assign header_transparent = return -%}
 
-{%- if banner and header_transparent -%}
+{%- if banner_image and header_transparent -%}
   {%- assign header_transparent_class = "site-header-transparent" -%}
 {%- endif -%}
 
