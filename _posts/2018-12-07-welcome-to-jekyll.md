@@ -4,7 +4,12 @@ title: Welcome to Jekyll!
 subheading: hello world!
 author: Jeffrey
 categories: jekyll
-banner: https://bit.ly/3fTktDu
+banner:
+  image: https://bit.ly/3fTktDu
+  opacity: 0.618
+  background: "#000"
+  height: "100vh"
+  min_height: "38vh"
 tags: jekyll theme yat
 sidebar: []
 ---
@@ -14,6 +19,7 @@ You’ll find this post in your `_posts` directory. Go ahead and edit it and re-
 To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
 
 ## section 1
+
 Jekyll also offers powerful support for code snippets:
 
 {% highlight ruby %}
@@ -32,11 +38,11 @@ Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most ou
 [jekyll-gh]: https://github.com/jekyll/jekyll
 [jekyll-talk]: https://talk.jekyllrb.com/
 
-$ a * b = c ^ b $
+$ a \* b = c ^ b $
 
 $ 2^{\frac{n-1}{3}} $
 
-$ \int\_a^b f(x)\,dx. $
+$ \int_a^b f(x)\,dx. $
 
 ```cpp
 #include <iostream>
