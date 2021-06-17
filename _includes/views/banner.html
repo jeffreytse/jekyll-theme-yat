@@ -16,19 +16,25 @@
 {%- include functions.html func='get_banner' -%}
 
 {% if banner_image %}
+  {% if banner_height %}
   <style>
     html .page-banner {
       height: {{ banner_height }};
     }
+  </style>
+  {% endif %}
 
+  {% if banner_opacity %}
+  <style>
     html .page-banner .page-banner-img > *:first-child {
       opacity: {{ banner_opacity }};
     }
 
     html[data-theme="dark"] .page-banner .page-banner-img > *:first-child {
-      opacity: {{ banner_opacity | times: 0.6 }};
+      opacity: {{ banner_opacity | times: 0.718 }};
     }
   </style>
+  {% endif %}
   <section class="page-banner">
     <div class="page-banner-img">
       <div style="background-image: url({{ banner_image }})"></div>
