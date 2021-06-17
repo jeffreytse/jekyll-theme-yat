@@ -570,6 +570,10 @@ html {
       @include center-image;
       transition: 0.1s all ease-in-out;
     }
+
+    & > img.img-placeholder {
+      display: none;
+    }
   }
 
   .wrapper {
