@@ -143,6 +143,15 @@ yat:
 #     subheading: "Your awesome subheading"
 #     banner: "Your image url"
 
+# Banner default settings
+# These banner settings are for global banner default, but you can also
+# config it by the front matter for one specific post
+# banner:
+#   image: null
+#   opacity: 1.0
+#   background: "rgba(0, 0, 0, 0.8)"
+#   height: "640px"
+
 # Excerpt size setting
 # excerpt_size: 350
 
