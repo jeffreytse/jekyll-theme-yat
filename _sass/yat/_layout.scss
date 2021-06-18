@@ -598,7 +598,7 @@ html {
         transition: 0.2s all;
 
         @include media-query($on-palm) {
-          @include relative-font-size(2.425);
+          @include relative-font-size(1.925);
         }
       }
 
