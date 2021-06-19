@@ -24,17 +24,15 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@domain.com
-author: GitHub User
+title: Home
+email: kimian39028@gmail.com
+author: Ian Kim 
 copyright: Copyright © 1970-2010
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+description: >- # this means to ignore newlines until "baseurl:" 
+            Kimmy 
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://Kimmy0112.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 favicon: "" # the favicon for your site
 
 # Yat date format
@@ -42,6 +40,7 @@ favicon: "" # the favicon for your site
 yat:
   date_format: "%b %d, %Y"
 
+remote_theme: jeffreytse/jekyll-theme-yat
 # If you want more debug log, you can set true
 # debug: false
 
@@ -60,7 +59,7 @@ yat:
 # Translate languges
 # langs refer to https://cloud.google.com/translate/docs/languages
 # translate_langs:
-#   - lang: en
+#  - lang: en
 #     img: https://cdn.countryflags.com/thumbs/united-states-of-america/flag-400.png
 #     text: English
 #
@@ -129,29 +128,17 @@ yat:
 
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
-# header_pages:
-#   - index.html
-#   - archives.html
-#   - categories.html
-#   - tags.html
-#   - about.md
+header_pages:
+  - home.html
+  - about.md
+  - categories.html
 
 # Page default value
-# defaults:
-#   home:
-#     heading: "Your awesome heading"
-#     subheading: "Your awesome subheading"
-#     banner: "Your image url"
-
-# Banner default settings
-# These banner settings are for global banner default, but you can also
-# config it by the front matter for one specific post
-# banner:
-#   image: null
-#   opacity: 1.0
-#   background: "rgba(0, 0, 0, 0.8)"
-#   height: "640px"
-#   min_height: null
+defaults:
+  home:
+    heading: I'm Ian Kim
+    subheading: ---
+#       banner: "You"
 
 # Excerpt size setting
 # excerpt_size: 350
