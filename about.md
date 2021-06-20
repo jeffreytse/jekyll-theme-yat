@@ -14,5 +14,12 @@ When I was growing up, I would always play basketball at school with my friends,
 
 At a very young age, I started gaming. One of the first games I remember was Runescape and/or Club Penguin. However, nowadays and throughout my childhood, it's moreso Pokemon and Minecraft. A few months ago, peaking top 50 in Generation 7 Doubles OU on Pokemon Showdown. Later, picking up YuGioh (that I still play to this day). As of December 6th, 2020, I started playing League of Legends, which is a very fun (and tilting) MOBA game. As of May 2021, I recently picked up OSU which is a rhythm game where you C L I C K  T H E  C I R C L E S.
 
+### Contact Me 
+[Email me](https://mail.google.com/mail/u/3/#inbox?compose=GTvVlcSMVVxMZlllKkfBFxnPJHbtRxtFClCzGzfbTMpClbJRFZvKpBZRnDZdPXQwjPrmjMlfCgLjs)<br>
+[Twitter](https://twitter.com/Kimmy0409_)<br>
+[Instagram](https://www.instagram.com/kimmy.photos_/)<br>
+Discord: Ian Kim#0834
+
+
 
 

@@ -131,6 +131,7 @@ remote_theme: jeffreytse/jekyll-theme-yat
 header_pages:
   - home.html
   - about.md
+  - photo.html
   - categories.html
 
 # Page default value
@@ -138,7 +139,7 @@ defaults:
   home:
     heading: I'm Ian Kim
     subheading: ---
-#       banner: "You"
+#    banner:
 
 # Excerpt size setting
 # excerpt_size: 350
