@@ -598,13 +598,18 @@ html {
         transition: 0.2s all;
 
         @include media-query($on-palm) {
-          @include relative-font-size(1.925);
+          @include relative-font-size(1.975);
         }
       }
 
       > :nth-child(2) {
         font-weight: normal;
         margin-bottom: 0;
+        transition: 0.2s all;
+
+        @include media-query($on-palm) {
+          @include relative-font-size(1.175);
+        }
       }
 
       > :last-child {
