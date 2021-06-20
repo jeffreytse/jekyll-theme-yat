@@ -47,6 +47,8 @@ Let me just say, I loved Isabella's Lullaby, it's such a beautiful song. As for 
  
 As for the season 2 intro, I really liked it as well. This song has more of a "getting revenge"or "inspiration" vibe to it compared to the season 1 opening. [Season 2 Opening](https://www.youtube.com/watch?v=fx_okp_k0nU). I believe 0:47 is the best part of the opening. I believe this opening is a good opening for a mediocre/bad season. 
  
+ As for the season 1 outro, I think the ending is decent, especially the introduction with the base, and the chorus with those high notes. [Season 1 Outro](https://www.youtube.com/watch?v=sZ9qdr5WcPY). As for the season 2 outro, I really enjoyed the outro, even more than the season 1 outro. The season 2 outro gives off such a mellow vibe, which is the main reason why I enjoy it. [Season 2 Outro](https://www.youtube.com/watch?v=AOofd4z4ugM). 
+
 ### Any Flaws?
 I heard from a lot of people that season 2 for Promised Neverland is way different from the manga. I mean I can't really say personally since I have not read the manga, but many people online are saying it, so I'll assume that as well. One thing I didn't really like was the ending of Promised Neverland Season 2.  
 
