@@ -48,7 +48,7 @@ remote_theme: jeffreytse/jekyll-theme-yat
 # header_transparent: true
 
 Google analytics:
-  google_analytics: G-N0L37EBXSN
+  google_analytics: [G-N0L37EBXSN]
 
 # If you want to generate website sitemap, you can set true
 # sitemap: false
