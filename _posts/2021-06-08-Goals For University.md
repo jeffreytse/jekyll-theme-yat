@@ -4,18 +4,11 @@ title: Goals For University
 subtitle: 5 Year goal plan
 categories: Other
 tags: [Goals]
+output: 
+  html_document:
+    includes:
+       in_header: googleanalytics.html
 ---
- <head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-W6ERL4MJ0J"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-W6ERL4MJ0J');
-</script>
-</head>
 
 
 ### Backstory 
