@@ -4,6 +4,9 @@ title: Goals For University
 subtitle: 5 Year goal plan
 categories: Other
 tags: [Goals]
+  html_document:
+    includes:
+       in_header: googleanalytics.html
 ---
  
 ### Backstory 

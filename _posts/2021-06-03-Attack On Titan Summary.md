@@ -5,6 +5,9 @@ subtitle: Review
 categories: Review Anime
 tags: [Anime, Review]
 background: "/assets/images/AOT.jpg"
+  html_document:
+    includes:
+       in_header: googleanalytics.html
 ---
 
 ### What Is It? 

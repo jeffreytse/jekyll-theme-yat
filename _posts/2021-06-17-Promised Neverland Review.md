@@ -5,6 +5,9 @@ subtitle: Another Anime Review
 categories: Review Anime
 tags: [Anime, Review]
 background: 
+  html_document:
+    includes:
+       in_header: googleanalytics.html
 ---
 ### What Is It? 
 

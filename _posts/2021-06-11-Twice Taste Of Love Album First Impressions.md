@@ -4,6 +4,9 @@ title: Taste Of Love First Impressions
 subtitle: My favourite Kpop girl group 
 categories: Kpop
 tags: [Twice]
+  html_document:
+    includes:
+       in_header: googleanalytics.html
 ---
  
 ### Taste Of Love Album Review 

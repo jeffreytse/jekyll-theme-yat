@@ -1,6 +1,9 @@
 ---
 layout: about
 title: About
+  html_document:
+    includes:
+       in_header: googleanalytics.html
 ---
 
 ## About Me  

@@ -8,6 +8,17 @@ title: Photo
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width =device-width, intial-scale = 1.0">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W6ERL4MJ0J"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-W6ERL4MJ0J');
+    </script>
+    
 </head>
 <style>
     .gallery {
@@ -77,7 +88,7 @@ title: Photo
 
         var a = document.createElement("a");
         a.href = 'photo/' + x + '.JPG';
- 
+
         document.getElementById("div1").appendChild(a).appendChild(img);
     }
 
