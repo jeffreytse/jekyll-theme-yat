@@ -4,11 +4,20 @@ title: Goals For University
 subtitle: 5 Year goal plan
 categories: Other
 tags: [Goals]
-  html_document:
-    includes:
-       in_header: googleanalytics.html
 ---
- 
+ <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W6ERL4MJ0J"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-W6ERL4MJ0J');
+</script>
+</head>
+
+
 ### Backstory 
 Throughout high school and elementary school, I was a very quiet person overall -- not an interesting person to say the least. I did not have a lot of extracurriculars I participated in, I did not participate that much in class, I was near the bottom of the list of grades, etc... Throughout my grade 11 and grade 12 year, I wanted to change something about my life because honestly, I wasn't really happy with how my life was going. I picked up some small hobbies like photography and a little bit of photography editing and video editing, and joined a multicultural dance club. 
  
