@@ -68,7 +68,7 @@ title: Photo
         "photo/34.JPG",
         "photo/35.JPG",
         "photo/36.JPG"
-    ]
+    ];
 
     var div = document.getElementById("div1");
     for (let x = image.length; x > 0; x--) {
@@ -77,7 +77,7 @@ title: Photo
 
         var a = document.createElement("a");
         a.href = 'photo/' + x + '.JPG';
-
+ 
         document.getElementById("div1").appendChild(a).appendChild(img);
     }
 
