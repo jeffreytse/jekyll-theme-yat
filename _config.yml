@@ -47,8 +47,8 @@ remote_theme: jeffreytse/jekyll-theme-yat
 # If you don't want transparent header, you can set false
 # header_transparent: true
 
-# Google analytics
-# google_analytics: [Tracking ID]
+Google analytics:
+  google_analytics: G-N0L37EBXSN
 
 # If you want to generate website sitemap, you can set true
 # sitemap: false

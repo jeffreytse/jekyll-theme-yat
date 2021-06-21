@@ -2,7 +2,7 @@
 layout: post
 title: Attack On Titan Review
 subtitle: Review 
-categories: Review, Anime
+categories: Review Anime
 tags: [Anime, Review]
 background: "/assets/images/AOT.jpg"
 ---

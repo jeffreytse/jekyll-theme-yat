@@ -2,7 +2,7 @@
 layout: post
 title: Promised Neverland Review
 subtitle: Another Anime Review 
-categories: Review, Anime
+categories: Review Anime
 tags: [Anime, Review]
 background: 
 ---

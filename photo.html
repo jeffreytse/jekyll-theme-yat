@@ -26,45 +26,61 @@ title: Photo
 </style>
 
 <body>
-    <div class="gallery">
-        <a href="photo\1.JPG"> <img src="photo\1.JPG" width="428" height="321"></a>
-        <a href="photo\2.JPG"> <img src="photo\2.JPG" width="428" height="321"></a>
-        <a href="photo\3.JPG"> <img src="photo\3.JPG" width="428" height="321"></a>
-        <a href="photo\4.JPG"> <img src="photo\4.JPG" width="428" height="321"></a>
-        <a href="photo\5.JPG"> <img src="photo\5.JPG" width="428" height="321"></a>
-        <a href="photo\6.JPG"> <img src="photo\6.JPG" width="428" height="321"></a>
-        <a href="photo\7.JPG"> <img src="photo\7.JPG" width="428" height="321"></a>
-        <a href="photo\8.JPG"> <img src="photo\8.JPG" width="428" height="321"></a>
-        <a href="photo\9.JPG"> <img src="photo\9.JPG" width="428" height="321"></a>
-        <a href="photo\10.JPG"> <img src="photo\10.JPG" width="428" height="321"></a>
-        <a href="photo\11.JPG"> <img src="photo\11.JPG" width="428" height="321"></a>
-        <a href="photo\12.JPG"> <img src="photo\12.JPG" width="428" height="321"></a>
-        <a href="photo\13.JPG"> <img src="photo\13.JPG" width="428" height="321"></a>
-        <a href="photo\14.JPG"> <img src="photo\14.JPG" width="428" height="321"></a>
-        <a href="photo\15.JPG"> <img src="photo\15.JPG" width="428" height="321"></a>
-        <a href="photo\16.JPG"> <img src="photo\16.JPG" width="428" height="321"></a>
-        <a href="photo\17.JPG"> <img src="photo\17.JPG" width="428" height="321"></a>
-        <a href="photo\18.JPG"> <img src="photo\18.JPG" width="428" height="321"></a>
-        <a href="photo\19.JPG"> <img src="photo\19.JPG" width="428" height="321"></a>
-        <a href="photo\20.JPG"> <img src="photo\20.JPG" width="428" height="321"></a>
-        <a href="photo\21.JPG"> <img src="photo\21.JPG" width="428" height="321"></a>
-        <a href="photo\22.JPG"> <img src="photo\22.JPG" width="428" height="321"></a>
-        <a href="photo\23.JPG"> <img src="photo\23.JPG" width="428" height="321"></a>
-        <a href="photo\24.JPG"> <img src="photo\24.JPG" width="428" height="321"></a>
-        <a href="photo\25.JPG"> <img src="photo\25.JPG" width="428" height="321"></a>
-        <a href="photo\26.JPG"> <img src="photo\26.JPG" width="428" height="321"></a>
-        <a href="photo\27.JPG"> <img src="photo\27.JPG" width="428" height="321"></a>
-        <a href="photo\28.JPG"> <img src="photo\28.JPG" width="428" height="321"></a>
-        <a href="photo\29.JPG"> <img src="photo\29.JPG" width="428" height="321"></a>
-        <a href="photo\30.JPG"> <img src="photo\30.JPG" width="428" height="321"></a>
-        <a href="photo\31.JPG"> <img src="photo\31.JPG" width="428" height="321"></a>
-        <a href="photo\32.JPG"> <img src="photo\32.JPG" width="428" height="321"></a>
-        <a href="photo\33.JPG"> <img src="photo\33.JPG" width="428" height="321"></a>
-        <a href="photo\34.JPG"> <img src="photo\34.JPG" width="428" height="321"></a>
-        <a href="photo\35.JPG"> <img src="photo\35.JPG" width="428" height="321"></a>
-        <a href="photo\36.JPG"> <img src="photo\36.JPG" width="428" height="321"></a>
+    <div id="div1" class="gallery">
+        <!-- <a href ="photo/1.JPG"><img src = "photo/1.JPG" width = "428" height = "321"></a>-->
     </div>
-
 </body>
+<script>
+    var image = [
+        "photo/1.JPG",
+        "photo/2.JPG",
+        "photo/3.JPG",
+        "photo/4.JPG",
+        "photo/5.JPG",
+        "photo/6.JPG",
+        "photo/7.JPG",
+        "photo/8.JPG",
+        "photo/9.JPG",
+        "photo/10.JPG",
+        "photo/11.JPG",
+        "photo/12.JPG",
+        "photo/13.JPG",
+        "photo/14.JPG",
+        "photo/15.JPG",
+        "photo/16.JPG",
+        "photo/17.JPG",
+        "photo/18.JPG",
+        "photo/19.JPG",
+        "photo/20.JPG",
+        "photo/21.JPG",
+        "photo/22.JPG",
+        "photo/23.JPG",
+        "photo/24.JPG",
+        "photo/25.JPG",
+        "photo/26.JPG",
+        "photo/27.JPG",
+        "photo/28.JPG",
+        "photo/29.JPG",
+        "photo/30.JPG",
+        "photo/31.JPG",
+        "photo/32.JPG",
+        "photo/33.JPG",
+        "photo/34.JPG",
+        "photo/35.JPG",
+        "photo/36.JPG",
+    ];
+
+    var div = document.getElementById("div1");
+    for (let x = image.length; x > 0; x--) {
+        var img = new Image(428, 321);
+        img.src = 'photo/' + x + '.JPG';
+
+        var a = document.createElement("a");
+        a.href = 'photo/' + x + '.JPG';
+ 
+        document.getElementById("div1").appendChild(a).appendChild(img);
+    }
+
+</script>
 
 </html>
