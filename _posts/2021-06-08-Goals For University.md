@@ -31,7 +31,7 @@ Below are my 5 year goal plans for university:
 * Get an apartment to live in  
 * Learn some kind of combat sport
 * Learn more about computers 
-* Get involved in these one of these activities in year 1: intramurals, Japanese Culture Club, Huron BMOS Students’ Association, Western Photography Club
+* Get involved in these one of these activities in year 1: intramurals, Japanese Culture Club, Huron BMOS Students’ Association, Western Photography Club, and League of Legends team. 
 * In year 4, apply for an internship for my major 
  
 I'm not exactly sure why, but one thing that has been in my dreams and in daydreams is seeing my older self livestreaming on Youtube, doing this bi-monthly singing performance with my acoustic guitar or piano whilst singing a korean or english ballad. It would be kind of like a performance, I would like 5 or 6 songs and perform them to the audience.  
