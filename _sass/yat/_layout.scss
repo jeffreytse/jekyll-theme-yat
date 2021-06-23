@@ -380,7 +380,11 @@ html {
     border-bottom: 1px solid #ebebeb;
 
     .post-title {
-      margin-bottom: 2px;
+      margin-bottom: 6px;
+    }
+
+    .post-subtitle {
+      font-weight: lighter;
     }
 
     .post-meta {
@@ -593,7 +597,7 @@ html {
       > :nth-child(1) {
         @include relative-font-size(3.9);
         letter-spacing: -1px;
-        margin-bottom: 16px;
+        margin-bottom: 0.1em;
         font-weight: normal;
         transition: 0.2s all;
 
@@ -603,8 +607,8 @@ html {
       }
 
       > :nth-child(2) {
-        font-weight: normal;
-        margin-bottom: 0;
+        font-weight: lighter;
+        margin-bottom: 0.8em;
         transition: 0.2s all;
 
         @include media-query($on-palm) {
