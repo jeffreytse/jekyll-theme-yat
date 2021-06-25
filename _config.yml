@@ -152,6 +152,8 @@ yat:
 #   background: "rgba(0, 0, 0, 0.8)"
 #   height: "640px"
 #   min_height: null
+#   heading_style: null     # Custom heading style (e.g. "font-weight: bold; text-decoration: underline")
+#   subheading_style: null  # Custom subheading style (e.g. color: gold)
 
 # Excerpt size setting
 # excerpt_size: 350

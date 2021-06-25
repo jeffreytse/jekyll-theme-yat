@@ -49,6 +49,20 @@
     }
   </style>
   {% endif %}
+  {%- if banner_heading_style -%}
+  <style>
+    html .page-banner .page-banner-inner > *:first-child > *:nth-child(1) {
+      {{ banner_heading_style }}
+    }
+  </style>
+  {%- endif -%}
+  {%- if banner_subheading_style -%}
+  <style>
+    html .page-banner .page-banner-inner > *:first-child > *:nth-child(2) {
+      {{ banner_subheading_style }}
+    }
+  </style>
+  {%- endif -%}
   <section class="page-banner">
     <div class="page-banner-img">
       <div style="background-image: url({{ banner_image }})"></div>

@@ -31,3 +31,14 @@
 {% assign name = 'banner.min_height' %}
 {%- include functions.html func='get_value' -%}
 {% assign banner_min_height = return %}
+
+{%- include functions.html func='log' level='debug' msg='Get banner_heading_style value' -%}
+{% assign name = 'banner.heading_style' %}
+{%- include functions.html func='get_value' -%}
+{% assign banner_heading_style = return %}
+
+{%- include functions.html func='log' level='debug' msg='Get banner_subheading_style value' -%}
+{% assign name = 'banner.subheading_style' %}
+{%- include functions.html func='get_value' -%}
+{% assign banner_subheading_style = return %}
+
