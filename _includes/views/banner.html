@@ -15,19 +15,19 @@
 
 {%- include functions.html func='get_banner' -%}
 
-{% if banner_image %}
-  {% if banner_background %}
+{%- if banner_image -%}
+  {%- if banner_background -%}
   <style>
     html .page-banner {
       background: {{ banner_background }};
     }
   </style>
-  {% endif %}
-  {% if banner_height %}
+  {%- endif -%}
+  {%- if banner_height -%}
   <style>
-    {% assign num = banner_height | times: 1 %}
-    {% assign unit = banner_height | replace_first: num %}
-    {% assign banner_min_height = banner_min_height | default: banner_height %}
+    {%- assign num = banner_height | times: 1 -%}
+    {%- assign unit = banner_height | replace_first: num -%}
+    {%- assign banner_min_height = banner_min_height | default: banner_height -%}
     html .page-banner {
       height:  {{ banner_height | times: 0.368 | append: unit }};
       min-height: {{ banner_min_height }};
@@ -36,9 +36,9 @@
       height: {{ banner_height }};
     }
   </style>
-  {% endif %}
+  {%- endif -%}
 
-  {% if banner_opacity %}
+  {%- if banner_opacity -%}
   <style>
     html .page-banner .page-banner-img > *:first-child {
       opacity: {{ banner_opacity }};
@@ -48,7 +48,7 @@
       opacity: {{ banner_opacity | times: 0.718 }};
     }
   </style>
-  {% endif %}
+  {%- endif -%}
   {%- if banner_heading_style -%}
   <style>
     html .page-banner .page-banner-inner > *:first-child > *:nth-child(1) {
