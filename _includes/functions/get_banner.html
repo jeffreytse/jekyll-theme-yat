@@ -42,3 +42,27 @@
 {%- include functions.html func='get_value' -%}
 {% assign banner_subheading_style = return %}
 
+{%- include functions.html func='log' level='debug' msg='Get banner_video value' -%}
+{% assign name = 'banner.video' %}
+{%- include functions.html func='get_value' -%}
+{% assign banner_video = return %}
+
+{%- include functions.html func='log' level='debug' msg='Get banner_loop value' -%}
+{% assign name = 'banner.loop' %}
+{%- include functions.html func='get_value' default=true -%}
+{% assign banner_loop = return %}
+
+{%- include functions.html func='log' level='debug' msg='Get banner_volume value' -%}
+{% assign name = 'banner.volume' %}
+{%- include functions.html func='get_value' default=0 -%}
+{% assign banner_volume = return %}
+
+{%- include functions.html func='log' level='debug' msg='Get banner_start_at value' -%}
+{% assign name = 'banner.start_at' %}
+{%- include functions.html func='get_value' default=0 -%}
+{% assign banner_start_at = return %}
+
+{% if banner_image or banner_video %}
+  {% assign has_banner = true %}
+{% endif %}
+

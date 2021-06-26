@@ -15,7 +15,7 @@
 
 {%- include functions.html func='get_banner' -%}
 
-{%- if banner_image -%}
+{%- if has_banner -%}
   {%- if banner_background -%}
   <style>
     html .page-banner {
@@ -65,8 +65,45 @@
   {%- endif -%}
   <section class="page-banner">
     <div class="page-banner-img">
-      <div style="background-image: url({{ banner_image }})"></div>
-      <img class="img-placeholder" src="{{ banner_image }}"></div>
+      {%- if banner_video -%}
+        <video
+          autoplay=""
+          poster="{{ banner_image }}"
+        >
+          <source src="{{ banner_video }}">
+        </video>
+        <script>
+          (function() {
+            var video = document.querySelector('.page-banner .page-banner-img > video');
+            var videoPlay = function() {
+              try {
+                video.play();
+              } catch (e) {
+                console.error(e);
+              }
+              window.removeEventListener('focus', videoPlay);
+            }
+
+            window.addEventListener('focus', videoPlay);
+
+            video.onloadstart = function() {
+              video.volume = {{ banner_volume }};
+              video.currentTime = {{ banner_start_at }};
+            }
+
+            video.onended = function() {
+              video.currentTime = {{ banner_start_at }};
+              video.volume = 0;
+            {%- if banner_loop -%}
+              video.play();
+            {%- endif -%}
+            }
+          })();
+        </script>
+      {%- else -%}
+        <div style="background-image: url({{ banner_image }})"></div>
+        <img class="img-placeholder" src="{{ banner_image }}">
+      {%- endif -%}
     </div>
     <div class="wrapper">
       <div class="page-banner-inner">

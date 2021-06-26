@@ -6,7 +6,7 @@
 {%- include functions.html func='get_value' default=true -%}
 {%- assign header_transparent = return -%}
 
-{%- if banner_image and header_transparent -%}
+{%- if has_banner and header_transparent -%}
   {%- assign header_transparent_class = "site-header-transparent" -%}
 {%- endif -%}
 

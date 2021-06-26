@@ -575,6 +575,11 @@ html {
       transition: 0.1s all ease-in-out;
     }
 
+    & > video {
+      width: 100vw;
+      object-fit: cover;
+    }
+
     & > img.img-placeholder {
       display: none;
     }
