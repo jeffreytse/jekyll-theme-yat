@@ -16,6 +16,10 @@
   {%- include {{ include_path }} params=params-%}
 {%- endif -%}
 
+{%- if return == nil -%}
+  {%- assign return = include.default -%}
+{%- endif -%}
+
 {%- if func != 'log' -%}
   {%- assign msg = '[function]['
     | append: {{func}}
