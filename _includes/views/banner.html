@@ -69,6 +69,7 @@
         <video
           autoplay=""
           poster="{{ banner_image }}"
+          playsinline
         >
           <source src="{{ banner_video }}">
         </video>
@@ -76,19 +77,17 @@
           (function() {
             var video = document.querySelector('.page-banner .page-banner-img > video');
             var videoPlay = function() {
-              try {
-                video.play();
-              } catch (e) {
-                console.error(e);
-              }
-              window.removeEventListener('focus', videoPlay);
+              video.play().catch (function() {
+                  video.muted = true;
+                  video.play();
+                });
             }
 
-            window.addEventListener('focus', videoPlay);
-
             video.onloadstart = function() {
-              video.volume = {{ banner_volume }};
               video.currentTime = {{ banner_start_at }};
+              video.volume = {{ banner_volume }};
+              video.muted = (video.volume == 0);
+              videoPlay();
             }
 
             video.onended = function() {
