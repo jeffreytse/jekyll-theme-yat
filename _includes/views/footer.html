@@ -3,15 +3,15 @@
 
   <div class="wrapper">
     <div class="site-footer-inner">
-      <div>
-        {%- assign currYear = 'now' | date: "%Y" -%}
-        {{ site.copyright
-            | replace: '{currentYear}', currYear
+        {%- assign currentYear = 'now' | date: "%Y" -%}
+        {%- assign copyright = site.copyright
+            | replace: '{currentYear}', currentYear
             | replace: '{author}', site.author
             | replace: '(c)', '&copy;'
             | replace: '(p)', '℗'
             | replace: '(cleft)', '<span class="copyleft">&copy;</span>'
-        }}</div>
+        -%}
+      <div>{{ copyright }}</div>
       <div>Powered by <a title="Jekyll is a simple, blog-aware, static site
       generator." href="http://jekyllrb.com/">Jekyll</a> &amp; <a title="Yat, yet
       another theme." href="https://github.com/jeffreytse/jekyll-theme-yat">Yat Theme</a>.</div>
