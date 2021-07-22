@@ -319,6 +319,8 @@ html {
 
   .post-excerpt {
     color: #777;
+    word-break: break-word;
+    overflow-wrap: break-word;
   }
 
   .post-tags .post-tag {
