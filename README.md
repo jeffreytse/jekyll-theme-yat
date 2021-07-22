@@ -55,7 +55,7 @@
 <br>
 
 Hey, nice to meet you, you found this [Jekyll][jekyll] theme. Here the
-_YAT (Yet Another Theme)_ is a modern responsive theme. It's quiet
+_YAT (Yet Another Theme)_ is a modern responsive theme. It's quite
 clear, clean and neat for writers and posts. **If you are an elegant
 writer and focus on content, don't miss it.**
 
