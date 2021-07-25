@@ -129,3 +129,37 @@
   </section>
 {%- endif -%}
 
+<div class="main-banner {{ list-class }}">
+
+    <div class="main-banner__cover" style=" {% if page.image %} background-image: url({{page.image}}) {% endif %} "></div>
+    <div class="main-banner__text">
+
+        <a href="javascript: history.go(-1)" class="link--back">
+            <span class="blind">뒤로가기</span>
+        </a>
+        <button type="button" class="button--cate">
+            <span class="blind">카테고리</span>
+        </button>
+
+        <h2 class="main-banner__h2">
+
+            {% if page.name == 'index.html' %}
+                <span>Beyond Price Comparison</span>
+                <br>
+                <strong>너와 나와, 다나와에서 함께 개발해요</strong>
+                <a href="https://recruit.danawa.com/" class="main-banner__link" target="_blank">
+                    <strong>개발자 지원하기</strong>
+                </a>
+            {% elsif page.layout == 'category' %}
+                <span>
+                    {{page.title}}
+                </span>
+            {% elsif page.layout == 'post' %}
+               <span>
+                    {{ page.categories }}
+               </span>    
+            {% endif %}
+        </h2>
+    </div>
+</div>
+
