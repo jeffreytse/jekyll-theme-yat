@@ -143,12 +143,15 @@ yat:
 
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
-# header_pages:
-#   - index.html
-#   - archives.html
-#   - categories.html
-#   - tags.html
-#   - about.md
+ header_pages:
+   - index.html
+   - archives.html
+   - categories.html
+   - tags.html
+   - about.md
+   - name: Career
+     link: https://www.notion.so/12218c410da941b795b994745fec8b9f
+
 
 # Page default value
 # defaults:
