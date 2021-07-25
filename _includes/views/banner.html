@@ -118,14 +118,14 @@
             <h1 class="page-banner-heading">
               {{ heading | default: page.title | escape }}
             </h1>
+          
             <h2 class="page-banner-subheading">
-            <strong>너와 나와, 다나와에서 함께 개발해요</strong>
+            <strong>{{ subheading | default: page.subtitle | escape }}</strong>
                 <a href="https://recruit.danawa.com/" class="main-banner__link" target="_blank">
-                    <strong>개발자 지원하기</strong>
+                    <strong>[채용공고 지원하기[</strong>
                 </a>
             </h2>  
-           <!--   {{ subheading | default: page.subtitle | escape }}
-            </h2> -->
+          
           </div>
 
         {%- endif -%}
