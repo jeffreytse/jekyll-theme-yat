@@ -119,22 +119,18 @@
               {{ heading | default: page.title | escape }}
             </h1>
             <h2 class="page-banner-subheading">
-              {{ subheading | default: page.subtitle | escape }}
-            </h2>
+            <strong>너와 나와, 다나와에서 함께 개발해요</strong>
+                <a href="https://recruit.danawa.com/" class="main-banner__link" target="_blank">
+                    <strong>개발자 지원하기</strong>
+                </a>
+           <!--   {{ subheading | default: page.subtitle | escape }}
+            </h2> -->
           </div>
 
         {%- endif -%}
       </div>
     </div>
-    <h2 class="main-banner__h2">
 
-            {% if page.name == 'index.html' %}
-                <span>Beyond Price Comparison</span>
-                <br>
-                <strong>너와 나와, 다나와에서 함께 개발해요</strong>
-                <a href="https://recruit.danawa.com/" class="main-banner__link" target="_blank">
-                    <strong>개발자 지원하기</strong>
-                </a>
             {% elsif page.layout == 'category' %}
                 <span>
                     {{page.title}}
