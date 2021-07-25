@@ -324,14 +324,16 @@ html {
   }
 
   .post-tags .post-tag {
+    display: inline-block;
     text-decoration: none;
     border: 1px solid;
     padding: 2px 4px;
     border-radius: 2px;
     transition: color 0.2s;
+    margin-bottom: 8px;
 
-    &:not(:first-child) {
-      margin-left: 8px;
+    &:not(:last-child) {
+      margin-right: 8px;
     }
 
     &:hover {
