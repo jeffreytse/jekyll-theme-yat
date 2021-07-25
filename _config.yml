@@ -143,13 +143,13 @@ yat:
 
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
- header_pages:
-   - index.html
-   - archives.html
-   - categories.html
-   - tags.html
-   - about.html
-   - career.html
+# header_pages:
+#   - index.html
+#   - archives.html
+#   - categories.html
+#   - tags.html
+#   - about.md
+ 
 
 # Page default value
 # defaults:
