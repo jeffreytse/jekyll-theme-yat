@@ -148,8 +148,8 @@ yat:
    - archives.html
    - categories.html
    - tags.html
-   - about.md
-   - career.md
+   - about.html
+   - career.html
 
 # Page default value
 # defaults:
