@@ -1,4 +1,4 @@
 home:
   heading: "Your awesome heading"
-  subheading: <"a href="https://recruit.danawa.com" target="_blank"> <strong>개발자 지원하기</strong> </a>
+  subheading:
   banner: " 이미지 주소"
