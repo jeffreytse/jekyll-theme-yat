@@ -126,22 +126,7 @@
         {%- endif -%}
       </div>
     </div>
-  </section>
-{%- endif -%}
-
-<div class="main-banner {{ list-class }}">
-
-    <div class="main-banner__cover" style=" {% if page.image %} background-image: url({{page.image}}) {% endif %} "></div>
-    <div class="main-banner__text">
-
-        <a href="javascript: history.go(-1)" class="link--back">
-            <span class="blind">뒤로가기</span>
-        </a>
-        <button type="button" class="button--cate">
-            <span class="blind">카테고리</span>
-        </button>
-
-        <h2 class="main-banner__h2">
+    <h2 class="main-banner__h2">
 
             {% if page.name == 'index.html' %}
                 <span>Beyond Price Comparison</span>
@@ -160,6 +145,6 @@
                </span>    
             {% endif %}
         </h2>
-    </div>
-</div>
+  </section>
+{%- endif -%}
 
