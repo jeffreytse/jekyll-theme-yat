@@ -183,8 +183,8 @@ yat:
 # paginate: 5
 
 # Disqus comments
-# disqus:
-# shortname: tech-github-io
+ disqus:
+ shortname: techubion-github-io
 
 # Gitment comments
 # gitment:
