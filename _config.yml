@@ -183,8 +183,8 @@ yat:
 # paginate: 5
 
 # Disqus comments
- disqus:
- shortname: "techhrmaker"
+ disqus: true
+   shortname: "techhrmaker"
 
 # Gitment comments
 # gitment:
