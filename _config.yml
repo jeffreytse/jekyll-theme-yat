@@ -147,8 +147,8 @@ yat:
    - index.html
    - archives.html
    - categories.html
-#   - tags.html
-   - about.md
+   - tags.html
+   - about.html
  
 
 # Page default value
