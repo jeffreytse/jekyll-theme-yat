@@ -4,6 +4,7 @@ title: Test markdown
 subtitle: Each post also has a subtitle
 categories: markdown
 comments: true
+date: 2021-07-26
 tags: [test]
 ---
 
