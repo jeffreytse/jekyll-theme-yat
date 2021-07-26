@@ -5,8 +5,7 @@ subtitle: 부제목
 categories: markdown
 tags: [example, markdown]
 writer: 긴 또깡
-date: 2018-12-05
-last_modified_at: 2021-07-24
+
 ---
 
 This note demonstrates some of what [Markdown][1] is capable of doing.
