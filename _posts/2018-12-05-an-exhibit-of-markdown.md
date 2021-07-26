@@ -6,6 +6,7 @@ categories: markdown
 tags: [example, markdown]
 author: 긴 또깡
 date: 2021-07-01
+last_modified_at: 2021-07-24
 ---
 
 This note demonstrates some of what [Markdown][1] is capable of doing.
