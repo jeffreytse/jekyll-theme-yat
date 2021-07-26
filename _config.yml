@@ -184,7 +184,7 @@ yat:
 
 # Disqus comments
 # disqus:
-#  shortname: "techhrmaker"
+  shortname: "techhrmaker"
 
 # Gitment comments
 # gitment:
