@@ -1,6 +1,6 @@
 ---
 layout: post
-title: An exhibit of Markdown(큰제목)
+title: An exhibit of Markdown(큰1제목)
 subtitle: 부제목
 categories: markdown
 tags: [example, markdown]
