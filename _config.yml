@@ -182,7 +182,7 @@ yat:
 # Pagination setting
 # paginate: 5
 
-# Disqus comments
+# Disqus comments **post.html과 disqus.html 두개를 
 # disqus:
   shortname: "techhrmaker"
 
