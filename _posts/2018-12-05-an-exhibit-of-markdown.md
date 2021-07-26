@@ -5,7 +5,8 @@ subtitle: Each post also has a subtitle
 categories: markdown
 tags: [example, markdown]
 author: 긴 또깡
-date: 2021-12-01
+date: 2021-07-01
+excerpt: 블로그 만드는 포스팅으로 블로그 시작
 ---
 
 This note demonstrates some of what [Markdown][1] is capable of doing.
