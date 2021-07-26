@@ -183,8 +183,8 @@ yat:
 # paginate: 5
 
 # Disqus comments
-# disqus:
-# shortname: techubion-github-io
+ disqus:
+ shortname: techhrmaker
 
 # Gitment comments
 # gitment:
