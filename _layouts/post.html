@@ -60,7 +60,7 @@ sidebar:
     {%- assign result = hidden | where_exp: "item", "item == 'comments'" -%}
     {%- if result.size == 0 -%}
     <div class="post-comments">
-      {%- if page.comments != false -%}
+    <!--  {%- if page.comments != false -%}
 
       {%- if site.disqus.shortname -%}
       {%- include extensions/comments/disqus.html -%}
@@ -70,7 +70,8 @@ sidebar:
       {%- include extensions/comments/gitment.html -%}
       {%- endif -%}
 
-      {%- endif -%}
+      {%- endif -%} -->
+      {%- include extensions/comments/disqus.html -%}
     </div>
     {%- endif -%}
 
