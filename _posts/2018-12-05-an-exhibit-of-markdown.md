@@ -1,10 +1,10 @@
 ---
 layout: post
-title: An exhibit of Markdown
-subtitle: Each post also has a subtitle
+title: An exhibit of Markdown(큰제목)
+subtitle: 부제목
 categories: markdown
 tags: [example, markdown]
-author: 긴 또깡
+writer: 긴 또깡
 date: 2021-07-01
 last_modified_at: 2021-07-24
 ---
