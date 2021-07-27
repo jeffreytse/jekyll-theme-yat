@@ -22,7 +22,7 @@ $white-color: #fdfdfd !default;
 $table-text-align: left !default;
 
 $header-height: $base-line-height * $base-font-size * 2.85 !default;
-$header-text-color: #62C70A !default;
+$header-text-color: invert($theme-color) !default;
 $header-background-color: $theme-color !default;
 
 $footer-height: $header-height * 1.05 !default;
