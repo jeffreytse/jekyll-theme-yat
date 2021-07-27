@@ -102,9 +102,9 @@ yat:
 # Default theme colors as below:
 # coolblack: #090a0b
 # spacegrey: #353535
-# snowwhite: #EEEEEE
+ snowwhite: #EEEEEE
 #
-# theme_color: snowwhite
+ theme_color: snowwhite
 #
 # Custom color as below:
 # theme_color: "#882250"
