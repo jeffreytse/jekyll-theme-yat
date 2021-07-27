@@ -24,7 +24,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Tech Ubion
+title: Home
 email: mslee@ubion.co.kr
 author: mslee
 
@@ -144,7 +144,7 @@ yat:
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
   header_pages:
-   - index.html
+#   - index.html
    - archives.html
    - categories.html
    - tags.html
