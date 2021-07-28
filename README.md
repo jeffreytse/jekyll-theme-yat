@@ -20,7 +20,6 @@
 layout: post
 title:  "제목"  # 리스트에 보여질 제목
 description: "설명" # 리스트에 보여질 설명
-image: "https://cdn.pixabay.com/photo/2015/11/02/18/34/banner-1018818_960_720.jpg" # [optional] 배너 이미지를 바꾸고 싶을때 입력하면됩니다. 없을시 기본 배너 표시됩니다.
 date:   2021-07-23 10:53:24 +0900 # 등록일자를 입력하세요.
 categories: php # 생성한 카테고리 title을 입력하세요.
 ---
