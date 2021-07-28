@@ -2,7 +2,7 @@
 layout: post
 title:  "인재개발원장 인터뷰"  # 제목
 subtitle: "장봉진 부사장" # 부제목
-date: 2021-07-28 15:53:24 +0900
+date: 2021-07-27 15:53:24 +0900
 categories: interview # 생성한 카테고리 title을 입력하세요.(카테고리는 반드시 1개만 입력)
 tags: [HR, CTO] # 태그는 복수 입력 가능
 banner:
