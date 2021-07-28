@@ -10,7 +10,7 @@
       var d = document, s = d.createElement('script');
 
     /**  s.src = 'https://{{ site.disqus.shortname }}.disqus.com/embed.js'; */
-      s.src = 'https://ubion.disqus.com/embed.js';
+      s.src = 'https://ubion.disqus.com/embed.js';  /** 요 사이트 도메인네임(shortname)을 입력해야 함 */
       s.setAttribute('data-timestamp', +new Date());
       (d.head || d.body).appendChild(s);
     })();
