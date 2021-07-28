@@ -24,7 +24,7 @@ They say that the best way to learn something is to try to explain it, so in a p
 
 Let's start with a little history, humans have been tinkering with the idea of an intelligent machine for a while now, some even say that the idea of artificial intelligence was conceived by the ancient greeks ([source](https://www.thinkautomation.com/bots-and-ai/a-history-of-automation-the-rise-of-robots-and-ai/)), and several attempts at devising "intelligent" machines have been made through history, a notable one was 'The Analytical Engine' created by Charles Babbage in 1837:
 
-![The Analytical Engine](./assets/images/postimg/imgtest.JPG)
+![The Analytical Engine]("assets/images/postimg/imgtest.JPG")
 <small>The Analytical Engine of Charles Babbage - 1837</small>
 
 Then, in the middle of last century by trying to create a model of how our brain works, Neural Networks were born. Around that time, Frank Rosenblatt at Cornell trying to understand the simple decision system present in the eye of a common housefly,  proposed the idea of a [perceptron](./single-neuron-perceptron.html), a very simple system that processes certain inputs with basic math operations and produces an output.
