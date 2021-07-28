@@ -37,8 +37,9 @@ github에 commit 후 잠시 기다리면 적용된 모습을 확인할 수 있�
 
 루트디렉토리에서 assets 디렉토리로 들어가서 아래와 같은 방법으로 본문에 임베딩할 수 있습니다.
 
-![ImageName](/assets/images/postimg/20210728_cto.확장자) # 디렉토리에서 불러오는 경우
+![ImageName](/assets/images/postimg/20210728_cto.png) # 디렉토리에서 불러오는 경우
 
-![ImageName](https://source.unsplash.com/random/1500x1000(랜덤 또는 파일 이름)"  # 웹사이트에서 가져오는 경우
+![ImageName](https://source.unsplash.com/random/1500x1000"  # 웹사이트에서 가져오는 경우
 
+![image](https://user-images.githubusercontent.com/83527354/127280564-ede88016-ec3e-4b28-bd79-719bd7931f81.png)
 
