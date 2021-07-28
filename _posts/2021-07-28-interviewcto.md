@@ -18,7 +18,7 @@ banner:
   subheading_style: "color: gold"
 ---
 
-작 성 자 : 꾼
+인터뷰어 : 꾼
 
 
 ![2번.png](/assets/images/postimg/20210728_cto.png)
