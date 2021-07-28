@@ -20,7 +20,6 @@ banner:
 
 작 성 자 : 꾼
 
-작성일자 : 2021.07.28
 
 ![2번.png](/assets/images/postimg/20210728_cto.png)
 
