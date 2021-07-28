@@ -37,6 +37,6 @@ github에 commit 후 잠시 기다리면 적용된 모습을 확인할 수 있�
 
 루트디렉토리에서 assets 디렉토리로 들어가서 아래와 같은 방법으로 본문에 임베딩할 수 있습니다.
 
+![image](https://user-images.githubusercontent.com/83527354/127280662-b96694da-79d8-44fc-8520-b3a549bd905a.png)
 
-![image](https://user-images.githubusercontent.com/83527354/127280564-ede88016-ec3e-4b28-bd79-719bd7931f81.png)
 
