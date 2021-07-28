@@ -7,6 +7,7 @@ tags: [HR, CTO] # 태그는 복수 입력 가능
 ---
 
 작 성 자 : 꾼
+
 작성일자 : 2021.07.28
 
 ![2번.png](/assets/images/postimg/20210728_cto.png)
