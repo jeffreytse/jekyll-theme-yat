@@ -18,11 +18,11 @@
 ```
 ---
 layout: post
-title:  "제목"  # 리스트에 보여질 제목
-description: "설명" # 리스트에 보여질 설명
-date: 2021-07-23 10:53:24 +0900 # 등록일자를 입력하세요.
-categories: php # 생성한 카테고리 title을 입력하세요.(카테고리는 반드시 1개만 입력)
-tags: [example1, example2] # 태그는 복수 입력 가능
+title:  "제목"  # 제목
+subtitle: "설명" # 부제목
+date: 2021-07-28 10:53:24 +0900 # 등록일자를 입력하세요.
+categories: Interview # 생성한 카테고리 title을 입력하세요.(카테고리는 반드시 1개만 입력)
+tags: [HR, CTO] # 태그는 복수 입력 가능
 ---
 
 
@@ -31,13 +31,11 @@ tags: [example1, example2] # 태그는 복수 입력 가능
 내용....
 ```
 
-
-
 github에 commit 후 잠시 기다리면 적용된 모습을 확인할 수 있습니다.
 
 #3 본문에 이미지 삽입하는 방법
 
 루트디렉토리에서 assets 디렉토리로 들어가서 아래와 같은 방법으로 본문에 임베딩할 수 있습니다.
 
-![ImageName](/assets/images/postimg/20210728_cto.png) # 디렉토리에서 불러오는 경우
-![ImageName](https://source.unsplash.com/random/1500x1000)  # 웹사이트에서 가져오는 경우
+##![ImageName](/assets/images/postimg/20210728_cto.png) # 디렉토리에서 불러오는 경우
+##![ImageName](https://source.unsplash.com/random/1500x1000)  # 웹사이트에서 가져오는 경우
