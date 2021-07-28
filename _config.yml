@@ -184,7 +184,7 @@ yat:
 
 # Disqus comments **post.html과 disqus.html 두개를 
 # disqus:
-  shortname: "techhrmaker"
+# shortname: " "
 
 # Gitment comments
 # gitment:
