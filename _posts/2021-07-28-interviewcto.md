@@ -4,6 +4,18 @@ title:  "인재개발원장 인터뷰"  # 제목
 subtitle: "장봉진 부사장" # 부제목
 categories: interview # 생성한 카테고리 title을 입력하세요.(카테고리는 반드시 1개만 입력)
 tags: [HR, CTO] # 태그는 복수 입력 가능
+banner:
+  video: https://vjs.zencdn.net/v/oceans.mp4
+  loop: true
+  volume: 0.1
+  start_at: 8.5
+  image: https://bit.ly/3xTmdUP
+  opacity: 0.618
+  background: "#000"
+  height: "100vh"
+  min_height: "38vh"
+  heading_style: "font-size: 4.25em; font-weight: bold; text-decoration: underline"
+  subheading_style: "color: gold"
 ---
 
 작 성 자 : 꾼
