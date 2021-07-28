@@ -39,6 +39,7 @@ github에 commit 후 잠시 기다리면 적용된 모습을 확인할 수 있�
 
 ---
 ![ImageName](/assets/images/postimg/20210728_cto.확장자) # 디렉토리에서 불러오는 경우
-![ImageName](https://source.unsplash.com/random/150x100)"  # 웹사이트에서 가져오는 경우
+
+![ImageName](https://source.unsplash.com/random/1500x1000(랜덤 또는 파일 이름)"  # 웹사이트에서 가져오는 경우
 ---
 
