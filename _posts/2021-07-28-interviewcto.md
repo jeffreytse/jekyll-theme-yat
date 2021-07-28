@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "인재개발원장 인터뷰"  # 리스트에 보여질 제목
+title:  "인재개발원장 인터뷰"  # 제목입니다
 description: "인재개발원 장봉진 부사장" # 리스트에 보여질 설명
 categories: interview # 생성한 카테고리 title을 입력하세요.(카테고리는 반드시 1개만 입력)
 tags: [HR, CTO] # 태그는 복수 입력 가능
