@@ -7,7 +7,7 @@ categories: jekyll
 banner:
   video: https://vjs.zencdn.net/v/oceans.mp4
   loop: true
-  volume: 0.8
+  volume: 0.2
   start_at: 8.5
   image: https://bit.ly/3xTmdUP
   opacity: 0.618
