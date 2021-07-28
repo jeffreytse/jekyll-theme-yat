@@ -36,4 +36,7 @@ tags: [example1, example2] # 태그는 복수 입력 가능
 github에 commit 후 잠시 기다리면 적용된 모습을 확인할 수 있습니다.
 
 ##3 본문에 이미지 삽입하는 방법
-루트
+루트디렉토리에서 assets 디렉토리로 들어가서 아래와 같은 방법으로 본문에 임베딩할 수 있습니다.
+
+![ImageName](/assets/images/postimg/20210728_cto.png) # 디렉토리에서 불러오는 경우
+![ImageName](https://source.unsplash.com/random/1500x1000)  # 웹사이트에서 가져오는 경우
