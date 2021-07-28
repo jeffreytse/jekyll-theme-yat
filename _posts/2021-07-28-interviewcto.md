@@ -1,11 +1,10 @@
 ```
 ---
 layout: post
-title:  "제목"  # 리스트에 보여질 제목
-description: "설명" # 리스트에 보여질 설명
-date: 2021-07-23 10:53:24 +0900 # 등록일자를 입력하세요.
-categories: php # 생성한 카테고리 title을 입력하세요.(카테고리는 반드시 1개만 입력)
-tags: [example1, example2] # 태그는 복수 입력 가능
+title:  "인재개발원장 인터뷰"  # 리스트에 보여질 제목
+description: "인재개발원 장봉진 부사장" # 리스트에 보여질 설명
+categories: interview # 생성한 카테고리 title을 입력하세요.(카테고리는 반드시 1개만 입력)
+tags: [HR, CTO] # 태그는 복수 입력 가능
 ---
 ```
 
