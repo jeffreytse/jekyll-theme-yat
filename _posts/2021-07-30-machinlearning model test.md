@@ -12,6 +12,9 @@ tags: [머신러닝,학습분석학,학업성취] # 태그는 복수 입력 가�
 ![hustlin_erd](/assets/images/postimg/2021-07-30-learning know.pdf)
 ```
 -->
+
+<p>
+  
 작성자 : 이현우,이종문,차윤미
 
 <p>      
