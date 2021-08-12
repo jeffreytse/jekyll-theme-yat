@@ -2,6 +2,10 @@
   {% assign translate_langs = include.translate_langs %}
 {% endif %}
 
+{% if include.lang %}
+  {% assign lang = include.lang %}
+{% endif %}
+
 <div id="google_translate_element" style="display: none;">
 </div>
 
@@ -24,7 +28,7 @@
 <script type="text/javascript">
 function googleTranslateElementInit() {
   new google.translate.TranslateElement({
-    pageLanguage: '',
+    pageLanguage: '{{ lang }}',
     autoDisplay: false,
     layout: google.translate.TranslateElement.InlineLayout.VERTICAL
   }, 'google_translate_element');
