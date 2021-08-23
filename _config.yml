@@ -34,7 +34,7 @@ author: GitHub User
 # * author: {author} (Value is the same as site.author)
 # * copyright: (c) - ©
 # * copyleft: (cleft)
-# * sound recording copyright: (p) - ℗ 
+# * sound recording copyright: (p) - ℗
 #
 # For example:
 #   "Copyright (c) 2017-{currentYear} <a href="https://example.com">{author}</a>"
@@ -61,6 +61,9 @@ yat:
 
 # If you don't want transparent header, you can set false
 # header_transparent: true
+
+# If you want to change the content width, you can set to another value
+# content_width: "920px"
 
 # Google analytics
 # google_analytics: [Tracking ID]
