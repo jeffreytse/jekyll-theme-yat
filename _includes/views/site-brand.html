@@ -1,4 +1,9 @@
 <a class="site-brand-inner" rel="author" href="{{ "/" | relative_url }}">
-  <img class="site-favicon" title="{{ site.title | escape }}" src="{{ site.favicon }}" onerror="this.style.display='none'">
+  {%- assign name = 'brand_icon' -%}
+  {%- include functions.html func='get_value' -%}
+  {%- assign brand_icon = return -%}
+  {%- if brand_icon -%}
+    {% include {{ site.brand_icon }} %}
+  {%- endif -%}
   {{ site.title | escape }}
 </a>

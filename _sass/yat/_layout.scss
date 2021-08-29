@@ -110,6 +110,15 @@ html {
       height: $header-height / 1.5;
       margin-right: 5px;
     }
+
+    svg {
+      vertical-align: middle; 
+      margin-right: 5px;
+    }
+
+    line, polyline {
+      stroke: $brand-color
+    }
   }
 }
 
