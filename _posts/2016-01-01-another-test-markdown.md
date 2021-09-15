@@ -233,6 +233,16 @@ $\LaTeX{}$
 Bob -> Alice : hello
 @enduml
 
+## Mermaid
+
+```mermaid!
+graph LR
+  concurrent.futures --->| on top of | threading
+  concurrent.futures --->| on top of | multiprocessing
+  threading --->| on top of | \_thread
+  click concurrent.futures "https://docs.python.org/3.9/library/concurrent.futures.html" _blank
+```
+
 ## Video
 
 ![Flower](https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm)
