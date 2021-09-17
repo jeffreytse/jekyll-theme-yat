@@ -289,6 +289,10 @@ CAF file (".caf") :
 
 ![](https://hpr.dogphilosophy.net/test/cafopus.caf)
 
+Spotify Podcast:
+
+![](https://open.spotify.com/episode/31AxcwYdjsFtStds5JVWbT)
+
 ## Special media links
 
 ![]( {{ "/assets/devstories.webm" | relative_url }} )
