@@ -20,6 +20,13 @@ $ \int\_a^b f(x)\,dx. $
 
 \\( \int\_a^b f(x)\,dx. \\)
 
+$$
+\begin{cases}
+\text{if true}\ foo \\
+\text{if false}\ bar
+\end{cases}
+$$
+
 $ \rho {\rm{FOD}} = \sum\limits{\sigma ,i} {(\delta _1 - \delta _2 n_i^\sigma )|\phi _i^\sigma ({\bf{r}})|^2} $
 
 $$ \rho {\rm{FOD}} = \sum\limits{\sigma ,i} {(\delta _1 - \delta _2 n_i^\sigma )|\phi _i^\sigma ({\bf{r}})|^2} $$
