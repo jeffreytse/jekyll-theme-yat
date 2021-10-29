@@ -100,11 +100,11 @@
     document.addEventListener('click', uncheckNavTrigger);
 
     var timer;
-    document.querySelector(".trigger").addEventListener('mouseLeave', () => {
+    document.querySelector(".trigger").addEventListener('mouseleave', () => {
       timer = setTimeout(uncheckNavTrigger, 1000);
     });
 
-    document.querySelector(".trigger").addEventListener('mouseEnter', () => {
+    document.querySelector(".trigger").addEventListener('mouseenter', () => {
       if (timer) {
         clearTimeout(timer);
       }
