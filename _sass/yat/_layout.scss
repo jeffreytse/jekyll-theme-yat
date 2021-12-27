@@ -206,6 +206,11 @@ html {
   .site-footer-inner {
     transition: border-top 0.2s;
     padding: $spacing-unit * 1.8 0;
+
+    .social-media {
+      font-size: 48px;
+      letter-spacing: 4px;
+    }
   }
 
   a {

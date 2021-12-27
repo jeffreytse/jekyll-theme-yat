@@ -1,0 +1,41 @@
+email:
+  id: 'your.name@yoursite.com'
+  href: 'mailto:'
+  title: 'Email'
+  fa-icon: 'fa-envelope-square'
+
+rss:
+  id: '' # Leave this property empty
+  href: '/feed.xml'
+  title: 'RSS'
+  fa-icon: 'fa-rss-square'
+
+facebook:
+  id: 'your-facebook-username'
+  href: 'https://www.facebook.com/'
+  title: 'Facebook'
+  fa-icon: 'fa-facebook-square'
+
+instagram:
+  id: 'your-instagram-username'
+  href: 'https://www.instagram.com/'
+  title: 'Instagram'
+  fa-icon: 'fa-instagram'
+
+twitter:
+  id: 'your-twitter-name'
+  href: 'https://www.twitter.com/'
+  title: 'Twitter'
+  fa-icon: 'fa-twitter-square'
+
+linkedin:
+  id: 'your-linkedin-username'
+  href: 'https://www.linkedin.com/'
+  title: 'LinkedIn'
+  fa-icon: 'fa-linkedin-square'
+
+github:
+  id: 'your-github-name'
+  href: 'https://github.com/'
+  title: 'GitHub'
+  fa-icon: 'fa-github-square'

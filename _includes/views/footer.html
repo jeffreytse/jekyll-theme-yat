@@ -15,7 +15,15 @@
       <div>Powered by <a title="Jekyll is a simple, blog-aware, static site
       generator." href="http://jekyllrb.com/">Jekyll</a> &amp; <a title="Yat, yet
       another theme." href="https://github.com/jeffreytse/jekyll-theme-yat">Yat Theme</a>.</div>
-      <div class="footer-col rss-subscribe">Subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></div>
+      <div class="social-media">
+        {% assign sm = site.data.social-media %}
+        {% for entry in sm %}
+            {% assign key = entry | first %}
+            {% if sm[key].id %}
+                <a href="{{ sm[key].href }}{{ sm[key].id }}" title="{{ sm[key].title }}"><i class="fab {{ sm[key].fa-icon }}"></i></a>
+            {% endif %}
+        {% endfor %}
+      </div>
     </div>
   </div>
 </footer>
