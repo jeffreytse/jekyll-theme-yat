@@ -583,6 +583,9 @@ html {
     & > *:first-child {
       @include center-image;
       transition: 0.1s all ease-in-out;
+      @include media-query($on-palm) {
+           background-position: 97% center;
+      }
     }
 
     & > video {
