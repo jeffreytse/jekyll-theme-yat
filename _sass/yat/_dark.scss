@@ -16,7 +16,7 @@ html[data-theme="dark"]  {
     footer.site-footer {
       .site-footer-inner {
         border-top: solid 1px #2f2f2f !important;
-        transition: 0s;
+        transition: 0s;        
       }
     }
   }
@@ -49,7 +49,7 @@ html[data-theme="dark"]  {
 
   .site-header {
     background-color: #090909;
-
+    border-bottom: 1px solid red;
     .site-brand {
       .site-brand-inner {
         &, &:visited {
@@ -86,6 +86,7 @@ html[data-theme="dark"]  {
   .site-footer {
     color: #fff;
     background-color: #000;
+    border-top: 1px solid red;
   }
 
   .left-vsplit:before {
@@ -96,10 +97,11 @@ html[data-theme="dark"]  {
     .page-banner-img {
       & > *:first-child {
         opacity: 0.718;
+         @include media-query($on-palm) {
+           background-position: 97% center;
+         }
       }
-      @include media-query($on-palm) {
-        background-position: 97% center;
-      }
+     
     }
   }
 
