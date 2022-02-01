@@ -572,7 +572,8 @@ html {
   height: $banner-height;
   background-color: $banner-background;
   transition: height 0.2s;
-
+  border-bottom: 1px solid red;
+  
   .page-banner-img {
     position: absolute;
     width: 100%;
@@ -591,6 +592,9 @@ html {
 
     & > img.img-placeholder {
       display: none;
+    }
+    @include media-query($on-palm) {
+      background-position: 97% center;
     }
   }
 
