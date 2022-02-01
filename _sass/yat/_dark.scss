@@ -48,8 +48,7 @@ html[data-theme="dark"]  {
   }
 
   .site-header {
-    background-color: #090909;
-    border-bottom: 1px solid red;
+    background-color: #090909;    
     .site-brand {
       .site-brand-inner {
         &, &:visited {
@@ -94,12 +93,15 @@ html[data-theme="dark"]  {
   }
 
   .page-banner {
+    border-bottom: 1px solid red;
     .page-banner-img {
       & > *:first-child {
         opacity: 0.718;
+        & > *:first-child {
          @include media-query($on-palm) {
            background-position: 97% center;
          }
+        }
       }
      
     }
