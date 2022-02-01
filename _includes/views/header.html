@@ -39,8 +39,8 @@
               <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | upcase | escape }}</a>
               {%- endif -%}
             {%- endfor -%}
-             <a href="www.linkedin.com/in/johannes-hölzel">My LinkedIn</a>
-             <a href="github.com/jhoelzel">My GitHub</a>
+             <a class="page-link" href="https://www.linkedin.com/in/johannes-hölzel">My LinkedIn</a>
+             <a class="page-link" href="https://github.com/jhoelzel">My GitHub</a>
 
             {%- assign name = 'translate_langs' -%}
             {%- include functions.html func='get_value' -%}
