@@ -16,7 +16,7 @@ dl, dd, ol, ul, figure {
 body {
   font-family: $base-font-family;
   font-weight: $base-font-weight;
-  font-size: #{$base-font-size};
+  font-size: #{$base-font-size * 1.25};
   font-display: swap;
   line-height: #{$base-line-height};
   color: $text-color;
