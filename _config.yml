@@ -40,7 +40,7 @@ author: wangwawo
 #   "Copyright (c) 2017-{currentYear} <a href="https://example.com">{author}</a>"
 #   "Copyright © 2017-2021 Foobar"
 #
-copyright: "Unpublished Work (cleft) 2017-{currentYear} {email}"
+copyright: "Published Work (cleft) 2021-{currentYear} {wangwawo@outlook.com}"
 
 description: >- # this means to ignore newlines until "baseurl:"
   Hello~
@@ -152,11 +152,11 @@ lang: "zh-CN"  # default lang is en
 #   - about.md
 
 # Page default value
-# defaults:
-#   home:
-#     heading: "Your awesome heading"
-#     subheading: "Your awesome subheading"
-#     banner: "Your image url"
+defaults:
+  home:
+    heading: "我的笔记"
+    subheading: "欢迎~"
+    banner: "Your image url"
 
 # Banner default settings
 # These banner settings are for global banner default, but you can also
