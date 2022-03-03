@@ -151,7 +151,7 @@ header_pages:
   - professor.md
   - research.md
   - members.md
-  - publications.md
+  - publications/index.html
   - photo.md
   - galaxy.md
   - git.md

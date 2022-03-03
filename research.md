@@ -21,7 +21,7 @@ package GALAXY and a web server GalaxyWeb implementing the GALAXY methods[^1]
     structure prediction and refinement", _Nucleic Acids Res._ 40 (W1),
     W294-W297 (2012).
 
-{% include image.html url="/assets/images/research/galaxy_outline.png" description="" style="width: 100%;" %}
+{% include image.html url="/assets/images/research/galaxy_outline.png" %}
 
 **GALAXY** is a software package for biomolecular modeling which consists of
 core programs that perform basic modeling tasks such as protein structure
@@ -45,7 +45,7 @@ task.
 
 ### Template-based modeling in CASP experiments
 
-{% include image.html url="/assets/images/research/CASP9result.png" description="" style="width: 100%;" %}
+{% include image.html url="/assets/images/research/CASP9result.png" %}
 
 The CASP (Critical Assessment of the techniques for protein Structure
 Prediction) experiment is a community-wide protein structure prediction
@@ -62,7 +62,7 @@ category in CASP) according to the official assessment by the CASP organizers.
 
 ### GalaxyTBM: Automated protein structure prediction
 
-{% include image.html url="/assets/images/research/galaxyTBM.png" description="" style="width: 100%;" %}
+{% include image.html url="/assets/images/research/galaxyTBM.png" %}
 
 Our stand-alone tool for template-based modeling is called "GalaxyTBM" [^2] (web
 service available at [GalaxyWeb][galaxytbm]).  
@@ -79,7 +79,7 @@ performance and speed, to provide better services to users.
 
 ### Protein Loop Modeling
 
-{% include image.html url="/assets/images/research/loop_algorithm.png" description="" style="width: 100%;" %}
+{% include image.html url="/assets/images/research/loop_algorithm.png" %}
 
 Protein loop modeling is one of the areas of our specialty. Loop modeling is
 applicable to the studies related to protein flexibility. All our loop modeling
@@ -97,21 +97,21 @@ optimization.
     of Loop Closure", _J. Comput. Chem._ 25, 510 (2004).
 
 [^4]:
-    E. A. Coutsias, C. Seok, M. J. Wester, and K. A. Dill, "Resultants and Loop
+    E. A. Coutsias\*, C. Seok, M. J. Wester, and K. A. Dill, "Resultants and Loop
     Closure", _Int. J. Quantum Chem._ 106, 176 (2006).
 
 [^5]:
-    J. Lee*, D. Lee, H. Park, E. A. Coutsias, and C. Seok*, "Protein loop
+    J. Lee\*, D. Lee, H. Park, E. A. Coutsias, and C. Seok\*, "Protein loop
     modeling by using fragment assembly and analytical loop closure",
     _Proteins_, 78, 3428-3436 (2010).
 
 [^6]:
-    J. Ko, D. Lee, H. Park, E. A. Coutsias, J. Lee*, and C. Seok*, "The
+    J. Ko, D. Lee, H. Park, E. A. Coutsias, J. Lee\*, and C. Seok\*, "The
     FALC-Loop web server for protein loop modeling", _Nucleic Acids Res._ 39,
     W210-W214 (2011).
 
 [^7]:
-    H. Park, J. Ko, K. Joo, J. Lee, C. Seok*, and J. Lee*, "Refinement of
+    H. Park, J. Ko, K. Joo, J. Lee, C. Seok\*, and J. Lee\*, "Refinement of
     protein termini in template-based modeling using conformational space
     annealing", _Proteins_, 79, 2725-2734 (2011).
 
@@ -121,7 +121,7 @@ optimization.
 
 [^9]: H. Park, G. R. Lee, and C. Seok\*, in preparation.
 
-{% include image.html url="/assets/images/research/galaxyLoop.png" description="" style="width: 100%;" %}
+{% include image.html url="/assets/images/research/galaxyLoop.png" %}
 
 In contrast to traditional loop modeling studies that focus primarily on
 reconstructing loop structures in the experimentally resolved structures, <u>we
@@ -144,7 +144,7 @@ in CASP9 TBM and refinement categories[^8].
 
 ## Protein-Ligand Docking
 
-{% include image.html url="/assets/images/research/galaxyDock.png" description="" style="width: 100%;" %}
+{% include image.html url="/assets/images/research/galaxyDock.png" %}
 
 Another essential computational tool necessary for understanding protein
 function is protein-ligand docking. A protein-ligand docking method predicts the
@@ -161,7 +161,7 @@ results) that considers receptor flexibility will bring a large impact to the
 field.
 
 [^11]:
-    W. Shin, L. Heo, J. Lee, J. Ko, C. Seok*, and J. Lee*, "LigDockCSA:
+    W. Shin, L. Heo, J. Lee, J. Ko, C. Seok\*, and J. Lee\*, "LigDockCSA:
     protein-ligand docking using conformational space annealing", _J. Comput.
     Chem._ 32 (15), 3226-3232, (2011).
 
@@ -181,7 +181,7 @@ accessible at [GalaxyWeb][galaxysite].
 
 ## Protein-Protein Docking
 
-{% include image.html url="/assets/images/research/galaxyPPdock.png" description="" style="width: 100%;" %}
+{% include image.html url="/assets/images/research/galaxyPPdock.png" %}
 
 We are also developing prediction methods for protein-protein interactions.
 Prediction of protein- protein complex structure and binding affinity is crucial
@@ -191,7 +191,7 @@ protein-protein interaction prediction experiment (Critical Assessment of
 PRedicted Interactions).
 
 [^14]:
-    Sarel J Fleishman et al. (H. Park, J. Ko, H. Lee, C. Seok), "Community-wide
+    Sarel J Fleishman _et al._ (H. Park, J. Ko, H. Lee, C. Seok), "Community-wide
     assessment of protein-interface modeling suggests improvements to design
     methodology", _J. Mol. Biol._ 414 (2), 289-302 (2011).
 
@@ -208,7 +208,7 @@ for GalaxyGemini is available at [GalaxyWeb][galaxygemini].
 
 ## Applications
 
-{% include image.html url="/assets/images/research/guided_prediction.png" description="" style="width: 100%;" %}
+{% include image.html url="/assets/images/research/guided_prediction.png" %}
 
 The next stage in the GALAXY development is to develop more tools for practical
 applications. The first type of application methods combine incomplete
@@ -224,7 +224,7 @@ chemical shift data collected from NMR spectroscopy can assist refinement of
 template-based models. We are studying how to interpret and combine various
 experimental data with GalaxyTBM.
 
-{% include image.html url="/assets/images/research/galaxy_application.png" description="" style="width: 100%;" %}
+{% include image.html url="/assets/images/research/galaxy_application.png" %}
 
 The second type of application methods aim at obtaining insights into
 conformational changes and molecular interactions involved in proteins of

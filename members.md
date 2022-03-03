@@ -3,7 +3,7 @@ layout: about
 title: Members
 ---
 
-{% include image.html url="/assets/images/members.jpg" description="" style="width: 100%;" %}
+{% include image.html url="/assets/images/members.jpg" %}
 
 ## Graduate Students
 

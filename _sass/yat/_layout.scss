@@ -341,7 +341,7 @@ html {
 
   .post-subtitle {
     font-weight: lighter;
-    margin-bottom: $spacing-unit * 0.25;
+    margin-bottom: $spacing-unit * 0.2;
   }
 
   .post-meta {
@@ -362,7 +362,7 @@ html {
     padding: 2px 4px;
     border-radius: 2px;
     transition: color 0.2s;
-    margin-bottom: 8px;
+    margin: 8px 0;
 
     &:not(:last-child) {
       margin-right: 8px;
@@ -418,6 +418,7 @@ html {
   iframe {
     margin-left: auto;
     margin-right: auto;
+    width: 70%;
   }
 }
 
@@ -446,7 +447,6 @@ html {
   }
 
   .post-content {
-    margin-bottom: $spacing-unit;
     overflow-wrap: normal;
     word-wrap: normal;
     word-break: normal;
@@ -521,6 +521,13 @@ html {
       iframe {
         margin-left: 0;
         margin-right: 0;
+        width: 200px;
+
+        @include media-query($on-palm) {
+          margin-left: auto;
+          margin-right: auto;
+          width: 50%;
+        }
       }
     }
 

@@ -56,7 +56,7 @@ sidebar:
     </div>
     {%- endif -%}
 
-    {%- assign result = hidden | where_exp: "item", "item == 'comments'" -%}
+    <!-- {%- assign result = hidden | where_exp: "item", "item == 'comments'" -%}
     {%- if result.size == 0 -%}
     <div class="post-comments">
       {%- if page.comments != false -%}
@@ -71,7 +71,11 @@ sidebar:
 
       {%- endif -%}
     </div>
-    {%- endif -%}
+    {%- endif -%} -->
 
   </section>
 </div>
+
+{%- if page.paginate -%}
+  {% include views/pagination.html %}
+{%- endif -%}

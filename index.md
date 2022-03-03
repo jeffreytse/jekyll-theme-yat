@@ -8,4 +8,4 @@ banner:
   height: 300px
 ---
 
-{% include image.html url="/assets/images/main.jpg" description="" style="width: 70%;" %}
+{% include image.html url="/assets/images/main.jpg" %}
