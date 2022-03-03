@@ -8,15 +8,16 @@ html {
     }
   }
 
-  &[data-scroll-status='top'] {
+  &[data-scroll-status="top"] {
     header.site-header-transparent {
       height: 0;
       margin-top: 12px;
       background-color: transparent;
-      transition: 0.1s height,background-color,box-shadow;
+      transition: 0.1s height, background-color, box-shadow;
 
       &.site-header {
-        .site-brand-inner, .page-link {
+        .site-brand-inner,
+        .page-link {
           color: #fff;
           transition: 0.1s color;
         }
@@ -45,7 +46,7 @@ html {
     }
   }
 
-  &[data-scroll-status='down'] {
+  &[data-scroll-status="down"] {
     header.site-header {
       top: -$header-height;
     }
@@ -64,7 +65,7 @@ html {
   height: $header-height;
   width: 100%;
   transition: height 0.2s, text-shadow 0.2s, top 0.2s;
-  box-shadow: 0 1px 0 0 rgba(0, 0, 0, .06);
+  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.06);
 
   // Positioning context for the mobile navigation icon
   @include flex-sticky(0);
@@ -98,10 +99,10 @@ html {
   .site-brand-inner {
     @include relative-font-size(1.125);
     font-weight: $base-font-weight;
-    letter-spacing: -1px;
     transition: 0.1s filter color;
 
-    &, &:visited {
+    &,
+    &:visited {
       color: $header-text-color;
     }
 
@@ -109,6 +110,7 @@ html {
       display: inline-block;
       height: $header-height / 1.5;
       margin-right: 5px;
+      vertical-align: middle;
     }
   }
 }
@@ -168,7 +170,7 @@ html {
       clear: both;
       display: none;
       border-radius: 3px;
-      box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .06);
+      box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.06);
     }
 
     input:checked ~ .trigger {
@@ -189,30 +191,59 @@ html {
  * Site footer
  */
 .site-footer {
-  @include relative-font-size(1.0);
-  color: $footer-text-color;
-  background-color: $footer-background-color;
-  text-align: left;
-  transition: background-color 0.2s;
+  @include relative-font-size(1);
+  text-align: right;
+
+  @include media-query($content-width) {
+    text-align: center;
+  }
 
   .site-footer-inner {
     transition: border-top 0.2s;
-    padding: $spacing-unit * 1.8 0;
-  }
+    padding: $spacing-unit 0;
 
-  a {
-    $a-color: $brand-color;
-    color: $a-color;
+    .tie {
+      white-space: nowrap;
+    }
 
-    &:hover {
-      color: lighten($a-color, 10%);
+    .tie-block {
+      white-space: nowrap;
+      @include media-query($content-width) {
+        display: block;
+        margin-bottom: 1em;
+      }
+    }
+
+    .powered-by {
+      @include media-query($on-palm) {
+        margin-top: 1em;
+      }
+    }
+
+    .footer-icon {
+      line-height: 1;
+      display: inline-block;
+
+      * {
+        font-size: 20px;
+        vertical-align: text-bottom;
+      }
+    }
+
+    a {
+      $a-color: $brand-color;
+      color: $a-color;
+
+      &:hover {
+        color: lighten($a-color, 10%);
+      }
     }
   }
 }
 
 .copyleft {
   display: inline-block;
-  transform: rotate(180deg);
+  transform: rotateY(180deg);
 }
 
 /**
@@ -224,12 +255,12 @@ html {
   }
 
   .post-title {
-    @include relative-font-size(2.625);
+    @include relative-font-size(2.25);
     letter-spacing: -1px;
     line-height: 1;
 
     @include media-query($on-laptop) {
-      @include relative-font-size(2.25);
+      @include relative-font-size(2);
     }
   }
 
@@ -268,12 +299,13 @@ html {
   .post-list {
     margin-left: 0;
     list-style: none;
+    font-size: small;
 
     > li {
-      margin-bottom: $spacing-unit * 1.5;
-      padding-bottom: 30px;
+      margin-bottom: $spacing-unit * 0.5;
 
       &:not(:last-child) {
+        padding-bottom: $spacing-unit * 0.5;
         border-bottom: 1px solid #e3e3e3;
       }
     }
@@ -285,9 +317,10 @@ html {
 
     a {
       text-decoration: none;
+      color: #333;
 
       &:after {
-        content: 'NEW';
+        content: "NEW";
         position: absolute;
         margin-left: 8px;
         margin-top: 3px;
@@ -305,16 +338,14 @@ html {
     }
   }
 
-  .post-meta {
-    font-size: $base-font-size;
-    color: $grey-color;
-    margin-bottom: $spacing-unit * 0.5;
+  .post-subtitle {
+    font-weight: lighter;
+    margin-bottom: $spacing-unit * 0.25;
   }
 
-  .post-link {
-    @include relative-font-size(1.65);
-    font-weight: $base-font-weight * 1.5;
-    color: #333;
+  .post-meta {
+    color: $grey-color;
+    margin-bottom: $spacing-unit * 0.25;
   }
 
   .post-excerpt {
@@ -345,7 +376,7 @@ html {
     text-align: center;
 
     & > .previous:before {
-      content: ' ';
+      content: " ";
       border: solid #787878;
       border-width: 0 2px 2px 0;
       display: inline-block;
@@ -356,7 +387,7 @@ html {
     }
 
     & > .next:after {
-      content: ' ';
+      content: " ";
       border: solid #787878;
       border-width: 0 2px 2px 0;
       display: inline-block;
@@ -366,7 +397,8 @@ html {
       -webkit-transform: rotate(-45deg);
     }
 
-    .previous span, .next span {
+    .previous span,
+    .next span {
       color: #b3b3b3;
     }
 
@@ -376,6 +408,17 @@ html {
   }
 }
 
+/**
+  * Home
+  */
+.home {
+  img,
+  svg,
+  iframe {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 /**
  * Posts
@@ -407,7 +450,7 @@ html {
     word-wrap: normal;
     word-break: normal;
 
-    h2 {
+    h1 {
       @include relative-font-size(2);
 
       @include media-query($on-laptop) {
@@ -415,33 +458,48 @@ html {
       }
     }
 
-    h3 {
+    h2 {
       @include relative-font-size(1.625);
 
       @include media-query($on-laptop) {
-        @include relative-font-size(1.375);
+        @include relative-font-size(1.5);
+      }
+    }
+
+    h3 {
+      @include relative-font-size(1.375);
+
+      @include media-query($on-laptop) {
+        @include relative-font-size(1.25);
       }
     }
 
     h4 {
-      @include relative-font-size(1.25);
+      @include relative-font-size(1.125);
 
       @include media-query($on-laptop) {
-        @include relative-font-size(1.125);
+        @include relative-font-size(1.1);
       }
     }
 
-    img, svg, iframe {
+    img,
+    svg,
+    iframe {
       margin-left: auto;
       margin-right: auto;
       display: block;
     }
 
-    h2, h3, h4, h5, h6 {
-      margin: 60px 0 19px;
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 30px 0 19px;
     }
 
-    p, hr {
+    p,
+    hr {
       margin-bottom: 24px;
     }
 
@@ -450,10 +508,54 @@ html {
       background-color: #ebebeb;
       border: none;
     }
+
+    th {
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .professor {
+      img,
+      svg,
+      iframe {
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+
+    .research {
+      font-family: "Times New Roman", Times, "Nanum Myeongjo", serif;
+
+      .research-content {
+        text-align: center;
+
+        h1 {
+          counter-reset: research-section;
+        }
+
+        h2:before {
+          content: counter(research-section, upper-roman) ". ";
+          counter-increment: research-section;
+        }
+
+        h3 {
+          font-weight: normal;
+          font-style: italic;
+        }
+
+        .footnotes {
+          text-align: left;
+
+          ol {
+            list-style: brackets;
+          }
+        }
+      }
+    }
   }
 
   .post-related {
-    &>*:first-child {
+    & > *:first-child {
       @include relative-font-size(1.425);
       color: #333;
       margin-bottom: 14px;
@@ -473,7 +575,7 @@ html {
         }
 
         &:after {
-          content: 'NEW';
+          content: "NEW";
           position: absolute;
           margin-left: 8px;
           margin-top: 3px;
@@ -497,7 +599,6 @@ html {
   padding-top: 25px;
 }
 
-
 /**
  * Posts misc
  */
@@ -515,7 +616,7 @@ html {
   }
 
   .previous:before {
-    content: ' ';
+    content: " ";
     border: solid #787878;
     border-width: 0 2px 2px 0;
     display: inline-block;
@@ -526,7 +627,7 @@ html {
   }
 
   .next:after {
-    content: ' ';
+    content: " ";
     border: solid #787878;
     border-width: 0 2px 2px 0;
     display: inline-block;
@@ -536,7 +637,6 @@ html {
     -webkit-transform: rotate(-45deg);
   }
 }
-
 
 /**
  * Archives page
@@ -561,7 +661,6 @@ html {
     color: $grey-color;
   }
 }
-
 
 /**
  * Page banner
@@ -599,21 +698,29 @@ html {
   }
 
   .page-banner-inner {
-    @include vertical-center(relative);
+    @include vertical-lower(relative);
 
     color: $banner-text-color;
     padding: 10px 5px;
     text-shadow: 1px 1px 2px #33333355;
 
     & > *:first-child {
-      margin: 0;
+      margin-right: 30%;
+
+      @include media-query($on-laptop) {
+        margin-right: 0;
+      }
 
       > :nth-child(1) {
-        @include relative-font-size(3.9);
+        @include relative-font-size(2.75);
         letter-spacing: -1px;
-        margin-bottom: 0.1em;
+        margin-bottom: -0.1em;
         font-weight: normal;
         transition: 0.2s all;
+
+        @include media-query($on-laptop) {
+          @include relative-font-size(2.5);
+        }
 
         @include media-query($on-palm) {
           @include relative-font-size(1.975);
@@ -622,7 +729,6 @@ html {
 
       > :nth-child(2) {
         font-weight: lighter;
-        margin-bottom: 0.8em;
         transition: 0.2s all;
 
         @include media-query($on-palm) {
@@ -680,12 +786,11 @@ html {
   }
 }
 
-
 /**
  * Layout and sidebar
  */
 .framework {
-    @extend %flex;
+  @extend %flex;
 
   .main {
     @extend %flex-1;
@@ -700,20 +805,13 @@ html {
     @include media-query($on-laptop) {
       display: none;
     }
-
   }
 }
-
 
 /**
  * Segments page
  */
 .page-segments {
-  .page-segments-list {
-    margin-left: 0;
-    list-style: none;
-  }
-
   .segment-name {
     font-weight: $base-font-weight * 1.5;
     margin-bottom: 8px;
@@ -726,7 +824,7 @@ html {
     }
 
     &:hover:before {
-      content: '#';
+      content: "#";
       left: -1em;
       position: absolute;
     }
@@ -749,7 +847,7 @@ html {
     }
 
     &:after {
-      content: 'NEW';
+      content: "NEW";
       position: absolute;
       margin-left: 8px;
       margin-top: 3px;
@@ -775,4 +873,25 @@ html {
   margin: 0 10px;
   background-color: #e3e3e3e3;
   vertical-align: baseline;
+
+  @include media-query($on-laptop) {
+    display: block;
+    width: 0px;
+  }
+}
+
+.fa-calendar-alt {
+  font-size: 0.9em;
+  vertical-align: 13%;
+}
+
+.fa-clock {
+  font-size: 0.8em;
+  vertical-align: 7%;
+}
+
+.fa-edit {
+  font-size: 0.8em;
+  margin-left: 1px;
+  vertical-align: 10%;
 }

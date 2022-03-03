@@ -1,8 +1,9 @@
-$dark-background-color:       #0e0e0e !default;
 $dark-text-color: #bbb !default;
+$dark-background-color: #0e0e0e !default;
+$dark-emph-background-color: #333 !default;
 
-html[data-theme="dark"]  {
-  &[data-scroll-status='top'] {
+html[data-theme="dark"] {
+  &[data-scroll-status="top"] {
     header.site-header-transparent {
       &.site-header {
         @include media-query($on-laptop) {
@@ -27,23 +28,27 @@ html[data-theme="dark"]  {
   }
 
   *:not(pre) > code {
-    color: $dark-text-color;
     background-color: #454545;
   }
 
+  *:not(pre, a) > code {
+    color: $dark-text-color;
+  }
+
   blockquote {
-    border-left: 4px solid #484848;
+    border-left: 4px solid #000000;
   }
 
   table {
     color: #9d9d9d;
 
     th {
-      background-color: #050505;
+      background-color: $dark-text-color;
+      color: $dark-background-color;
     }
 
     tr:nth-child(even) {
-      background-color: #080808;
+      background-color: $dark-emph-background-color;
     }
   }
 
@@ -52,7 +57,8 @@ html[data-theme="dark"]  {
 
     .site-brand {
       .site-brand-inner {
-        &, &:visited {
+        &,
+        &:visited {
           color: #f8f8f8;
         }
       }
@@ -68,13 +74,14 @@ html[data-theme="dark"]  {
       box-shadow: 0 0 3px 1px #0000005b;
     }
 
-    .ct-language-selected, .ct-language-dropdown li:hover {
+    .ct-language-selected,
+    .ct-language-dropdown li:hover {
       background-color: #222 !important;
     }
 
     @include media-query($on-laptop) {
       .menu-icon > svg {
-          fill: rgba($dark-text-color, 80%);
+        fill: rgba($dark-text-color, 80%);
       }
 
       .site-nav input:checked ~ .trigger {
@@ -85,7 +92,14 @@ html[data-theme="dark"]  {
 
   .site-footer {
     color: #fff;
-    background-color: #000;
+    background-color: $dark-emph-background-color;
+    .site-footer-inner {
+      .footer-icon {
+        * {
+          color: #fff;
+        }
+      }
+    }
   }
 
   .left-vsplit:before {
@@ -93,6 +107,8 @@ html[data-theme="dark"]  {
   }
 
   .page-banner {
+    background-color: $dark-emph-background-color;
+
     .page-banner-img {
       & > *:first-child {
         opacity: 0.718;
@@ -179,7 +195,7 @@ html[data-theme="dark"]  {
       }
 
       span {
-        background-color: #333;
+        background-color: $dark-emph-background-color;
       }
     }
   }
@@ -209,4 +225,3 @@ html[data-theme="dark"]  {
     }
   }
 }
-

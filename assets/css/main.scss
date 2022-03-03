@@ -36,3 +36,4 @@ $brand-color: map-get($brand-colors, "orangered");
 $content-width: {{ site.content_width | default: '920px' }};
 
 @import "yat";
+@import "fa";

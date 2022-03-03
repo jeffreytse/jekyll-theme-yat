@@ -1,0 +1,13 @@
+@import "fa/fontawesome.scss";
+@import "fa/solid.scss";
+@import "fa/regular.scss";
+@import "fa/brands.scss";
+
+.twitter {
+  @extend %fa-icon;
+  @extend .fab;
+
+  &:before {
+    content: fa-content($fa-var-twitter);
+  }
+}

@@ -99,7 +99,7 @@
             }
           })();
         </script>
-      {%- else -%}
+      {%- else if banner_image -%}
         <div style="background-image: url({{ banner_image }})"></div>
         <img class="img-placeholder" src="{{ banner_image }}">
       {%- endif -%}
@@ -128,4 +128,3 @@
     </div>
   </section>
 {%- endif -%}
-

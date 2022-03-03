@@ -62,7 +62,6 @@
 {%- include functions.html func='get_value' default=0 -%}
 {% assign banner_start_at = return %}
 
-{% if banner_image or banner_video %}
+{% if banner %}
   {% assign has_banner = true %}
 {% endif %}
-

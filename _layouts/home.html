@@ -1,8 +1,18 @@
 ---
-layout: articles
+layout: framework
 heading: 'Your awesome heading'
 subheading: 'Your awesome subheading'
 banner: 'default'
+hidden:
+  - header
+  - navigator
+  - related_posts
 ---
 
-{{ content }}
+<div class="home">
+  {% if page.banner == nil %}
+    {% assign banner = page.title %}
+  {% endif %}
+
+  {{ content }}
+</div>

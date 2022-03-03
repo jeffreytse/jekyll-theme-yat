@@ -1,5 +1,7 @@
-# frozen_string_literal: true
-
 source "https://rubygems.org"
-gemspec
 
+gem "jekyll-theme-yat"
+group :jekyll_plugins do
+	gem "jekyll-include-cache"
+	gem "jekyll-redirect-from"
+end

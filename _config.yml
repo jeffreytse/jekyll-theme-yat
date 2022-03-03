@@ -1,5 +1,4 @@
 # Welcome to Jekyll!
-#
 # About Theme
 #
 # Yet another theme for elegant writers with modern flat style and beautiful
@@ -24,9 +23,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@domain.com
-author: GitHub User
+title: "SNU Compbio Lab"
+email: "galaxy.compbio@gmail.com"
+author: "seoklab"
 
 # Copyright setting
 # You can use any html code, currently below placeholders are available:
@@ -40,21 +39,22 @@ author: GitHub User
 #   "Copyright (c) 2017-{currentYear} <a href="https://example.com">{author}</a>"
 #   "Copyright © 2017-2021 Foobar"
 #
-copyright: "Unpublished Work (cleft) 2017-{currentYear} {author}"
+copyright: '(cleft) 2022-{currentYear} {author}, licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-SA 4.0 International</a>.'
+copyright-icons:
+  - fa-creative-commons
+  - fa-creative-commons-by
+  - fa-creative-commons-sa
 
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. https://example.com
-favicon: "" # the favicon for your site
+description: "Seoul National University Lab of Computational Biology and Biomolecular Engineering"
+url: "https://seoklab.org"
+favicon: "https://avatars.githubusercontent.com/u/16937572"
 
 # Yat date format
 # refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
 yat:
-  date_format: "%b %d, %Y"
+  date_format: "%Y"
+last-modified-at:
+  date-format: "%F %r"
 
 # If you want more debug log, you can set true
 # debug: false
@@ -69,10 +69,11 @@ yat:
 # google_analytics: [Tracking ID]
 
 # If you want to generate website sitemap, you can set true
-# sitemap: false
+# sitemap: true
 
 # If you want to change site language, you can set lang option
-# lang: "en"  # default lang is en
+lang: "ko"
+timezone: Asia/Seoul
 
 # Translate languges
 # langs refer to https://cloud.google.com/translate/docs/languages
@@ -146,33 +147,38 @@ yat:
 
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
-# header_pages:
-#   - index.html
-#   - archives.html
-#   - categories.html
-#   - tags.html
-#   - about.md
+header_pages:
+  - professor.md
+  - research.md
+  - members.md
+  - publications.md
+  - photo.md
+  - galaxyweb.md
+  - git.md
+  - source.md
 
 # Page default value
-# defaults:
-#   home:
-#     heading: "Your awesome heading"
-#     subheading: "Your awesome subheading"
-#     banner: "Your image url"
+defaults:
+  - scope:
+      path: "_posts"
+      type: "posts"
+    values:
+      layout: post
+      permalink: /:categories/:year/:month/:title:output_ext
 
 # Banner default settings
 # These banner settings are for global banner default, but you can also
 # config it by the front matter for one specific post
 # banner:
+#   height: "200px"         # Banner default height
+#   opacity: 0.5            # Banner opacity (100% is 1.0)
 #   video: null             # Video banner source
 #   loop: true              # Video loop
 #   volume: 0               # Video volume (100% is 1.0)
-#   start_at: 0             # Video start time
 #   image: null             # Image banner source
-#   opacity: 1.0            # Banner opacity (100% is 1.0)
+#   start_at: 0             # Video start time
 #   background: "rgba(0, 0, 0, 0.8)"  # Banner background (Could be a image)
-#   height: "640px"         # Banner default height
-#   min_height: null        # Banner minimum height
+#   min_height: null        # Banner minium height
 #   heading_style: null     # Custom heading style (e.g. "font-weight: bold; text-decoration: underline")
 #   subheading_style: null  # Custom subheading style (e.g. color: gold)
 
@@ -180,29 +186,27 @@ yat:
 # excerpt_size: 350
 
 # Pagination setting
-# paginate: 5
+paginate: 10
+paginate_path: "/publications/page:num/"
 
 # Disqus comments
 # disqus:
-#   shortname: "Your Disqus username"
+#   shortname: jnooree-dev
 
 # Gitment comments
 # gitment:
-#   username: "Your GitHub username"
-#   repo: "The repo to store comments"
-#   client_id: "Your client ID"
-#   client_secret: "Your client secret"
-#   redirect_uri: "Your redirect url"   # If you use a custom domain name
+#   username:
+#   repo:
+#   client_id:
+#   client_secret:
 
 # Build settings
+theme: "jekyll-theme-yat"
 # highlighter: none
-markdown: kramdown
-kmarkdown:
-  input: GFM
-
+# markdown: kramdown
+# kmarkdown:
+#   input: GFM
 plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-sitemap
-  - jekyll-paginate
-  - jekyll-spaceship
+  # - jekyll-last-modified-at
+  - jekyll-redirect-from
+  - jekyll-include-cache

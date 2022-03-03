@@ -5,14 +5,14 @@
   <p class="post-meta">
     <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
       {%- assign date_format = site.yat.date_format | default: "%b %-d, %Y" -%}
-      <i class="fa fa-calendar"></i> {{ page.date | date: date_format }}
+      <i class="far fa-calendar-alt"></i> {{ page.date | date: date_format }}
     </time>
 
     {% assign article = page.content %}
     {% assign lang = page.lang %}
     {%- include functions.html func='get_reading_time' -%}
     {% assign reading_time = return %}
-    <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> {{ reading_time }}</span>
+    <span class="post-reading-time left-vsplit"><i class="far fa-clock"></i> {{ reading_time }}</span>
   </p>
 
   {%- if page.tags.size > 0 -%}

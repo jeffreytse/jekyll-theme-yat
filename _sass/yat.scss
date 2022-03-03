@@ -2,11 +2,11 @@
 
 // Define defaults for each variable.
 
-$base-font-family: Helvetica, Arial, Oswald, sans-serif, !default;
-$base-font-size: 14px !default;
+$base-font-family: Apple SD Gothic Neo, Nanum Gothic, Malgun Gothic, sans-serif, !default;
+$base-font-size: 16px !default;
 $base-font-weight: 400 !default;
-$small-font-size:  $base-font-size * 0.875 !default;
 $base-line-height: 1.6 !default;
+$small-font-size:  $base-font-size * 0.875 !default;
 
 $spacing-unit:     30px !default;
 
@@ -25,7 +25,7 @@ $header-height: $base-line-height * $base-font-size * 2.85 !default;
 $header-text-color: invert($theme-color) !default;
 $header-background-color: $theme-color !default;
 
-$footer-height: $header-height * 1.05 !default;
+$footer-height: $header-height !default;
 $footer-text-color: lighten(invert($theme-color), 25%) !default;
 $footer-background-color: darken($theme-color, 5%) !default;
 
@@ -37,7 +37,7 @@ $banner-background: rgba(0,0,0,0.8) !default;
 // $content-width:    920px !default;
 
 $on-palm:          600px !default;
-$on-laptop:        800px !default;
+$on-laptop:        875px !default;
 
 // Use media queries like this:
 // @include media-query($on-palm) {
