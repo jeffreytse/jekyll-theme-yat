@@ -52,9 +52,7 @@ favicon: "https://avatars.githubusercontent.com/u/16937572"
 # Yat date format
 # refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
 yat:
-  date_format: "%Y"
-last-modified-at:
-  date-format: "%F %r"
+  date_format: "%b %Y"
 
 # If you want more debug log, you can set true
 # debug: false
