@@ -419,6 +419,10 @@ html {
     margin-left: auto;
     margin-right: auto;
     width: 70%;
+
+    @include media-query($on-laptop) {
+      width: 90%;
+    }
   }
 }
 
