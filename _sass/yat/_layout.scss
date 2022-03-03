@@ -557,6 +557,10 @@ html {
           ol {
             list-style: brackets;
           }
+
+          p {
+            margin-bottom: $spacing-unit * 0.25;
+          }
         }
       }
     }

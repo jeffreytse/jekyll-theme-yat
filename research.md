@@ -32,10 +32,10 @@ designed to be modular, enabling convenient addition of new programs in the
 future.
 
 The philosophy underlying the GALAXY development is to provide more
-"<u>practically useful</u>" information to experimentalists, such as more
-"<u>reliable</u>" model structures, by fusion of available tools and knowledge
-in diverse disciplines such as chemistry, physics, computer science, or
-bioinformatics. GALAXY currently utilizes various scoring functions (e.g.
+"<ins>practically useful</ins>" information to experimentalists, such as more
+"<ins>reliable</ins>" model structures, by fusion of available tools and
+knowledge in diverse disciplines such as chemistry, physics, computer science,
+or bioinformatics. GALAXY currently utilizes various scoring functions (e.g.
 molecular mechanics, implicit solvation models, statistical scores) and sampling
 techniques (e.g. molecular dynamics, genetic algorithm, Monte Carlo simulation,
 conformational space annealing) to achieve the best performance in each modeling
@@ -70,8 +70,8 @@ GalaxyTBM combines a number of modules in the GALAXY package such as
 GalaxyCassiopeia and GalaxyRefine and external programs for template detection
 and sequence alignment.
 
-<u>One of the merits of GalaxyTBM is that it automatically refines unreliable
-model regions in relatively short computation time.</u> Unreliable loops,
+<ins>One of the merits of GalaxyTBM is that it automatically refines unreliable
+model regions in relatively short computation time.</ins> Unreliable loops,
 termini, or side-chains are automatically detected and reconstructed by Galaxy
 modules. The generated model structures are not only globally accurate but also
 locally realistic. We keep improving the components of GalaxyTBM, both in the
@@ -97,8 +97,8 @@ optimization.
     of Loop Closure", _J. Comput. Chem._ 25, 510 (2004).
 
 [^4]:
-    E. A. Coutsias\*, C. Seok, M. J. Wester, and K. A. Dill, "Resultants and Loop
-    Closure", _Int. J. Quantum Chem._ 106, 176 (2006).
+    E. A. Coutsias\*, C. Seok, M. J. Wester, and K. A. Dill, "Resultants and
+    Loop Closure", _Int. J. Quantum Chem._ 106, 176 (2006).
 
 [^5]:
     J. Lee\*, D. Lee, H. Park, E. A. Coutsias, and C. Seok\*, "Protein loop
@@ -124,12 +124,12 @@ optimization.
 {% include image.html url="/assets/images/research/galaxyLoop.png" %}
 
 In contrast to traditional loop modeling studies that focus primarily on
-reconstructing loop structures in the experimentally resolved structures, <u>we
-are extending "GalaxyPS" loop modeling to a broader range of problems.</u> For
-example, even in perturbed crystal structures or structures in different
-functional state, GalaxyPS produces accurate predictions in the atomic
-level[^9][^10]. Therefore, this approach is expected to be more useful for
-solving more practical problems.
+reconstructing loop structures in the experimentally resolved structures,
+<ins>we are extending "GalaxyPS" loop modeling to a broader range of
+problems.</ins> For example, even in perturbed crystal structures or structures
+in different functional state, GalaxyPS produces accurate predictions in the
+atomic level[^9][^10]. Therefore, this approach is expected to be more useful
+for solving more practical problems.
 
 [^10]:
     G. R. Lee, W. Shin, H. Park, S. Shin, and C. Seok\*, "Conformational
@@ -151,9 +151,9 @@ function is protein-ligand docking. A protein-ligand docking method predicts the
 bound pose of the ligand and the binding affinity. Protein-ligand docking is one
 of the essential tools for computer-aided drug discovery.
 
-<u>Our recent research in this area focuses on incorporating receptor (protein)
-flexibility to our docking program **"GalaxyDock"**</u>[^11][^12]. A large
-number of proteins undergo conformational transitions to perform their
+<ins>Our recent research in this area focuses on incorporating receptor
+(protein) flexibility to our docking program **"GalaxyDock"**</ins>[^11][^12]. A
+large number of proteins undergo conformational transitions to perform their
 biochemical functions. Nevertheless, many ligand-docking tools that treat
 proteins as rigid are used widely because of their efficiency and simplicity. A
 more practical docking program (with less computational cost and more accurate
@@ -191,9 +191,10 @@ protein-protein interaction prediction experiment (Critical Assessment of
 PRedicted Interactions).
 
 [^14]:
-    Sarel J Fleishman _et al._ (H. Park, J. Ko, H. Lee, C. Seok), "Community-wide
-    assessment of protein-interface modeling suggests improvements to design
-    methodology", _J. Mol. Biol._ 414 (2), 289-302 (2011).
+    Sarel J Fleishman _et al._ (H. Park, J. Ko, H. Lee, C. Seok),
+    "Community-wide assessment of protein-interface modeling suggests
+    improvements to design methodology", _J. Mol. Biol._ 414 (2), 289-302
+    (2011).
 
 Understanding interaction between symmetric protein chains is a topic related to
 protein-protein docking. We developed a prediction method for homo-oligomer
