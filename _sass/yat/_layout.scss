@@ -214,12 +214,6 @@ html {
       }
     }
 
-    .powered-by {
-      @include media-query($on-palm) {
-        margin-top: 1em;
-      }
-    }
-
     .footer-icon {
       line-height: 1;
       display: inline-block;
@@ -227,6 +221,12 @@ html {
       * {
         font-size: 20px;
         vertical-align: text-bottom;
+      }
+    }
+
+    div:not(:first-child) {
+      @include media-query($on-palm) {
+        margin-top: 1em;
       }
     }
 
@@ -811,6 +811,7 @@ html {
   .sidebar {
     padding-left: 8px;
     transition: top 0.2s, display 0.2s;
+    max-width: 30%;
 
     @include flex-sticky($header-height + 20px);
 
