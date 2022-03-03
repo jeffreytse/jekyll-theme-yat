@@ -18,7 +18,7 @@
   {%- if page.tags.size > 0 -%}
   <div class="post-tags">
     {%- for tag in page.tags -%}
-    <a class="post-tag" href="{{ '/tags.html ' | relative_url }}#{{tag}}">#{{tag}}</a>
+    <a class="post-tag" href="{{ '/publications/tags.html ' | relative_url }}#{{tag}}">#{{tag}}</a>
     {%- endfor -%}
   </div>
   {%- endif -%}
