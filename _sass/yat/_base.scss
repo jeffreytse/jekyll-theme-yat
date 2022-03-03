@@ -41,6 +41,7 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  hyphens: auto;
 }
 
 /**
@@ -268,6 +269,9 @@ table {
   th,
   td {
     padding: ($spacing-unit / 3) ($spacing-unit / 2);
+    @include media-query($on-palm) {
+      padding: ($spacing-unit / 6) ($spacing-unit / 4);
+    }
   }
 
   th {

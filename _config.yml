@@ -70,7 +70,7 @@ yat:
 # sitemap: true
 
 # If you want to change site language, you can set lang option
-lang: "ko"
+lang: "en"
 timezone: Asia/Seoul
 
 # Translate languges
