@@ -10,8 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
 
       # Use GitHub Actions' cache to cache dependencies on servers
       - uses: actions/cache@v2
@@ -22,7 +20,7 @@ jobs:
             ${{ runner.os }}-gems-
 
       # Use GitHub Deploy Action to build and deploy to Github
-      - uses: jnooree/jekyll-deploy-action@master
+      - uses: jeffreytse/jekyll-deploy-action@master
         with:
           provider: 'github'
           token: ${{ secrets.GITHUB_TOKEN }} # It's your Personal Access Token(PAT)
