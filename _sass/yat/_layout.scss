@@ -234,6 +234,12 @@ html {
       $a-color: $brand-color;
       color: $a-color;
 
+      &.dnsever {
+        display: inline-block;
+        vertical-align: 7%;
+        margin-right: 3px;
+      }
+
       &:hover {
         color: lighten($a-color, 10%);
       }
