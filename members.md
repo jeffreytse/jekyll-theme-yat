@@ -16,7 +16,7 @@ title: Members
 | Minjae Park    | B.S. in Chemistry & Nanoscience, Ewha W.University | minjp2357@snu.ac.kr     |
 | Changsoo Lee   | B.S. & M.S. in Pharmacy, SNU                       | ccaa2013@snu.ac.kr      |
 | Jiho Sim       | B.S. in Chemistry, SNU                             | j2hosim@snu.ac.kr       |
-| Sumin Lee      | B.S. in Biological Science, SNU                    | keepthrword22@snu.ac.kr |
+| Sumin Lee      | B.S. in Biological Sciences, SNU                   | keepthrword22@snu.ac.kr |
 | Hakjean Kim    | B.S. in Chemistry, SNU                             | hakjean@snu.ac.kr       |
 | Jayun Choi     | B.S. in Chemistry, SNU                             | jychoi9809@snu.ac.kr    |
 | Seho Lee       | B.S. in Chemistry, SNU                             | tp1928@snu.ac.kr        |
@@ -26,7 +26,7 @@ title: Members
 | Wooyeop Jeong  | B.S. in Chemistry Education, SNU                   | dnduq97@snu.ac.kr       |
 | Yubeen Kim     | B.S. in Chemistry, SNU                             | oilbeen@snu.ac.kr       |
 | Sujin Park     | B.S. in Chemistry, SNU                             | safopanda@snu.ac.kr     |
-| Simaek Oh      | B.S. in Biological Science, SNU                    | weather1999@snu.ac.kr   |
+| Simaek Oh      | B.S. in Biological Sciences, SNU                    | weather1999@snu.ac.kr   |
 
 ## Internship Members
 
@@ -34,7 +34,7 @@ title: Members
 | ------------- | ---------------------------- |
 | Seungmin Yeom | Department of Chemistry, SNU |
 
-## Researchers
+## Administrative Assistant
 
 | Name      | E-mail               |
 | --------- | -------------------- |
@@ -44,11 +44,12 @@ title: Members
 
 | Name              | Current Position                                                                                     | Course in SeokLab                                           |
 | ----------------- | ---------------------------------------------------------------------------------------------------- | ----------------------------------------------------------- |
-| Jinsol Yang       | Director & Co-founder, Galux                                                                         | Ph.D., 2022                                                 |
-| Taeyong Park      | Vice President & Co-founder, Galux                                                                   | Ph.D., 2021                                                 |
-| Jonghun Won       | Director & Co-founder, Galux                                                                         | M.S. and Ph.D., 2021                                        |
+| Beomchang Kang    | Unattached                                                                                           | Ph.D., 2022                                                 |
+| Jinsol Yang       | Director & Co-founder, Galux Inc.                                                                    | Ph.D., 2022                                                 |
+| Taeyong Park      | Vice President & Co-founder, Galux Inc.                                                              | Ph.D., 2021                                                 |
+| Jonghun Won       | Director & Co-founder, Galux Inc.                                                                    | M.S. and Ph.D., 2021                                       |
 | Minkyung Baek     | Postdoctoral Researcher, Department of Biochemistry, University of Washington                        | Ph.D., 2018                                                 |
-| Martin Steinegger | Assistant Professor, Department of Biology, Seoul National University                                | Visiting Student from Max Planck Institute, 2014, 2016~2018 |
+| Martin Steinegger | Assistant Professor, Department of Biological Sciences, Seoul National University                    | Visiting Student from Max Planck Institute, 2014, 2016~2018 |
 | Gyu Rie Lee       | Postdoctoral Researcher, Department of Biochemistry, University of Washington                        | Ph.D., 2017                                                 |
 | Matthias Buck     | Professor, Case Western Reserve University                                                           | Visiting Professor, 2017                                    |
 | Andrew H. Beaven  | Postdoctoral Researcher, University of Minnesota                                                     | Visiting Student from University of Kansas, 2015~2016       |
