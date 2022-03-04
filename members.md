@@ -26,7 +26,7 @@ title: Members
 | Wooyeop Jeong  | B.S. in Chemistry Education, SNU                   | dnduq97@snu.ac.kr       |
 | Yubeen Kim     | B.S. in Chemistry, SNU                             | oilbeen@snu.ac.kr       |
 | Sujin Park     | B.S. in Chemistry, SNU                             | safopanda@snu.ac.kr     |
-| Simaek Oh      | B.S. in Biological Sciences, SNU                    | weather1999@snu.ac.kr   |
+| Simaek Oh      | B.S. in Biological Sciences, SNU                   | weather1999@snu.ac.kr   |
 
 ## Internship Members
 
@@ -47,7 +47,7 @@ title: Members
 | Beomchang Kang    | Unattached                                                                                           | Ph.D., 2022                                                 |
 | Jinsol Yang       | Director & Co-founder, Galux Inc.                                                                    | Ph.D., 2022                                                 |
 | Taeyong Park      | Vice President & Co-founder, Galux Inc.                                                              | Ph.D., 2021                                                 |
-| Jonghun Won       | Director & Co-founder, Galux Inc.                                                                    | M.S. and Ph.D., 2021                                       |
+| Jonghun Won       | Director & Co-founder, Galux Inc.                                                                    | M.S. and Ph.D., 2021                                        |
 | Minkyung Baek     | Postdoctoral Researcher, Department of Biochemistry, University of Washington                        | Ph.D., 2018                                                 |
 | Martin Steinegger | Assistant Professor, Department of Biological Sciences, Seoul National University                    | Visiting Student from Max Planck Institute, 2014, 2016~2018 |
 | Gyu Rie Lee       | Postdoctoral Researcher, Department of Biochemistry, University of Washington                        | Ph.D., 2017                                                 |
