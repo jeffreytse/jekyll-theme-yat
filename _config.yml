@@ -146,9 +146,8 @@ timezone: Asia/Seoul
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
 header_pages:
-  - professor.md
-  - research.md
   - members.md
+  - research.md
   - publications/index.html
   - photo.md
   - galaxy.md
@@ -163,6 +162,9 @@ defaults:
     values:
       layout: post
       permalink: /:categories/:year/:month/:title:output_ext
+
+exclude:
+  - README.md
 
 # Banner default settings
 # These banner settings are for global banner default, but you can also
@@ -187,17 +189,6 @@ defaults:
 paginate: 10
 paginate_path: "/publications/page:num/"
 
-# Disqus comments
-# disqus:
-#   shortname: jnooree-dev
-
-# Gitment comments
-# gitment:
-#   username:
-#   repo:
-#   client_id:
-#   client_secret:
-
 # Build settings
 theme: "jekyll-theme-yat"
 # highlighter: none
@@ -205,6 +196,5 @@ theme: "jekyll-theme-yat"
 # kmarkdown:
 #   input: GFM
 plugins:
-  # - jekyll-last-modified-at
   - jekyll-redirect-from
   - jekyll-include-cache
