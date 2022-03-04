@@ -313,35 +313,26 @@ html {
   }
 
   .post-title {
-    margin-bottom: $spacing-unit * 0.2;
+    margin-bottom: $spacing-unit * 0.25;
     transition: 0.2s all;
 
     a {
       text-decoration: none;
       color: #333;
 
-      &:after {
-        content: "NEW";
-        position: absolute;
-        margin-left: 8px;
-        margin-top: 3px;
-        padding: 0px 3px;
-        background-color: $brand-color;
-        color: #fff;
-        font-size: 10px;
-        font-weight: 600;
-        border-radius: 2px;
+      &:hover {
+        text-decoration: underline;
       }
 
-      &:visited:after {
-        background-color: #fff;
+      &:visited {
+        color: $grey-color;
       }
     }
   }
 
   .post-subtitle {
     font-weight: lighter;
-    margin-bottom: $spacing-unit * 0.2;
+    margin-bottom: $spacing-unit * 0.25;
   }
 
   .post-meta {
@@ -362,7 +353,7 @@ html {
     padding: 2px 4px;
     border-radius: 2px;
     transition: color 0.2s;
-    margin: 8px 0;
+    margin: 5px 0;
 
     &:not(:last-child) {
       margin-right: 8px;
@@ -545,9 +536,16 @@ html {
           counter-reset: research-section;
         }
 
-        h2:before {
-          content: counter(research-section, upper-roman) ". ";
-          counter-increment: research-section;
+        h2 {
+          &:nth-last-child(2) {
+            font-size: larger;
+            text-transform: uppercase;
+          }
+
+          &:not(:nth-last-child(2)):before {
+            content: counter(research-section, upper-roman) ". ";
+            counter-increment: research-section;
+          }
         }
 
         h3 {
@@ -857,27 +855,14 @@ html {
       margin-left: 5px;
     }
 
-    color: #303030;
+    color: #333;
 
     &:hover {
       color: #000;
     }
 
-    &:after {
-      content: "NEW";
-      position: absolute;
-      margin-left: 8px;
-      margin-top: 3px;
-      padding: 0px 3px;
-      background-color: $brand-color;
-      color: #fff;
-      font-size: 10px;
-      font-weight: 600;
-      border-radius: 2px;
-    }
-
-    &:visited:after {
-      background-color: #fff;
+    &:visited {
+      color: $grey-color;
     }
   }
 }
@@ -893,7 +878,8 @@ html {
 
   @include media-query($on-laptop) {
     display: block;
-    width: 0px;
+    width: 0;
+    height: $spacing-unit * 0.1;
   }
 }
 

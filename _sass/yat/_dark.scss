@@ -14,11 +14,9 @@ html[data-theme="dark"] {
       }
     }
 
-    footer.site-footer {
-      .site-footer-inner {
-        border-top: solid 1px #2f2f2f !important;
-        transition: 0s;
-      }
+    footer.site-footer .site-footer-inner {
+      border-top: solid 1px #2f2f2f !important;
+      transition: 0s;
     }
   }
 
@@ -55,12 +53,10 @@ html[data-theme="dark"] {
   .site-header {
     background-color: #090909;
 
-    .site-brand {
-      .site-brand-inner {
-        &,
-        &:visited {
-          color: #f8f8f8;
-        }
+    .site-brand .site-brand-inner {
+      &,
+      &:visited {
+        color: #f8f8f8;
       }
     }
 
@@ -93,12 +89,8 @@ html[data-theme="dark"] {
   .site-footer {
     color: #fff;
     background-color: $dark-emph-background-color;
-    .site-footer-inner {
-      .footer-icon {
-        * {
-          color: #fff;
-        }
-      }
+    .site-footer-inner .footer-icon * {
+      color: #fff;
     }
   }
 
@@ -109,10 +101,8 @@ html[data-theme="dark"] {
   .page-banner {
     background-color: $dark-emph-background-color;
 
-    .page-banner-img {
-      & > *:first-child {
-        opacity: 0.718;
-      }
+    .page-banner-img > *:first-child {
+      opacity: 0.718;
     }
   }
 
@@ -121,20 +111,12 @@ html[data-theme="dark"] {
       color: $dark-text-color;
     }
 
-    .post-title {
-      a:visited:after {
-        background-color: $dark-background-color;
-      }
-
-      a:after {
-        color: $dark-background-color;
-      }
+    .post-title a:visited {
+      color: $grey-color;
     }
 
-    .post-list {
-      & > li:not(:last-child) {
-        border-bottom: 1px solid #545454;
-      }
+    .post-list > li:not(:last-child) {
+      border-bottom: 1px solid #545454;
     }
 
     .post-tags .post-tag:hover {
@@ -142,26 +124,16 @@ html[data-theme="dark"] {
     }
   }
 
-  .page-segments {
-    li {
-      a {
-        color: #ddd;
-      }
+  .page-segments li a {
+    color: #ddd;
 
-      a:visited:after {
-        background-color: $dark-background-color;
-      }
-
-      a:after {
-        color: $dark-background-color;
-      }
+    &:visited {
+      color: $grey-color;
     }
   }
 
-  .post .post-content {
-    img:not([raw]) {
-      background-color: #ffffff33;
-    }
+  .post .post-content img:not([raw]) {
+    background-color: #ffffff33;
   }
 
   .post-related {
