@@ -543,14 +543,14 @@ html {
         }
 
         h2 {
-          &:nth-last-child(2) {
-            font-size: larger;
-            text-transform: uppercase;
-          }
-
-          &:not(:nth-last-child(2)):before {
+          &:not(:last-of-type):before {
             content: counter(research-section, upper-roman) ". ";
             counter-increment: research-section;
+          }
+
+          &:last-of-type {
+            font-size: larger;
+            text-transform: uppercase;
           }
         }
 
