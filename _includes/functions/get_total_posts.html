@@ -1,0 +1,12 @@
+{%- assign posts = site[include.params.posts] -%}
+
+{%- if posts.size > 0 -%}
+{%- assign return = "Total " | append: posts.size | append: " post" -%}
+{%- if posts.size > 1 -%}
+{%- assign return = return | append: "s" -%}
+{%- endif -%}
+{%- else -%}
+{%- assign return = "No post" -%}
+{%- endif -%}
+
+{%- assign return = return | append: "." -%}

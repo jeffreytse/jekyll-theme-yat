@@ -1,18 +1,23 @@
+{%- assign ydf = site.yat.date_format | default: "%b %-d, %Y" -%}
+{%- assign ldf = site.last-modified-at.date_format | default: "%b %-d, %Y" -%}
+
+{%- if page.date_format -%}
+{%- assign date_format = page.date_format -%}
+{%- else -%}
+{%- assign date_format = ydf -%}
+{%- endif -%}
+
 <header class="post-header">
   <h1 class="post-title p-name" itemprop="name headline">{{ heading | default: page.title | escape }}</h1>
   <h2 class="post-subtitle">{{ subheading | default: page.subtitle | escape }}</h2>
 
   <p class="post-meta">
     <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-      {%- assign date_format = site.yat.date_format | default: "%b %-d, %Y" -%}
       <i class="far fa-calendar-alt"></i> {{ page.date | date: date_format }}
     </time>
-
-    {% assign article = page.content %}
-    {% assign lang = page.lang %}
-    {%- include functions.html func='get_reading_time' -%}
-    {% assign reading_time = return %}
-    <span class="post-reading-time left-vsplit"><i class="far fa-clock"></i> {{ reading_time }}</span>
+    {%- if page.use_mtime -%}
+    <span class="left-vsplit"><i class="fas fa-edit"></i> {{ page.last_modified_at | date: ldf }}</span>
+    {%- endif -%}
   </p>
 
   {%- if page.tags.size > 0 -%}

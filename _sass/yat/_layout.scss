@@ -253,6 +253,15 @@ html {
   transform: rotateY(180deg);
 }
 
+.board-header {
+  display: flex;
+  .total-posts {
+    margin-top: auto;
+    margin-bottom: $spacing-unit / 2;
+    margin-left: auto;
+  }
+}
+
 /**
  * Post header
  */
@@ -347,7 +356,7 @@ html {
   }
 
   .post-excerpt {
-    color: #777;
+    color: $grey-color;
     word-break: break-word;
     overflow-wrap: break-word;
   }
@@ -891,12 +900,7 @@ html {
 
 .fa-calendar-alt {
   font-size: 0.9em;
-  vertical-align: 13%;
-}
-
-.fa-clock {
-  font-size: 0.8em;
-  vertical-align: 7%;
+  vertical-align: 12%;
 }
 
 .fa-edit {

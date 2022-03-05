@@ -1,24 +1,32 @@
 {%- if page.paginator -%}
 {%- assign paginator = page.paginator -%}
-{%- elsif paginator == nil -%}
-{%- assign paginator = site -%}
 {%- endif -%}
 
-{%- if paginator.posts.size > 0 -%}
+{%- if paginator == nil -%}
+{%- assign posts = site[include.posts] | sort: "post_date" | reverse -%}
+{%- else -%}
+{%- assign posts = paginator.posts -%}
+{%- endif -%}
+
+{%- if posts.size > 0 -%}
+{%- assign ydf = site.yat.date_format | default: "%b %-d, %Y" -%}
+{%- assign ldf = site.last-modified-at.date_format | default: "%b %-d, %Y" -%}
 <div class="pagination">
   <!-- Post list links -->
   <ul class="post-list">
-    {%- for post in paginator.posts -%}
+    {%- for post in posts -%}
     <li>
-      {%- assign date_format = site.yat.date_format | default: "%b %-d, %Y" -%}
+      {%- if post.date_format -%}
+      {%- assign date_format = post.date_format -%}
+      {%- else -%}
+      {%- assign date_format = ydf -%}
+      {%- endif -%}
 
       {% assign article = post.content %}
       {% assign lang = post.lang %}
-      {%- include functions.html func='get_reading_time' -%}
-      {% assign reading_time = return %}
-      {%- include functions.html func='get_article_excerpt' -%}
-      {% assign excerpt = return %}
       {%- assign post_url = post.url | relative_url -%}
+      <!-- {%- include functions.html func='get_reading_time' -%}
+      {% assign reading_time = return %} -->
 
       <h2 class="post-title">
         <a class="post-link" href="{{ post_url }}">
@@ -27,21 +35,30 @@
       </h2>
       <h3 class="post-subtitle">{{ subheading | default: post.authors | escape }}</h3>
       <div class="post-meta">
-        <span class="post-date"><i class="far fa-calendar-alt"></i> {{ post.date | date: date_format }}</span><span
-          class="post-journal left-vsplit"><i class="far fa-newspaper"></i> {{ post.journal }}</span>
+        <span class="post-date"><i class="far fa-calendar-alt"></i> {{ post.date | date: date_format }}</span>{%- if
+        post.use_mtime -%}<span class="post-date left-vsplit"><i class="fas fa-edit"></i> {{ post.last_modified_at |
+          date: ldf }}</span>{%- endif -%}{%- if post.journal -%}<span class="post-journal left-vsplit"><i
+            class="far fa-newspaper"></i> {{ post.journal }}</span>{%- endif -%}
       </div>
-      <!-- <a class="post-excerpt" href="{{ post_url }}">
-        <p>{{ excerpt }} <span class="read_more">Read More</span></p>
-      </a> -->
+      {%- if post.excerpt -%}
+      {%- include functions.html func='get_article_excerpt' -%}
+      {% assign excerpt = return %}
+      <div class="post-excerpt">
+        {{ excerpt }} <a class="read_more" href="{{ post_url }}">Read More...</a>
+      </div>
+      {%- endif -%}
+      {%- if post.tags -%}
       <div class="post-tags">
         {%- for tag in post.tags -%}
         <a class="post-tag" href="{{ '/publications/tags.html ' | relative_url }}#{{tag}}">#{{tag}}</a>
         {%- endfor -%}
       </div>
+      {%- endif -%}
     </li>
     {%- endfor -%}
   </ul>
 
   <!-- Pagination links -->
-  {%- if paginator.posts.size < site.posts.size -%} {%- include views/paginator.html -%} {%- endif -%} </div>
+  {%- if paginator != nil and paginator.posts.size < site.posts.size -%} {%- include views/paginator.html -%} {%- endif
+    -%} </div>
     {%- endif -%}

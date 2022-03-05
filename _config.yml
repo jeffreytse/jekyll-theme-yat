@@ -54,6 +54,9 @@ favicon: "https://avatars.githubusercontent.com/u/16937572"
 yat:
   date_format: "%b %Y"
 
+last-modified-at:
+  date_format: "%F, %T"
+
 # If you want more debug log, you can set true
 # debug: false
 
@@ -146,6 +149,7 @@ timezone: Asia/Seoul
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
 header_pages:
+  - notice.html
   - members.md
   - research.md
   - publications/index.html
@@ -154,14 +158,26 @@ header_pages:
   - git.md
   - source.md
 
+collections:
+  notice:
+    output: true
+
 # Page default value
 defaults:
   - scope:
-      path: "_posts"
-      type: "posts"
+      path: _posts
+      type: posts
     values:
       layout: post
-      permalink: /:categories/:year/:month/:title:output_ext
+      permalink: "/:categories/:year/:month/:title:output_ext"
+  - scope:
+      path: _notice
+      type: notice
+    values:
+      layout: post
+      date_format: "%b %e, %Y"
+      use_mtime: true
+      excerpt: true
 
 exclude:
   - README.md
@@ -196,5 +212,6 @@ theme: "jekyll-theme-yat"
 # kmarkdown:
 #   input: GFM
 plugins:
+  - jekyll-last-modified-at
   - jekyll-redirect-from
   - jekyll-include-cache

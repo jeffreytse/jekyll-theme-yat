@@ -4,7 +4,7 @@ banner:
 banner_html: post-header.html
 hidden: []
 sidebar:
-  - article-menu
+- article-menu
 ---
 
 <div class="post">
@@ -29,14 +29,15 @@ sidebar:
     {%- if result.size == 0 -%}
     <div class="post-nav">
       {%- if page.previous -%}
-        <a class="previous" href="{{ page.previous.url | relative_url }}" title="{{
+      <a class="previous" href="{{ page.previous.url | relative_url }}" title="{{
           page.previous.title | escape }}">{{ page.previous.title | escape | truncatewords: 6 }}</a>
       {%- else -%}
       <span></span>
       {%- endif -%}
 
       {%- if page.next -%}
-        <a class="next" href="{{ page.next.url | relative_url }}" title="{{ page.next.title | escape }}">{{ page.next.title | escape | truncatewords: 6 }}</a>
+      <a class="next" href="{{ page.next.url | relative_url }}" title="{{ page.next.title | escape }}">{{
+        page.next.title | escape | truncatewords: 6 }}</a>
       {%- else -%}
       <span></span>
       {%- endif -%}
@@ -50,7 +51,8 @@ sidebar:
       <ul>
         {% assign posts = site[page.collection] | sample:4 %}
         {%- for post in posts -%}
-        <li><a class="post-link" href="{{post.url | relative_url}}" title="{{ page.next.title | escape }}">{{ post.title | escape | truncatewords: 12 }}</a></li>
+        <li><a class="post-link" href="{{post.url | relative_url}}" title="{{ page.next.title | escape }}">{{ post.title
+            | escape | truncatewords: 12 }}</a></li>
         {%- endfor -%}
       </ul>
     </div>
@@ -77,5 +79,5 @@ sidebar:
 </div>
 
 {%- if page.paginate -%}
-  {% include views/pagination.html %}
+{% include views/pagination.html posts = page.paginate %}
 {%- endif -%}

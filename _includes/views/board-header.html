@@ -1,0 +1,7 @@
+<div class="board-header">
+    <h1>{{ page.title }}</h1>
+    {%- include functions.html func='get_total_posts' posts=page.paginate -%}
+    <span class="total-posts">{{ return }}</span>
+</div>
+
+<hr>
