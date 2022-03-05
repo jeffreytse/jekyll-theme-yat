@@ -177,7 +177,6 @@ defaults:
       layout: post
       date_format: "%b %e, %Y"
       use_mtime: true
-      excerpt: true
 
 exclude:
   - README.md

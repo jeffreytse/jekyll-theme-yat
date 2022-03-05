@@ -17,17 +17,14 @@
     {%- for post in posts -%}
     <li>
       {%- if post.date_format -%}
-      {%- assign date_format = post.date_format -%}
+      {% assign date_format = post.date_format %}
       {%- else -%}
-      {%- assign date_format = ydf -%}
+      {% assign date_format = ydf %}
       {%- endif -%}
 
-      {% assign article = post.content %}
+      {% assign article = post.content | strip_newlines %}
       {% assign lang = post.lang %}
       {%- assign post_url = post.url | relative_url -%}
-      <!-- {%- include functions.html func='get_reading_time' -%}
-      {% assign reading_time = return %} -->
-
       <h2 class="post-title">
         <a class="post-link" href="{{ post_url }}">
           {{ post.title | escape }}
@@ -40,7 +37,7 @@
           date: ldf }}</span>{%- endif -%}{%- if post.journal -%}<span class="post-journal left-vsplit"><i
             class="far fa-newspaper"></i> {{ post.journal }}</span>{%- endif -%}
       </div>
-      {%- if post.excerpt -%}
+      {%- if article != '' -%}
       {%- include functions.html func='get_article_excerpt' -%}
       {% assign excerpt = return %}
       <div class="post-excerpt">
