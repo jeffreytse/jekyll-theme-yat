@@ -135,12 +135,13 @@ html {
     color: $header-text-color;
     transition: 0.1s ease-in-out;
 
+    &:hover {
+      text-decoration: underline;
+    }
+
     // Gaps between nav items, but not on the last one
     &:not(:last-child) {
       margin-right: 24px;
-      &:hover {
-        text-decoration: underline;
-      }
     }
   }
 
@@ -255,10 +256,9 @@ html {
 
 .board-header {
   display: flex;
+  align-items: baseline;
 
   .total-posts {
-    margin-top: auto;
-    margin-bottom: $spacing-unit / 2;
     margin-left: auto;
   }
 }
@@ -267,17 +267,13 @@ html {
  * Post header
  */
 %post-header {
-  .post-header {
-    margin-bottom: $spacing-unit;
-  }
-
   .post-title {
     @include relative-font-size(2.25);
     letter-spacing: -1px;
-    line-height: 1;
+    margin-bottom: 0;
 
     @include media-query($on-laptop) {
-      @include relative-font-size(2);
+      @include relative-font-size(1.75);
     }
   }
 
@@ -852,6 +848,10 @@ html {
 .framework {
   @extend %flex;
 
+  @include media-query($on-palm) {
+    margin-top: $spacing-unit / 2;
+  }
+
   .main {
     @extend %flex-1;
   }
@@ -927,6 +927,12 @@ html {
     width: 0;
     height: $spacing-unit * 0.1;
   }
+}
+
+.fa-external-link-alt {
+  font-size: 0.8em;
+  margin-left: 5px;
+  vertical-align: 15%;
 }
 
 .fa-calendar-alt {
