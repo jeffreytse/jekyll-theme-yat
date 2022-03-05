@@ -149,7 +149,7 @@ timezone: Asia/Seoul
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
 header_pages:
-  - notice.html
+  - notice.md
   - members.md
   - research.md
   - publications/index.html
