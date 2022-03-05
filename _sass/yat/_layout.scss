@@ -504,9 +504,6 @@ html {
       margin-bottom: 0;
       .post-meta-inner {
         float: right;
-        // @include media-query($on-palm) {
-        //   float: left;
-        // }
       }
     }
   }
@@ -872,7 +869,7 @@ html {
 .framework {
   @extend %flex;
 
-  @include media-query($on-palm) {
+  @include media-query($on-laptop) {
     margin-top: $spacing-unit / 2;
   }
 
@@ -888,6 +885,10 @@ html {
     @include flex-sticky($header-height + 20px);
 
     @include media-query($on-laptop) {
+      max-width: 20%;
+    }
+
+    @include media-query($content-width) {
       display: none;
     }
   }
