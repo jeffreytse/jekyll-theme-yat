@@ -5,6 +5,8 @@ title: Members
 
 # Members
 
+---
+
 {% include image.html url="/assets/images/members.jpg" %}
 
 ## Prof. Seok, Chaok

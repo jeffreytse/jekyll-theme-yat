@@ -255,6 +255,7 @@ html {
 
 .board-header {
   display: flex;
+
   .total-posts {
     margin-top: auto;
     margin-bottom: $spacing-unit / 2;
@@ -296,8 +297,7 @@ html {
 .page-content {
   @extend %flex-1; /* <-- Keep footer on the bottom */
   -ms-flex: none; /* <-- Fix IE footer issue */
-  padding: $spacing-unit * 2 0;
-  padding-top: 72px;
+  padding: 0 0 $spacing-unit;
 }
 
 .page-heading {
@@ -419,15 +419,35 @@ html {
   * Home
   */
 .home {
-  img,
-  svg,
-  iframe {
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
+  padding: 0 0 $spacing-unit * 2;
 
-    @include media-query($on-laptop) {
-      width: 90%;
+  .theme-toggle-wrapper {
+    position: relative;
+    height: $spacing-unit * 2;
+
+    .theme-toggle {
+      margin-top: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  .page-content {
+    padding: 0;
+
+    figure {
+      margin: 0;
+    }
+
+    img,
+    svg,
+    iframe {
+      margin: 0 auto;
+      width: 70%;
+
+      @include media-query($on-palm) {
+        width: 90%;
+      }
     }
   }
 }
@@ -439,20 +459,29 @@ html {
   @extend %post-header;
 
   .post-header {
-    margin: 50px auto 60px;
-    padding: 0 0 20px;
+    margin: 0 auto $spacing-unit;
+    padding: 0;
     border-bottom: 1px solid #ebebeb;
-
-    .post-title {
-      margin-bottom: 6px;
-    }
 
     .post-subtitle {
       font-weight: lighter;
+      margin-bottom: 0;
+      @include media-query($on-palm) {
+        margin-bottom: $spacing-unit / 2;
+      }
     }
 
     .post-meta {
       color: #808080;
+      display: inline-block;
+      width: 100%;
+      margin-bottom: 0;
+      .post-meta-inner {
+        float: right;
+        // @include media-query($on-palm) {
+        //   float: left;
+        // }
+      }
     }
   }
 
@@ -460,6 +489,7 @@ html {
     overflow-wrap: normal;
     word-wrap: normal;
     word-break: normal;
+    margin-bottom: $spacing-unit;
 
     h1 {
       @include relative-font-size(2);
@@ -584,10 +614,11 @@ html {
   }
 
   .post-related {
+    margin-top: $spacing-unit * 0.5;
     & > *:first-child {
       @include relative-font-size(1.425);
       color: #333;
-      margin-bottom: 14px;
+      margin-bottom: $spacing-unit * 0.5;
     }
 
     ul {
@@ -634,8 +665,8 @@ html {
 .post-nav {
   display: flex;
   justify-content: space-between;
-  margin: 72px 0 59px;
-  padding: 31px 0 0;
+  margin: $spacing-unit * 0.5 0;
+  padding: 0;
 
   a {
     @include relative-font-size(1.125);

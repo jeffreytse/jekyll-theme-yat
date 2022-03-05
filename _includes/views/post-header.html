@@ -12,12 +12,14 @@
   <h2 class="post-subtitle">{{ subheading | default: page.subtitle | escape }}</h2>
 
   <p class="post-meta">
-    <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-      <i class="far fa-calendar-alt"></i> {{ page.date | date: date_format }}
-    </time>
-    {%- if page.use_mtime -%}
-    <span class="left-vsplit"><i class="fas fa-edit"></i> {{ page.last_modified_at | date: ldf }}</span>
-    {%- endif -%}
+    <span class="post-meta-inner">
+      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        <i class="far fa-calendar-alt"></i> {{ page.date | date: date_format }}
+      </time>
+      {%- if page.use_mtime -%}
+      <span class="left-vsplit"><i class="fas fa-edit"></i> {{ page.last_modified_at | date: ldf }}</span>
+      {%- endif -%}
+    </span>
   </p>
 
   {%- if page.tags.size > 0 -%}
