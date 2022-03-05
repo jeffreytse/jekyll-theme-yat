@@ -427,8 +427,25 @@ html {
     }
   }
 
+  @include media-query($on-laptop) {
+    .theme-toggle-wrapper {
+      position: relative;
+      height: 34px;
+
+      .theme-toggle {
+        top: auto;
+        transform: none;
+        margin: 10px 20px 0px auto;
+      }
+    }
+  }
+
   .page-content {
     padding: 0;
+
+    @include media-query($on-laptop) {
+      margin-top: $spacing-unit;
+    }
 
     figure {
       margin: 0;
@@ -439,6 +456,10 @@ html {
     iframe {
       margin: 0 auto;
       width: 70%;
+
+      @include media-query($content-width) {
+        width: 60%;
+      }
 
       @include media-query($on-palm) {
         width: 90%;
