@@ -10,9 +10,9 @@ hidden:
 ---
 
 <div class="home">
-  {% if page.banner == nil %}
-    {% assign banner = page.title %}
-  {% endif %}
+  {%- if page.banner == nil -%}
+    {%- assign banner = page.title -%}
+  {%- endif -%}
 
   {{ content }}
 </div>

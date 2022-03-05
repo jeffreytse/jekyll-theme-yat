@@ -1,16 +1,16 @@
-{% if include.params.article %}
-  {% assign article = include.params.article %}
-{% endif %}
+{%- if include.params.article -%}
+  {%- assign article = include.params.article -%}
+{%- endif -%}
 
-{% if include.params.lang %}
-  {% assign lang = include.params.lang %}
+{%- if include.params.lang -%}
+  {%- assign lang = include.params.lang -%}
 {% else %}
-  {% assign lang = lang | default: site.lang | default: "en" %}
-{% endif %}
+  {%- assign lang = lang | default: site.lang | default: "en" -%}
+{%- endif -%}
 
-{% assign words = article | number_of_words %}
+{%- assign words = article | number_of_words -%}
 
-{% if lang != "en" %}
+{%- if lang != "en" -%}
   {% assign words = words
     | times: 0.6
     | round %}
@@ -21,6 +21,6 @@
     | times: 0.4
     | plus: words
     | round %}
-{% endif %}
+{%- endif -%}
 
-{% assign return = words %}
+{%- assign return = words -%}

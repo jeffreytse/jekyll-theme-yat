@@ -7,10 +7,10 @@ sidebar: category-list
 
   {%- include functions.html func='log' level='debug' msg='Get value' -%}
   {%- include functions.html func='get_categories' -%}
-  {% assign categories = return %}
+  {%- assign categories = return -%}
 
-  {% assign keys = categories %}
-  {% assign field = 'categories' %}
+  {%- assign keys = categories -%}
+  {%- assign field = 'categories' -%}
   {%- include views/segments.html -%}
 
 {%- endif -%}

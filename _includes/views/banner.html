@@ -1,17 +1,17 @@
 {%- include functions.html func='log' level='debug' msg='Get banner_html value' -%}
-{% assign name = 'banner_html' %}
+{%- assign name = 'banner_html' -%}
 {%- include functions.html func='get_value' -%}
-{% assign banner_html = return %}
+{%- assign banner_html = return -%}
 
 {%- include functions.html func='log' level='debug' msg='Get heading value' -%}
-{% assign name = 'heading' %}
+{%- assign name = 'heading' -%}
 {%- include functions.html func='get_value' -%}
-{% assign heading = return %}
+{%- assign heading = return -%}
 
 {%- include functions.html func='log' level='debug' msg='Get subheading value' -%}
-{% assign name = 'subheading' %}
+{%- assign name = 'subheading' -%}
 {%- include functions.html func='get_value' -%}
-{% assign subheading = return %}
+{%- assign subheading = return -%}
 
 {%- include functions.html func='get_banner' -%}
 

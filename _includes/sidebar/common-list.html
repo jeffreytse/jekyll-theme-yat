@@ -14,7 +14,7 @@
       </a>
     </li>
 
-    {% for key in  keys %}
+    {%- for key in  keys -%}
       <li>
         <a href="{{ url }}#h-{{ key }}">
           {{ key }} <span>{{ site.posts | where: field, key | size }}</span>

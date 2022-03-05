@@ -7,14 +7,14 @@
 {%- endif -%}
 
 <div class="page-segments">
-  {% for key in keys %}
+  {%- for key in keys -%}
   <h2 id="{{ key }}" class="segment-name">{{ key }}</h2>
   <ul class="page-segments-list">
-    {% assign items = site.posts | where: field, key %}
-    {% for item in items %}
-      {% if item != nil %}
-      <li> {% include views/post-item.html %} </li>
-      {% endif %}
+    {%- assign items = site.posts | where: field, key -%}
+    {%- for item in items -%}
+      {%- if item != nil -%}
+      <li> {%- include views/post-item.html -%} </li>
+      {%- endif -%}
     {% endfor %}
   </ul>
   {% endfor %}

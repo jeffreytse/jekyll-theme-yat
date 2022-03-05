@@ -1,24 +1,24 @@
-{% if include.translate_langs %}
-  {% assign translate_langs = include.translate_langs %}
-{% endif %}
+{%- if include.translate_langs -%}
+  {%- assign translate_langs = include.translate_langs -%}
+{%- endif -%}
 
-{% if include.lang %}
-  {% assign lang = include.lang %}
-{% endif %}
+{%- if include.lang -%}
+  {%- assign lang = include.lang -%}
+{%- endif -%}
 
 <div id="google_translate_element" style="display: none;">
 </div>
 
 <span class="ct-language">
   <ul class="list-unstyled ct-language-dropdown">
-    {% for item in translate_langs %}
+    {%- for item in translate_langs -%}
       <li>
         <a href="#" class="lang-select" data-lang="{{ item.lang }}">
-          {% if item.img %}
+          {%- if item.img -%}
           <img src="{{ item.img }}" title="{{ item.text }}">
           {% else %}
             {{ item.text }}
-          {% endif %}
+          {%- endif -%}
         </a>
       </li>
     {% endfor %}

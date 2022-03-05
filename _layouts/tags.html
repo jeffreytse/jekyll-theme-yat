@@ -7,10 +7,10 @@ sidebar: tag-list
 
   {%- include functions.html func='log' level='debug' msg='Get tags value' -%}
   {%- include functions.html func='get_tags' -%}
-  {% assign tags = return %}
+  {%- assign tags = return -%}
 
-  {% assign keys = tags %}
-  {% assign field = 'tags' %}
+  {%- assign keys = tags -%}
+  {%- assign field = 'tags' -%}
   {%- include views/segments.html -%}
 
 {%- endif -%}

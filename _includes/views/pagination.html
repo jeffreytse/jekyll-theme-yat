@@ -17,13 +17,13 @@
     {%- for post in posts -%}
     <li>
       {%- if post.date_format -%}
-      {% assign date_format = post.date_format %}
+      {%- assign date_format = post.date_format -%}
       {%- else -%}
-      {% assign date_format = ydf %}
+      {%- assign date_format = ydf -%}
       {%- endif -%}
 
-      {% assign article = post.content | strip_newlines %}
-      {% assign lang = post.lang %}
+      {%- assign article = post.content -%}
+      {%- assign lang = post.lang -%}
       {%- assign post_url = post.url | relative_url -%}
       <h2 class="post-title">
         <a class="post-link" href="{{ post_url }}">
@@ -37,11 +37,15 @@
           date: ldf }}</span>{%- endif -%}{%- if post.journal -%}<span class="post-journal left-vsplit"><i
             class="far fa-newspaper"></i> {{ post.journal }}</span>{%- endif -%}
       </div>
-      {%- if article != '' -%}
+      {%- assign article_strip = article | strip_newlines -%}
+      {%- if article_strip != '' -%}
       {%- include functions.html func='get_article_excerpt' -%}
-      {% assign excerpt = return %}
+      {%- assign excerpt = return -%}
       <div class="post-excerpt">
-        {{ excerpt }} <a class="read_more" href="{{ post_url }}">Read More...</a>
+        {{ excerpt }}
+        {% if excerpt_truncated %}
+        <a class="read_more" href="{{ post_url }}">Read More...</a>
+        {% endif %}
       </div>
       {%- endif -%}
       {%- if post.tags -%}
