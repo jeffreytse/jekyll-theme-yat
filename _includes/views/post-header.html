@@ -14,10 +14,10 @@
   <p class="post-meta">
     <span class="post-meta-inner">
       <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        <i class="far fa-calendar-alt"></i> {{ page.date | date: date_format }}
+        <i class="fa-solid fa-calendar-day"></i> {{ page.date | date: date_format }}
       </time>
       {%- if page.use_mtime -%}
-      <span class="left-vsplit"><i class="fas fa-edit"></i> {{ page.last_modified_at | date: ldf }}</span>
+      <span class="left-vsplit"><i class="fa-solid fa-pen-to-square"></i> {{ page.last_modified_at | date: ldf }}</span>
       {%- endif -%}
     </span>
   </p>

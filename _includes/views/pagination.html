@@ -37,10 +37,14 @@
       {%- endif -%}
       <h3 class="post-subtitle">{{ subheading | default: post_subtitle | escape }}</h3>
       <div class="post-meta">
-        <span class="post-date"><i class="far fa-calendar-alt"></i> {{ post.date | date: date_format }}</span>{%- if
-        post.use_mtime -%}<span class="post-date left-vsplit"><i class="fas fa-edit"></i> {{ post.last_modified_at |
-          date: ldf }}</span>{%- endif -%}{%- if post.journal -%}<span class="post-journal left-vsplit"><i
-            class="far fa-newspaper"></i> {{ post.journal }}</span>{%- endif -%}
+        <span class="post-date"><i class="fa-solid fa-calendar-day"></i> {{ post.date | date: date_format }}</span>
+        {%- if post.use_mtime -%}
+        <span class="post-date left-vsplit"><i class="fa-solid fa-pen-to-square"></i> {{ post.last_modified_at | date:
+          ldf }}</span>
+        {%- endif -%}
+        {%- if post.journal -%}
+        <span class="post-journal left-vsplit"><i class="fa-solid fa-newspaper"></i> {{ post.journal }}</span>
+        {%- endif -%}
       </div>
       {%- assign article_strip = article | strip_newlines -%}
       {%- if article_strip != '' -%}

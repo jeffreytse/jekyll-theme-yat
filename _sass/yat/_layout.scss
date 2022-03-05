@@ -453,10 +453,20 @@ html {
 .post {
   @extend %post-header;
 
+  hr {
+    height: 1px;
+    background-color: $text-color;
+    border: none;
+
+    &.sub-separator {
+      background-color: #e3e3e3;
+    }
+  }
+
   .post-header {
     margin: 0 auto $spacing-unit;
     padding: 0;
-    border-bottom: 1px solid #ebebeb;
+    border-bottom: 1px solid $text-color;
 
     .post-subtitle {
       font-weight: lighter;
@@ -537,12 +547,6 @@ html {
     p,
     hr {
       margin-bottom: 24px;
-    }
-
-    hr {
-      height: 1px;
-      background-color: #ebebeb;
-      border: none;
     }
 
     th {
@@ -926,21 +930,4 @@ html {
     width: 0;
     height: $spacing-unit * 0.1;
   }
-}
-
-.fa-external-link-alt {
-  font-size: 0.8em;
-  margin-left: 5px;
-  vertical-align: 15%;
-}
-
-.fa-calendar-alt {
-  font-size: 0.9em;
-  vertical-align: 12%;
-}
-
-.fa-edit {
-  font-size: 0.8em;
-  margin-left: 1px;
-  vertical-align: 10%;
 }

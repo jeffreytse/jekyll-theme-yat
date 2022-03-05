@@ -1,13 +1,20 @@
 @import "fa/fontawesome.scss";
 @import "fa/solid.scss";
 @import "fa/regular.scss";
-@import "fa/brands.scss";
 
-.twitter {
-  @extend %fa-icon;
-  @extend .fab;
+.fa-arrow-up-right-from-square {
+  font-size: 0.8em;
+  margin-left: 5px;
+  vertical-align: 15%;
+}
 
-  &:before {
-    content: fa-content($fa-var-twitter);
-  }
+.fa-calendar-day {
+  font-size: 0.9em;
+  vertical-align: 12.5%;
+}
+
+.fa-pen-to-square {
+  font-size: 0.8em;
+  margin-left: 1px;
+  vertical-align: 15%;
 }

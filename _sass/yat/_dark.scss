@@ -132,8 +132,24 @@ html[data-theme="dark"] {
     }
   }
 
-  .post .post-content img:not([raw]) {
-    background-color: #ffffff33;
+  .post {
+    hr {
+      background-color: $dark-text-color;
+
+      &.sub-separator {
+        background-color: #545454;
+      }
+    }
+
+    .post-header {
+      border-bottom: 1px solid $dark-text-color;
+    }
+
+    .post-content {
+      img:not([raw]) {
+        background-color: #ffffff33;
+      }
+    }
   }
 
   .post-related {
