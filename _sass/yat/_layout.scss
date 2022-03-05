@@ -193,9 +193,14 @@ html {
 .site-footer {
   @include relative-font-size(1);
   text-align: right;
+  line-height: 2;
 
   @include media-query($content-width) {
     text-align: center;
+  }
+
+  @include media-query($on-palm) {
+    line-height: 1.5;
   }
 
   .site-footer-inner {
@@ -206,21 +211,20 @@ html {
       white-space: nowrap;
     }
 
-    .tie-block {
-      white-space: nowrap;
-      @include media-query($content-width) {
-        display: block;
-        margin-bottom: 1em;
-      }
-    }
-
     .footer-icon {
-      line-height: 1;
       display: inline-block;
 
-      * {
+      i {
         font-size: 20px;
-        vertical-align: text-bottom;
+        vertical-align: -10%;
+
+        @include media-query($on-palm) {
+          vertical-align: -12%;
+        }
+
+        &:not(:first-child) {
+          margin-left: 3px;
+        }
       }
     }
 
@@ -236,6 +240,7 @@ html {
 
       &.dnsever {
         display: inline-block;
+        line-height: 1;
         vertical-align: 7%;
         margin-right: 3px;
       }
