@@ -228,8 +228,8 @@ html {
       }
     }
 
-    div:not(:first-child) {
-      @include media-query($on-palm) {
+    @include media-query($on-palm) {
+      div:not(:first-child) {
         margin-top: 1em;
       }
     }
