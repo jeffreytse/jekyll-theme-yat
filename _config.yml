@@ -153,10 +153,16 @@ header_pages:
   - members.md
   - research.md
   - publications/index.html
-  - photo.md
-  - galaxy.md
-  - git.md
-  - source.md
+
+header_ext_links:
+  - title: photo
+    url: http://cloud.seoklab.org:999/photo
+  - title: GalaxyWeb
+    url: https://galaxy.seoklab.org
+  - title: github
+    url: https://github.com/seoklab
+  - title: source
+    url: https://github.com/seoklab/seoklab.github.io
 
 collections:
   notice:
