@@ -911,6 +911,12 @@ html {
     @include media-query($content-width) {
       display: none;
     }
+
+    .post-menu ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
   }
 }
 
