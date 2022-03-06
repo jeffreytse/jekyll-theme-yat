@@ -7,6 +7,6 @@ journal: Journal of Chemical Information and Modeling
 categories:
   - Prediction of protein-ligand interactions
 tags:
-  - other
+  - misc
 redirect_to: https://doi.org/10.1021/acs.jcim.0c01434
 ---

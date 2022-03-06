@@ -1,3 +1,5 @@
+{%- assign split_mark = '<|>' -%}
+
 {%- if include.keys -%}
   {%- assign keys = include.keys -%}
 {%- endif -%}
@@ -6,16 +8,51 @@
   {%- assign field = include.field -%}
 {%- endif -%}
 
+{%- if include.min_cnt -%}
+  {%- assign min_cnt = include.min_cnt -%}
+{%- else -%}
+  {%- assign min_cnt = 0 -%}
+{%- endif -%}
+
+{%- assign others = '' -%}
+
 <div class="page-segments">
   {%- for key in keys -%}
-  <h2 id="{{ key }}" class="segment-name">{{ key }}</h2>
-  <ul class="page-segments-list">
     {%- assign items = site.posts | where: field, key -%}
-    {%- for item in items -%}
-      {%- if item != nil -%}
-      <li> {%- include views/post-item.html -%} </li>
-      {%- endif -%}
-    {% endfor %}
-  </ul>
-  {% endfor %}
+    {%- if items.size < min_cnt -%}
+      {%- assign others = others | append: split_mark | append: key -%}
+    {%- else -%}
+    <h2 id="{{ key }}" class="segment-name">{{ key }}</h2>
+    <ul class="page-segments-list">
+      {%- for item in items -%}
+        {%- if item != nil -%}
+        <li> {%- include views/post-item.html -%} </li>
+        {%- endif -%}
+      {%- endfor -%}
+    </ul>
+    {%- endif -%}
+  {%- endfor -%}
+
+  {%- assign others = others | remove_first: split_mark | split: split_mark -%}
+  {%- if others.size > 0 -%}
+    {%- if others.size == 1 -%}
+      {%- assign other_tag = 'other' -%}
+    {%- else -%}
+      {%- assign other_tag = 'others' -%}
+    {%- endif -%}
+    <h2 id="{{ other_tag }}" class="segment-name">{{ other_tag }}</h2>
+    <div>
+      {%- for other in others -%}
+        <h3 id="{{ other }}" class="segment-subname">{{ other }}</h3>
+        <ul class="page-segments-list">
+          {%- assign items = site.posts | where: field, other -%}
+          {%- for item in items -%}
+            {%- if item != nil -%}
+            <li> {%- include views/post-item.html -%} </li>
+            {%- endif -%}
+          {%- endfor -%}
+        </ul>
+      {%- endfor -%}
+    </div>
+  {%- endif -%}
 </div>

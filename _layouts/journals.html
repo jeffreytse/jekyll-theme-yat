@@ -1,0 +1,14 @@
+---
+layout: framework
+sidebar: journal-list
+---
+
+{%- if site.posts.size > 0 -%}
+  {%- include functions.html func='get_journals' -%}
+  {%- assign journals = return -%}
+
+  {%- assign keys = journals -%}
+  {%- assign field = 'journal' -%}
+  {%- include views/segments.html min_cnt = 3 -%}
+
+{%- endif -%}

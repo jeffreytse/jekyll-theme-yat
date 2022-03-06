@@ -2,9 +2,6 @@
  * Common list
  */
 .common-list {
-  @include relative-font-size(1.0);
-  min-width: 200px;
-
   ul {
     list-style: none;
     margin: 0;

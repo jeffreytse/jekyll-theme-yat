@@ -6,6 +6,15 @@
   {%- assign field = include.field -%}
 {%- endif -%}
 
+{%- if include.min_cnt -%}
+  {%- assign min_cnt = include.min_cnt -%}
+{%- else -%}
+  {%- assign min_cnt = 0 -%}
+{%- endif -%}
+
+{%- assign others = '' | split: '' -%}
+{%- assign other_types = 0 -%}
+
 <div class="common-list">
   <ul>
     <li>
@@ -15,11 +24,29 @@
     </li>
 
     {%- for key in  keys -%}
+      {%- assign items = site.posts | where: field, key -%}
+      {%- if items.size < min_cnt -%}
+        {%- assign others = others | concat: items -%}
+        {%- assign other_types = other_types | plus: 1 -%}
+      {%- else -%}
       <li>
         <a href="{{ url }}#h-{{ key }}">
-          {{ key }} <span>{{ site.posts | where: field, key | size }}</span>
+          {{ key }} <span>{{ items.size }}</span>
         </a>
       </li>
-    {% endfor %}
+      {%- endif -%}
+    {%- endfor -%}
+
+    {%- if other_types > 0 -%}
+      {%- assign other_tag = 'other' -%}
+      {%- if other_types > 1 -%}
+        {%- assign other_tag = other_tag | append: 's' -%}
+      {%- endif -%}
+      <li>
+        <a href="{{ url }}#h-{{ other_tag }}">
+          {{ other_tag }} <span>{{ others.size }}</span>
+        </a>
+      </li>
+    {%- endif -%}
   </ul>
 </div>

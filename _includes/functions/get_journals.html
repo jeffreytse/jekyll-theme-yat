@@ -1,0 +1,13 @@
+{%- assign split_mark = '<|>' -%}
+
+{%- assign journals = '' -%}
+{%- for post in site.posts -%}
+  {%- assign journal = post.journal -%}
+  {%- assign journals = journals | append: split_mark  | append: journal -%}
+{% endfor %}
+
+{% assign return = journals
+  | remove_first: split_mark
+  | split: split_mark
+  | sort: self
+  | uniq %}

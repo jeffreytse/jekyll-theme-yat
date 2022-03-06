@@ -27,7 +27,7 @@
       {%- assign post_url = post.url | relative_url -%}
       <h2 class="post-title">
         <a class="post-link" href="{{ post_url }}">
-          {{ post.title | escape }}
+          {{ post.title }}
         </a>
       </h2>
       {%- if post.subtitle -%}
@@ -35,7 +35,7 @@
       {%- elsif post.authors -%}
       {%- assign post_subtitle = post.authors -%}
       {%- endif -%}
-      <h3 class="post-subtitle">{{ subheading | default: post_subtitle | escape }}</h3>
+      <h3 class="post-subtitle">{{ subheading | default: post_subtitle }}</h3>
       <div class="post-meta">
         <span class="post-date"><i class="fa-solid fa-calendar-day"></i> {{ post.date | date: date_format }}</span>
         {%- if post.use_mtime -%}
@@ -43,7 +43,8 @@
           ldf }}</span>
         {%- endif -%}
         {%- if post.journal -%}
-        <span class="post-journal left-vsplit"><i class="fa-solid fa-newspaper"></i> {{ post.journal }}</span>
+        <span class="post-journal left-vsplit"><i class="fa-solid fa-newspaper"></i> <a class="post-tag"
+            href="{{ '/publications/journals.html ' | relative_url }}#{{post.journal}}">{{ post.journal }}</a></span>
         {%- endif -%}
       </div>
       {%- assign article_strip = article | strip_newlines -%}

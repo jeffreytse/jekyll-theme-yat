@@ -353,6 +353,16 @@ html {
   .post-meta {
     color: $grey-color;
     margin-bottom: $spacing-unit * 0.25;
+
+    .post-journal {
+      font-family: "Times New Roman", Times, "Nanum Myeongjo", serif;
+      font-style: italic;
+      font-weight: lighter;
+
+      a {
+        color: $grey-color;
+      }
+    }
   }
 
   .post-excerpt {
@@ -884,14 +894,19 @@ html {
 
   .sidebar {
     padding-left: 8px;
-    transition: top 0.2s, display 0.2s;
-    max-width: 30%;
+    margin-left: 15px;
 
-    @include flex-sticky($header-height + 20px);
+    transition: top 0.2s, display 0.2s;
+    min-width: 200px;
+    max-width: $content-width * 0.3;
 
     @include media-query($on-laptop) {
-      max-width: 20%;
+      max-width: $content-width * 0.2;
     }
+
+    @include relative-font-size(1);
+
+    @include flex-sticky($header-height + 20px);
 
     @include media-query($content-width) {
       display: none;
@@ -903,16 +918,19 @@ html {
  * Segments page
  */
 .page-segments {
-  .segment-name {
+  .segment-name,
+  .segment-subname {
     font-weight: $base-font-weight * 1.5;
     margin-bottom: 8px;
     position: relative;
 
-    @include relative-font-size(1.6);
-
     &:not(:first-child) {
       margin-top: 28px;
     }
+  }
+
+  .segment-name {
+    @include relative-font-size(1.6);
 
     &:hover:before {
       content: "#";

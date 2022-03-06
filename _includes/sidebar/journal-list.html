@@ -1,0 +1,7 @@
+{%- include functions.html func='get_journals' -%}
+{%- assign journals = return -%}
+
+{%- assign keys = journals -%}
+{%- assign field = 'journal' -%}
+{%- assign url = '/publications/journals.html' | relative_url -%}
+{%- include sidebar/common-list.html min_cnt = 3 -%}

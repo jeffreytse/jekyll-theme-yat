@@ -11,6 +11,6 @@ sidebar: tag-list
 
   {%- assign keys = tags -%}
   {%- assign field = 'tags' -%}
-  {%- include views/segments.html -%}
+  {%- include views/segments.html min_cnt = 3 -%}
 
 {%- endif -%}

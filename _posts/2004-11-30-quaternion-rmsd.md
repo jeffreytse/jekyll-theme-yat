@@ -5,6 +5,6 @@ journal: Journal of Computational Chemistry
 categories:
   - Protein structure prediction
 tags:
-  - other
+  - misc
 redirect_to: https://doi.org/10.1002/jcc.20110
 ---

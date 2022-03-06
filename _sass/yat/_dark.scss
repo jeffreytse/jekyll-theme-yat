@@ -183,7 +183,8 @@ html[data-theme="dark"] {
       }
 
       span {
-        background-color: $dark-emph-background-color;
+        color: $black-color;
+        background: #ffffffbd;
       }
     }
   }
