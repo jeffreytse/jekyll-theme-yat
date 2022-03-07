@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This is a repository for [seoklab homepage](seoklab.github.io) source code.
+This is a repository for [seoklab homepage](https://seoklab.github.io) source code.
 
 ## Creating new posts
 
