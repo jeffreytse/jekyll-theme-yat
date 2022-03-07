@@ -12,7 +12,7 @@ See [\_notice](_notice/README.md) directory for more information.
 
 ### Publications
 
-See [\_posts](_postss/README.md) directory for more information.
+See [\_posts](_posts/README.md) directory for more information.
 
 ---
 
