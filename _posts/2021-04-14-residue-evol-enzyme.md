@@ -7,6 +7,6 @@ journal: Chemical Science
 categories:
   - Applications and collaborations
 tags:
-  - with experimentallists
+  - with experimentalists
 redirect_to: https://doi.org/10.1039/D0SC06823C
 ---
