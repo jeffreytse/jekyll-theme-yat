@@ -7,6 +7,6 @@ journal: Nature Communications
 categories:
   - Applications and collaborations
 tags:
-  - with experimentallists
+  - with experimentalists
 redirect_to: https://doi.org/10.1038/s41467-020-19155-4
 ---
