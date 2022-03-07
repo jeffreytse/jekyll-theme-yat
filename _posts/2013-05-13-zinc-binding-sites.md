@@ -3,8 +3,8 @@ title: "Alternative zinc-binding sites explain the redox sensitivity of zinc-con
 authors: Lim Heo, Yoo-Bok Cho, Myeong Sup Lee, Jung-Hye Roe*, Chaok Seok*
 journal: Proteins
 categories: 
-  -others
+  - others
 tags:
-  -with experimentalists
+  - with experimentalists
 redirect_to: https://onlinelibrary.wiley.com/doi/full/10.1002/prot.24323
 ---
