@@ -9,6 +9,6 @@ journal: Proceedings of the National Academy of Sciences
 categories:
   - Applications and collaborations
 tags:
-  - with experimentallists
+  - with experimentalists
 redirect_to: https://doi.org/10.1073/pnas.1805901115
 ---
