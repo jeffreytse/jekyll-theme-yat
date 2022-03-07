@@ -6,6 +6,6 @@ journal: Angewandte Chemie International Edition
 categories:
   - Applications and collaborations
 tags:
-  - with experimentallists
+  - with experimentalists
 redirect_to: https://doi.org/10.1002/anie.201003779
 ---
