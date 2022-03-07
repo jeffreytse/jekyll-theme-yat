@@ -2,7 +2,7 @@
 title:
   "Structural Basis for the Enantioselectivity of Esterase Est-Y29 toward
   (S)-Ketoprofen"
-authors: Tri Duc Ngo <em>et al.</em> (Minkyung Baek and Chaok Seok)
+authors: Tri Duc Ngo et al. (Minkyung Baek and Chaok Seok)
 journal: ACS Catalysis
 categories:
   - Applications and collaborations

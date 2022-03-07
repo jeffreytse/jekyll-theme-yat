@@ -2,7 +2,7 @@
 title:
   "Measured and predicted affinities of binding and relative potencies to
   activate the AhR of PAHs and their alkylated analogues"
-authors: Sangwoo Lee <em>et al.</em> (Woong-Hee Shin and Chaok Seok)
+authors: Sangwoo Lee et al. (Woong-Hee Shin and Chaok Seok)
 journal: Chemosphere
 categories:
   - Applications and collaborations

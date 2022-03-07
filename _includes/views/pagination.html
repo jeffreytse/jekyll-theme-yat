@@ -33,7 +33,10 @@
       {%- if post.subtitle -%}
       {%- assign post_subtitle = post.subtitle -%}
       {%- elsif post.authors -%}
-      {%- assign post_subtitle = post.authors -%}
+      {%- assign post_subtitle = post.authors
+      | escape
+      | replace: 'et al.', '<em>et al.</em>'
+      -%}
       {%- endif -%}
       <h3 class="post-subtitle">{{ subheading | default: post_subtitle }}</h3>
       <div class="post-meta">

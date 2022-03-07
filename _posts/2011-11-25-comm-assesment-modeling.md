@@ -3,7 +3,7 @@ title:
   "Community-Wide Assessment of Protein-Interface Modeling Suggests Improvements
   to Design Methodology"
 authors:
-  Sarel J. Fleishman <em>et al.</em> (Hahnbeom Park, Junsu Ko, Hasup Lee and
+  Sarel J. Fleishman et al. (Hahnbeom Park, Junsu Ko, Hasup Lee and
   Chaok Seok)
 journal: Journal of Molecular Biology
 categories:

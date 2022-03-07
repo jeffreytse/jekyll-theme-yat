@@ -3,7 +3,7 @@ title:
   "Biophysical and functional characterization of Norrin signaling through
   Frizzled4"
 authors:
-  Injin Bang, Hee Ryung Kim <em>et al.</em> (Gyu Rie Lee, Hasup Lee, Wonpil Im
+  Injin Bang, Hee Ryung Kim et al. (Gyu Rie Lee, Hasup Lee, Wonpil Im
   and Chaok Seok)
 journal: Proceedings of the National Academy of Sciences
 categories:

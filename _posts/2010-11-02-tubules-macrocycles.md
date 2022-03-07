@@ -1,7 +1,7 @@
 ---
 title:
   "Self-Dissociating Tubules from Helical Stacking of Noncovalent Macrocycles"
-authors: Ho-Joong Kim <em>et al.</em> (Chaok Seok)
+authors: Ho-Joong Kim et al. (Chaok Seok)
 journal: Angewandte Chemie International Edition
 categories:
   - Applications and collaborations

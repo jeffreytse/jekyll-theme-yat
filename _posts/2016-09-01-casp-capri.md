@@ -3,7 +3,7 @@ title:
   "Prediction of homoprotein and heteroprotein complexes by protein docking and
   template-based modeling: A CASP-CAPRI experiment"
 authors:
-  Marc F. Lensink* <em>et al.</em> (Hasup Lee, Minkyung Baek, Sangwoo Park, Lim
+  Marc F. Lensink* et al. (Hasup Lee, Minkyung Baek, Sangwoo Park, Lim
   Heo, Gyu Rie Lee and Chaok Seok)
 journal: "Proteins: Structure, Function, and Bioinformatics"
 categories:

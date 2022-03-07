@@ -2,7 +2,7 @@
 title:
   "Sclerostin inhibits Wnt signaling through tandem interaction with two LRP6
   ectodomains"
-authors: Jinuk Kim <em>et al.</em> (Taeyong Park and Chaok Seok)
+authors: Jinuk Kim et al. (Taeyong Park and Chaok Seok)
 journal: Nature Communications
 categories:
   - Applications and collaborations

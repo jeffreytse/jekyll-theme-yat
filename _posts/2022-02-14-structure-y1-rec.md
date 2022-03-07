@@ -1,6 +1,6 @@
 ---
 title: "Structural basis of neuropeptide Y signaling through Y1 receptor"
-authors: Chaehee Park <em>et al.</em> (Hyeonuk Woo and Chaok Seok)
+authors: Chaehee Park et al. (Hyeonuk Woo and Chaok Seok)
 journal: Nature Communications
 categories:
   - Applications and collaborations

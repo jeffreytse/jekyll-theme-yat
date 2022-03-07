@@ -1,6 +1,6 @@
 ---
 title: "Benchmarking predictions of allostery in liver pyruvate kinase in CAGI4"
-authors: Qifang Xu <em>et al.</em> (Gyu Rie Lee and Chaok Seok)
+authors: Qifang Xu et al. (Gyu Rie Lee and Chaok Seok)
 journal: Human Mutation
 categories:
   - Applications and collaborations
