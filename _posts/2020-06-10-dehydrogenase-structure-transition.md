@@ -9,6 +9,6 @@ journal: Communications Biology
 categories:
   - Applications and collaborations
 tags:
-  - with experimentallists
+  - with experimentalists
 redirect_to: https://doi.org/10.1038/s42003-020-1030-1
 ---
