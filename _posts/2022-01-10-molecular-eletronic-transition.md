@@ -3,8 +3,8 @@ title: "A benchmark study of machinel earning methods for molecular electronic t
 authors: Beomchang Kang, Chaok Seok*, Juyong Lee*
 journal: BKCS
 categories:
-  - Others
+  - others
 tags:
-  - Optical property prediction
+  - optical property prediction
 redirect_to: https://onlinelibrary.wiley.com/doi/10.1002/bkcs.12468
 ---
