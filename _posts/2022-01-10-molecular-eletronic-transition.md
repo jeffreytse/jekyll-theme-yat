@@ -5,7 +5,7 @@ title:
 authors: Beomchang Kang, Chaok Seok* and Juyong Lee*
 journal: Bulletin of the Korean Chemical Society
 categories:
-  - Others
+  - others
 tags:
   - optical property prediction
 redirect_to: https://doi.org/10.1002/bkcs.12468
