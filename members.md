@@ -22,7 +22,7 @@ title: Members
 
 ### Professional Experiences
 
-- Assistant Professor, Associate Professor, Professor, Department of Chemistry, 
+- Assistant Professor, Associate Professor, Professor, Department of Chemistry,
   Seoul National University, 2004-
 - Affiliate Professor, School of Computational Sciences, Korea Institute for
   Advanced Study, 2008.4-2010.3
@@ -32,14 +32,18 @@ title: Members
 
 ### Contact Information
 
-- Mailing address:  
-  Department of Chemistry  
-  Seoul National University  
-  Seoul, 08826  
-  Republic of Korea
-- chaok@snu.ac.kr  
-  82-2-880-9197 (O)  
-  82-2-880-4355 (L)
+#### Mailing address
+
+Department of Chemistry  
+Seoul National University  
+Seoul, 08826  
+Republic of Korea
+
+#### Contacts
+
+- chaok@snu.ac.kr
+- 82-2-880-9197 (Office)  
+  82-2-880-4355 (Lab)
 
 ### Location
 
