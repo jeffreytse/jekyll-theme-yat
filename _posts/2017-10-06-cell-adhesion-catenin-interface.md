@@ -8,6 +8,6 @@ journal: Journal of Biological Chemistry
 categories:
   - Applications and collaborations
 tags:
-  - with experimentallists
+  - with experimentalists
 redirect_to: https://doi.org/10.1074/jbc.M117.795567
 ---
