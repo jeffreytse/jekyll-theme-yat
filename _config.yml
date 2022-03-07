@@ -167,8 +167,6 @@ header_ext_links:
     url: https://galaxy.seoklab.org
   - title: github
     url: https://github.com/seoklab
-  - title: source
-    url: https://github.com/seoklab/seoklab.github.io
 
 collections:
   notice:
