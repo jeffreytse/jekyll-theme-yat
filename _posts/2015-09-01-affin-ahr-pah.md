@@ -7,6 +7,6 @@ journal: Chemosphere
 categories:
   - Applications and collaborations
 tags:
-  - with experimentallists
+  - with experimentalists
 redirect_to: https://doi.org/10.1016/j.chemosphere.2015.05.033
 ---
