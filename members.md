@@ -22,13 +22,10 @@ title: Members
 
 ### Professional Experiences
 
-- Professor, Department of Chemistry, Seoul National University, 2013-
-- Associate Professor, Department of Chemistry, Seoul National University,
-  2008-2013
+- Assistant Professor, Associate Professor, Professor, Department of Chemistry, 
+  Seoul National University, 2004-
 - Affiliate Professor, School of Computational Sciences, Korea Institute for
   Advanced Study, 2008.4-2010.3
-- Assistant Professor, Department of Chemistry, Seoul National University,
-  2004-2008
 - Research Associate, University of California, San Francisco, 2000-2004
 - Research Associate, Massachusetts Institute of Technology, 2000
 - Research Associate, University of Chicago, 1999
@@ -114,4 +111,4 @@ title: Members
 | Sukki Kang        | Science Writer                                                                                       | Graduate Course, 2007                                       |
 | Sangwoo Shim      | Founder & Chief Data Scientist, MakinaRocks                                                          | M.S., 2007                                                  |
 | Changho Sohn      | Assistant Professor, Nano Biomedical Engineering, Y-IBS Institute, Yonsei University                 | Undergraduate Student, 2006                                 |
-| Heesun Han        | Assistant Professor, Department of Chemistry, University of Iltdnois, Urbana-Champaign               | Undergraduate Student, 2006                                 |
+| Heesun Han        | Assistant Professor, Department of Chemistry, University of Illinois, Urbana-Champaign               | Undergraduate Student, 2006                                 |
