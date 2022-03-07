@@ -63,6 +63,10 @@ yat:
 last-modified-at:
   date_format: "%F, %T"
 
+autolink_email:
+  link_attr: class="email-link"
+  escape: true
+
 # If you want more debug log, you can set true
 # debug: false
 
@@ -217,10 +221,13 @@ paginate_path: "/publications/page:num/"
 # Build settings
 theme: "jekyll-theme-yat"
 # highlighter: none
-# markdown: kramdown
-# kmarkdown:
-#   input: GFM
+markdown: kramdown
+kramdown:
+  input: GFM
+  entity_output: as_input
+
 plugins:
   - jekyll-last-modified-at
   - jekyll-redirect-from
   - jekyll-include-cache
+  - jekyll-autolink_email

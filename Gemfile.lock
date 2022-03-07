@@ -1,3 +1,12 @@
+GIT
+  remote: https://github.com/jnooree/jekyll-autolink_email
+  revision: b224f98980b6307e9e2b6a0e4f320a3a3b91c946
+  specs:
+    jekyll-autolink_email (0.1.0)
+      jekyll (>= 3.0, < 5.0)
+      jekyll-email-protect (~> 1.0)
+      rinku (~> 1.7.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -15,7 +24,7 @@ GEM
     http_parser.rb (0.8.0)
     i18n (1.10.0)
       concurrent-ruby (~> 1.0)
-    jekyll (4.2.1)
+    jekyll (4.2.2)
       addressable (~> 2.4)
       colorator (~> 1.0)
       em-websocket (~> 0.5)
@@ -30,6 +39,7 @@ GEM
       rouge (~> 3.0)
       safe_yaml (~> 1.0)
       terminal-table (~> 2.0)
+    jekyll-email-protect (1.1.0)
     jekyll-feed (0.16.0)
       jekyll (>= 3.7, < 5.0)
     jekyll-include-cache (0.2.1)
@@ -69,7 +79,9 @@ GEM
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.4.0)
-    nokogiri (1.13.3-x86_64-linux)
+    mini_portile2 (2.8.0)
+    nokogiri (1.13.3)
+      mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
@@ -81,6 +93,7 @@ GEM
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     rexml (3.2.5)
+    rinku (1.7.3)
     rouge (3.28.0)
     safe_yaml (1.0.5)
     sassc (2.4.0)
@@ -93,6 +106,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  jekyll-autolink_email!
   jekyll-include-cache
   jekyll-last-modified-at
   jekyll-redirect-from
