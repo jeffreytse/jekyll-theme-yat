@@ -135,7 +135,8 @@ a {
     text-decoration: underline;
   }
 
-  &.email-link {
+  &.email-link,
+  &.tel-link {
     color: inherit;
   }
 

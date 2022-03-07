@@ -42,8 +42,8 @@ Republic of Korea
 #### Contacts
 
 - chaok@snu.ac.kr
-- [+82-2-880-9197](tel:+82-2-880-9197) (Office)  
-  [+82-2-880-4355](tel:+82-2-880-4355) (Lab)
+- <a href="tel:+82-2-880-9197" class="tel-link">+82-2-880-9197</a> (Office)  
+  <a href="tel:+82-2-880-4355" class="tel-link">+82-2-880-4355</a> (Lab)
 
 ### Location
 
