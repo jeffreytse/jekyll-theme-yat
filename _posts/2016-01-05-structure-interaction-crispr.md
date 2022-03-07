@@ -7,6 +7,6 @@ journal: Structure
 categories:
   - Applications and collaborations
 tags:
-  - with experimentallists
+  - with experimentalists
 redirect_to: https://doi.org/10.1016/j.str.2015.10.019
 ---
