@@ -8,6 +8,6 @@ journal: EMBO Molecular Medicine
 categories:
   - Applications and collaborations
 tags:
-  - with experimentallists
+  - with experimentalists
 redirect_to: https://doi.org/10.15252/emmm.202013790
 ---
