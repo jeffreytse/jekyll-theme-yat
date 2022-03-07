@@ -7,6 +7,6 @@ journal: ACS Catalysis
 categories:
   - Applications and collaborations
 tags:
-  - with experimentallists
+  - with experimentalists
 redirect_to: https://doi.org/10.1021/acscatal.8b02797
 ---
