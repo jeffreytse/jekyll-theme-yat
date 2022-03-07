@@ -7,6 +7,6 @@ journal: Journal of Chemical Theory and Computation
 categories:
   - Applications and collaborations
 tags:
-  - with experimentallists
+  - with experimentalists
 redirect_to: https://doi.org/10.1021/acs.jctc.1c00552
 ---
