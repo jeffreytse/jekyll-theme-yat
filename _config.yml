@@ -39,13 +39,19 @@ author: "seoklab"
 #   "Copyright (c) 2017-{currentYear} <a href="https://example.com">{author}</a>"
 #   "Copyright © 2017-2021 Foobar"
 #
-copyright: '(cleft) 2022-{currentYear} {author}, licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-SA 4.0 International</a>.'
+copyright:
+  'Copyright (c) 2022-{currentYear} {author}, licensed under <a
+  href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank"
+  rel="license noopener noreferrer" style="display:inline-block;">CC BY-SA 4.0
+  International</a>.'
 copyright-icons:
   - fa-creative-commons
   - fa-creative-commons-by
   - fa-creative-commons-sa
 
-description: "Seoul National University Lab of Computational Biology and Biomolecular Engineering"
+description:
+  "Seoul National University Lab of Computational Biology and Biomolecular
+  Engineering"
 url: "https://seoklab.org"
 favicon: "https://avatars.githubusercontent.com/u/16937572"
 
