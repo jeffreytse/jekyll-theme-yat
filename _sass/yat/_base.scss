@@ -135,6 +135,10 @@ a {
     text-decoration: underline;
   }
 
+  &.email-link {
+    color: inherit;
+  }
+
   .social-media-list &:hover {
     text-decoration: none;
 
