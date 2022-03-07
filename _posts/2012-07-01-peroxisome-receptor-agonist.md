@@ -7,6 +7,6 @@ journal: European Journal of Medicinal Chemistry
 categories:
   - Applications and collaborations
 tags:
-  - with experimentallists
+  - with experimentalists
 redirect_to: https://doi.org/10.1016/j.ejmech.2012.03.055
 ---
