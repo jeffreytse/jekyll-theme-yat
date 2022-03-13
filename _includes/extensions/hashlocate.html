@@ -1,6 +1,7 @@
 <script>
   function hashLocate(hashValue) {
     hashValue = hashValue.replace(/^.*#h-/, '');
+    hashValue = decodeURIComponent(hashValue);
     var element = document.getElementById(hashValue);
 
     if (!element) {

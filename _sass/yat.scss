@@ -2,7 +2,7 @@
 
 // Define defaults for each variable.
 
-$base-font-family: "Noto Sans Light", AppleSDGothicNeo-Regular, "Malgun Gothic", "Apple Color Emoji", Helvetica, Arial, Oswald, sans-serif, !default;
+$base-font-family: Helvetica, Arial, Oswald, sans-serif, !default;
 $base-font-size: 14px !default;
 $base-font-weight: 400 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
@@ -12,7 +12,6 @@ $spacing-unit:     30px !default;
 
 $text-color:       #454545 !default;
 $background-color: #fff !default;
-$brand-color:      #ff5100 !default;
 
 $grey-color:       #828282 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
@@ -35,7 +34,7 @@ $banner-text-color: lighten($white-color, 0%) !default;
 $banner-background: rgba(0,0,0,0.8) !default;
 
 // Width of the content area
-$content-width:    920px !default;
+// $content-width:    920px !default;
 
 $on-palm:          600px !default;
 $on-laptop:        800px !default;

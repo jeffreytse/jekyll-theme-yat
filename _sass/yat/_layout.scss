@@ -23,7 +23,7 @@ html {
 
         @include media-query($on-laptop) {
           .page-link {
-            color: unset;
+            color: $header-text-color;
           }
 
           .menu-icon {
@@ -36,6 +36,7 @@ html {
     }
 
     footer.site-footer {
+      color: unset;
       background-color: transparent;
 
       .site-footer-inner {
@@ -209,6 +210,11 @@ html {
   }
 }
 
+.copyleft {
+  display: inline-block;
+  transform: rotate(180deg);
+}
+
 /**
  * Post header
  */
@@ -274,7 +280,7 @@ html {
   }
 
   .post-title {
-    margin-bottom: 2px;
+    margin-bottom: $spacing-unit * 0.2;
     transition: 0.2s all;
 
     a {
@@ -306,24 +312,28 @@ html {
   }
 
   .post-link {
-    @include relative-font-size(1.5);
+    @include relative-font-size(1.65);
     font-weight: $base-font-weight * 1.5;
-    color: #15171a;
+    color: #333;
   }
 
   .post-excerpt {
     color: #777;
+    word-break: break-word;
+    overflow-wrap: break-word;
   }
 
   .post-tags .post-tag {
+    display: inline-block;
     text-decoration: none;
     border: 1px solid;
     padding: 2px 4px;
     border-radius: 2px;
     transition: color 0.2s;
+    margin-bottom: 8px;
 
-    &:not(:first-child) {
-      margin-left: 8px;
+    &:not(:last-child) {
+      margin-right: 8px;
     }
 
     &:hover {
@@ -379,7 +389,11 @@ html {
     border-bottom: 1px solid #ebebeb;
 
     .post-title {
-      margin-bottom: 2px;
+      margin-bottom: 6px;
+    }
+
+    .post-subtitle {
+      font-weight: lighter;
     }
 
     .post-meta {
@@ -569,6 +583,15 @@ html {
       @include center-image;
       transition: 0.1s all ease-in-out;
     }
+
+    & > video {
+      width: 100vw;
+      object-fit: cover;
+    }
+
+    & > img.img-placeholder {
+      display: none;
+    }
   }
 
   .wrapper {
@@ -588,18 +611,23 @@ html {
       > :nth-child(1) {
         @include relative-font-size(3.9);
         letter-spacing: -1px;
-        margin-bottom: 16px;
+        margin-bottom: 0.1em;
         font-weight: normal;
         transition: 0.2s all;
 
         @include media-query($on-palm) {
-          @include relative-font-size(2.425);
+          @include relative-font-size(1.975);
         }
       }
 
       > :nth-child(2) {
-        font-weight: normal;
-        margin-bottom: 0;
+        font-weight: lighter;
+        margin-bottom: 0.8em;
+        transition: 0.2s all;
+
+        @include media-query($on-palm) {
+          @include relative-font-size(1.175);
+        }
       }
 
       > :last-child {

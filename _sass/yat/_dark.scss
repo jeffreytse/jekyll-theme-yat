@@ -2,11 +2,22 @@ $dark-background-color:       #0e0e0e !default;
 $dark-text-color: #bbb !default;
 
 html[data-theme="dark"]  {
-
   &[data-scroll-status='top'] {
-    .site-footer-inner {
-      border-top: solid 1px #2f2f2f !important;
-      transition: 0s;
+    header.site-header-transparent {
+      &.site-header {
+        @include media-query($on-laptop) {
+          .page-link {
+            color: #f8f8f8;
+          }
+        }
+      }
+    }
+
+    footer.site-footer {
+      .site-footer-inner {
+        border-top: solid 1px #2f2f2f !important;
+        transition: 0s;
+      }
     }
   }
 
@@ -84,7 +95,7 @@ html[data-theme="dark"]  {
   .page-banner {
     .page-banner-img {
       & > *:first-child {
-        opacity: 0.8;
+        opacity: 0.718;
       }
     }
   }
