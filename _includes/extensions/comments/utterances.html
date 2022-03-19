@@ -1,0 +1,46 @@
+<script async
+        crossorigin="anonymous"
+        issue-term="{{ site.utterances.issue_term }}"
+        label="{{ site.utterances.label }}"
+        {%- if site.utterances.follow_site_theme -%}
+        onload="initUtterancesTheme()"
+        {%- endif -%}
+        repo="{{ site.utterances.repo }}"
+        src="https://utteranc.es/client.js"
+        theme="{{ site.utterances.theme }}">
+</script>
+
+{%- if site.utterances.follow_site_theme -%}
+<script>
+  const setUtterancesTheme = (dataTheme) => {
+    const iframe = document.querySelector('.utterances-frame');
+    if (iframe) {
+      const utterancesTheme = dataTheme === 'dark' ? 'github-dark' : 'github-light'
+      const message = {
+        type: 'set-theme',
+        theme: utterancesTheme
+      };
+      iframe.contentWindow.postMessage(message, 'https://utteranc.es');
+    }
+  }
+
+  // init theme
+  const initUtterancesTheme = () => {
+    const iframe = document.querySelector('.utterances-frame');
+    if (!iframe) return
+    iframe.onload = () => {
+      setUtterancesTheme(document.documentElement.getAttribute('data-theme'))
+    }
+  }
+
+  // dynamic change
+  const observer = new MutationObserver((mutationsList, observer) => {
+    for (let mutation of mutationsList) {
+      if (mutation.type === 'attributes' && mutation.attributeName === 'data-theme') {
+        setUtterancesTheme(document.documentElement.getAttribute('data-theme'))
+      }
+    }
+  });
+  observer.observe(document.documentElement, {attributes: true, childList: false, subtree: false});
+</script>
+{%- endif -%}
