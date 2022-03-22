@@ -67,11 +67,11 @@ Republic of Korea
 | Seho Lee       | B.S. in Chemistry, SNU                             | tp1928@snu.ac.kr        |
 | Jihyeon Lee    | B.S. in Chemistry, SMWU                            | jihyeon@snu.ac.kr       |
 | Seeun Kim      | B.S. in Chemistry, SNU                             | ehdqn04@snu.ac.kr       |
+| Simaek Oh      | B.S. in Biological Sciences, SNU                   | weather1999@snu.ac.kr   |
 | Nuri Jung      | B.S. in Chemistry & Computational Sciences, SNU    | jnooree@snu.ac.kr       |
 | Wooyeop Jeong  | B.S. in Chemistry Education, SNU                   | dnduq97@snu.ac.kr       |
-| Yubeen Kim     | B.S. in Chemistry, SNU                             | oilbeen@snu.ac.kr       |
 | Sujin Park     | B.S. in Chemistry, SNU                             | safopanda@snu.ac.kr     |
-| Simaek Oh      | B.S. in Biological Sciences, SNU                   | weather1999@snu.ac.kr   |
+| Yubeen Kim     | B.S. in Chemistry, SNU                             | oilbeen@snu.ac.kr       |
 
 ## Internship Members
 
