@@ -1,8 +1,8 @@
-# seoklab.github.io
+# seoklab.org
 
 ## Introduction
 
-This is a repository for [seoklab homepage](https://seoklab.github.io) source code.
+This is a repository for [seoklab homepage](https://seoklab.org) source code.
 
 ## Creating new posts
 
