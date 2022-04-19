@@ -193,7 +193,7 @@ defaults:
       use_mtime: true
 
 exclude:
-  - README.md
+  - "*README.md"
 
 # Banner default settings
 # These banner settings are for global banner default, but you can also
