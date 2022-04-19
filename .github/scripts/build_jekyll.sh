@@ -9,9 +9,9 @@ SCRIPT_DIR="$(realpath "$(dirname "$0")")"
 WORKING_DIR="${PWD}"
 
 # Initial default value
-JEKYLL_SRC=${JEKYLL_SRC:=./}
-JEKYLL_CFG=${JEKYLL_CFG:=./_config.yml}
-JEKYLL_BASEURL=${JEKYLL_BASEURL:=}
+: "${JEKYLL_SRC:=./}"
+: "${JEKYLL_CFG:=./_config.yml}"
+: "${JEKYLL_BASEURL:=}"
 
 echo "Starting the Jekyll Deploy Action"
 
@@ -21,7 +21,7 @@ if [[ -z "${TOKEN-}" ]]; then
 fi
 
 # Check parameters and assign default values
-: ${REPOSITORY:=${GITHUB_REPOSITORY}}
+: "${REPOSITORY:=${GITHUB_REPOSITORY}}"
 
 # Check if repository is available
 if ! echo "${REPOSITORY}" | grep -Eq ".+/.+"; then
@@ -30,9 +30,9 @@ if ! echo "${REPOSITORY}" | grep -Eq ".+/.+"; then
 fi
 
 # Fix Github API metadata warnings
-export JEKYLL_GITHUB_TOKEN=${TOKEN}
+export JEKYLL_GITHUB_TOKEN="${TOKEN}"
 
-cd ${JEKYLL_SRC}
+cd "${JEKYLL_SRC}"
 
 # Pre-handle Jekyll baseurl
 if [[ -n "${JEKYLL_BASEURL-}" ]]; then
@@ -41,10 +41,10 @@ fi
 
 echo "Starting jekyll build"
 JEKYLL_ENV=production bundle exec jekyll build \
-  ${JEKYLL_BASEURL} \
-  -c ${JEKYLL_CFG} \
-  -d ${WORKING_DIR}/build
+  "${JEKYLL_BASEURL}" \
+  -c "${JEKYLL_CFG}" \
+  -d "${WORKING_DIR}/build"
 
-cd ${WORKING_DIR}/build
+cd "${WORKING_DIR}/build"
 
 . "${SCRIPT_DIR}/github.sh"
