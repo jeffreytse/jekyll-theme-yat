@@ -13,15 +13,11 @@ jobs:
         with:
           fetch-depth: 0
 
-      # Use GitHub Actions' cache to cache dependencies on servers
-      - uses: actions/cache@v3
+      - uses: ruby/setup-ruby@v1
         with:
-          path: vendor/bundle
-          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
-          restore-keys: ${{ runner.os }}-gems-
+          ruby-version: 2.7
+          bundler-cache: true
 
-      # Use GitHub Deploy Action to build and deploy to Github
-      - uses: jeffreytse/jekyll-deploy-action@master
-        with:
-          provider: "github"
-          token: ${{ secrets.GITHUB_TOKEN }} # It's your Personal Access Token(PAT)
+      - run: .github/scripts/build_jekyll.sh
+        env:
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
