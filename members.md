@@ -52,26 +52,26 @@ Republic of Korea
 
 ## Graduate Students
 
-| Name           | Educational Background                             | E-mail                  |
-| -------------- | -------------------------------------------------- | ----------------------- |
-| Sangwoo Park   | B.S. in Chemistry, SNU                             | shadow1229@snu.ac.kr    |
-| Sohee Kwon     | B.S. in Chemistry, SNU                             | sohee95@snu.ac.kr       |
-| Hyeonuk Woo    | B.S. in Chemistry, SNU                             | dngusdnr1@snu.ac.kr     |
-| Katsuhito Inui | B.S. in Applied Chemistry, The University of Tokyo | downbylaw@snu.ac.kr     |
-| Minjae Park    | B.S. in Chemistry & Nanoscience, Ewha W.University | minjp2357@snu.ac.kr     |
-| Changsoo Lee   | B.S. & M.S. in Pharmacy, SNU                       | ccaa2013@snu.ac.kr      |
-| Jiho Sim       | B.S. in Chemistry, SNU                             | j2hosim@snu.ac.kr       |
-| Sumin Lee      | B.S. in Biological Sciences, SNU                   | keepthrword22@snu.ac.kr |
-| Hakjean Kim    | B.S. in Chemistry, SNU                             | hakjean@snu.ac.kr       |
-| Jayun Choi     | B.S. in Chemistry, SNU                             | jychoi9809@snu.ac.kr    |
-| Seho Lee       | B.S. in Chemistry, SNU                             | tp1928@snu.ac.kr        |
-| Jihyeon Lee    | B.S. in Chemistry, SMWU                            | jihyeon@snu.ac.kr       |
-| Seeun Kim      | B.S. in Chemistry, SNU                             | ehdqn04@snu.ac.kr       |
-| Simaek Oh      | B.S. in Biological Sciences, SNU                   | weather1999@snu.ac.kr   |
-| Nuri Jung      | B.S. in Chemistry & Computational Sciences, SNU    | jnooree@snu.ac.kr       |
-| Wooyeop Jeong  | B.S. in Chemistry Education, SNU                   | dnduq97@snu.ac.kr       |
-| Sujin Park     | B.S. in Chemistry, SNU                             | safopanda@snu.ac.kr     |
-| Yubeen Kim     | B.S. in Chemistry, SNU                             | oilbeen@snu.ac.kr       |
+| Name           | Educational Background                              | E-mail                  |
+| -------------- | --------------------------------------------------- | ----------------------- |
+| Sangwoo Park   | B.S. in Chemistry, SNU                              | shadow1229@snu.ac.kr    |
+| Sohee Kwon     | B.S. in Chemistry, SNU                              | sohee95@snu.ac.kr       |
+| Hyeonuk Woo    | B.S. in Chemistry, SNU                              | dngusdnr1@snu.ac.kr     |
+| Katsuhito Inui | B.S. in Applied Chemistry, The University of Tokyo  | downbylaw@snu.ac.kr     |
+| Minjae Park    | B.S. in Chemistry & Nanoscience, Ewha W. University | minjp2357@snu.ac.kr     |
+| Changsoo Lee   | B.S. & M.S. in Pharmacy, SNU                        | ccaa2013@snu.ac.kr      |
+| Jiho Sim       | B.S. in Chemistry, SNU                              | j2hosim@snu.ac.kr       |
+| Sumin Lee      | B.S. in Biological Sciences, SNU                    | keepthrword22@snu.ac.kr |
+| Hakjean Kim    | B.S. in Chemistry, SNU                              | hakjean@snu.ac.kr       |
+| Jayun Choi     | B.S. in Chemistry, SNU                              | jychoi9809@snu.ac.kr    |
+| Seho Lee       | B.S. in Chemistry, SNU                              | tp1928@snu.ac.kr        |
+| Jihyeon Lee    | B.S. in Chemistry, SMWU                             | jihyeon@snu.ac.kr       |
+| Seeun Kim      | B.S. in Chemistry, SNU                              | ehdqn04@snu.ac.kr       |
+| Simaek Oh      | B.S. in Biological Sciences, SNU                    | weather1999@snu.ac.kr   |
+| Nuri Jung      | B.S. in Chemistry & Computational Sciences, SNU     | jnooree@snu.ac.kr       |
+| Wooyeop Jeong  | B.S. in Chemistry Education, SNU                    | dnduq97@snu.ac.kr       |
+| Sujin Park     | B.S. in Chemistry, SNU                              | safopanda@snu.ac.kr     |
+| Yubeen Kim     | B.S. in Chemistry, SNU                              | oilbeen@snu.ac.kr       |
 
 ## Internship Members
 
