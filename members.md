@@ -89,7 +89,7 @@ Republic of Korea
 
 | Name              | Current Position                                                                                     | Course in SeokLab                                           |
 | ----------------- | ---------------------------------------------------------------------------------------------------- | ----------------------------------------------------------- |
-| Beomchang Kang    | Unattached                                                                                           | Ph.D., 2022                                                 |
+| Beomchang Kang    | Professional, LG Energy Solution                                                                     | Ph.D., 2022                                                 |
 | Jinsol Yang       | Director & Co-founder, Galux Inc.                                                                    | Ph.D., 2022                                                 |
 | Taeyong Park      | Vice President & Co-founder, Galux Inc.                                                              | Ph.D., 2021                                                 |
 | Jonghun Won       | Director & Co-founder, Galux Inc.                                                                    | M.S. and Ph.D., 2021                                        |
