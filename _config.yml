@@ -194,6 +194,17 @@ yat:
 #   client_secret: "Your client secret"
 #   redirect_uri: "Your redirect url"   # If you use a custom domain name
 
+# Utterances comments
+# See https://utteranc.es/
+# set follow_site_theme true to make utterances' theme follow the site's
+
+# utterances:
+#   repo: "owner/repo"
+#   issue_term: "title"
+#   label: "utterances comment"
+#   theme: "github-light"
+#   follow_site_theme: true
+
 # Build settings
 # highlighter: none
 markdown: kramdown
