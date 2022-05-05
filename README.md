@@ -1,3 +1,6 @@
+# This is a FORK, find the original theme here:
+<https://jeffreytse.github.io/jekyll-theme-yat>
+
 <div align="center">
   <br>
 
