@@ -58,7 +58,6 @@ Republic of Korea
 | Sohee Kwon     | B.S. in Chemistry, SNU                              | sohee95@snu.ac.kr       |
 | Hyeonuk Woo    | B.S. in Chemistry, SNU                              | dngusdnr1@snu.ac.kr     |
 | Katsuhito Inui | B.S. in Applied Chemistry, The University of Tokyo  | downbylaw@snu.ac.kr     |
-| Minjae Park    | B.S. in Chemistry & Nanoscience, Ewha W. University | minjp2357@snu.ac.kr     |
 | Changsoo Lee   | B.S. & M.S. in Pharmacy, SNU                        | ccaa2013@snu.ac.kr      |
 | Jiho Sim       | B.S. in Chemistry, SNU                              | j2hosim@snu.ac.kr       |
 | Sumin Lee      | B.S. in Biological Sciences, SNU                    | keepthrword22@snu.ac.kr |
