@@ -212,7 +212,7 @@ exclude:
 #   subheading_style: null  # Custom subheading style (e.g. color: gold)
 
 # Excerpt size setting
-# excerpt_size: 350
+excerpt_size: 100
 
 # Pagination setting
 paginate: 10
