@@ -220,6 +220,7 @@ paginate_path: "/publications/page:num/"
 
 # Build settings
 theme: "jekyll-theme-yat"
+future: true
 # highlighter: none
 markdown: kramdown
 kramdown:
