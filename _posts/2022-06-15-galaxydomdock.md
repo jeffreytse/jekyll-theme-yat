@@ -7,7 +7,7 @@ journal: Journal of Molecular Biology
 categories:
   - Prediction of protein-protein interactions
 tags:
-  - ab-initio
+  - ab initio
   - protein complex
   - structure prediction
 redirect_to: https://doi.org/10.1016/j.jmb.2022.167508
