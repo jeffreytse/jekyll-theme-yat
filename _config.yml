@@ -218,6 +218,17 @@ excerpt_size: 100
 paginate: 10
 paginate_path: "/publications/page:num/"
 
+# Utterances comments
+# See https://utteranc.es/
+# set follow_site_theme true to make utterances' theme follow the site's
+
+# utterances:
+#   repo: "owner/repo"
+#   issue_term: "title"
+#   label: "utterances comment"
+#   theme: "github-light"
+#   follow_site_theme: true
+
 # Build settings
 theme: "jekyll-theme-yat"
 future: true
