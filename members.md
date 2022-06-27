@@ -74,9 +74,14 @@ Republic of Korea
 
 ## Internship Members
 
-| Name          | Affiliation                  |
-| ------------- | ---------------------------- |
-| Seungmin Yeom | Department of Chemistry, SNU |
+| Name          | Affiliation                            |
+| ------------- | -------------------------------------- |
+| Seungmin Yeom | Department of Chemistry, SNU           |
+| Soohyun Jo    | Department of Chemistry, SNU           |
+| Yongin Jo     | Department of Chemistry, SNU           |
+| Sanggeun Park | Department of Biological Sciences, SNU |
+
+
 
 ## Administrative Assistant
 
