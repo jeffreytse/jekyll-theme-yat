@@ -3,7 +3,7 @@
 <script>
   const utterancesThemeFromDataTheme = () => {
     const dataTheme = document.documentElement.getAttribute('data-theme');
-    return dataTheme === 'dark' ? 'github-dark' : 'github-light';
+    return `github-${dataTheme}`;
   };
 
   const setUtterancesTheme = () => {
