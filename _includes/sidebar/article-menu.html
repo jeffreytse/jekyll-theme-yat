@@ -29,8 +29,12 @@
       let textContent = "";
 
       h.childNodes.forEach((value) => {
-        if (value.nodeType === Node.TEXT_NODE) {
-          textContent += value.nodeValue;
+        if (value.nodeType === Node.ELEMENT_NODE) {
+          if (value.role !== "doc-noteref") {
+            textContent += value.outerHTML;
+          }
+        } else {
+          textContent += value.textContent;
         }
       });
 
