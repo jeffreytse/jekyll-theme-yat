@@ -4,6 +4,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="google-translate-customization" content="108d9124921d80c3-80e20d618ff053c8-g4f02ec6f3dba68b7-c">
   {%- seo -%}
+  {% if page.title %}
+    <meta property="og:title" content="{{ site.title }} :: {{ page.title }}">
+    <meta property="og:type" content="article">
+    {% if page.subtitle %}
+      <meta property="og:description" content="{{ post.subtitle }}">
+    {% else %}
+      <meta property="og:description" content="{{ site.description }}">
+    {% endif %}
+    {% if page.banner %}
+      <meta property="og:image" content="{{ page.banner }}">
+    {% else %}
+      <meta property="og:image" content="{{ site.image }}">
+    {% endif %}
+  {% else %}
+    <meta property="og:title" content="{{ site.title }}">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="{{ site.description }}">
+    <meta property="og:image" content="{{ site.image }}">
+  {% endif %}
   <link rel="shortcut icon" href="{{ site.favicon }}">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-noto-sans@0.0.72/index.min.css">
