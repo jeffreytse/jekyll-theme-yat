@@ -434,6 +434,9 @@ html {
     img, svg, iframe {
       margin-left: auto;
       margin-right: auto;
+    }
+
+    img:not(.emoji), svg, iframe {
       display: block;
     }
 
