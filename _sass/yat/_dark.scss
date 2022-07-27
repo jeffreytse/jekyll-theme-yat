@@ -142,14 +142,20 @@ html[data-theme="dark"]  {
     }
   }
 
-  .post .post-content {
-    h2 {
+  .post {
+    .post-header {
       border-bottom: 1px solid #555;
-      padding-bottom: 0.3em;
     }
 
-    img:not(.emoji):not([raw]) {
-      background-color: #ffffff33;
+    .post-content {
+      h2 {
+        border-bottom: 1px solid #555;
+        padding-bottom: 0.3em;
+      }
+
+      img:not(.emoji):not([raw]) {
+        background-color: #ffffff33;
+      }
     }
   }
 
