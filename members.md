@@ -80,6 +80,7 @@ Republic of Korea
 | Soohyun Jo    | Department of Chemistry, SNU           |
 | Yongin Jo     | Department of Chemistry, SNU           |
 | Sanggeun Park | Department of Biological Sciences, SNU |
+| Hyunsu Kim    | Department of Pharmacy, SNU            |
 
 
 
