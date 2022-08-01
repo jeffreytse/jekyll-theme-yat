@@ -146,7 +146,7 @@ html[data-theme="dark"] {
     }
 
     .post-content {
-      img:not([raw]) {
+      img:not(.emoji):not([raw]) {
         background-color: #ffffff33;
       }
     }
