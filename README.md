@@ -22,7 +22,7 @@
       alt="Github Pages" />
   </a>
 
-  <a href="http://badge.fury.io/rb/jekyll-theme-yat">
+  <a href="https://badge.fury.io/rb/jekyll-theme-yat">
     <img src="https://badge.fury.io/rb/jekyll-theme-yat.svg"
       alt="Gem Version" />
   </a>
@@ -33,7 +33,7 @@
   </a>
 
   <a href="https://liberapay.com/jeffreytse">
-    <img src="http://img.shields.io/liberapay/goal/jeffreytse.svg?logo=liberapay"
+    <img src="https://img.shields.io/liberapay/goal/jeffreytse.svg?logo=liberapay"
       alt="Donate (Liberapay)" />
   </a>
 
