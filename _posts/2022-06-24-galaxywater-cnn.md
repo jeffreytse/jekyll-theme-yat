@@ -4,7 +4,7 @@ title:
 authors: Sangwoo Park and Chaok Seok*
 journal: Journal of Chemical Information and Modeling
 categories:
-  - Prediction of water positions prediction
+  - Prediction of protein-ligand interactions
 tags:
   - 3D-CNN model
   - water score map
