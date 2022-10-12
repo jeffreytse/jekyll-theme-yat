@@ -1,7 +1,7 @@
 ---
 title:
   "A pGpG-specific phosphodiesterase regulates cyclic di-GMP signaling in Vibrio cholerae"
-authors: Kyoo Heo, Jae-Woo Lee, Yongdae Jang, Sohee Kwon, Jaehun Lee, Chaok Seok, Nam-Chul Ha*, and Yeong-Jae Seok*
+authors: Kyoo Heo et al. (Sohee Kwon and Chaok Seok)
 journal: Journal of Biological Chemistry
 categories:
   - Applications and collaborations
