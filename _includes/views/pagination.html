@@ -16,7 +16,7 @@
       {% assign lang = post.lang %}
       {%- include functions.html func='get_reading_time' -%}
       {% assign reading_time = return %}
-      {%- include functions.html func='get_article_excerpt' -%}
+      {%- include functions.html func='get_article_excerpt' excerpt_size=post.excerpt_size -%}
       {% assign excerpt = return %}
       {%- assign post_url = post.url | relative_url -%}
 
