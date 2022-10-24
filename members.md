@@ -92,6 +92,8 @@ Republic of Korea
 
 | Name              | Current Position                                                                                     | Course in SeokLab                                           |
 | ----------------- | ---------------------------------------------------------------------------------------------------- | ----------------------------------------------------------- |
+| Sohee Kwon        | Researcher, Galux Inc.                                                                               | Ph.D., 2022                                                 |
+| Sangwoo Park      | Staff Engineer, Samsung Semiconductor Lab                                                            | Ph.D., 2022                                                 |
 | Beomchang Kang    | Professional, LG Energy Solution                                                                     | Ph.D., 2022                                                 |
 | Jinsol Yang       | Director & Co-founder, Galux Inc.                                                                    | Ph.D., 2022                                                 |
 | Taeyong Park      | Vice President & Co-founder, Galux Inc.                                                              | Ph.D., 2021                                                 |
