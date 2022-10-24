@@ -77,12 +77,10 @@ Republic of Korea
 | Name          | Affiliation                            |
 | ------------- | -------------------------------------- |
 | Seungmin Yeom | Department of Chemistry, SNU           |
-| Soohyun Jo    | Department of Chemistry, SNU           |
-| Yongin Jo     | Department of Chemistry, SNU           |
 | Sanggeun Park | Department of Biological Sciences, SNU |
 | Hyunsoo Kim   | Department of Pharmacy, SNU            |
-
-
+| Byungwook Kim | Department of Chemistry, SNU           |
+| Wooyoung Kim  | Department of Chemistry, SNU           |
 
 ## Administrative Assistant
 
