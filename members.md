@@ -78,7 +78,7 @@ Republic of Korea
 | ------------- | -------------------------------------- |
 | Seungmin Yeom | Department of Chemistry, SNU           |
 | Sanggeun Park | Department of Biological Sciences, SNU |
-| Hyunsoo Kim   | Department of Pharmacy, SNU            |
+| Hyunsoo Kim   | College of Pharmacy, SNU               |
 | Byungwook Kim | Department of Chemistry, SNU           |
 | Wooyoung Kim  | Department of Chemistry, SNU           |
 
@@ -96,7 +96,7 @@ Republic of Korea
 | Jinsol Yang       | Director & Co-founder, Galux Inc.                                                                    | Ph.D., 2022                                                 |
 | Taeyong Park      | Vice President & Co-founder, Galux Inc.                                                              | Ph.D., 2021                                                 |
 | Jonghun Won       | Director & Co-founder, Galux Inc.                                                                    | M.S. and Ph.D., 2021                                        |
-| Minkyung Baek     | Postdoctoral Researcher, Department of Biochemistry, University of Washington                        | Ph.D., 2018                                                 |
+| Minkyung Baek     | Assistant Professor, Department of Biological Sciences, Seoul National University                    | Ph.D., 2018                                                 |
 | Martin Steinegger | Assistant Professor, Department of Biological Sciences, Seoul National University                    | Visiting Student from Max Planck Institute, 2014, 2016~2018 |
 | Gyu Rie Lee       | Postdoctoral Researcher, Department of Biochemistry, University of Washington                        | Ph.D., 2017                                                 |
 | Matthias Buck     | Professor, Case Western Reserve University                                                           | Visiting Professor, 2017                                    |
@@ -111,7 +111,7 @@ Republic of Korea
 | Hahnbeom Park     | Senior Researcher, Brain Science Institute, KIST                                                     | Ph.D., 2012                                                 |
 | Junsu Ko          | CEO & Co-founder, Arontier                                                                           | Ph.D., 2012                                                 |
 | Junghyun Choi     | Researcher, LG Chemistry                                                                             | M.S., 2011                                                  |
-| Juyong Lee        | Assistant Professor, Department of Chemistry, Kangwon National University                            | M.S. and Ph.D., 2011                                        |
+| Juyong Lee        | Assistant Professor, College of Pharmacy, Seoul National University                                  | M.S. and Ph.D., 2011                                        |
 | Younkyoung Lee    | Assistant Professor, Electronic Materials Engineering, Jeonbuk National University                   | M.S., 2010                                                  |
 | Jungho Lee        | Assistant Professor, Department of Chemistry, Seoul National University                              | Research Assistant, 2008                                    |
 | Jungki Yoon       | School of Medicine, Seoul National University                                                        | Undergraduate Student, 2008                                 |
