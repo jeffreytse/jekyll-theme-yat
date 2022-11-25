@@ -2,7 +2,7 @@
 title:
   "Cryo-EM structure of the human somatostatin receptor 2 complex with its agonist somatostatin delineates the ligand-binding specificity"
 authors: Yunseok Heo et al. (Hyeonuk Woo)
-journal: Structural Biology and Molecular Biophysics
+journal: eLife
 categories:
   - Applications and collaborations
 tags:
