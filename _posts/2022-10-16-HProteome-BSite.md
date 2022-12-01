@@ -1,6 +1,6 @@
 ---
 title: "HProteome-BSite: predicted binding sites and ligands in human 3D proteome"
-authors: Jiho Sim, Sohee Kwon, Chaok Seok*
+authors: Jiho Sim, Sohee Kwon and Chaok Seok*
 journal: Nucleic Acids Research
 categories:
   - Prediction of protein-ligand interactions
