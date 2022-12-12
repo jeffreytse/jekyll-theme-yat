@@ -1,6 +1,6 @@
 ---
 title: "Evaluating GPCR modeling and docking strategies in the era of deep learning-based protein structure prediction"
-authors: Sumin Lee, Seeun Kim, Gyu Rie Lee, Sohee Kwon, Hyeonuk Woo, Chaok Seok*, Hahnbeom Park*
+authors: Sumin Lee, Seeun Kim, Gyu Rie Lee, Sohee Kwon, Hyeonuk Woo, Chaok Seok* and Hahnbeom Park*
 journal: Computational and Structural Biotechnology Journal
 categories:
   - Applications
