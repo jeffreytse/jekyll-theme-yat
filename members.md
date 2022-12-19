@@ -89,6 +89,7 @@ Republic of Korea
 
 | Name              | Current Position                                                                                     | Course in SeokLab                                           |
 | ----------------- | ---------------------------------------------------------------------------------------------------- | ----------------------------------------------------------- |
+| Katsuhito Inui    | Researcher, Seoul National University                                                                | M.S., 2022                                                 |
 | Sohee Kwon        | Researcher, Galux Inc.                                                                               | Ph.D., 2022                                                 |
 | Sangwoo Park      | Staff Engineer, Samsung Semiconductor Lab                                                            | Ph.D., 2022                                                 |
 | Beomchang Kang    | Professional, LG Energy Solution                                                                     | Ph.D., 2022                                                 |
