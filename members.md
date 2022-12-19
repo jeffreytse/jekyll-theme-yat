@@ -55,7 +55,6 @@ Republic of Korea
 | Name           | Educational Background                              | E-mail                  |
 | -------------- | --------------------------------------------------- | ----------------------- |
 | Hyeonuk Woo    | B.S. in Chemistry, SNU                              | dngusdnr1@snu.ac.kr     |
-| Katsuhito Inui | B.S. in Applied Chemistry, The University of Tokyo  | downbylaw@snu.ac.kr     |
 | Changsoo Lee   | B.S. & M.S. in Pharmacy, SNU                        | ccaa2013@snu.ac.kr      |
 | Jiho Sim       | B.S. in Chemistry, SNU                              | j2hosim@snu.ac.kr       |
 | Sumin Lee      | B.S. in Biological Sciences, SNU                    | keepthrword22@snu.ac.kr |
@@ -90,6 +89,8 @@ Republic of Korea
 
 | Name              | Current Position                                                                                     | Course in SeokLab                                           |
 | ----------------- | ---------------------------------------------------------------------------------------------------- | ----------------------------------------------------------- |
+| Katsuhito Inui    | Researcher, Seoul National University                                                                | M.S., 2022
+                  |
 | Sohee Kwon        | Researcher, Galux Inc.                                                                               | Ph.D., 2022                                                 |
 | Sangwoo Park      | Staff Engineer, Samsung Semiconductor Lab                                                            | Ph.D., 2022                                                 |
 | Beomchang Kang    | Professional, LG Energy Solution                                                                     | Ph.D., 2022                                                 |
