@@ -1,6 +1,6 @@
 ---
 title: "Atomic-level thermodynamics analysis of the binding free energy of SARS-CoV-2 neutralizing antibodies"
-authors: Jihyeon Lee, Chaok Seok, Sihyun Ham, Song-Ho Chong*
+authors: Jihyeon Lee, Chaok Seok, Sihyun Ham and Song-Ho Chong*
 journal: Proteins
 categories:
   - Applications
