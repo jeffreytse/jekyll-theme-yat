@@ -24,7 +24,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: dlfma의 첫 git blog
+title: dlfma의 blog
 email: 
 author: dlfma
 
