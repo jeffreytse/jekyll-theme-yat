@@ -24,8 +24,13 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
+<<<<<<< HEAD
 title: dlfma의 blog
 email: 
+=======
+title: dlfma의 블로그
+email: your-email@domain.com
+>>>>>>> a9699bb192f44d8b698c6dd32343e89209df20dc
 author: dlfma
 
 # Copyright setting
