@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Welcome to Jekyll!
-subtitle: A awesome static site generator.
-author: Jeffrey
+title: Welcome to dlfma!
+subtitle: dlfma의 블로그
+author: dlfma
 categories: jekyll
 banner:
   video: https://vjs.zencdn.net/v/oceans.mp4
