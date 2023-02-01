@@ -161,8 +161,8 @@ yat:
 # Page default value
 # defaults:
 #   home:
-#     heading: "Your awesome heading"
-#     subheading: "Your awesome subheading"
+#     heading: "Welcome to My Blog"
+#     subheading: "dlfma of Blog"
 #     banner: "Your image url"
 
 # Banner default settings
