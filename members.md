@@ -74,10 +74,8 @@ Republic of Korea
 | Name          | Affiliation                            |
 | ------------- | -------------------------------------- |
 | Seungmin Yeom | Department of Chemistry, SNU           |
-| Sanggeun Park | Department of Biological Sciences, SNU |
 | Hyunsoo Kim   | College of Pharmacy, SNU               |
 | Byungwook Kim | Department of Chemistry, SNU           |
-| Wooyoung Kim  | Department of Chemistry, SNU           |
 
 ## Administrative Assistant
 
