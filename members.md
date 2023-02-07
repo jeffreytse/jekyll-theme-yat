@@ -71,11 +71,15 @@ Republic of Korea
 
 ## Internship Members
 
-| Name          | Affiliation                            |
-| ------------- | -------------------------------------- |
-| Seungmin Yeom | Department of Chemistry, SNU           |
-| Hyunsoo Kim   | College of Pharmacy, SNU               |
-| Byungwook Kim | Department of Chemistry, SNU           |
+| Name            | Affiliation                                              |
+| --------------- | -------------------------------------------------------- |
+| Seungmin Yeom   | Department of Chemistry, SNU                             |
+| Hyunsoo Kim     | College of Pharmacy, SNU                                 |
+| Byungwook Kim   | Department of Chemistry, SNU                             |
+| Hyeonsung Byeon | Department of Chemistry, SNU                             |
+| Jeongbin Im     | Department of Chemistry, SNU                             |
+| Younghwan Kim   | Department of Chemistry, SNU                             |
+| Jaekyun Ahn     | Department of Forest Sciences & Chemistry, SNU           |
 
 ## Administrative Assistant
 
