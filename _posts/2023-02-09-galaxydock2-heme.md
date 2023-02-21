@@ -9,4 +9,4 @@ tags:
   - protein-ligand interaction 
 ---
 
-*Manuscript in preparation*
+*Manuscript in press*
