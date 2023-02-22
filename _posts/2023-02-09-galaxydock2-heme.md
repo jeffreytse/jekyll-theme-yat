@@ -6,7 +6,6 @@ categories:
   - Prediction of protein-ligand interactions
 tags:
   - scoring
-  - protein-ligand interaction 
+  - protein-ligand interaction
+redirect_to: https://doi.org/10.1002/jcc.27092
 ---
-
-*Manuscript in press*
