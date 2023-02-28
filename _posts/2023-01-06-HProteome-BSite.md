@@ -8,5 +8,4 @@ tags:
   - information-based
   - protein-ligand docking
 redirect_to: https://doi.org/10.1093/nar/gkac873
-
 ---
