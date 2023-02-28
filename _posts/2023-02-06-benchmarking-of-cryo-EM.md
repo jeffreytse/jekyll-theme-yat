@@ -6,7 +6,6 @@ categories:
   - Applications
 tags:
   - Cryo-EM
-redirect_to: 
+redirect_to: http://doi.org/10.1002/jcc.27091
 ---
 
-*Manuscript in press*
