@@ -40,7 +40,8 @@
       {%- endif -%}
       <h3 class="post-subtitle">{{ subheading | default: post_subtitle }}</h3>
       <div class="post-meta">
-        <span class="post-date"><i class="fa-solid fa-calendar-day"></i> {{ post.date | date: date_format }}</span>
+        <span class="post-date"><i class="fa-solid fa-calendar-day"></i> {% if
+        post.accepted_date %}(Accepted at) {% endif %}{{ post.date | date: date_format }}</span>
         {%- if post.use_mtime -%}
         <span class="post-date left-vsplit"><i class="fa-solid fa-pen-to-square"></i> {{ post.last_modified_at | date:
           ldf }}</span>
