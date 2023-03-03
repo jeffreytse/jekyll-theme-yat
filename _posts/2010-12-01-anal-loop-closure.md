@@ -4,7 +4,7 @@ title:
 authors:
   Julian Lee*, Dongseon Lee, Hahnbeom Park, Evangelos A. Coutsias and Chaok
   Seok*
-journal: "Proteins: Structure, Function, and Bioinformatics"
+journal: Proteins
 categories:
   - Protein structure prediction
 tags:

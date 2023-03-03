@@ -3,7 +3,7 @@ title:
   "Alternative zinc-binding sites explain the redox sensitivity of
   zinc-containing anti-sigma factors"
 authors: Lim Heo, Yoo-Bok Cho, Myeong Sup Lee, Jung-Hye Roe* and Chaok Seok*
-journal: "Proteins: Structure, Function, and Bioinformatics"
+journal: Proteins
 categories:
   - others
 tags:

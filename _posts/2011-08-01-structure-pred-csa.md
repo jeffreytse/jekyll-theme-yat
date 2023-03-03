@@ -5,7 +5,7 @@ title:
 authors:
   Juyong Lee, Jinhyuk Lee, Takeshi N. Sasaki, Masaki Sasai, Chaok Seok* and
   Jooyoung Lee*
-journal: "Proteins: Structure, Function, and Bioinformatics"
+journal: Proteins
 categories:
   - Applications and collaborations
 tags:

@@ -3,7 +3,7 @@ title:
   "Effective protein model structure refinement by loop modeling and overall
   relaxation"
 authors: Gyu Rie Lee, Lim Heo and Chaok Seok*
-journal: "Proteins: Structure, Function, and Bioinformatics"
+journal: Proteins
 categories:
   - Protein structure prediction
 tags:

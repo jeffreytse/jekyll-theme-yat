@@ -5,7 +5,7 @@ title:
 authors:
   Jonghun Won, Minkyung Baek, Bohdan Monastyrskyy, Andriy Kryshtafovych and
   Chaok Seok*
-journal: "Proteins: Structure, Function, and Bioinformatics"
+journal: Proteins
 categories:
   - Applications and collaborations
 tags:

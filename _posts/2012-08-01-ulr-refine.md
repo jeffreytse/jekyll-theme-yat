@@ -1,7 +1,7 @@
 ---
 title: "Refinement of unreliable local regions in template-based protein models"
 authors: Hahnbeom Park and Chaok Seok*
-journal: "Proteins: Structure, Function, and Bioinformatics"
+journal: Proteins
 categories:
   - Protein structure prediction
 tags:

@@ -2,7 +2,7 @@
 title: "Modeling SARS-CoV-2 proteins in the CASP-commons experiment"
 authors:
   Andriy Kryshtafovych* et al. (Sohee Kwon, Jonghun Won and Chaok Seok)
-journal: "Proteins: Structure, Function, and Bioinformatics"
+journal: Proteins
 categories:
   - Applications and collaborations
 tags:

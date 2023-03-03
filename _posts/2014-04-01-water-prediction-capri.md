@@ -3,7 +3,7 @@ title: "Blind prediction of interfacial water positions in CAPRI"
 authors:
   Marc F. Lensink* et al. (Hahnbeom Park, Junsu Ko, Hasup Lee and Chaok
   Seok)
-journal: "Proteins: Structure, Function, and Bioinformatics"
+journal: Proteins
 categories:
   - Applications and collaborations
 tags:

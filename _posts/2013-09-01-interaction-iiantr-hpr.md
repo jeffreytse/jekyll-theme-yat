@@ -4,7 +4,7 @@ title:
   identified by X-ray crystallography and docking studies"
 authors:
   Mi-Sun Kim, Hasup Lee, Lim Heo, Areum Lim, Chaok Seok* and Dong Hae Shin*
-journal: "Proteins: Structure, Function, and Bioinformatics"
+journal: Proteins
 categories:
   - Applications and collaborations
 tags:

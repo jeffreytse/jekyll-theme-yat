@@ -3,7 +3,7 @@ title:
   "Assessment of protein model structure accuracy estimation in CASP14: Old and
   new challenges"
 authors: Sohee Kwon, Jonghun Won, Andriy Kryshtafovych and Chaok Seok*
-journal: "Proteins: Structure, Function, and Bioinformatics"
+journal: Proteins
 categories:
   - Applications and collaborations
 tags:

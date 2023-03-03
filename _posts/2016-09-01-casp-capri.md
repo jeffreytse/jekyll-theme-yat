@@ -5,7 +5,7 @@ title:
 authors:
   Marc F. Lensink* et al. (Hasup Lee, Minkyung Baek, Sangwoo Park, Lim
   Heo, Gyu Rie Lee and Chaok Seok)
-journal: "Proteins: Structure, Function, and Bioinformatics"
+journal: Proteins
 categories:
   - Applications and collaborations
 tags:

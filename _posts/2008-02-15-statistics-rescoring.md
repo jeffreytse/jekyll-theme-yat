@@ -3,7 +3,7 @@ title:
   "A statistical rescoring scheme for protein–ligand docking: Consideration of
   entropic effect"
 authors: Juyong Lee and Chaok Seok*
-journal: "Proteins: Structure, Function, and Bioinformatics"
+journal: Proteins
 categories:
   - Prediction of protein-ligand interactions
 tags:

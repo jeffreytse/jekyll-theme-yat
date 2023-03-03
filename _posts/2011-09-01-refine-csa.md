@@ -5,7 +5,7 @@ title:
 authors:
   Hahnbeom Park, Junsu Ko, Keehyoung Joo, Julian Lee, Chaok Seok* and Jooyoung
   Lee*
-journal: "Proteins: Structure, Function, and Bioinformatics"
+journal: Proteins
 categories:
   - Protein structure prediction
 tags:
