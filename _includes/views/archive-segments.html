@@ -1,0 +1,76 @@
+{%- assign split_mark = '<|>' -%}
+
+{%- assign unpublished = false -%}
+{%- for post in site.posts -%}
+  {%- if post.accepted_at -%}
+    {%- assign unpublished = true -%}
+  {%- else -%}
+    {%- assign name = post.date | date: filter -%}
+    {%- assign dates = dates | append: split_mark  | append: name -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- assign dates = dates
+  | remove_first: split_mark
+  | split: split_mark
+  | sort: self
+  | uniq
+  | reverse -%}
+
+<div class="page-segments">
+  {%- if unpublished -%}
+    <h2 id="unpublished" class="segment-name">Unpublished / Early Access</h2>
+    <div>
+      <ul class="page-segments-list">
+        {%- assign items = site.posts | where_exp: "item", "item.accepted_at != nil" -%}
+        {%- for item in items -%}
+          <li> {%- include views/post-item.html -%} </li>
+        {%- endfor -%}
+      </ul>
+    </div>
+  {%- endif -%}
+
+  {%- assign published = site.posts | where_exp: "item", "item.accepted_at == nil" -%}
+
+  {%- assign max = dates | first -%}
+  {%- assign min = dates | last -%}
+  {%- assign start = min | divided_by: 10 -%}
+  {%- assign end = max | divided_by: 10 | times: 10 -%}
+  {%- if end == max -%}
+    {%- assign end = end | minus: 10 -%}
+  {%- endif -%}
+
+  {%- for year in (end..max) reversed -%}
+  {%- assign items = published | where: "date", year -%}
+  <h2 id="{{ year }}" class="segment-name">{{ year }}</h2>
+  <ul class="page-segments-list">
+    {%- for item in items -%}
+      {%- if item != nil -%}
+      <li> {%- include views/post-item.html -%} </li>
+      {%- endif -%}
+    {%- endfor -%}
+  </ul>
+  {%- endfor -%}
+
+  {%- assign start = start | plus: 1 -%}
+  {%- assign end = end | divided_by: 10 -%}
+  {%- for i in (start..end) reversed -%}
+    {%- assign next = i | times: 10 | minus: 1 -%}
+    {%- assign curr = next | minus: 9 -%}
+    {%- assign date_range = curr | append: "-" | append: next -%}
+
+    {%- assign curr_date = curr | append: "-01-01" | to_time -%}
+    {%- assign next_date = next | plus: 1 | append: "-01-01" | to_time -%}
+    {%- assign items = published
+      | where_exp: "item", "item.date >= curr_date"
+      | where_exp: "item", "item.date <= next_date" -%}
+    <h2 id="{{ date_range }}" class="segment-name">{{ date_range }}</h2>
+    <ul class="page-segments-list">
+    {%- for item in items -%}
+      {%- if item != nil -%}
+      <li> {%- include views/post-item.html -%} </li>
+      {%- endif -%}
+    {%- endfor -%}
+    </ul>
+  {%- endfor -%}
+</div>

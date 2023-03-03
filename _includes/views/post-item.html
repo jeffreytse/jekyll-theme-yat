@@ -5,7 +5,12 @@
 {%- assign post = item -%}
 
 {%- assign date_format = site.yat.date_format | default: "%b %-d, %Y" -%}
-<span class="post-meta">{{ post.date | date: date_format }}</span>
+{%- assign post_date = post.date | date: date_format -%}
+{%- if post.accepted_at -%}
+  {%- assign post_date = post.accepted_at | date: date_format -%}
+  {%- assign post_date = "(Accepted at) " | append: post_date -%}
+{%- endif -%}
+<span class="post-meta">{{ post_date }}</span>
 <span>
   <a class="post-link" href="{{ post.url | relative_url }}">
     {{ post.title }}
