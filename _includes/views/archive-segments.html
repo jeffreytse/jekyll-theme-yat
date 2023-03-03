@@ -35,12 +35,19 @@
       | where_exp: "item", "item.date >= curr_date"
       | where_exp: "item", "item.date <= next_date" -%}
     <h2 id="{{ date_range }}" class="segment-name">{{ date_range }}</h2>
-    <ul class="page-segments-list">
-    {%- for item in items -%}
-      {%- if item != nil -%}
-      <li> {%- include views/post-item.html -%} </li>
-      {%- endif -%}
-    {%- endfor -%}
-    </ul>
+    <div>
+      {%- for year in (curr..next) reversed -%}
+        {%- assign year_items = items | where: "date", year -%}
+        {%- if year_items.size == 0 -%}
+          {%- continue -%}
+        {%- endif -%}
+        <h3 id="{{ year }}" class="segment-subname">{{ year }}</h3>
+        <ul class="page-segments-list">
+          {%- for item in year_items -%}
+            <li> {%- include views/post-item.html -%} </li>
+          {%- endfor -%}
+        </ul>
+      {%- endfor -%}
+    </div>
   {%- endfor -%}
 </div>
