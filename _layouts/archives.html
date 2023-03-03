@@ -4,5 +4,5 @@ sidebar: archive-list
 ---
 
 {%- if site.posts.size > 0 -%}
-  {%- include views/archive-segments.html -%}
+  {%- include archive-common.html sub="views/archive-segments.html" -%}
 {%- endif -%}

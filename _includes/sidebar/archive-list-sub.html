@@ -1,0 +1,47 @@
+{%- assign url = '/publications/archives.html' | relative_url -%}
+
+<div class="common-list">
+  <ul>
+    <li>
+      <a href="{{ '/publications/index.html' | relative_url }}">
+        All<span>{{ site.posts.size }}</span>
+      </a>
+    </li>
+
+    {%- if include.unpublished.size > 0 -%}
+      <li>
+        <a href="{{ url }}#h-unpublished">
+          Unpublished <span>{{ include.unpublished.size }}</span>
+        </a>
+      </li>
+    {%- endif -%}
+
+    {%- assign end = include.end | times: 10 -%}
+    {%- for year in (end..include.max) reversed -%}
+      {%- assign items = include.published | where: "date", year -%}
+      <li>
+        <a href="{{ url }}#h-{{ year }}">
+          {{ year }} <span>{{ items.size }}</span>
+        </a>
+      </li>
+    {%- endfor -%}
+
+    {%- assign start = include.start | plus: 1 -%}
+    {%- for i in (start..include.end) reversed -%}
+      {%- assign next = i | times: 10 | minus: 1 -%}
+      {%- assign curr = next | minus: 9 -%}
+      {%- assign date_range = curr | append: "-" | append: next -%}
+
+      {%- assign curr_date = curr | append: "-01-01" | to_time -%}
+      {%- assign next_date = next | plus: 1 | append: "-01-01" | to_time -%}
+      {%- assign items = published
+        | where_exp: "item", "item.date >= curr_date"
+        | where_exp: "item", "item.date <= next_date" -%}
+      <li>
+        <a href="{{ url }}#h-{{ date_range }}">
+          {{ date_range }} <span>{{ items.size }}</span>
+        </a>
+      </li>
+    {%- endfor -%}
+  </ul>
+</div>

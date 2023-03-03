@@ -1,0 +1,32 @@
+{%- assign split_mark = '<|>' -%}
+
+{%- assign unpublished = site.posts | where_exp: "item", "item.accepted_at != nil" -%}
+{%- assign published = site.posts | where_exp: "item", "item.accepted_at == nil" -%}
+{%- for post in published -%}
+  {%- assign name = post.date | date: filter -%}
+  {%- assign dates = dates | append: split_mark | append: name -%}
+{%- endfor -%}
+
+{%- assign dates = dates
+  | remove_first: split_mark
+  | split: split_mark
+  | sort: self
+  | uniq
+  | reverse -%}
+
+{%- assign max = dates | first -%}
+{%- assign min = dates | last -%}
+{%- assign start = min | divided_by: 10 -%}
+{%- assign end = max | divided_by: 10 | times: 10 -%}
+{%- if end == max -%}
+  {%- assign end = end | minus: 10 -%}
+{%- endif -%}
+{%- assign end = end | divided_by: 10 -%}
+
+{%- include {{ include.sub }}
+  unpublished=unpublished
+  published=published
+  max=max
+  min=min
+  start=start
+  end=end -%}
