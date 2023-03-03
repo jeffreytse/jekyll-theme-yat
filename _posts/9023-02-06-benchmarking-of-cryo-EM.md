@@ -7,5 +7,5 @@ categories:
 tags:
   - Cryo-EM
 redirect_to: https://doi.org/10.1002/jcc.27091
-accepted_at: 2023-02-06
+accepted_in: 2023-02-06
 ---

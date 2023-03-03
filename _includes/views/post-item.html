@@ -6,9 +6,9 @@
 
 {%- assign date_format = site.yat.date_format | default: "%b %-d, %Y" -%}
 {%- assign post_date = post.date | date: date_format -%}
-{%- if post.accepted_at -%}
-  {%- assign post_date = post.accepted_at | date: date_format -%}
-  {%- assign post_date = "(Accepted at) " | append: post_date -%}
+{%- if post.accepted_in -%}
+  {%- assign post_date = post.accepted_in | date: date_format -%}
+  {%- assign post_date = "(Accepted in) " | append: post_date -%}
 {%- endif -%}
 <span class="post-meta">{{ post_date }}</span>
 <span>

@@ -41,7 +41,7 @@
       <h3 class="post-subtitle">{{ subheading | default: post_subtitle }}</h3>
       <div class="post-meta">
         <span class="post-date"><i class="fa-solid fa-calendar-day"></i> {% if
-          post.accepted_at %}(Accepted at) {{ post.accepted_at | date: date_format }}{% else %}{{ post.date | date:
+          post.accepted_in %}(Accepted in) {{ post.accepted_in | date: date_format }}{% else %}{{ post.date | date:
           date_format }}{% endif %}</span>
         {%- if post.use_mtime -%}
         <span class="post-date left-vsplit"><i class="fa-solid fa-pen-to-square"></i> {{ post.last_modified_at | date:

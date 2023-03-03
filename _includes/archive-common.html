@@ -1,7 +1,7 @@
 {%- assign split_mark = '<|>' -%}
 
-{%- assign unpublished = site.posts | where_exp: "item", "item.accepted_at != nil" -%}
-{%- assign published = site.posts | where_exp: "item", "item.accepted_at == nil" -%}
+{%- assign unpublished = site.posts | where_exp: "item", "item.accepted_in != nil" -%}
+{%- assign published = site.posts | where_exp: "item", "item.accepted_in == nil" -%}
 {%- for post in published -%}
   {%- assign name = post.date | date: filter -%}
   {%- assign dates = dates | append: split_mark | append: name -%}
