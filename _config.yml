@@ -184,7 +184,6 @@ defaults:
     values:
       layout: post
       permalink: "/:categories/:year/:month/:title:output_ext"
-      accepted_date: false
   - scope:
       path: _notice
       type: notice

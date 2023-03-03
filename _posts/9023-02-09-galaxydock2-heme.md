@@ -8,5 +8,5 @@ tags:
   - scoring
   - protein-ligand interaction
 redirect_to: https://doi.org/10.1002/jcc.27092
-accepted_date: true
+accepted_at: 2023-02-09
 ---
