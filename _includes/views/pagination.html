@@ -11,6 +11,7 @@
 {%- if posts.size > 0 -%}
 {%- assign ydf = site.yat.date_format | default: "%b %-d, %Y" -%}
 {%- assign ldf = site.last-modified-at.date_format | default: "%b %-d, %Y" -%}
+{%- assign archive = '/publications/archives.html' | relative_url -%}
 <div class="pagination">
   <!-- Post list links -->
   <ul class="post-list">
@@ -40,9 +41,11 @@
       {%- endif -%}
       <h3 class="post-subtitle">{{ subheading | default: post_subtitle }}</h3>
       <div class="post-meta">
-        <span class="post-date"><i class="fa-solid fa-calendar-day"></i> {% if
-          post.accepted_in %}(Accepted in) {{ post.accepted_in | date: date_format }}{% else %}{{ post.date | date:
-          date_format }}{% endif %}</span>
+        <span class="post-date"><i class="fa-solid fa-calendar-day"></i>
+          {% if post.journal %}
+          {% if
+          post.accepted_in %}<a class="post-tag" href="{{ archive }}#h-unpublished">(Accepted in) {{ post.accepted_in | date: date_format }}</a>{% else %}<a class="post-tag" href="{{ archive }}#h-{{ post.date | date: '%Y' }}">{{ post.date | date:
+          date_format }}</a>{% endif %}{% else %}{{ post.date | date: date_format }}{% endif %}</span>
         {%- if post.use_mtime -%}
         <span class="post-date left-vsplit"><i class="fa-solid fa-pen-to-square"></i> {{ post.last_modified_at | date:
           ldf }}</span>
