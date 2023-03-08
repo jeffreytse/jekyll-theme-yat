@@ -27,7 +27,7 @@
       {%- assign lang = post.lang -%}
       {%- assign post_url = post.url | relative_url -%}
       <h2 class="post-title">
-        <a class="post-link" href="{{ post_url }}">
+        <a class="post-link" href="{{ post_url }}" {%- if post.redirect_to -%} target="_blank" {%- endif -%}>
           {{ post.title }}
         </a>
       </h2>

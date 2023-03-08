@@ -12,7 +12,7 @@
 {%- endif -%}
 <span class="post-meta">{{ post_date }}</span>
 <span>
-  <a class="post-link" href="{{ post.url | relative_url }}">
+  <a class="post-link" href="{{ post.url | relative_url }}" {%- if post.redirect_to -%} target="_blank" {%- endif -%}>
     {{ post.title }}
   </a>
 </span>
