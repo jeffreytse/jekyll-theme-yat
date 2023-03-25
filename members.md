@@ -81,7 +81,6 @@ Republic of Korea
 | Hyeonsung Byeon | Department of Chemistry, SNU                             |
 | Jeongbin Im     | Department of Chemistry, SNU                             |
 | Younghwan Kim   | Department of Chemistry, SNU                             |
-| Jaekyun Ahn     | Department of Forest Sciences & Chemistry, SNU           |
 
 ## Administrative Assistant
 
