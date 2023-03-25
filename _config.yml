@@ -53,7 +53,8 @@ description:
   "Seoul National University Lab of Computational Biology and Biomolecular
   Engineering"
 url: "https://seoklab.org"
-favicon: "https://avatars.githubusercontent.com/u/16937572"
+#favicon: "https://avatars.githubusercontent.com/u/16937572"
+favicon: "/assets/images/logo.png"
 
 # Yat date format
 # refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
