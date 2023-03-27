@@ -24,7 +24,7 @@
 # in the templates via {{ site.myvariable }}.
 
 title: "SNU Compbio Lab"
-email: "galaxy.compbio@gmail.com"
+email: "contact@seoklab.org"
 author: "seoklab"
 
 # Copyright setting
