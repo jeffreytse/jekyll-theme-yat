@@ -100,10 +100,10 @@ Republic of Korea
 | Taeyong Park      | Vice President & Co-founder, Galux Inc.                                                              | Ph.D., 2021                                                 |
 | Jonghun Won       | Director & Co-founder, Galux Inc.                                                                    | M.S. and Ph.D., 2021                                        |
 | Minkyung Baek     | Assistant Professor, Department of Biological Sciences, Seoul National University                    | Ph.D., 2018                                                 |
-| Martin Steinegger | Assistant Professor, Department of Biological Sciences, Seoul National University                    | Visiting Student from Max Planck Institute, 2014, 2016~2018 |
+| Martin Steinegger | Assistant Professor, Department of Biological Sciences, Seoul National University                    | Visiting Student from Max Planck Institute, 2014, 2016-2018 |
 | Gyu Rie Lee       | Postdoctoral Researcher, Department of Biochemistry, University of Washington                        | Ph.D., 2017                                                 |
 | Matthias Buck     | Professor, Case Western Reserve University                                                           | Visiting Professor, 2017                                    |
-| Andrew H. Beaven  | Postdoctoral Researcher, University of Minnesota                                                     | Visiting Student from University of Kansas, 2015~2016       |
+| Andrew H. Beaven  | Postdoctoral Researcher, University of Minnesota                                                     | Visiting Student from University of Kansas, 2015-2016       |
 | Lim Heo           | Postdoctoral Researcher, Department of Biochemistry and Molecular Biology, Michigan State University | Ph.D., 2015                                                 |
 | Hasup Lee         | Research Staff Member, Samsung Advanced Institute of Technology                                      | Ph.D., 2016                                                 |
 | Kyuhong Choe      | Researcher, LG Chemistry                                                                             | M.S., 2015                                                  |
