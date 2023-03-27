@@ -10,6 +10,10 @@ This is a repository for [seoklab homepage](https://seoklab.org) source code.
 
 See [\_notice](_notice/README.md) directory for more information.
 
+### Blog
+
+See [\_blog](_blog/README.md) directory for more information.
+
 ### Publications
 
 See [\_posts](_posts/README.md) directory for more information.
