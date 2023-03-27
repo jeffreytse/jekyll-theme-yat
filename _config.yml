@@ -161,6 +161,7 @@ timezone: Asia/Seoul
 # this and add the path to the pages in order as they should show up
 header_pages:
   - notice.md
+  - blog.md
   - members.md
   - research.md
   - publications/index.html
@@ -176,6 +177,8 @@ header_ext_links:
 collections:
   notice:
     output: true
+  blog:
+    output: true
 
 # Page default value
 defaults:
@@ -188,6 +191,13 @@ defaults:
   - scope:
       path: _notice
       type: notice
+    values:
+      layout: post
+      date_format: "%b %e, %Y"
+      use_mtime: true
+  - scope:
+      path: _blog
+      type: blog
     values:
       layout: post
       date_format: "%b %e, %Y"
