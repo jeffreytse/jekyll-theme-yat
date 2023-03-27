@@ -41,10 +41,10 @@
             {%- endfor -%}
             {%- for link in site.header_ext_links -%}
               {%- if link.title -%}
-              <a class="page-link" target="_blank" href="{{ link.url }}">{{ link.title | upcase | escape }}<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a class="page-link" target="_blank" rel="noopener noreferrer" href="{{ link.url }}">{{ link.title | upcase | escape }}<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
               {%- endif -%}
             {%- endfor -%}
-            <a class="page-link" target="_blank" href="https://github.com/seoklab/seoklab.github.io/edit/master/{{ page.path }}">EDIT<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <a class="page-link" target="_blank" rel="noopener noreferrer" href="https://github.com/seoklab/seoklab.github.io/edit/master/{{ page.path }}">EDIT<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
           </div>
         </nav>
       {%- endif -%}
