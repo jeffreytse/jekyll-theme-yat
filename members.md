@@ -78,7 +78,7 @@ Republic of Korea
 | Seungmin Yeom   | Department of Chemistry, SNU                             |
 | Hyunsoo Kim     | College of Pharmacy, SNU                                 |
 | Byungwook Kim   | Department of Chemistry, SNU                             |
-| Hyeonsung Byeon | Department of Chemistry, SNU                             |
+| Hyeonsung Byeon | Department of Applied Biology and Chemistry, SNU         |
 | Jeongbin Im     | Department of Chemistry, SNU                             |
 | Younghwan Kim   | Department of Chemistry, SNU                             |
 
