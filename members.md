@@ -81,6 +81,8 @@ Republic of Korea
 | Hyeonsung Byeon | Department of Applied Biology and Chemistry, SNU         |
 | Jeongbin Im     | Department of Chemistry, SNU                             |
 | Younghwan Kim   | Department of Chemistry, SNU                             |
+| Hongsuk Kim     | Department of Chemistry, SNU                             |
+
 
 ## Administrative Assistant
 
