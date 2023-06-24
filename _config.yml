@@ -65,8 +65,9 @@ yat:
 # If you want to change the content width, you can set to another value
 # content_width: "920px"
 
-# Google analytics
-# google_analytics: [Tracking ID]
+# Google analytics - GA4
+# google_analytics: [Measurement ID]
+# enableDNT: "false"
 
 # If you want to generate website sitemap, you can set true
 # sitemap: false
