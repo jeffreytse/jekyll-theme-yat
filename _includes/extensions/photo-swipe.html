@@ -23,8 +23,8 @@
       imgEl.outerHTML = `
     <a class="photo-swipe"
       href="${imgEl.src}"
-      data-width="${imgEl.getAttribute("width") || imgEl.width * 2}"
-      data-height="${imgEl.getAttribute("height") || imgEl.height * 2}"
+      data-width="${Math.max(imgEl.naturalWidth, imgEl.width) * 2}"
+      data-height="${Math.max(imgEl.naturalHeight, imgEl.height) * 2}"
       data-caption="${imgEl.getAttribute("caption") || imgEl.alt}"
       target="_blank">
       ${imgEl.outerHTML}
@@ -63,7 +63,6 @@
           bgOpacity: 0.85,
           showHideOpacity: true,
           closeOnScroll: true,
-          maxSpreadZoom: 1,
           getDoubleTapZoom: (isMouseClick, item) => {
             if (item.detail) {
               zoomLevel += item.detail.origEvent.shiftKey ? -1 : 1;
