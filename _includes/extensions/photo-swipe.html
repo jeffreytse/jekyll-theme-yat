@@ -16,26 +16,69 @@
 
 <script>
   function initPhotoSwipe() {
-    var mainEl = document.querySelector("section.main");
+    const selectors = '{{ site.photo_previewer.photo_selectors || join: "," }}'
+      .split(",")
+      .filter((item) => item.length > 0);
 
-    var imgEls = mainEl.querySelectorAll("img:not(.emoji)");
+    // Default selector
+    if (selectors.length === 0) {
+      selectors.push("section.main");
+    }
+
+    const areaEls = [];
+    selectors.forEach((selector) => {
+      const el = document.querySelector(selector);
+      if (el) {
+        areaEls.push(el);
+      }
+    });
+
+    const imgEls = [];
+
+    areaEls.forEach((areaEl) => {
+      var els = areaEl.querySelectorAll("img:not(.emoji)");
+      els.forEach((el) => {
+        if (!imgEls.includes(el)) {
+          imgEls.push(el);
+        }
+      });
+    });
+
+    if (imgEls.length === 0) {
+      return;
+    }
+
+    const photo_scale = '{{ site.photo_previewer.photo_scale }}';
+    const background_opacity = '{{ site.photo_previewer.background_opacity }}';
+    const previewer_options = {
+      photo_scale: photo_scale.length > 0 ? parseFloat(photo_scale) : 2,
+      background_opacity: background_opacity.length > 0 ?
+      parseFloat(background_opacity) : 0.85,
+    };
+
     imgEls.forEach((imgEl) => {
       imgEl.outerHTML = `
-    <a class="photo-swipe"
-      href="${imgEl.src}"
-      data-width="${Math.max(imgEl.naturalWidth, imgEl.width) * 2}"
-      data-height="${Math.max(imgEl.naturalHeight, imgEl.height) * 2}"
-      data-caption="${imgEl.getAttribute("caption") || imgEl.alt}"
-      target="_blank">
-      ${imgEl.outerHTML}
-    </a>`;
+      <a class="photo-swipe"
+        href="${imgEl.src}"
+        data-width="${
+          Math.max(imgEl.naturalWidth, imgEl.width) *
+          previewer_options.photo_scale
+        }"
+        data-height="${
+          Math.max(imgEl.naturalHeight, imgEl.height) *
+          previewer_options.photo_scale
+        }"
+        data-caption="${imgEl.getAttribute("caption") || imgEl.alt}"
+        target="_blank">
+        ${imgEl.outerHTML}
+      </a>`;
     });
 
     // Init empty gallery array
     var container = [];
 
     // Loop over gallery items and push it to the array
-    var linkEls = mainEl.querySelectorAll("a.photo-swipe");
+    var linkEls = document.querySelectorAll("a.photo-swipe");
     linkEls.forEach((link) => {
       var item = {
         src: link.getAttribute("href"),
@@ -60,7 +103,7 @@
         // Define object and gallery options
         var options = {
           index: index,
-          bgOpacity: 0.85,
+          bgOpacity: previewer_options.background_opacity,
           showHideOpacity: true,
           closeOnScroll: true,
           getDoubleTapZoom: (isMouseClick, item) => {
