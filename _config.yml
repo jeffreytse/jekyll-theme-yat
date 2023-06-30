@@ -183,11 +183,17 @@ yat:
 # Pagination setting
 # paginate: 5
 
-# Photo previewer settings
+# Photo previewer settings (PhotoSwipe 5)
+# the options please refer to: https://photoswipe.com/options/
 # photo_previewer:
-#   photo_selectors: "section.main"  # Preview specified areas of photos by CSS selectors (It also can be an array)
-#   photo_scale: 2            # Adjust the preview scale of photos
-#   background_opacity: 0.85  # Background backdrop opacity
+#  gallery: "section.main"
+#  children: "a.photo-swipe"
+#  bgOpacity: 0.8
+#  padding:
+#    top: 20
+#    bottom: 40
+#    left: 100
+#    right: 100
 
 # Disqus comments
 # disqus:
