@@ -570,6 +570,7 @@ html {
 
     img:not(.emoji), svg, iframe {
       display: block;
+      max-height: 50vh;
     }
 
     h2,
