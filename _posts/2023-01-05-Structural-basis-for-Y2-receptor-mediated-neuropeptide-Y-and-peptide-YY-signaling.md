@@ -1,6 +1,6 @@
 ---
 title: "Structural basis for Y2 receptor-mediated neuropeptide Y and peptide YY signaling"
-authors: Hyunook Kang et al. (Sohee Kwon, Chaok Seok)*
+authors: Hyunook Kang et al. (Sohee Kwon and Chaok Seok)
 journal: Structure
 categories:
   - Applications and collaborations
