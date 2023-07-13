@@ -195,6 +195,15 @@ yat:
 #    left: 100
 #    right: 100
 
+# Click to top settings
+# click_to_top:
+#   light:
+#     background_color: "white"
+#     color: "#454545"
+#   dark:
+#     background_color: "#34323d"
+#     color: "#bbb"
+
 # Disqus comments
 # disqus:
 #   shortname: "Your Disqus username"

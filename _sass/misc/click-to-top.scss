@@ -9,7 +9,6 @@
   border-radius: 32px;
   right: 60px;
   bottom: 48px;
-  background: white;
   cursor: pointer;
   opacity: 0;
   transform: translateY(10px);
@@ -39,8 +38,16 @@
   transform: translateY(0);
 }
 
+html[data-theme="light"] {
+  .click-to-top {
+    background-color: $click-to-top-light-background-color;
+    color: $click-to-top-light-color;
+  }
+}
+
 html[data-theme="dark"] {
   .click-to-top {
-    background: #34323D;
+    background-color: $click-to-top-dark-background-color;
+    color: $click-to-top-dark-color;
   }
 }

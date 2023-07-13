@@ -35,4 +35,10 @@ $brand-color: map-get($brand-colors, "orangered");
 
 $content-width: {{ site.content_width | default: '920px' }};
 
+// Click to top theme
+$click-to-top-light-background-color: {{ site.click_to_top.light.background_color | default: "white" }};
+$click-to-top-light-color: {{ site.click_to_top.light.color | default: "#454545" }};
+$click-to-top-dark-background-color: {{ site.click_to_top.dark.background_color | default: "#34323d" }};
+$click-to-top-dark-color: {{ site.click_to_top.dark.color | default: "#bbb" }};
+
 @import "yat";
