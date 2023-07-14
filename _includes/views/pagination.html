@@ -1,14 +1,19 @@
-{%- if page.paginator -%}
+{%- assign params = include -%}
+{%- if include.paginator -%}
+  {%- assign paginator = include.paginator -%}
+{%- elsif layout.paginator -%}
+  {%- assign paginator = layout.paginator -%}
+{%- elsif page.paginator -%}
   {%- assign paginator = page.paginator -%}
 {%- elsif paginator == nil -%}
-  {%- assign paginator = site -%}
+  {%- assign paginator = site.posts -%}
 {%- endif -%}
 
-{%- if paginator.posts.size > 0 -%}
+{%- if paginator.size > 0 -%}
 <div class="pagination">
   <!-- Post list links -->
   <ul class="post-list">
-    {%- for post in paginator.posts -%}
+    {%- for post in paginator -%}
     <li>
       {%- assign date_format = site.yat.date_format | default: "%b %-d, %Y" -%}
 
@@ -44,7 +49,7 @@
   </ul>
 
   <!-- Pagination links -->
-  {%- if paginator.posts.size < site.posts.size -%}
+  {%- if paginator.size < site.posts.size -%}
     {%- include views/paginator.html -%}
   {%- endif -%}
 </div>
