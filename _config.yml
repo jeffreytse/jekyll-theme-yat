@@ -147,12 +147,21 @@ yat:
 
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
-# header_pages:
-#   - index.html
-#   - archives.html
-#   - categories.html
-#   - tags.html
-#   - about.md
+header_pages:
+  - index.html
+  - menu/archives.html
+  - menu/categories.html
+  - menu/tags.html
+  - menu/about.md
+  - menu/contact.html
+
+
+google_form:
+  url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSfZcGWu5ISan2WjmzWme3Om_th0yXnnfa4jcG8SyejGpCYWOQ/formResponse"
+  name_entry: "entry.1199157498"
+  email_entry: "entry.923332370"
+  subject_entry: "entry.1032018857"
+  message_entry: "entry.392222136"
 
 # Page default value
 # defaults:
