@@ -42,3 +42,26 @@ $click-to-top-dark-background-color: {{ site.click_to_top.dark.background_color 
 $click-to-top-dark-color: {{ site.click_to_top.dark.color | default: "#bbb" }};
 
 @import "yat";
+
+/* Styles for contact form */
+#contactForm {
+  width: 100vw; /* this will make the form 80% of the viewport's width */
+  max-width: $content-width;
+  margin: 0 auto;
+}
+
+.form-control {
+  font-size: 18px;
+}
+
+.help-block.text-danger {
+  color: $theme-color;
+}
+
+.btn.btn-submit {
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: $brand-color;
+  color: $theme-color;
+}
