@@ -1,6 +1,6 @@
 ---
 title: "Tribute to Ken A. Dill"
-authors: Hribar-Lee B et al. (Chaok Seok)
+authors: Barbara Hribar-Lee, Chaok Seok, Evangelos Coutsias, and Miha Lukšič
 journal: Journal of Physical Chemistry
 categories:
   - others
