@@ -11,7 +11,6 @@
     font-size: $base-font-size * 1.5;
     margin-bottom: 14px;
     font-weight: 600;
-    color: #222;
   }
 
   .post-menu-content {
@@ -39,7 +38,7 @@
 
         &:hover {
           text-decoration: none;
-          color: lighten($text-color, 20%)!important;
+          color: lighten($text-color, 30%)!important;
         }
       }
 

@@ -36,14 +36,19 @@
     user-select: none;
   }
 
-  .dark {
+  .names p {
+    margin-bottom: 0;
+    line-height: 24px;
     opacity: .5;
   }
 
-  p {
-    color: #acacac;
-    margin-bottom: 0;
-    line-height: 24px;
+  label .light {
+    color: #868686;
+    margin-left: -0.2em;
+  }
+
+  label .dark {
+    color: #b9b9b9;
   }
 
   [type="checkbox"] {
@@ -56,12 +61,12 @@
     background-color: #34323D;
   }
 
-  [type="checkbox"]:checked ~ label .dark{
-    opacity: 1;
+  [type="checkbox"]:checked ~ label .dark {
+    color: #ddd;
   }
 
-  [type="checkbox"]:checked ~ label .light{
-    opacity: .5;
+  [type="checkbox"]:checked ~ label .light {
+    color: #ccc;
   }
 
   @include media-query(1024px) {

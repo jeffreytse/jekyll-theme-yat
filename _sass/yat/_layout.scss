@@ -297,18 +297,14 @@ html {
         font-size: 10px;
         font-weight: 600;
         border-radius: 2px;
+        transition-duration: $base-transition-duration;
       }
 
       &:visited:after {
-        background-color: #fff;
+        color: $background-color;
+        background-color: $background-color;
       }
     }
-  }
-
-  .post-meta {
-    font-size: $base-font-size;
-    color: $grey-color;
-    margin-bottom: $spacing-unit * 0.5;
   }
 
   .post-link {
@@ -317,8 +313,14 @@ html {
     color: #333;
   }
 
+  .post-meta {
+    color: $grey-color;
+    font-size: $base-font-size;
+    margin-bottom: $spacing-unit * 0.5;
+  }
+
   .post-excerpt {
-    color: #777;
+    color: $grey-color;
     word-break: break-word;
     overflow-wrap: break-word;
   }
@@ -393,11 +395,12 @@ html {
     }
 
     .post-subtitle {
-      font-weight: lighter;
+      font-weight: 300;
     }
 
     .post-meta {
-      color: #808080;
+      color: $grey-color;
+      padding-bottom: 15px;
     }
   }
 
@@ -465,33 +468,32 @@ html {
 
     ul {
       margin-left: 15px;
-      .post-link {
-        @include relative-font-size(1.075);
+    }
+
+    .post-link {
+      @include relative-font-size(1.075);
+      color: $grey-color;
+
+      &:hover {
+        color: darken($grey-color, 50%);
       }
 
-      a {
-        color: #666;
+      &:after {
+        content: 'NEW';
+        position: absolute;
+        margin-left: 8px;
+        margin-top: 3px;
+        padding: 0px 3px;
+        background-color: $brand-color;
+        color: $background-color;
+        font-size: 10px;
+        font-weight: 600;
+        border-radius: 2px;
+      }
 
-        &:hover {
-          color: #333;
-        }
-
-        &:after {
-          content: 'NEW';
-          position: absolute;
-          margin-left: 8px;
-          margin-top: 3px;
-          padding: 0px 3px;
-          background-color: $brand-color;
-          color: #fff;
-          font-size: 10px;
-          font-weight: 600;
-          border-radius: 2px;
-        }
-
-        &:visited:after {
-          background-color: #fff;
-        }
+      &:visited:after {
+        color: $background-color;
+        background-color: $background-color;
       }
     }
   }
@@ -513,8 +515,8 @@ html {
 
   a {
     @include relative-font-size(1.125);
+    color: $grey-color;
     line-height: 15px;
-    color: #666;
     max-width: 50%;
   }
 
@@ -651,6 +653,7 @@ html {
 
     .post-meta {
       color: #ffffffcc;
+      padding-bottom: 1em;
     }
 
     .left-vsplit:before {
