@@ -124,6 +124,11 @@ yat:
 # Custom color as below:
 # brand_color: "#1a8e42"
 
+# You can custom selection style
+# selection:
+#   color: "#ff00ff"
+#   background_color: "yellow"
+
 # Night/Dark mode
 # Default mode is "auto", "auto" is for auto nightshift
 # (19:00 - 07:00), "manual" is for manual toggle, and

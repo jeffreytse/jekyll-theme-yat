@@ -291,3 +291,26 @@ table {
   overflow: hidden;
 }
 
+/**
+ * Text Selection
+ */
+::selection {
+  color: $selection-color;
+  background-color: $selection-background-color;
+}
+::-moz-selection { /* Code for Firefox */
+  color: $selection-color;
+  background-color: $selection-background-color;
+}
+::-ms-selection {
+  color: $selection-color;
+  background-color: $selection-background-color;
+}
+::-o-selection {
+  color: $selection-color;
+  background-color: $selection-background-color;
+}
+::-webkit-selection {
+  color: $selection-color;
+  background-color: $selection-background-color;
+}

@@ -41,4 +41,15 @@ $click-to-top-light-color: {{ site.click_to_top.light.color | default: "#454545"
 $click-to-top-dark-background-color: {{ site.click_to_top.dark.background_color | default: "#34323d" }};
 $click-to-top-dark-color: {{ site.click_to_top.dark.color | default: "#bbb" }};
 
+// Selection styles
+$selection-color: unquote("{{ site.selection.color }}");
+$selection-background-color: unquote("{{ site.selection.background_color }}");
+
+@if $selection-color == "" {
+  $selection-color: inherit;
+}
+@if $selection-background-color == "" {
+  $selection-background-color: rgba(invert($brand-color), 0.3);
+}
+
 @import "yat";
