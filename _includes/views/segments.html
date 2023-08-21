@@ -13,7 +13,13 @@
       {% assign items = site.posts | where: field, key %}
       {% for item in items %}
         {% if item != nil %}
-        <li> {% include views/post-item.html %} </li>
+          {%- assign post_item_class = "" -%}
+          {%- if item.top -%}
+            {%- assign post_item_class = "top-post" -%}
+          {%- endif -%}
+          <li class="{{ post_item_class }}">
+            {%- include views/post-item.html -%}
+          </li>
         {% endif %}
       {% endfor %}
     {% endfor %}

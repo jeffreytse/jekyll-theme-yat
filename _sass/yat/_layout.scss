@@ -285,25 +285,6 @@ html {
 
     a {
       text-decoration: none;
-
-      &:after {
-        content: 'NEW';
-        position: absolute;
-        margin-left: 8px;
-        margin-top: 3px;
-        padding: 0px 3px;
-        background-color: $brand-color;
-        color: #fff;
-        font-size: 10px;
-        font-weight: 600;
-        border-radius: 2px;
-        transition-duration: $base-transition-duration;
-      }
-
-      &:visited:after {
-        color: $background-color;
-        background-color: $background-color;
-      }
     }
   }
 
@@ -477,24 +458,6 @@ html {
       &:hover {
         color: darken($grey-color, 50%);
       }
-
-      &:after {
-        content: 'NEW';
-        position: absolute;
-        margin-left: 8px;
-        margin-top: 3px;
-        padding: 0px 3px;
-        background-color: $brand-color;
-        color: $background-color;
-        font-size: 10px;
-        font-weight: 600;
-        border-radius: 2px;
-      }
-
-      &:visited:after {
-        color: $background-color;
-        background-color: $background-color;
-      }
     }
   }
 }
@@ -502,7 +465,6 @@ html {
 .post-comments {
   padding-top: 25px;
 }
-
 
 /**
  * Posts misc
@@ -754,23 +716,6 @@ html {
     &:hover {
       color: #000;
     }
-
-    &:after {
-      content: 'NEW';
-      position: absolute;
-      margin-left: 8px;
-      margin-top: 3px;
-      padding: 0px 3px;
-      background-color: $brand-color;
-      color: #fff;
-      font-size: 10px;
-      font-weight: 600;
-      border-radius: 2px;
-    }
-
-    &:visited:after {
-      background-color: #fff;
-    }
   }
 }
 
@@ -782,4 +727,52 @@ html {
   margin: 0 10px;
   background-color: #e3e3e3e3;
   vertical-align: baseline;
+}
+
+/**
+ * Post badge
+ */
+.post-badges {
+  display: inline-block;
+  position: relative;
+  margin-left: 8px;
+  margin-top: 3px;
+  user-select: none;
+}
+
+.pagination .post-badges {
+  bottom: 0.5em;
+}
+
+.post-related .post-badges {
+  bottom: 0.1em;
+}
+
+.page-segments .post-badges {
+  bottom: 0.1em;
+}
+
+.post-badge {
+  display: none;
+  padding: 0px 3px;
+  background-color: $brand-color;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 600;
+  border-radius: 2px;
+  transition-duration: $base-transition-duration;
+}
+
+.post-badge.badge-new {
+  display: inline-block;
+}
+
+.top-post .post-badges .post-badge.badge-top {
+  display: inline-block;
+}
+
+a:visited .post-badges .post-badge.badge-new {
+  display: none;
+  color: $background-color;
+  background-color: $background-color;
 }

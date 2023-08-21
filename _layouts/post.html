@@ -50,7 +50,18 @@ sidebar:
       <ul>
         {% assign posts = site[page.collection] | sample:4 %}
         {%- for post in posts -%}
-        <li><a class="post-link" href="{{post.url | relative_url}}" title="{{ page.next.title | escape }}">{{ post.title | escape | truncatewords: 12 }}</a></li>
+          {%- assign post_item_class = "" -%}
+          {%- if post.top -%}
+            {%- assign post_item_class = "top-post" -%}
+          {%- endif -%}
+        <li class="{{ post_item_class }}">
+          <a class="post-link"
+            href="{{ post.url | relative_url }}"
+            title="{{ post.title | escape }}">
+            {{ post.title | escape | truncatewords: 12 }}
+            {%- include views/post-badges.html -%}
+          </a>
+        </li>
         {%- endfor -%}
       </ul>
     </div>
