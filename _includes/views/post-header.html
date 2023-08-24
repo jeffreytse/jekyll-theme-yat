@@ -8,6 +8,10 @@
       <i class="fa fa-calendar"></i> {{ page.date | date: date_format }}
     </time>
 
+    {%- if page.author -%}
+    <span class="post-author left-vsplit"><i class="fa fa-pencil"></i> {{ page.author | escape }}</span>
+    {%- endif -%}
+
     {% assign article = page.content %}
     {% assign lang = page.lang %}
     {%- include functions.html func='get_reading_time' -%}
