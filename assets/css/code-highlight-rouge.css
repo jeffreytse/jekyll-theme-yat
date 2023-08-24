@@ -110,3 +110,115 @@
   color: #24292f;
   font-weight: bold;
 }
+html[data-theme="dark"] .highlight pre table td { padding: 5px; }
+html[data-theme="dark"] .highlight pre table pre { margin: 0; }
+html[data-theme="dark"] .highlight pre, html[data-theme="dark"] .highlight pre .w {
+  color: #c9d1d9;
+  background-color: #161b22;
+}
+html[data-theme="dark"] .highlight pre .k, html[data-theme="dark"] .highlight pre .kd, html[data-theme="dark"] .highlight pre .kn, html[data-theme="dark"] .highlight pre .kp, html[data-theme="dark"] .highlight pre .kr, html[data-theme="dark"] .highlight pre .kt, html[data-theme="dark"] .highlight pre .kv {
+  color: #ff7b72;
+}
+html[data-theme="dark"] .highlight pre .gr {
+  color: #f0f6fc;
+}
+html[data-theme="dark"] .highlight pre .gd {
+  color: #ffdcd7;
+  background-color: #67060c;
+}
+html[data-theme="dark"] .highlight pre .nb {
+  color: #ffa657;
+}
+html[data-theme="dark"] .highlight pre .nc {
+  color: #ffa657;
+}
+html[data-theme="dark"] .highlight pre .no {
+  color: #ffa657;
+}
+html[data-theme="dark"] .highlight pre .nn {
+  color: #ffa657;
+}
+html[data-theme="dark"] .highlight pre .sr {
+  color: #7ee787;
+}
+html[data-theme="dark"] .highlight pre .na {
+  color: #7ee787;
+}
+html[data-theme="dark"] .highlight pre .nt {
+  color: #7ee787;
+}
+html[data-theme="dark"] .highlight pre .gi {
+  color: #aff5b4;
+  background-color: #033a16;
+}
+html[data-theme="dark"] .highlight pre .kc {
+  color: #79c0ff;
+}
+html[data-theme="dark"] .highlight pre .l, html[data-theme="dark"] .highlight pre .ld, html[data-theme="dark"] .highlight pre .m, html[data-theme="dark"] .highlight pre .mb, html[data-theme="dark"] .highlight pre .mf, html[data-theme="dark"] .highlight pre .mh, html[data-theme="dark"] .highlight pre .mi, html[data-theme="dark"] .highlight pre .il, html[data-theme="dark"] .highlight pre .mo, html[data-theme="dark"] .highlight pre .mx {
+  color: #79c0ff;
+}
+html[data-theme="dark"] .highlight pre .sb {
+  color: #79c0ff;
+}
+html[data-theme="dark"] .highlight pre .bp {
+  color: #79c0ff;
+}
+html[data-theme="dark"] .highlight pre .ne {
+  color: #79c0ff;
+}
+html[data-theme="dark"] .highlight pre .nl {
+  color: #79c0ff;
+}
+html[data-theme="dark"] .highlight pre .py {
+  color: #79c0ff;
+}
+html[data-theme="dark"] .highlight pre .nv, html[data-theme="dark"] .highlight pre .vc, html[data-theme="dark"] .highlight pre .vg, html[data-theme="dark"] .highlight pre .vi, html[data-theme="dark"] .highlight pre .vm {
+  color: #79c0ff;
+}
+html[data-theme="dark"] .highlight pre .o, html[data-theme="dark"] .highlight pre .ow {
+  color: #79c0ff;
+}
+html[data-theme="dark"] .highlight pre .gh {
+  color: #1f6feb;
+  font-weight: bold;
+}
+html[data-theme="dark"] .highlight pre .gu {
+  color: #1f6feb;
+  font-weight: bold;
+}
+html[data-theme="dark"] .highlight pre .s, html[data-theme="dark"] .highlight pre .sa, html[data-theme="dark"] .highlight pre .sc, html[data-theme="dark"] .highlight pre .dl, html[data-theme="dark"] .highlight pre .sd, html[data-theme="dark"] .highlight pre .s2, html[data-theme="dark"] .highlight pre .se, html[data-theme="dark"] .highlight pre .sh, html[data-theme="dark"] .highlight pre .sx, html[data-theme="dark"] .highlight pre .s1, html[data-theme="dark"] .highlight pre .ss {
+  color: #a5d6ff;
+}
+html[data-theme="dark"] .highlight pre .nd {
+  color: #d2a8ff;
+}
+html[data-theme="dark"] .highlight pre .nf, html[data-theme="dark"] .highlight pre .fm {
+  color: #d2a8ff;
+}
+html[data-theme="dark"] .highlight pre .err {
+  color: #f0f6fc;
+  background-color: #8e1519;
+}
+html[data-theme="dark"] .highlight pre .c, html[data-theme="dark"] .highlight pre .ch, html[data-theme="dark"] .highlight pre .cd, html[data-theme="dark"] .highlight pre .cm, html[data-theme="dark"] .highlight pre .cp, html[data-theme="dark"] .highlight pre .cpf, html[data-theme="dark"] .highlight pre .c1, html[data-theme="dark"] .highlight pre .cs {
+  color: #8b949e;
+}
+html[data-theme="dark"] .highlight pre .gl {
+  color: #8b949e;
+}
+html[data-theme="dark"] .highlight pre .gt {
+  color: #8b949e;
+}
+html[data-theme="dark"] .highlight pre .ni {
+  color: #c9d1d9;
+}
+html[data-theme="dark"] .highlight pre .si {
+  color: #c9d1d9;
+}
+html[data-theme="dark"] .highlight pre .ge {
+  color: #c9d1d9;
+  font-style: italic;
+}
+html[data-theme="dark"] .highlight pre .gs {
+  color: #c9d1d9;
+  font-weight: bold;
+}
