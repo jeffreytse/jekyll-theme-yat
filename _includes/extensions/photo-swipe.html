@@ -43,6 +43,9 @@
     const imgEls = [];
     const els = galleryEl.querySelectorAll("img:not(.emoji)");
     els.forEach((el) => {
+      if (el.src.trim() == "") {
+        return;
+      }
       if (!imgEls.includes(el)) {
         imgEls.push(el);
       }
