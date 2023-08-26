@@ -182,8 +182,13 @@ yat:
 #   heading_style: null     # Custom heading style (e.g. "font-weight: bold; text-decoration: underline")
 #   subheading_style: null  # Custom subheading style (e.g. color: gold)
 
-# Excerpt size setting
-# excerpt_size: 350
+# Excerpt settings
+# excerpt:
+#   default_image: /assets/images/default-image.jpeg  # Default image when the image style is not none
+#   image_style: z          # Image layout style (It's value could be none, left, right, top, z, z-reverse)
+#   image_width: 38.2%      # Image default width
+#   image_height: 160px     # Image default height
+#   text_size: 350          # Words default size
 
 # Pagination setting
 # paginate: 5

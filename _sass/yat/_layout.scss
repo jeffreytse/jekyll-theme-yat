@@ -301,9 +301,59 @@ html {
   }
 
   .post-excerpt {
+    display: flex;
+    position: relative;
+    gap: 15px;
+    margin-bottom: 15px;
+
+    .post-image > *:first-child {
+      flex: 0 1 38.2%;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center center;
+      overflow: hidden;
+      transition: 0.2s all ease-in-out;
+    }
+  }
+
+  .post-list {
+    &.none-image-style .post-item .post-excerpt .post-image {
+      display: none;
+    }
+
+    &.left-image-style .post-item .post-excerpt {
+      flex-direction: row;
+    }
+
+    &.right-image-style .post-item .post-excerpt {
+      flex-direction: row-reverse;
+    }
+
+    &.post-list.top-image-style .post-item .post-excerpt {
+      flex-direction: column;
+    }
+
+    &.z-image-style .post-item:nth-child(even) .post-excerpt {
+      flex-direction: row-reverse;
+    }
+
+    &.z-reverse-image-style .post-item:nth-child(odd) .post-excerpt {
+      flex-direction: row-reverse;
+    }
+
+    .post-item .post-excerpt {
+      @include media-query($on-laptop) {
+        flex-direction: column !important;
+      }
+    }
+  }
+
+  .post-text {
     color: $grey-color;
     word-break: break-word;
     overflow-wrap: break-word;
+    flex: 1;
   }
 
   .post-tags .post-tag {

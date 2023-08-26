@@ -12,7 +12,7 @@
   {% assign excerpt_size = include.params.excerpt_size %}
 {% else %}
   {% assign excerpt_size = excerpt_size
-    | default: site.excerpt_size
+    | default: site.excerpt.text_size
     | default: 350 %}
 {% endif %}
 

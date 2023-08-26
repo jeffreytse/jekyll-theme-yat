@@ -4,10 +4,14 @@
   {%- assign paginator = site -%}
 {%- endif -%}
 
+{%- assign name = 'excerpt.image_style' -%}
+{%- include functions.html func='get_value' default='z' -%}
+{%- assign image_style = return | append: '-image-style' -%}
+
 {%- if paginator.posts.size > 0 -%}
 <div class="pagination">
   <!-- Post list links -->
-  <ul class="post-list">
+  <ul class="post-list {{ image_style }}">
     <!-- Top list item -->
     {%- if paginator == site or paginator.page == 1 -%}
       {%- assign post_item_class = "top-post" -%}
