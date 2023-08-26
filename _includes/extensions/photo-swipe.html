@@ -20,7 +20,7 @@
       const data = `{{ site.photo_previewer }}`.replaceAll("=>", ":");
       customOptions = JSON.parse(data);
     } catch (e) {
-      console.error("Invalid custom photo previewer options! " + e.message);
+      console.info("Invalid custom photo previewer options! " + e.message);
     }
 
     // Define object and gallery options
