@@ -1,533 +1,76 @@
-# 风险系数定义式
+---
+layout: post
+title: 测试
+subtitle: Each post also has a subtitle
+categories: markdown
+tags: [test]
+---
 
-## 云产品通用信息存储格式
+You can write regular [markdown](https://markdowntutorial.com/) here and Jekyll will automatically convert it to a nice webpage.  I strongly encourage you to [take 5 minutes to learn how to write in markdown](http://markdowntutorial.com/) - it'll teach you how to transform regular text into bold/italics/headings/tables/etc.
 
-~~~json
-{
-    "归属云":"",
-    "产品名称":"",
-    "组件依赖":[
-        {
-           "依赖名称":"",
-           "依赖名称URL":"",
-           "基金会":"",
-           "基金会所属国家":"",
-           "基金会URL":"",
-           "开源协议":"",
-           "开源协议URL":"",
-           "主要开发人员":[{
-               "姓名":"",
-               "职位":"",
-               "国籍":"",
-               "信息来源URL":"" 
-               }
-               ],
-           "母公司信息":[
-               {
-                   "公司名称":"",
-                   "公司所属国家":"",
-                   "公司名称URL":"",
-                   "公司高管":[
-                   {
-                       "姓名": "",
-                       "职位": "",
-                       "国籍": "",
-                       "信息来源URL": ""
-                   }
-                    ] 
-                }
-           ]
-       }
-   ]
+**Here is some bold text**
+
+## Here is a secondary heading
+
+Here's a useless table:
+
+| Number | Next number | Previous number |
+| :------ |:--- | :--- |
+| Five | Six | Four |
+| Ten | Eleven | Nine |
+| Seven | Eight | Six |
+| Two | Three | One |
+
+
+How about a yummy crepe?
+
+![Crepe](https://s3-media3.fl.yelpcdn.com/bphoto/cQ1Yoa75m2yUFFbY2xwuqw/348s.jpg)
+
+It can also be centered!
+
+![Crepe](https://s3-media3.fl.yelpcdn.com/bphoto/cQ1Yoa75m2yUFFbY2xwuqw/348s.jpg){: .center-block :}
+
+Here's a code chunk:
+
+~~~
+var foo = function(x) {
+  return(x + 5);
 }
+foo(3)
 ~~~
 
+And here is the same code with syntax highlighting:
 
+```javascript
+var foo = function(x) {
+  return(x + 5);
+}
+foo(3)
+```
 
-根据定义的数据信息，此风险计算公式采用的参数如下
+And here is the same code yet again but with line numbers:
 
-- "FUN":所属基金会
-- "OSL":开源协议
-- "DEV":开发人员
-- "PCO":母公司
-  - "CXO"公司高管
+{% highlight javascript linenos %}
+var foo = function(x) {
+  return(x + 5);
+}
+foo(3)
+{% endhighlight %}
 
-其中，每个参数都是一个信息模块的风险，有具体的打分规则,比较特殊的是PCO参数，其风险系来源于其子项CXO。
+## Boxes
+You can add notification, warning and error boxes like this:
 
-## 各参数解释
+### Notification
 
-### FUN
+{: .box-note}
+**Note:** This is a notification box.
 
-对于该项，如果基金会总部在中国，记为0分，否则记为1分，例如
+### Warning
 
-| 基金会                                     | 总部所在 国家 | 分数 |
-| ------------------------------------------ | ------------- | ---- |
-| Alluxio Foundation Inc\.                   | 中国          | 0    |
-| Altinity                                   | 美国          | 1    |
-| AMD                                        | 美国          | 1    |
-| Ampere Computing LLC                       | 美国          | 1    |
-| Apache Software Foundation                 | 美国          | 1    |
-| Canonical基金会                            | 英国          | 1    |
-| Cloud Native Computing Foundation \(CNCF\) | 美国          | 1    |
-| Cloudera软件基金会                         | 美国          | 1    |
-| Docker基金会                               | 美国          | 1    |
-| Eclipse Foundation                         | 加拿大        | 1    |
-| FreeBSD基金会                              | 未知          | 0.5  |
-| Intel                                      | 美国          | 1    |
-| Lightbend                                  | 美国          | 1    |
-| LinkedIn公司                               | 美国          | 1    |
-| Linux基金会                                | 美国          | 1    |
-| MariaDB基金会                              | 芬兰          | 1    |
-| Matomo 基金会                              | 新西兰        | 1    |
-| MongoDB基金会                              | 美国          | 1    |
-| MySQL Foundation                           | 瑞典          | 1    |
-| Node\.js基金会                             | 美国          | 1    |
-| openEuler社区基金会                        | 中国          | 0    |
-| OpenLDAP Foundation                        | 美国          | 1    |
-| openSUSE                                   | 未知          | 0.5  |
-| Oracle基金会                               | 美国          | 1    |
-| Percona Foundation                         | 美国          | 1    |
-| PostgreSQL                                 | 美国          | 1    |
-| Presto Software Foundation                 | 美国          | 1    |
-| Redis Labs                                 | 美国          | 1    |
-| Rocky Enterprise Software Foundation       | 美国          | 1    |
-| TDSQL\-C基金会                             | 中国          | 0    |
-| Ubuntu Foundation                          | 英国          | 1    |
-| WordPress基金会                            | 美国          | 1    |
-| 其他                                       | 未知          | 0.5  |
+{: .box-warning}
+**Warning:** This is a warning box.
 
-> 信息来源：[世界最著名的 16 个开源软件基金会，你认识哪几个呢？ - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/434702551)
+### Error
 
-### OSL
-
-这里根据开源程度进行风险打分，其中开源程度越高（也即是开源要求越高）分数越低。
-
-- 0.7开源程度比较宽松
-- 0.5开源程度有些宽松
-- 0.3开源程度要求严格
-
-| 名称                                                  | 分数 |
-| ----------------------------------------------------- | ---- |
-| Apache License 2\.0                                   | 0.7  |
-| Apache许可证 1\.1                                     | 0.7  |
-| BSD 3\-Clause                                         | 0.3  |
-| BSD\-2\-Clause                                        | 0.3  |
-| Eclipse Public License 2\.0                           | 0.7  |
-| GNU Affero General Public License v3\.0（AGPL\-3\.0） | 0.3  |
-| GNU General Public License v2\.0（GPL\-2\.0）         | 0.3  |
-| GNU General Public License v3\.0（GPL\-3\.0）         | 0.3  |
-| Intel开源许可证                                       | 0.7  |
-| Microsoft Public License \(MS\-PL\)                   | 0.7  |
-| Microsoft SQL Server vNext                            | 0.7  |
-| MIT License                                           | 0.5  |
-| Mulan OWLs                                            | 0.7  |
-| OpenLDAP Public License                               | 0.7  |
-| PostgreSQL License                                    | 0.7  |
-| Redis Source Available License                        | 0.7  |
-| 其他（比如一些特定产品的开源协议）                    | 0.5  |
-
-### COM
-
-| 阿里巴巴集团                         | 中国   | 分数 |
-| ------------------------------------ | ------ | ---- |
-| 广东堡塔安全技术有限公司             | 中国   | 0    |
-| 华为技术有限公司                     | 中国   | 0    |
-| 甲骨文公司                           | 美国   | 1    |
-| 商派                                 | 中国   | 0    |
-| 腾讯控股有限公司                     | 中国   | 0    |
-| 微软                                 | 美国   | 1    |
-| 中国国家信息安全漏洞库（CNVD）       | 中国   | 0    |
-| Alluxio, Inc\.                       | null   | 0.5  |
-| AMD                                  | 美国   | 1    |
-| Ampere Computing LLC                 | 美国   | 1    |
-| Apache Software Foundation           | 美国   | 1    |
-| Automattic                           | 美国   | 1    |
-| Baidu                                | null   | 0.5  |
-| Canonical公司                        | 英国   | 1    |
-| Cloudera                             | 美国   | 1    |
-| CloudLinux                           | 美国   | 1    |
-| Databricks                           | null   | 0.5  |
-| Docker Inc\.                         | 美国   | 1    |
-| Drupal                               | 美国   | 1    |
-| Elastic                              | 美国   | 1    |
-| Elastic N\.V\.                       | 荷兰   | 1    |
-| EnterpriseDB                         | 美国   | 1    |
-| Google                               | 美国   | 1    |
-| Imply                                | null   | 0.5  |
-| Intel                                | 美国   | 1    |
-| LinkedIn公司                         | 美国   | 1    |
-| Linux基金会                          | 美国   | 1    |
-| MariaDB Corporation                  | 美国   | 1    |
-| Microsoft Corporation                | 美国   | 1    |
-| MongoDB公司                          | 美国   | 1    |
-| NVIDIA                               | 美国   | 1    |
-| Oracle Corporation                   | 美国   | 1    |
-| Percona LLC                          | 美国   | 1    |
-| PostgreSQL                           | 美国   | 1    |
-| Project Jupyter                      | null   | 0.5  |
-| Red Hat                              | 美国   | 1    |
-| Redis Labs                           | 以色列 | 1    |
-| Rocky Enterprise Software Foundation | 美国   | 1    |
-| SUSE                                 | null   | 0.5  |
-| Symas Corporation                    | null   | 0.5  |
-| Yahoo                                | null   | 0.5  |
-| Yandex LLC                           | null   | 0.5  |
-
-### DEV
-
-单位开发人员风险主要来源于其国籍与职责共同决定
-
-其中，国籍主要打分依据为是否为中国籍贯，若为非中国籍，认为有较大风险,否则认为风险较低
-
-而对于职位，则根据其职位重要性划分风险度，因为对于职位体系称呼可能不同吗，下面根据重要性对其进行分类
-
-| 职称             | 重要性 |
-| ---------------- | ------ |
-| 负责人，创始人   | 1      |
-| 技术专家,架构师  | 0.7    |
-| 开发人员，开发者 | 0.5    |
-| 其他             | 0.6    |
-
-
-
-下面根据职位与国籍联合进行风险划分,其中,职称记为$pro$,则有
-
-$dev_i = \begin{cases} 	pro*0.8 ,非中国籍 \\ 	pro*0.3,中国籍\\ \end{cases}$
-
-| 国籍，职位       | 国籍   | 风险分数 |
-| ---------------- | ------ | -------- |
-| 创始人/负责人    | 中国   | 0.3      |
-| 技术专家,架构师  | 中国   | 0.21     |
-| 开发人员，开发者 | 中国   | 0.15     |
-| 其他             | 中国   | 0.18     |
-| 创始人/负责人    | 非中国 | 0.8      |
-| 技术专家,架构师  | 非中国 | 0.56     |
-| 开发人员，开发者 | 非中国 | 0.4      |
-| 其他             | 非中国 | 0.48     |
-
-对于开发人员模块，假设其总共个数为$N$,其总和风险系数计算公式如下：
-
-$DEV = \frac {1}{N}\sum_{i=1}^ndev_i$
-
-### PCO&CXO
-
-首先定义单个高管风险系数,其风险分数由国籍与职位共同定义，其职位重要性如下：
-
-| 职位                           | 重要性 |
-| ------------------------------ | ------ |
-| 总裁/副总裁/创始人/董事        | 1      |
-| 首席技术官/首席运营官/首席XX官 | 0.7    |
-| 经理/顾问/其他                 | 0.5    |
-
-则高管风险可由以下式子构建
-
-$cxo_i = \begin{cases} 	pro*0.9 ,非中国籍 \\ 	pro*0.2,中国籍\\ \end{cases}$
-
-| 职位                           | 国籍   | 风险 |
-| ------------------------------ | ------ | ---- |
-| 总裁/副总裁/创始人/董事        | 中国   | 0.2  |
-| 首席技术官/首席运营官/首席XX官 | 中国   | 0.14 |
-| 经理/顾问/其他                 | 中国   | 0.1  |
-| 总裁/副总裁/创始人/董事        | 非中国 | 0.9  |
-| 首席技术官/首席运营官/首席XX官 | 非中国 | 0.63 |
-| 经理/顾问/其他                 | 非中国 | 0.45 |
-
-类似于开发人员模块，高管也有多人，因此高管风险模块定义如下:
-
-$CXO = \frac {1}{N}\sum_{i=1}^ncxo_i$
-
-对于母公司模块，由公司总部所在国家与高管风险共同定义：
-
-$PCO = \begin{cases} 	CXO*0.85 ,非中国籍 \\ 	CXO*0.15,中国籍\\ \end{cases}$
-
-## 云产品风险公式定义
-
-假设该云产品有N个依赖，对于该云产品的风险系数$RS$，则使用上面的参数，代入下面的公式计算:
-
-$RS = \frac 1 {N}\sum_{i=1}^n\sqrt {(FUN_i+OSL_i+DEV_i+PCO_i)}$
-
-#### 特殊情况
-
-如果字段为null，则对应的模块置其模块均值,
-
-$RS = \frac 1 {N}\sum_{i=1}^n {(FUN_i*0.2+OSL_i*0.2+DEV_i*0.2+PCO_i*0.4)}$
-
-
-
-
-
-## 职位
-
-
-
-C:\Users\Hasee\.conda\envs\pytorch\python.exe C:\Users\Hasee\AppData\Roaming\JetBrains\PyCharm2022.3\scratches\4.py 
-OpenShift产品经理
-Docker Maintainer
-PMC Member and Committer
-创始人
-Impala PMC Chair
-首席技术官
-副负责人
-Alluxio创始人、首席执行官
-Project Lead
-Pig PMC主席
-Redis Labs首席技术官
-openEuler 20.03项目安全负责人
-Red Hat Open Source Program Office（OSPO）成员
-前项目负责人
-Impala PMC Member
-PMC 成员
-PMC Chair
-Rocky Linux网站主要开发者和维护者
-Hive PMC成员，Hortonworks软件工程师
-首席产品官（CPO）
-Databricks联合创始人兼CEO
-Research Scientist
-首席技术官（CTO）
-Microsoft技术院士、Windows Server技术总监
-高级副总裁，首席架构师
-Microsoft Azure和Windows Server高级产品经理
-Microsoft Corporation技术院士
-Databricks联合创始人，Apache Software Foundation成员
-Windows Server 2019开发经理
-openEuler 20.03项目构建负责人
-Software Engineer
-Sqoop PMC成员，Hortonworks公司软件工程师
-CoreOS创始人
-MariaDB核心开发人员
-架构师
-开发组长
-Chief Architect
-Azkaban PMC成员，LinkedIn公司工程师
-Presto PMC成员，Facebook公司软件工程师
-openSUSE Tumbleweed和openSUSE Leap的主要维护者
-Pig创始人
-MySQL创始人
-Vice President of MySQL Development
-Redis Labs首席执行官
-重要贡献者
-Hive PMC成员，Cloudera软件工程师
-Flink PMC Chair
-Alluxio软件工程师
-Apache HBase PMC成员，Salesforce公司工程师
-桌面环境负责人
-首席营销官
-Microsoft Corporation高级软件工程师
-CarbonData主要开发者
-CentOS Stream 产品经理
-开发者
-Alluxio技术总监
-Senior Software Engineer
-Committer
-技术专家
-软件工程师
-EulerOS内核负责人
-Apache HBase PMC成员，Cloudera公司工程师
-Apache HBase PMC主席，Hortonworks公司工程师
-创始人、技术顾问
-高级技术工程师
-Kudu开发者
-创始人兼首席执行官
-Hadoop PMC成员
-OpenLDAP 项目创始人
-ports committer
-Hudi创始人，Hudi PMC主席，Uber公司高级工程师
-Pig PMC成员
-Hudi 开发者
-Presto PMC成员，Starburst公司联合创始人
-PostgreSQL 核心开发者
-Founder
-MySQL 架构师
-Contributor
-Sqoop联合创始人，Sqoop PMC主席，Cloudera公司软件工程师
-创始人、前首席执行官
-Sqoop PMC成员，阿里巴巴集团技术专家
-Azkaban创始人，LinkedIn公司工程师
-Release Manager
-Redis开发者
-Redis Labs首席架构师
-Apache Spark PMC成员，Databricks公司工程师
-Apache Pig PMC成员, LinkedIn公司工程师
-Ranger Contributor
-Flume PMC Chair
-高级主任工程师
-openEuler技术委员会主席
-Apache Pig PMC成员, Hortonworks公司工程师
-openSUSE项目主席
-MySQL Foundation的创始人之一，前联合创始人
-Karanbir Singh
-前总裁兼CEO
-Intel Fellow
-首席执行官（CEO）
-Apache Hive PMC成员，Hortonworks公司工程师
-高级工程师
-联合创始人/首席架构师
-Project Leader
-EulerOS项目副总监
-Apache Spark 创始人，Databricks公司CTO
-项目负责人
-openEuler 20.03项目技术负责人
-GaussDB 项目负责人
-首席执行官
-CoreOS工程经理
-副总裁
-MySQL Foundation的创始人之一，前CTO
-首席架构师
-PMC成员
-高级副总裁、首席技术官
-Apache Software Foundation成员，Databricks工程师
-Principal Developer
-Tez PMC成员，Hortonworks软件工程师
-高级副总裁，数据平台集团经理
-高级副总裁，核心架构
-SQL Server产品经理
-Apache Doris PMC成员
-Zeppelin PMC Member
-PMC 主席
-SQL Server负责人
-Spark PMC 成员
-资深开发工程师
-Apache Tez PMC Chair
-总裁兼CEO
-Apache Hadoop PMC 委员会成员
-Hive PMC成员，Hive创始人之一，Hortonworks软件工程师
-MySQL 开发者
-Rocky Enterprise Software Foundation创始人兼首席执行官
-OpenShift和Kubernetes首席开发人员
-Hudi PMC成员，阿里巴巴集团技术专家
-Lead Architect
-技术研究员
-技术总监
-PMC Member
-首席工程师
-Hive PMC主席，Hive创始人，Facebook工程师
-Red Hat高级软件工程师
-MySQL 开发团队经理
-Sqoop PMC成员，Cloudera公司软件工程师
-Windows Server高级软件工程师
-资深软件工程师
-Hadoop 创始人之一
-Druid PMC 成员和 Imply 公司首席技术官
-src committer
-Apache Tez PMC Member
-核心贡献者
-Apache Pig PMC成员, Cloudera公司工程师
-FusionInsight Manager架构师
-PMC
-CTO（首席技术官）
-Druid PMC 成员和 Imply 公司联合创始人
-MariaDB创始人
-Windows Server高级产品经理
-openEuler架构委员会主席
-Member of Technical Staff
-openSUSE 理事会成员
-openSUSE主席
-Spark创始人，Apache Software Foundation成员，斯坦福大学教授
-项目创始人
-项目管理委员会成员
-Hadoop 创始人
-首席科学家
-openSUSE 基础设施团队成员
-Apache Flink PMC 委员会成员
-高级副总裁，统一软件和驱动程序架构
-FusionInsight Manager核心开发者
-首席开发人员
-前CoreOS CTO
-CentOS Stream 开发者
-创始人、前项目负责人
-技术主管
-开发人员
-openEuler 20.03项目副技术负责人
-Redis创始人、首席架构师
-EulerOS安全负责人
-EulerOS软件包负责人
-Apache Pig PMC成员, Twitter公司工程师
-FusionInsight Manager研发负责人
-工程师
-Tez PMC主席，Hortonworks软件工程师
-Spark 创始人
-核心开发者
-Impala PMC成员，Cloudera公司软件工程师
-CTO
-PostgreSQL成员、核心贡献者
-维护者
-Ranger PMC Member
-PrestoSQL项目联合创始人
-OpenLDAP 项目维护者
-Flink PMC Member
-Redis创始人
-首席软件工程师
-CentOS 项目领导
-高级软件工程师
-GaussDB 技术总监
-高级技术专家
-Flume PMC Member
-开发工程师
-ZooKeeper 创始人之一
-Delta Lake联合创始人
-前 Spark PMC 主席
-Core Team Member
-执行董事
-高级技术经理
-高级副总裁、首席架构师
-FusionInsight Manager高级开发工程师
-Hadoop 核心贡献者
-Apache Tez PMC成员，Hortonworks公司工程师
-数据技术架构师
-HBase PMC主席
-Windows Server 2019负责人
-Impala联合创始人，Impala PMC主席，Cloudera公司资深工程师
-Apache Ranger Committer
-openSUSE.Asia峰会组织者
-高级副总裁
-Data Scientist
-GaussDB 技术专家
-Kudu项目创始人
-高级技术总监
-联合创始人
-openSUSE 工程师
-前核心开发人员
-PMC Chair, Committer
-Hudi PMC成员，Uber公司高级工程师
-EulerOS虚拟化负责人
-openEuler开发者
-Apache Tez PMC成员，Cloudera公司工程师
-DevAssistant Maintainer
-OpenLDAP 项目首席架构师
-Sqoop联合创始人，Sqoop PMC成员，Cloudera公司软件工程师
-CentOS 开发者
-Druid 项目创始人和 Apache Software Foundation 成员
-程序经理
-openSUSE 项目主席
-Windows Server 2019产品经理
-创始人兼CEO
-董事会成员
-前CoreOS CEO
-VP of Engineering
-Virt-builder Maintainer
-Red Hat工程部副总裁
-Apache Kafka PMC 委员会成员
-Software Architect
-openEuler 20.03项目社区负责人
-技术工程师
-创始人/CTO
-openSUSE Leap发行经理
-HBase PMC成员
-Microsoft Corporation数据和人工智能部门副总裁
-Apache ZooKeeper PMC成员
-Ranger PMC Chair
-Fedora 项目负责人
-高级项目经理
-Apache Ranger PMC主席，Hortonworks公司工程师
-Hudi 创始人
-Alluxio技术负责人
-Presto联合创始人，Presto Software Foundation董事会成员
-Founder & CTO
-联合创始人，软件工程师
-VP of Open Source
-Apache Hue PMC主席，Cloudera公司工程师
-创始人、技术总监
-Apache Pig PMC成员, Yahoo!公司工程师
-ZooKeeper 核心开发者
-
-Process finished with exit code 0
+{: .box-error}
+**Error:** This is an error box.
