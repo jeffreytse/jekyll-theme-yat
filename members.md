@@ -54,7 +54,6 @@ Republic of Korea
 
 | Name           | Educational Background                              | E-mail                  |
 | -------------- | --------------------------------------------------- | ----------------------- |
-| Hyeonuk Woo    | B.S. in Chemistry, SNU                              | dngusdnr1@snu.ac.kr     |
 | Changsoo Lee   | B.S. & M.S. in Pharmacy, SNU                        | ccaa2013@snu.ac.kr      |
 | Jiho Sim       | B.S. in Chemistry, SNU                              | j2hosim@snu.ac.kr       |
 | Sumin Lee      | B.S. in Biological Sciences, SNU                    | keepthrword22@snu.ac.kr |
@@ -70,18 +69,18 @@ Republic of Korea
 | Yubeen Kim     | B.S. in Chemistry, SNU                              | oilbeen@snu.ac.kr       |
 | Jeonghyeon Kim | B.S. in Chemical and Biological Engineering & Computer Science and Engineering, SNU                              | jasonkjh@snu.ac.kr       |
 | Byunghyun Bae  | B.S. in Pharmacy, CAU                               | bbh9955@snu.ac.kr       |
+| Byungwook Kim  | B.S. in Chemistry, SNU                              | bwkim1324@snu.ac.kr     |
+| Hongsuk Kim    | B.S. in Chemistry, SNU                              | khs01654@snu.ac.kr      |
+| Gangeun Park   | B.S. in Chemistry, SNU                              | gangeun@snu.ac.kr       |
 
 ## Internship Members
 
 | Name            | Affiliation                                              |
 | --------------- | -------------------------------------------------------- |
 | Seungmin Yeom   | Department of Chemistry, SNU                             |
-| Hyunsoo Kim     | College of Pharmacy, SNU                                 |
-| Byungwook Kim   | Department of Chemistry, SNU                             |
 | Hyeonsung Byeon | Department of Applied Biology and Chemistry, SNU         |
-| Jeongbin Im     | Department of Chemistry, SNU                             |
 | Younghwan Kim   | Department of Chemistry, SNU                             |
-| Hongsuk Kim     | Department of Chemistry, SNU                             |
+| Hyeok Im        | Department of Chemistry, SNU                             |
 
 
 ## Administrative Assistant
@@ -94,6 +93,7 @@ Republic of Korea
 
 | Name              | Current Position                                                                                     | Course in SeokLab                                           |
 | ----------------- | ---------------------------------------------------------------------------------------------------- | ----------------------------------------------------------- |
+| Hyeonuk Woo    | Postdoctoral Researcher, Department of Chemistry, Seoul National University                | Ph.D., 2023                                                              |
 | Katsuhito Inui    | Researcher, Ohsong Pharm                                                                | M.S., 2022                                                 |
 | Sohee Kwon        | Researcher, Galux Inc.                                                                               | Ph.D., 2022                                                 |
 | Sangwoo Park      | Staff Engineer, Samsung Semiconductor Lab                                                            | Ph.D., 2022                                                 |
