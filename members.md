@@ -60,7 +60,6 @@ Republic of Korea
 | Hakjean Kim    | B.S. in Chemistry, SNU                              | hakjean@snu.ac.kr       |
 | Jayun Choi     | B.S. in Chemistry, SNU                              | jychoi9809@snu.ac.kr    |
 | Seho Lee       | B.S. in Chemistry, SNU                              | tp1928@snu.ac.kr        |
-| Jihyeon Lee    | B.S. in Chemistry, SMWU                             | jihyeon@snu.ac.kr       |
 | Seeun Kim      | B.S. in Chemistry, SNU                              | ehdqn04@snu.ac.kr       |
 | Simaek Oh      | B.S. in Biological Sciences, SNU                    | weather1999@snu.ac.kr   |
 | Nuri Jung      | B.S. in Chemistry & Computational Sciences, SNU     | jnooree@snu.ac.kr       |
@@ -93,6 +92,7 @@ Republic of Korea
 
 | Name              | Current Position                                                                                     | Course in SeokLab                                           |
 | ----------------- | ---------------------------------------------------------------------------------------------------- | ----------------------------------------------------------- |
+| Jihyeon Lee    | Ph.D. student, TBD                            | M.S., 2023       |
 | Hyeonuk Woo    | Postdoctoral Researcher, Department of Chemistry, Seoul National University                | Ph.D., 2023                                                              |
 | Katsuhito Inui    | Researcher, Ohsong Pharm                                                                | M.S., 2022                                                 |
 | Sohee Kwon        | Researcher, Galux Inc.                                                                               | Ph.D., 2022                                                 |
