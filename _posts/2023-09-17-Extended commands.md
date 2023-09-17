@@ -1,4 +1,10 @@
-
+---
+layout: post
+title: Extended commands
+subtitle: Each post also has a subtitle
+categories: markdown
+tags: [Linux]
+---
 
 ## mkpasswd 命令生成随机复杂密码
 
