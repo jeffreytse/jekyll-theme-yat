@@ -1,12 +1,12 @@
 {%- assign date_format = site.yat.date_format | default: "%b %-d, %Y" -%}
 
-{% assign article = post.content %}
-{% assign lang = post.lang %}
+{%- assign article = post.content -%}
+{%- assign lang = post.lang -%}
 {%- include functions.html func='get_reading_time' -%}
-{% assign reading_time = return %}
+{%- assign reading_time = return -%}
 
 {%- include functions.html func='get_article_excerpt' -%}
-{% assign excerpt = return %}
+{%- assign article_excerpt = return -%}
 {%- assign post_url = post.url | relative_url -%}
 
 {%- assign name = 'excerpt.image_width' -%}
@@ -21,7 +21,8 @@
 {%- include functions.html func='get_value' -%}
 {%- assign default_image = return -%}
 
-{%- assign post_image = post.banner.image
+{%- assign post_image = post.excerpt_image
+  | default: post.banner.image
   | default: post.banner
   | default: default_image
   | default: '/assets/images/default-image.jpeg' -%}
@@ -47,7 +48,7 @@
     </a>
     {%- endif -%}
     <a class="post-text" href="{{ post_url }}">
-      <p>{{ excerpt }} <span class="read_more">Read More</span></p>
+      <p>{{ article_excerpt }} <span class="read_more">Read More</span></p>
     </a>
   </div>
   <div class="post-tags">
