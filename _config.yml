@@ -59,13 +59,13 @@ yat:
 # If you want more debug log, you can set true
 # debug: false
 
-# If you don't want transparent header, you can set false
+# If you don't want a transparent header, you can set false
 # header_transparent: true
 
 # If you want to change the content width, you can set to another value
 # content_width: "920px"
 
-# Google analytics - GA4
+# Google Analytics - GA4
 # google_analytics: [Measurement ID]
 # enableDNT: "false"
 
@@ -75,7 +75,7 @@ yat:
 # If you want to change site language, you can set lang option
 # lang: "en"  # default lang is en
 
-# Translate languges
+# Translate languages
 # langs refer to https://cloud.google.com/translate/docs/languages
 # translate_langs:
 #   - lang: en
@@ -124,7 +124,7 @@ yat:
 # Custom color as below:
 # brand_color: "#1a8e42"
 
-# You can custom selection style
+# You can customize selection style
 # selection:
 #   color: "#ff00ff"
 #   background_color: "yellow"
@@ -136,7 +136,7 @@ yat:
 #
 # Whatever the user's choice is, it will supersede the
 # default setting of the site and be kept during the
-# visit (session). Only the dark mode setting is"manual",
+# visit (session). Only the dark mode setting is "manual",
 # it will be always kept on every visit (i.e. no matter
 # the browser is closed or not)
 #
