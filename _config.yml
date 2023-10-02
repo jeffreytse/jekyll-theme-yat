@@ -150,6 +150,28 @@ yat:
 #   background_color: "#ff4e00"
 #   text_transform: "uppercase"  # ("uppercase", "lowercase", "capitalize")
 
+# Code highlighting setting
+# This is a Jekyll setting rather than a theme setting, but the theme includes
+# stylesheets to highlight code when the Rouge highlighter (the default) is in
+# use. This setting affects both Markdown code blocks and Liquid `highlight`
+# blocks. You can set it to `none` to disable highlighting.
+#
+# By default, we highlight code with Rouge's "github.light" and `github.dark`
+# themes for light and dark mode, respectively. If you want to change that, you
+# can override `assets/css/code-highlight-rouge.css` with a different
+# stylesheet generated with Rouge's `rougify` command. If you do so, you must
+# set the CSS scope to `.highlight pre` for your light-mode theme:
+#
+#   $ mkdir -p assets/css
+#   $ bundle exec rougify style --scope '.highlight pre' <THEME> >assets/css/code-highlight-rouge.css
+#
+# ...and to `html[data-theme="dark"] .highlight pre` for your dark-mode theme.
+# A dark-mode theme is optional, but if you want one just append its stylesheet
+# to the same CSS file (note the >>):
+#
+#   $ bundle exec rougify style --scope 'html[data-theme="dark"] .highlight pre' <DARK_THEME> >>assets/css/code-highlight-rouge.css
+# highlighter: rouge
+
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
 # header_pages:
@@ -238,7 +260,6 @@ yat:
 #   follow_site_theme: true
 
 # Build settings
-# highlighter: none
 markdown: kramdown
 kramdown:
   input: GFM

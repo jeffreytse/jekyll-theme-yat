@@ -85,7 +85,7 @@ I will respect your crucial support and say THANK YOU!
 - Full layouts `home`, `post`, `tags`, `archive` and `about`.
 - Uses font awesome 5 for icons.
 - Beautiful page banner with image and video.
-- Beautiful Syntax Highlight using [highlight.js][highlight-js].
+- Beautiful Syntax Highlight with overridable [Rouge][rouge] themes.
 - RSS support using [Jekyll Feed][jekyll-feed] gem.
 - Optimized for search engines using [Jekyll Seo Tag][jekyll-seo-tag] gem.
 - Sitemap support using [Jekyll Sitemap][jekyll-sitemap] gem.
@@ -197,4 +197,4 @@ This theme is licensed under the [MIT license](https://opensource.org/licenses/m
 [jekyll-seo-tag]: https://github.com/jekyll/jekyll-seo-tag
 [jekyll-sitemap]: https://github.com/jekyll/jekyll-sitemap
 [jekyll-feed]: https://github.com/jekyll/jekyll-feed
-[highlight-js]: https://github.com/highlightjs/highlight.js
+[rouge]: https://github.com/rouge-ruby/rouge

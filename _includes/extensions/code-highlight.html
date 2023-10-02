@@ -1,9 +1,4 @@
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css">
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
-<!-- and it's easy to individually load additional languages -->
-<script charset="UTF-8"
-        src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/languages/go.min.js"
-        async></script>
+<link rel="stylesheet" href="{{ "/assets/css/code-highlight-rouge.css" | relative_url }}">
 
 {%- assign name = 'code_badge.enabled' -%}
 {%- include functions.html func='get_value' default='true' -%}
@@ -21,71 +16,76 @@
 {%- include functions.html func='get_value' default='uppercase' -%}
 {%- assign badge_text_transform = return -%}
 
+{%- if badge_enabled -%}
 <script>
-// Init highlight js
 document.addEventListener('DOMContentLoaded', function(event) {
-  var els = document.querySelectorAll('pre code')
-
-  function addLangData(block) {
-    var outer = block.parentElement.parentElement.parentElement;
-    var lang = block.getAttribute('data-lang');
-    for (var i = 0; i < outer.classList.length; i++) {
-      var cls = outer.classList[i];
+  function getLangFromClass(elem) {
+    for (cls of elem.classList) {
       if (cls.startsWith('language-')) {
-        lang = cls;
-        break;
+        return cls.substr(9);
       }
     }
-    if (!lang) {
-      cls = block.getAttribute('class');
-      lang = cls ? cls.replace('hljs ', '') : '';
-    }
-    if (lang.startsWith('language-')) {
-      lang = lang.substr(9);
-    }
-    block.setAttribute('class', 'hljs ' + lang);
-    block.parentNode.setAttribute('data-lang', lang);
+    return null;
   }
 
-  function addBadge(block) {
-    var enabled = ('{{ badge_enabled }}' || 'true').toLowerCase();
-    if (enabled == 'true') {
-      var pre = block.parentElement;
-      pre.classList.add('badge');
+  function addBadge(preElem, lang) {
+    let badgeWrapper = document.createElement('div');
+    badgeWrapper.classList.add('badge-wrapper')
+
+    let badge = document.createElement('div');
+    badge.classList.add('badge');
+    badge.append(lang);
+
+    preElem.replaceWith(badgeWrapper);
+    badgeWrapper.append(badge, preElem);
+  }
+
+  // Kramdown code blocks (Rouge highlighter):
+  //   div.highlighter_rouge.language-XXX > div.highlight > pre.highlight > code
+  document.querySelectorAll('.highlighter-rouge').forEach((e) => {
+    let pre = e.querySelector('pre');
+    if (pre !== null) {
+      let lang = getLangFromClass(e);
+      if (lang !== null) {
+        addBadge(pre, lang);
+      }
     }
-  }
+  });
 
-  function handle(block) {
-    addLangData(block);
-    addBadge(block)
-    hljs.highlightBlock(block);
-  }
+  // Liquid code blocks (any highlighter):
+  //   figure.highlight > pre > code.language-XXX[data-lang="XXX"]
+  // Kramdown code blocks (no highlighter):
+  //   pre > code.language-XXX
+  document.querySelectorAll('pre > code').forEach((e) => {
+    let lang = e.hasAttribute('data-lang')
+      ? e.getAttribute('data-lang')   // Liquid
+      : getLangFromClass(e);          // Kramdown
 
-  for (var i = 0; i < els.length; i++) {
-    var el = els[i];
-    handle(el);
-  }
+    if (lang !== null) {
+      addBadge(e.parentElement, lang);
+    }
+  });
 });
 </script>
 
 <style>
-  /* code language badge */
-  pre.badge::before {
-    content: attr(data-lang);
-    color: {{badge_color}};
-    background-color: {{badge_background_color}};
-    padding: 0 .5em;
-    border-radius: 0 2px;
-    text-transform: {{badge_text_transform}};
-    text-align: center;
-    min-width: 32px;
-    display: inline-block;
-    position: absolute;
-    right: 0;
+  .badge-wrapper {
+    position: relative;
   }
 
-  /* fix wrong badge display for firefox browser */
-  code > table pre::before {
-    display: none;
+  .badge-wrapper .badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    min-width: 32px;
+    padding: 0 .5em;
+    border-bottom-left-radius: 2px;
+    text-align: center;
+
+    color: {{badge_color}};
+    background-color: {{badge_background_color}};
+    text-transform: {{badge_text_transform}};
   }
 </style>
+{%- endif -%}
