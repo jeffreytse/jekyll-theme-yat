@@ -11,6 +11,6 @@ sidebar: category-list
 
   {%- assign keys = categories -%}
   {%- assign field = 'categories' -%}
-  {%- include views/segments.html -%}
+  {%- include views/segments.html min_cnt = 3 -%}
 
 {%- endif -%}

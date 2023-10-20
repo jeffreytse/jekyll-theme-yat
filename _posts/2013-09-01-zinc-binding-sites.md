@@ -5,7 +5,7 @@ title:
 authors: Lim Heo, Yoo-Bok Cho, Myeong Sup Lee, Jung-Hye Roe* and Chaok Seok*
 journal: Proteins
 categories:
-  - others
+  - Miscellaneous
 tags:
   - with experimentalists
 redirect_to: https://doi.org/10.1002/prot.24323

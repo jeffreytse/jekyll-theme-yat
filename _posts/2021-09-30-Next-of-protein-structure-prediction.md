@@ -5,7 +5,7 @@ authors:
   Jonghun Won
 journal: Biodesign
 categories:
-  - others
+  - Miscellaneous
 tags:
   - review
 redirect_to: https://doi.org/10.34184/kssb.2021.9.3.47

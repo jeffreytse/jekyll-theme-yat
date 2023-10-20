@@ -25,7 +25,8 @@
 
     {%- for key in  keys -%}
       {%- assign items = site.posts | where: field, key -%}
-      {%- if items.size < min_cnt -%}
+      {%- assign key_lower = key | downcase -%}
+      {%- if items.size < min_cnt or key_lower == 'misc' or key_lower == 'miscellaneous' -%}
         {%- assign others = others | concat: items -%}
         {%- assign other_types = other_types | plus: 1 -%}
       {%- else -%}

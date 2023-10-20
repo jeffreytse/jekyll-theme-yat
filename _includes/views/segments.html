@@ -19,7 +19,8 @@
 <div class="page-segments">
   {%- for key in keys -%}
     {%- assign items = site.posts | where: field, key -%}
-    {%- if items.size < min_cnt -%}
+    {%- assign key_lower = key | downcase -%}
+    {%- if items.size < min_cnt or key_lower == 'misc' or key_lower == 'miscellaneous' -%}
       {%- assign others = others | append: split_mark | append: key -%}
     {%- else -%}
       <h2 id="{{ key }}" class="segment-name">{{ key }}</h2>
