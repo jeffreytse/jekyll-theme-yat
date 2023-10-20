@@ -108,7 +108,7 @@ html {
 
     .site-favicon {
       display: inline-block;
-      height: $header-height / 1.5;
+      height: calc($header-height / 1.5);
       margin-right: 5px;
       vertical-align: middle;
     }
@@ -510,7 +510,7 @@ html {
       margin-bottom: 0;
 
       @include media-query($on-palm) {
-        margin-bottom: $spacing-unit / 2;
+        margin-bottom: calc($spacing-unit / 2);
       }
     }
 
@@ -850,7 +850,7 @@ html {
   }
 
   @include media-query($on-palm) {
-    height: $banner-height / 1.5;
+    height: calc($banner-height / 1.5);
   }
 }
 
@@ -861,7 +861,7 @@ html {
   @extend %flex;
 
   @include media-query($on-laptop) {
-    margin-top: $spacing-unit / 2;
+    margin-top: calc($spacing-unit / 2);
   }
 
   .main {

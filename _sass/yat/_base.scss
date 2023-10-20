@@ -62,7 +62,7 @@ ol,
 dl,
 figure,
 %vertical-rhythm {
-  margin-bottom: $spacing-unit / 2;
+  margin-bottom: calc($spacing-unit / 2);
 }
 
 /**
@@ -87,7 +87,7 @@ figure {
   img {
     display: block;
     width: 100%;
-    margin: $spacing-unit / 2 0;
+    margin: calc($spacing-unit / 2) 0;
   }
 
   figcaption {
@@ -164,7 +164,7 @@ a.footnote:after {
 blockquote {
   color: $grey-color;
   border-left: 4px solid $grey-color-light;
-  padding-left: $spacing-unit / 2;
+  padding-left: calc($spacing-unit / 2);
   @include relative-font-size(1.125);
   letter-spacing: -1px;
   font-style: italic;
@@ -279,9 +279,9 @@ table {
 
   th,
   td {
-    padding: ($spacing-unit / 3) ($spacing-unit / 2);
+    padding: calc($spacing-unit / 3) calc($spacing-unit / 2);
     @include media-query($on-palm) {
-      padding: ($spacing-unit / 6) ($spacing-unit / 4);
+      padding: calc($spacing-unit / 6) calc($spacing-unit / 4);
     }
   }
 
