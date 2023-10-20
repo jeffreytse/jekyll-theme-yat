@@ -136,6 +136,11 @@ timezone: Asia/Seoul
 # Custom color as below:
 # brand_color: "#1a8e42"
 
+# You can custom selection style
+# selection:
+#   color: "#ff00ff"
+#   background_color: "yellow"
+
 # Night/Dark mode
 # Default mode is "auto", "auto" is for auto nightshift
 # (19:00 - 07:00), "manual" is for manual toggle, and
@@ -222,8 +227,9 @@ exclude:
 #   heading_style: null     # Custom heading style (e.g. "font-weight: bold; text-decoration: underline")
 #   subheading_style: null  # Custom subheading style (e.g. color: gold)
 
-# Excerpt size setting
-excerpt_size: 100
+# Excerpt settings
+excerpt:
+  text_size: 100
 
 # Pagination setting
 paginate: 10
@@ -240,6 +246,15 @@ paginate_path: "/publications/page:num/"
 #    bottom: 40
 #    left: 100
 #    right: 100
+
+# Click to top settings
+# click_to_top:
+#   light:
+#     background_color: "white"
+#     color: "#454545"
+#   dark:
+#     background_color: "#34323d"
+#     color: "#bbb"
 
 # Disqus comments
 # disqus:

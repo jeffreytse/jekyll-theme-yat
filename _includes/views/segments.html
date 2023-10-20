@@ -22,14 +22,16 @@
     {%- if items.size < min_cnt -%}
       {%- assign others = others | append: split_mark | append: key -%}
     {%- else -%}
-    <h2 id="{{ key }}" class="segment-name">{{ key }}</h2>
-    <ul class="page-segments-list">
-      {%- for item in items -%}
-        {%- if item != nil -%}
-        <li> {%- include views/post-item.html -%} </li>
-        {%- endif -%}
-      {%- endfor -%}
-    </ul>
+      <h2 id="{{ key }}" class="segment-name">{{ key }}</h2>
+      <ul class="page-segments-list">
+        {%- for item in items -%}
+          {%- if item != nil -%}
+            <li {%- if item.top -%} class="top-post" {%- endif -%}>
+              {%- include views/post-item.html -%}
+            </li>
+          {%- endif -%}
+        {%- endfor -%}
+      </ul>
     {%- endif -%}
   {%- endfor -%}
 
@@ -48,7 +50,9 @@
           {%- assign items = site.posts | where: field, other -%}
           {%- for item in items -%}
             {%- if item != nil -%}
-            <li> {%- include views/post-item.html -%} </li>
+              <li {%- if item.top -%} class="top-post" {%- endif -%}>
+                {%- include views/post-item.html -%}
+              </li>
             {%- endif -%}
           {%- endfor -%}
         </ul>

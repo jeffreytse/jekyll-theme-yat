@@ -15,6 +15,7 @@ html {
       transition: 0.1s height, background-color, box-shadow;
 
       &.site-header {
+
         .site-brand-inner,
         .page-link {
           color: #fff;
@@ -27,7 +28,7 @@ html {
           }
 
           .menu-icon {
-            > svg {
+            >svg {
               fill: $white-color;
             }
           }
@@ -70,7 +71,7 @@ html {
   @include flex-sticky(0);
   z-index: 1000;
 
-  & > .wrapper {
+  &>.wrapper {
     margin: 0 60px;
     padding: 0;
     max-width: 100%;
@@ -160,20 +161,20 @@ html {
       float: right;
       text-align: center;
 
-      > svg {
+      >svg {
         fill: rgba($header-text-color, 80%);
         transition: 0.1s fill;
       }
     }
 
-    input ~ .trigger {
+    input~.trigger {
       clear: both;
       display: none;
       border-radius: 3px;
       box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.06);
     }
 
-    input:checked ~ .trigger {
+    input:checked~.trigger {
       display: block;
       background: $header-background-color;
     }
@@ -317,7 +318,7 @@ html {
     list-style: none;
     font-size: small;
 
-    > li {
+    >li {
       margin-bottom: $spacing-unit * 0.5;
 
       &:not(:last-child) {
@@ -392,7 +393,7 @@ html {
   .paginator {
     text-align: center;
 
-    & > .previous:before {
+    &>.previous:before {
       content: " ";
       border: solid #787878;
       border-width: 0 2px 2px 0;
@@ -403,7 +404,7 @@ html {
       -webkit-transform: rotate(135deg);
     }
 
-    & > .next:after {
+    &>.next:after {
       content: " ";
       border: solid #787878;
       border-width: 0 2px 2px 0;
@@ -505,18 +506,20 @@ html {
     border-bottom: 1px solid $text-color;
 
     .post-subtitle {
-      font-weight: lighter;
+      font-weight: 300;
       margin-bottom: 0;
+
       @include media-query($on-palm) {
         margin-bottom: $spacing-unit / 2;
       }
     }
 
     .post-meta {
-      color: #808080;
+      color: $grey-color;
       display: inline-block;
       width: 100%;
       margin-bottom: 0;
+
       .post-meta-inner {
         float: right;
       }
@@ -568,7 +571,9 @@ html {
       margin-right: auto;
     }
 
-    img:not(.emoji), svg, iframe {
+    img:not(.emoji),
+    svg,
+    iframe {
       display: block;
       max-height: 50vh;
     }
@@ -592,6 +597,7 @@ html {
     }
 
     .professor {
+
       img,
       svg,
       iframe {
@@ -651,7 +657,8 @@ html {
 
   .post-related {
     margin-top: $spacing-unit * 0.5;
-    & > *:first-child {
+
+    &>*:first-child {
       @include relative-font-size(1.425);
       color: #333;
       margin-bottom: $spacing-unit * 0.5;
@@ -659,33 +666,14 @@ html {
 
     ul {
       margin-left: 15px;
-      .post-link {
-        @include relative-font-size(1.075);
-      }
+    }
 
-      a {
-        color: #666;
+    .post-link {
+      @include relative-font-size(1.075);
+      color: $grey-color;
 
-        &:hover {
-          color: #333;
-        }
-
-        &:after {
-          content: "NEW";
-          position: absolute;
-          margin-left: 8px;
-          margin-top: 3px;
-          padding: 0px 3px;
-          background-color: $brand-color;
-          color: #fff;
-          font-size: 10px;
-          font-weight: 600;
-          border-radius: 2px;
-        }
-
-        &:visited:after {
-          background-color: #fff;
-        }
+      &:hover {
+        color: darken($grey-color, 50%);
       }
     }
   }
@@ -711,7 +699,7 @@ html {
   }
 
   a {
-    color: #666;
+    color: $grey-color;
     max-width: 45%;
   }
 }
@@ -731,6 +719,7 @@ html {
     &:not(:first-child) {
       margin-top: 18px;
     }
+
     margin-bottom: 8px;
   }
 
@@ -756,17 +745,17 @@ html {
     height: 100%;
     overflow: hidden;
 
-    & > *:first-child {
+    &>*:first-child {
       @include center-image;
       transition: 0.1s all ease-in-out;
     }
 
-    & > video {
+    &>video {
       width: 100vw;
       object-fit: cover;
     }
 
-    & > img.img-placeholder {
+    &>img.img-placeholder {
       display: none;
     }
   }
@@ -782,7 +771,7 @@ html {
     padding: 10px 5px;
     text-shadow: 1px 1px 2px #33333355;
 
-    & > *:first-child {
+    &>*:first-child {
       margin-right: 30%;
 
       @include media-query($on-laptop) {
@@ -831,6 +820,7 @@ html {
 
     .post-meta {
       color: #ffffffcc;
+      padding-bottom: 1em;
     }
 
     .left-vsplit:before {
@@ -910,6 +900,7 @@ html {
  * Segments page
  */
 .page-segments {
+
   .segment-name,
   .segment-subname {
     font-weight: $base-font-weight * 1.5;
@@ -967,4 +958,52 @@ html {
     width: 0;
     height: $spacing-unit * 0.1;
   }
+}
+
+/**
+ * Post badge
+ */
+.post-badges {
+  display: inline-block;
+  position: relative;
+  margin-left: 8px;
+  margin-top: 3px;
+  user-select: none;
+}
+
+.pagination .post-badges {
+  bottom: 0.5em;
+}
+
+.post-related .post-badges {
+  bottom: 0.1em;
+}
+
+.page-segments .post-badges {
+  bottom: 0.1em;
+}
+
+.post-badge {
+  display: none;
+  padding: 0px 3px;
+  background-color: $brand-color;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 600;
+  border-radius: 2px;
+  transition-duration: $base-transition-duration;
+}
+
+.post-badge.badge-new {
+  display: inline-block;
+}
+
+.top-post .post-badges .post-badge.badge-top {
+  display: inline-block;
+}
+
+a:visited .post-badges .post-badge.badge-new {
+  display: none;
+  color: $background-color;
+  background-color: $background-color;
 }

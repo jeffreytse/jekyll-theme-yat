@@ -14,5 +14,6 @@
 <span>
   <a class="post-link" href="{{ post.url | relative_url }}" {%- if post.redirect_to -%} target="_blank" rel="noopener noreferrer"{%- endif -%}>
     {{ post.title }}
+    {%- include views/post-badges.html -%}
   </a>
 </span>

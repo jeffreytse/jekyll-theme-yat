@@ -42,6 +42,7 @@ body {
   min-height: 100vh;
   flex-direction: column;
   hyphens: auto;
+  transition-duration: $base-transition-duration;
 }
 
 /**
@@ -363,4 +364,28 @@ table {
   system: extends decimal;
   prefix: "[";
   suffix: "]	";
+}
+
+/**
+ * Text Selection
+ */
+::selection {
+  color: $selection-color;
+  background-color: $selection-background-color;
+}
+::-moz-selection { /* Code for Firefox */
+  color: $selection-color;
+  background-color: $selection-background-color;
+}
+::-ms-selection {
+  color: $selection-color;
+  background-color: $selection-background-color;
+}
+::-o-selection {
+  color: $selection-color;
+  background-color: $selection-background-color;
+}
+::-webkit-selection {
+  color: $selection-color;
+  background-color: $selection-background-color;
 }

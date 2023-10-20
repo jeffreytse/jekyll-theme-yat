@@ -15,69 +15,30 @@
 <div class="pagination">
   <!-- Post list links -->
   <ul class="post-list">
-    {%- for post in posts -%}
-    <li>
-      {%- if post.date_format -%}
-      {%- assign date_format = post.date_format -%}
-      {%- else -%}
-      {%- assign date_format = ydf -%}
-      {%- endif -%}
+    <!-- Top list item -->
+    {%- if paginator != nil and paginator.page == 1 -%}
+      {%- assign post_item_class = "top-post" -%}
+      {%- assign top_posts = posts
+        | where_exp: "item", "item.top > 0"
+        | sort: "top" -%}
+      {%- for post in top_posts -%}
+        {%- include views/pagination-item.html -%}
+      {%- endfor -%}
+    {%- endif -%}
 
-      {%- assign article = post.content -%}
-      {%- assign lang = post.lang -%}
-      {%- assign post_url = post.url | relative_url -%}
-      <h2 class="post-title">
-        <a class="post-link" href="{{ post_url | relative_url }}" {%- if post.redirect_to -%} target="_blank" rel="noopener noreferrer"{%- endif -%}>
-          {{ post.title }}
-        </a>
-      </h2>
-      {%- if post.subtitle -%}
-      {%- assign post_subtitle = post.subtitle -%}
-      {%- elsif post.authors -%}
-      {%- assign post_subtitle = post.authors
-      | escape
-      | replace: 'et al.', '<em>et al.</em>'
-      -%}
+    <!-- Normal list item -->
+    {%- assign post_item_class = "" -%}
+    {%- for post in posts -%}
+      {%- if post.top -%}
+        {%- continue -%}
       {%- endif -%}
-      <h3 class="post-subtitle">{{ subheading | default: post_subtitle }}</h3>
-      <div class="post-meta">
-        <span class="post-date"><i class="fa-solid fa-calendar-day"></i>
-          {% if post.journal %}
-          {% if
-          post.accepted_in %}<a class="post-tag" href="{{ archive }}#h-unpublished">(Accepted in) {{ post.accepted_in | date: date_format }}</a>{% else %}<a class="post-tag" href="{{ archive }}#h-{{ post.date | date: '%Y' }}">{{ post.date | date:
-          date_format }}</a>{% endif %}{% else %}{{ post.date | date: date_format }}{% endif %}</span>
-        {%- if post.use_mtime -%}
-        <span class="post-date left-vsplit"><i class="fa-solid fa-pen-to-square"></i> {{ post.last_modified_at | date:
-          ldf }}</span>
-        {%- endif -%}
-        {%- if post.journal -%}
-        <span class="post-journal left-vsplit"><i class="fa-solid fa-newspaper"></i> <a class="post-tag"
-            href="{{ '/publications/journals.html ' | relative_url }}#{{post.journal}}">{{ post.journal }}</a></span>
-        {%- endif -%}
-      </div>
-      {%- assign article_strip = article | strip_newlines -%}
-      {%- if article_strip != '' -%}
-      {%- include functions.html func='get_article_excerpt' -%}
-      {%- assign excerpt = return -%}
-      <div class="post-excerpt">
-        {{ excerpt }}
-        {% if excerpt_truncated %}
-        <a class="read_more" href="{{ post_url }}">Read More...</a>
-        {% endif %}
-      </div>
-      {%- endif -%}
-      {%- if post.tags -%}
-      <div class="post-tags">
-        {%- for tag in post.tags -%}
-        <a class="post-tag" href="{{ '/publications/tags.html ' | relative_url }}#{{tag}}">#{{tag}}</a>
-        {%- endfor -%}
-      </div>
-      {%- endif -%}
-    </li>
+      {%- include views/pagination-item.html -%}
     {%- endfor -%}
   </ul>
 
   <!-- Pagination links -->
-  {%- if paginator != nil and paginator.posts.size < site.posts.size -%} {%- include views/paginator.html -%} {%- endif
-    -%} </div>
-    {%- endif -%}
+  {%- if paginator != nil and paginator.posts.size < site.posts.size -%}
+    {%- include views/paginator.html -%}
+  {%- endif -%}
+</div>
+{%- endif -%}
