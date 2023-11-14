@@ -72,6 +72,11 @@ Republic of Korea
 | Hongsuk Kim    | B.S. in Chemistry, SNU                              | khs01654@snu.ac.kr      |
 | Gangeun Park   | B.S. in Chemistry, SNU                              | gangeun@snu.ac.kr       |
 
+## Postdoctoral Researchers
+| Name            | Affiliation                                              |
+| --------------- | -------------------------------------------------------- |
+| Hyeonuk Woo     | Postdoctoral Researcher, Department of Chemistry, Seoul National University  |
+
 ## Internship Members
 
 | Name            | Affiliation                                              |
