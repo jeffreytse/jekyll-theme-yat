@@ -73,6 +73,7 @@ Republic of Korea
 | Gangeun Park   | B.S. in Chemistry, SNU                              | gangeun@snu.ac.kr       |
 
 ## Postdoctoral Researchers
+
 | Name            | Affiliation                                              |
 | --------------- | -------------------------------------------------------- |
 | Hyeonuk Woo     | Postdoctoral Researcher, Department of Chemistry, Seoul National University  |
