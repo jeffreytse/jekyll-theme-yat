@@ -74,9 +74,9 @@ Republic of Korea
 
 ## Postdoctoral Researchers
 
-| Name            | Affiliation                                              |
-| --------------- | -------------------------------------------------------- |
-| Hyeonuk Woo     | Postdoctoral Researcher, Department of Chemistry, Seoul National University  |
+| Name            | Affiliation                                                                 |
+| --------------- | --------------------------------------------------------------------------- |
+| Hyeonuk Woo     | Postdoctoral Researcher, Department of Chemistry, Seoul National University |
 
 ## Internship Members
 
