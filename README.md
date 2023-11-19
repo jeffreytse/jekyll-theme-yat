@@ -86,6 +86,7 @@ I will respect your crucial support and say THANK YOU!
 - Uses font awesome 5 for icons.
 - Beautiful page banner with image and video.
 - Beautiful Syntax Highlight using [highlight.js][highlight-js].
+- Beautiful image gallery previewer using [PhotoSwipe 5][photoswipe-5].
 - RSS support using [Jekyll Feed][jekyll-feed] gem.
 - Optimized for search engines using [Jekyll Seo Tag][jekyll-seo-tag] gem.
 - Sitemap support using [Jekyll Sitemap][jekyll-sitemap] gem.
@@ -95,6 +96,7 @@ I will respect your crucial support and say THANK YOU!
 - Diagram (PlantUML, Mermaid) support using [Jekyll Spaceship][jekyll-spaceship] gem.
 - Google Translation support.
 - New post tag support.
+- Pin post tag support.
 
 Also, visit the [Live Demo][yat-live-demo] site for the theme.
 
@@ -157,6 +159,10 @@ And then execute:
 $ bundle
 ```
 
+### Forking/Cloning the project
+
+You need to update the option of github workflow file `.github/workflows/build-jekyll.yml`, especially to ensure the value of `jekyll_baseurl` is correct.
+
 ### GitHub Pages without limitation
 
 GitHub Pages runs in `safe` mode and only allows [a set of whitelisted plugins/themes](https://pages.github.com/versions/). **In other words, the third-party gems will not work normally**.
@@ -198,3 +204,4 @@ This theme is licensed under the [MIT license](https://opensource.org/licenses/m
 [jekyll-sitemap]: https://github.com/jekyll/jekyll-sitemap
 [jekyll-feed]: https://github.com/jekyll/jekyll-feed
 [highlight-js]: https://github.com/highlightjs/highlight.js
+[photoswipe-5]: https://photoswipe.com/
