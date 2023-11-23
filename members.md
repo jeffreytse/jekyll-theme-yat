@@ -98,7 +98,7 @@ Republic of Korea
 
 | Name              | Current Position                                                                                     | Course in SeokLab                                           |
 | ----------------- | ---------------------------------------------------------------------------------------------------- | ----------------------------------------------------------- |
-| Jihyeon Lee    | Ph.D. student, TBD                            | M.S., 2023       |
+| Jihyeon Lee    | Ph.D. student, Department of Pharmaceutical Sciences, University of Maryland                            | M.S., 2023       |
 | Hyeonuk Woo    | Postdoctoral Researcher, Department of Chemistry, Seoul National University                | Ph.D., 2023                                                              |
 | Katsuhito Inui    | Researcher, Ohsong Pharm                                                                | M.S., 2022                                                 |
 | Sohee Kwon        | Researcher, Galux Inc.                                                                               | Ph.D., 2022                                                 |
