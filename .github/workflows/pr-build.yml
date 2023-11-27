@@ -24,18 +24,15 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  get-basepath:
+    uses: ./.github/workflows/_get_basepath.yml
+
   build:
     runs-on: ubuntu-latest
-    outputs:
-      base_path: ${{ steps.resolve-ref.outputs.base_path }}
+    needs: [get-basepath]
+    env:
+      base_path: ${{ needs.get-basepath.outputs.base_path }}
     steps:
-      - name: Get basepath
-        id: resolve-ref
-        run: |
-          base_path="staging/${{ github.event.number }}"
-          echo "base_path=$base_path" >>$GITHUB_OUTPUT
-          echo "base_path=$base_path" >>$GITHUB_ENV
-
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
@@ -61,10 +58,10 @@ jobs:
         uses: actions/upload-pages-artifact@v2
 
   deploy:
-    needs: build
     runs-on: [self-hosted, galaxy3]
+    needs: [get-basepath, build]
     env:
-      base_path: ${{ needs.build.outputs.base_path }}
+      base_path: ${{ needs.get-basepath.outputs.base_path }}
     steps:
       - name: Make directory
         run: mkdir -p ~/www/html/"$base_path"

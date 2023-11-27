@@ -1,0 +1,23 @@
+name: Generate base_path
+
+on:
+  workflow_call:
+    outputs:
+      base_path:
+        value: ${{ jobs.generate-base-path.outputs.base_path }}
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  generate-base-path:
+    runs-on: ubuntu-latest
+    outputs:
+      base_path: ${{ steps.base-path.outputs.base_path }}
+    steps:
+      - name: Get basepath
+        id: base-path
+        run: |
+          base_path="staging/${{ github.event.repository.name }}/${{ github.event.number }}"
+          echo "base_path=$base_path" >>$GITHUB_OUTPUT

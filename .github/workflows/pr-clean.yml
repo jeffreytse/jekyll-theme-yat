@@ -12,10 +12,15 @@ defaults:
     shell: bash
 
 jobs:
+  get-basepath:
+    uses: ./.github/workflows/_get_basepath.yml
+
   clean:
     runs-on: [self-hosted, galaxy3]
+    needs: [get-basepath]
+    env:
+      base_path: ${{ needs.get-basepath.outputs.base_path }}
     steps:
       - name: Remove stale sites
         run: |
-          base_path="$HOME/www/html/staging/${{ github.event.number }}"
           rm -rvf "$base_path"
