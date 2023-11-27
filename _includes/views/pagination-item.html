@@ -42,7 +42,7 @@
     <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> {{ reading_time }}</span>
   </div>
   <div class="post-excerpt">
-    {%- if post_image -%}
+    {%- if post_image and post_image != 'NO_EXCERPT_IMAGE' -%}
     <a  class="post-image" href="{{ post_url }}" style="flex: 0 1 {{ image_width }}">
       <div style="background-image: url({{ post_image | relative_url }}); height: {{ image_height }}"></div>
     </a>
