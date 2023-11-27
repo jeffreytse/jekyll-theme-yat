@@ -66,11 +66,10 @@ jobs:
       - name: Make directory
         run: mkdir -p ~/www/html/"$base_path"
 
-      - name: Download artifact
-        uses: actions/download-artifact@v2
+      - uses: actions/download-artifact@v2
+        id: download
         with:
           name: github-pages
-          path: github-pages.tar.gz
 
       - name: Extract artifact
-        run: tar -C ~/www/html/"$base_path" -xzvf github-pages.tar.gz
+        run: tar -C ~/www/html/"$base_path" -xvf ${{ steps.download.outputs.download-path }}/artifact.tar
