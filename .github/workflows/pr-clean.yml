@@ -1,0 +1,21 @@
+name: Cleanup sites if a PR is closed
+
+on:
+  pull_request:
+    branches:
+      - master
+    types:
+      - closed
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  clean:
+    runs-on: [self-hosted, galaxy3]
+    steps:
+      - name: Remove stale sites
+        run: |
+          base_path="$HOME/www/html/staging/${{ github.event.number }}"
+          rm -rvf "$base_path"
