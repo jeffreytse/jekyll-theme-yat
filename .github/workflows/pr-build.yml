@@ -39,7 +39,7 @@ jobs:
 
       - name: Patch link
         run: |
-          sed -i "s#https://seoklab.org#https://cluster.seoklab.org:8443/$base_path#g" _config.yml
+          sed -i "s#https://seoklab.org#https://cluster.seoklab.org:8443#g" _config.yml
 
       - uses: ruby/setup-ruby@v1
         with:
@@ -50,7 +50,7 @@ jobs:
         id: pages
         uses: actions/configure-pages@v3
 
-      - run: bundle exec jekyll build -b ${{ steps.pages.outputs.base_path }}/
+      - run: bundle exec jekyll build -b "$base_path"
         env:
           JEKYLL_ENV: production
 
