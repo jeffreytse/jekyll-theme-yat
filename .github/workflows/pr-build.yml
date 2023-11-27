@@ -1,4 +1,4 @@
-name: Github Pages
+name: Test build and deploy
 
 on:
   pull_request:
@@ -25,11 +25,13 @@ concurrency:
 
 jobs:
   get-basepath:
+    if: ${{ github.triggering_actor != 'dependabot[bot]' }}
     uses: ./.github/workflows/_get_basepath.yml
 
   build:
     runs-on: ubuntu-latest
     needs: [get-basepath]
+    if: ${{ !github.event.pull_request.draft }}
     env:
       base_path: ${{ needs.get-basepath.outputs.base_path }}
     steps:
@@ -73,3 +75,18 @@ jobs:
 
       - name: Extract artifact
         run: tar -C ~/www/html/"$base_path" -xvf ${{ steps.download.outputs.download-path }}/artifact.tar
+
+  comment:
+    needs: [get-basepath]
+    runs-on: ubuntu-latest
+    if: ${{ github.event.action == 'opened' }}
+    steps:
+      - uses: actions/github-script@v6
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: 'Thanks for your contribution! Your changes will be reflected in <https://cluster.seoklab.org:8443/${{ needs.get-basepath.outputs.base_path }}>. Please check the link and merge this PR if everything is fine.'
+            });
