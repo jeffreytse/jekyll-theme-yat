@@ -23,4 +23,4 @@ jobs:
     steps:
       - name: Remove stale sites
         run: |
-          rm -rvf "$base_path"
+          rm -rvf ~/"$base_path"
