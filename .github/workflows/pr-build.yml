@@ -1,0 +1,79 @@
+name: Github Pages
+
+on:
+  pull_request:
+    branches:
+      - master
+    paths-ignore:
+      - ".gitignore"
+      - "CNAME"
+      - "LICENSE.txt"
+      - "README.md"
+    types:
+      - opened
+      - reopened
+      - synchronize
+      - ready_for_review
+
+defaults:
+  run:
+    shell: bash
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    outputs:
+      base_path: ${{ steps.resolve-ref.outputs.base_path }}
+    steps:
+      - name: Get basepath
+        id: resolve-ref
+        run: |
+          base_path="staging/${{ github.event.number }}"
+          echo "base_path=$base_path" >>$GITHUB_OUTPUT
+          echo "base_path=$base_path" >>$GITHUB_ENV
+
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Patch link
+        run: |
+          sed -i "s#https://seoklab.org#https://cluster.seoklab.org:8443/$base_path#g" _config.yml
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.2"
+          bundler-cache: true
+
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v3
+
+      - run: bundle exec jekyll build -b ${{ steps.pages.outputs.base_path }}/
+        env:
+          JEKYLL_ENV: production
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
+
+  deploy:
+    needs: build
+    runs-on: [self-hosted, galaxy3]
+    env:
+      base_path: ${{ needs.build.outputs.base_path }}
+    steps:
+      - name: Make directory
+        run: mkdir -p ~/www/html/"$base_path"
+
+      - name: Download artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: github-pages
+          path: github-pages.tar.gz
+
+      - name: Extract artifact
+        run: tar -C ~/www/html/"$base_path" -xzvf github-pages.tar.gz
