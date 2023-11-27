@@ -81,6 +81,9 @@ jobs:
     needs: [get-basepath]
     runs-on: ubuntu-latest
     if: ${{ github.event.action == 'opened' }}
+    permissions:
+      issues: write
+      pull-requests: write
     steps:
       - uses: actions/github-script@v6
         with:
