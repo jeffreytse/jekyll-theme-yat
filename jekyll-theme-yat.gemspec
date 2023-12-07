@@ -3,7 +3,7 @@
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-theme-yat"
   spec.version       = "1.10.0"
-  spec.authors       = ["HY.Cheon"]
+  spec.authors       = ["Hyeonjin.Cheon"]
   spec.email         = ["hyeonjinc@gmail.com"]
 
   spec.summary       = "Yet another theme for elegant writers with modern flat style and beautiful night/dark mode."
