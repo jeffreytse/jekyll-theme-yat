@@ -85,7 +85,6 @@ Republic of Korea
 | Seungmin Yeom   | Department of Chemistry, SNU                             |
 | Hyeonsung Byeon | Department of Applied Biology and Chemistry, SNU         |
 | Younghwan Kim   | Department of Chemistry, SNU                             |
-| Hyeok Im        | Department of Chemistry, SNU                             |
 
 
 ## Administrative Assistant
@@ -98,9 +97,9 @@ Republic of Korea
 
 | Name              | Current Position                                                                                     | Course in SeokLab                                           |
 | ----------------- | ---------------------------------------------------------------------------------------------------- | ----------------------------------------------------------- |
-| Jihyeon Lee    | Ph.D. student, Department of Pharmaceutical Sciences, University of Maryland                            | M.S., 2023       |
-| Hyeonuk Woo    | Postdoctoral Researcher, Department of Chemistry, Seoul National University                | Ph.D., 2023                                                              |
-| Katsuhito Inui    | Researcher, Ohsong Pharm                                                                | M.S., 2022                                                 |
+| Jihyeon Lee    | Ph.D. student, Department of Pharmaceutical Sciences, University of Maryland                            | M.S., 2023                                                  |
+| Hyeonuk Woo    | Postdoctoral Researcher, Department of Chemistry, Seoul National University                             | Ph.D., 2023                                                 |
+| Katsuhito Inui    | Researcher, Ohsong Pharm                                                                             | M.S., 2022                                                  |
 | Sohee Kwon        | Researcher, Galux Inc.                                                                               | Ph.D., 2022                                                 |
 | Sangwoo Park      | Staff Engineer, Samsung Semiconductor Lab                                                            | Ph.D., 2022                                                 |
 | Beomchang Kang    | Professional, LG Energy Solution                                                                     | Ph.D., 2022                                                 |
@@ -112,7 +111,7 @@ Republic of Korea
 | Gyu Rie Lee       | Postdoctoral Researcher, Department of Biochemistry, University of Washington                        | Ph.D., 2017                                                 |
 | Matthias Buck     | Professor, Case Western Reserve University                                                           | Visiting Professor, 2017                                    |
 | Andrew H. Beaven  | Postdoctoral Researcher, University of Minnesota                                                     | Visiting Student from University of Kansas, 2015-2016       |
-| Lim Heo           | Postdoctoral Researcher, Department of Biochemistry and Molecular Biology, Michigan State University | Ph.D., 2015                                                 |
+| Lim Heo           | Sr. Principal Scientist, Bristol Myers Squibb                                                        | Ph.D., 2015                                                 |
 | Hasup Lee         | Research Staff Member, Samsung Advanced Institute of Technology                                      | Ph.D., 2016                                                 |
 | Kyuhong Choe      | Researcher, LG Chemistry                                                                             | M.S., 2015                                                  |
 | Jaeju Ko          | Associate Professor, Indiana University of Pennsylvania                                              | Visiting Professor, 2014-2015                               |
