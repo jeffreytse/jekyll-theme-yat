@@ -97,7 +97,7 @@ No esta representado por una persona particular. Una vez finalizado el proyecto 
 ## Entregables principales del proyecto
 
 Los entregables del proyecto son:
-- Plataforma de hardware que conforma el prototipo funcional
+- Plataforma de hardware, es decir, un prototipo funcional del robot móvil. Esto incluye tanto electrónica como todos los componentes mecánicos para que el robot se desempeñe cumpliendo los requerimientos funcionales.
 - Documentación del hardware e interconexión de los módulos componentes
 - Código fuente del driver de la IMU
 - Documentación del driver de la IMU
@@ -123,6 +123,11 @@ Los entregables del proyecto son:
     2. Selección del tipo de robot móvil a desarrollar
     3. Descripción matemática del robot seleccionado
 2. [Selección y documentación del hardware necesario]({% post_url 2023-12-30-hardware-selection %})
+2. Diseño y fabricación del prototipo mecánico
+    1. Diseño mecánico del chasis del prototipo de robot móvil mediante herramienta CAD.
+    2. Adquisición de elementos mecánicos necesarios para la manufactura del prototipo como tornillos, tuercas, filamento plástico para impresión 3D y otros.
+    3. Fabricación mediante impresión 3D.
+    4. Montaje del prototipo mecánico y iteración para corregir errores de ser necesario.
 2. Setup del entorno de trabajo para desarrollo del software necesario (5 h)
 3. Implementación de micro-ROS en el sistema embebido (18 h)
     1. [Introducción a micro-ROS]({% post_url 2023-05-12-microROS-and-ROS-2 %}) (4 h)
@@ -194,3 +199,4 @@ Una vez finalizado el proyecto se realizarán las siguientes actividades:
 - Reunión privada con el equipo de trabajo para compartir *feedback* sobre la experiencia obtenida en el lapso del proyecto.
 - Reunión virtual, organizada por el responsable, con el Dr. Ing. Fabio Ardiani como acto de agradecimiento.
 - Reunión con el Ing. Leandro Borgnino y el equipo de trabajo, organizada por el responsable, para dar un cierre al proyecto y evaluar los próximos proyectos y actividades a realizar en conjunto.
+

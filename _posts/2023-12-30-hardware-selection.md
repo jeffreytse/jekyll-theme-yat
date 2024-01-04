@@ -39,4 +39,5 @@ sidebar: []
 - PS Clock 33.3333MHz PL Clock 50MHz
 - One PS button, two PL buttons
 - One PS LED, two PL LEDs
-Two 40-pin 2.54mm pitch expansion port, 72 IOs, coltage 3.3V
+- Two 40-pin 2.54mm pitch expansion port, 72 IOs, coltage 3.3V
+
