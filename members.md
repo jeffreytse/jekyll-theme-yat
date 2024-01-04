@@ -85,6 +85,10 @@ Republic of Korea
 | Seungmin Yeom   | Department of Chemistry, SNU                             |
 | Hyeonsung Byeon | Department of Applied Biology and Chemistry, SNU         |
 | Younghwan Kim   | Department of Chemistry, SNU                             |
+| Jeongmoo Jun    | College of Medicine, SNU                                 |
+| Yooshin Kim     | Department of Biological Science, SNU                    |
+| Dongyun Kim     | Department of Chemistry, SNU                             |
+
 
 
 ## Administrative Assistant
