@@ -25,47 +25,36 @@ sidebar: []
 
 ## Descripción técnica conceptual del proyecto a realizar
 
-La navegación autónoma ha sido un tema de investigación activo durante décadas, pero
-recientemente ha ganado una atención sin precedentes gracias a los avances en tecnologı́as
-como la inteligencia artificial y la robótica.
+La Fundación Fulgor es una organización argentina que trabaja con la misión de generar oportunidades de desarrollo y formación en áreas estratégicas para el futuro de Argentina. Su búsqueda tiene como objetivo colaborar para que Argentina sea competitiva internacionalmente en áreas tecnológicas.
 
-La navegación autónoma se refiere a la capacidad de un sistema para planificar y ejecutar sus
-propias acciones de manera autónoma, sin la necesidad de una intervención humana constante.
-La capacidad de un sistema para tomar decisiones en forma autónoma en su navegación a través
-del entorno es crucial para una amplia variedad de aplicaciones, desde los vehı́culos autónomos y
-los drones, hasta los robots industriales y los sistemas de logı́stica.
+Las principales herramientas de la Fundación Fulgor para cumplir su misión son el vínculo con universidades e instituciones educativas y la generación de oportunidades de capacitación, por ejemplo, a través de becas de grado y posgrado en temas estratégicos como:
+- el procesamiento digital de señales
+- los sistemas de comunicación y protocolos de transporte de datos,
+el diseño e implementación de circuitos digitales en FPGA y circuitos integrados
+- el diseño e implementación de circuitos analógicos
+- la inteligencia artificial con aplicación en navegación autónoma y visión artificial
+- el procesamiento de señales de radar y lidar
+- la fusión sensorial y el control en vehículos aéreos y terrestres
 
-La investigación de técnicas de bajo costo es importante para permitir que la tecnologı́a sea
-accesible para un mayor número de aplicaciones y usuarios. Esto es especialmente importante
-en paı́ses en desarrollo o en áreas con recursos limitados, donde los sistemas de navegación
-autónoma pueden ser prohibitivamente costosos.
+La navegación autónoma se refiere a la capacidad de un sistema para planificar y ejecutar sus propias acciones de forma autónoma, sin la necesidad de una intervención humana constante. Esta capacidad es crucial en una gran variedad de aplicaciones, desde los vehı́culos autónomos para transporte de personas y los drones, hasta los robots industriales y los sistemas de logı́stica.
 
-La restricción económica en el desarrollo de nuevas técnicas también puede mejorar la eficiencia
-y la efectividad de los sistemas de navegación autónoma, al permitir que los recursos sean
-utilizados de manera más efectiva y maximizar la vida útil de los componentes del sistema.
-La odometrı́a visual es una técnica de localización y navegación que se utiliza en robótica
-para estimar la posición y orientación de un robot en su entorno, en función de la información
-visual capturada por sus cámaras. La información de las imágenes capturadas permite estimar
-la cantidad de movimiento y la dirección del vehı́culo, permitiendo calcular su posición y
-orientación en relación con su posición inicial.
+Dentro de los campos de la inteligencia artificial con aplicación en navegación autónoma, la fusión sensorial y el control de robots móviles, uno de los temas estudiados en Fundación Fulgor es la odometría visual-inercial (VIO por sus siglas en inglés) con algoritmos de SLAM (*Simultaneous Localization and Mapping*) monocular. Uno de los motivos por el cuál esta técnica es de interés, es su bajo costo económico en comparación con otros métodos donde los sensores son más complejos, inaccesibles y costosos.
 
-Las técnicas de odometrı́a visual son particularmente útiles en entornos donde el movimiento
-del robot es predominantemente lateral. Además, se pueden utilizar en combinación con otras
-técnicas de localización y navegación, como la odometrı́a inercial o la SLAM (Simultaneous
-Localization and Mapping), para mejorar la precisión y la fiabilidad de la localización del robot.
-La SLAM es una técnica de visión por computadora que permite a un robot móvil construir un
-mapa del entorno en el que se encuentra, mientras estima en simultaneo su propia posición y
-orientación en ese entorno. En el caso de SLAM monocular, se utiliza una única cámara para
-capturar imágenes del entorno.
+La investigación de técnicas de bajo costo es importante para permitir que la tecnologı́a sea accesible a un mayor número de aplicaciones y usuarios. Esto es especialmente importante en paı́ses en desarrollo o en áreas con recursos limitados, donde los sistemas de navegación autónoma pueden ser prohibitivamente costosos. Además, la restricción económica en el desarrollo de nuevas técnicas también colabora en mejorar la eficiencia de los sistemas de navegación autónoma, al permitir que los recursos sean utilizados de manera más efectiva y maximizar la vida útil de los componentes del sistema.
 
-La Fundación Fulgor realiza diversas actividades de investigación. Dentro del campo de
-navegación autónoma, una de las ramas de interés es la de algoritmos de SLAM monocular
-en conjunto con la odometrı́a inercial, por las diferentes ventajas que presenta sobre otros
-métodos. Es por esto que se han realizado experimentos en el marco de la Práctica Profesional
-Supervisada de la estudiante de grado Evangelina Castellano, implementando y analizando el
-desempeño de diferentes algoritmos en entornos de simulación.
+La odometría visual-inercial es una técnica de localización y navegación utilizada en la robótica para estimar la posición y orientación del robot móvil, en base a la información visual capturada por una o más cámaras y la información inercial obtenida por una o más unidades de medición inercial (IMU por sus siglas en inglés).
 
-Actualmente, uno de los objetivos en esta lı́nea de investigación es poder migrar los algoritmos estudiados en un entorno virtual a un sistema fı́sico, para evaluar su desempeño en un entorno real. La experimentación en entornos virtuales se llevó a cabo con el framework ROS 2 (Robot Operating System 2 ). Dada la naturaleza modular de este framework, la migración consiste en el reemplazo de un módulo encapsulado que contenga el algoritmo.
+Por su parte, la SLAM es una técnica de visión por computadora que permite a un robot móvil construir un mapa del entorno en el que se encuentra, mientras estima en simultaneo su propia posición y orientación en ese entorno. En el caso de SLAM monocular, se utiliza una única cámara para capturar imágenes del entorno.
+
+En esta línea de investigación, un eqipo de trabajo de Fundación Fulgor ha realizado experiencias mediante simulación, donde se han implementado y evaluado el desempeño de diferentes algoritmos en entornos virtuales utilizando ROS 2 (*Robot Operating System 2*). 
+
+El entorno ROS es un framework de software libre y de código abierto diseñado para permitir el desarrollo de aplicaciones robóticas distribuidas. Este framework proporciona un conjunto de herramientas para la creación, gestión, depuración y análisis de sistemas robóticos.
+
+Actualmente, uno de los objetivos del equipo de trabajo es migrar los algoritmos estudiados en un entorno virtual a un sistema fı́sico, para evaluar su desempeño en un entorno real. Es esta necesidad la que se propone resolver con el proyecto analizado en el presente documento.
+
+Por lo tanto, el proyecto propone el desarrollo de un robot móvil terrestre que permita evaluar el funcionamiento de los algoritmos de SLAM monocular en un entorno real, aplicar optimizaciones especificas para el sistema embebido utilizado y ofrecer una herramienta a Fundación Fulgor escalable a otros grupos de investigación vinculados con la robótica.
+
+Este tipo de plataformas robóticas móviles ya existen tanto de forma comercial, como en la comunidad *open source* y *open hardware*. Su complejidad varía ampliamente, desde un punto de vista mecánico, de su electrónica, de sus sensores y actuadores y más. La planificación del proyecto contempla el diseño y selección de todos los aspectos que comprenden un robot móvil terrestre.
 
 ## Identificación y análisis de los interesados
 
