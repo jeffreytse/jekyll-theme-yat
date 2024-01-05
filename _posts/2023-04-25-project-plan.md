@@ -18,7 +18,6 @@ categories: plan
 #   subheading_style: "color: gold"
 tags: cese project-planning
 top: 1
-sidebar: []
 ---
 
 *Esta planificación fue realizada en el curso de Gestión de proyectos entre el 25 de abril de 2023 y el 13 de junio de 2023*
@@ -54,9 +53,15 @@ Actualmente, uno de los objetivos del equipo de trabajo es migrar los algoritmos
 
 Por lo tanto, el proyecto propone el desarrollo de un robot móvil terrestre que permita evaluar el funcionamiento de los algoritmos de SLAM monocular en un entorno real, aplicar optimizaciones especificas para el sistema embebido utilizado y ofrecer una herramienta a Fundación Fulgor escalable a otros grupos de investigación vinculados con la robótica.
 
-Este tipo de plataformas robóticas móviles ya existen tanto de forma comercial, como en la comunidad *open source* y *open hardware*. Su complejidad varía ampliamente, desde un punto de vista mecánico, de su electrónica, de sus sensores y actuadores y más. La planificación del proyecto contempla el diseño y selección de todos los aspectos que comprenden un robot móvil terrestre.
+Este tipo de plataformas robóticas móviles ya existen tanto de forma comercial con robots como *Spot* de BostonDynamics, como en la comunidad *open source* y *open hardware* con robots como el TurtleBot de OpenRobotics. Su complejidad varía ampliamente, desde un punto de vista mecánico, de su electrónica, de sus sensores y actuadores y más. La planificación del proyecto contempla el diseño y selección de todos los aspectos que comprenden un robot móvil terrestre.
+
+![Spot de BostonDynamics](/assets/images/spot-bostondynamics.jpg)
+
+![TurtleBot 4 de OpenRobotics](/assets/images/turtlebot4.jpg)
 
 ## Identificación y análisis de los interesados
+
+A continuación se detallan las personas e instituciones involucradas en el proyecto:
 
 | Rol | Nombre y Apellido | Organización | Puesto |
 |-----|-------------------|--------------|--------|
@@ -82,6 +87,18 @@ Los estudiantes Evangelina Castellano y Fabio Gazzoni se encuentran realizando s
 - **Usuario final:**
 
 No esta representado por una persona particular. Una vez finalizado el proyecto el prototipo quedará disponible en la Fundación Fulgor para su uso de parte de grupos de investigación.
+
+## Propósito del proyecto
+El prósito del proyecto es el desarrollo de un robot móvil terrestre que permita evaluar en un entorno real el funcionamiento de algoritmos de SLAM monocular previamente simulados en un entorno virtual. El sistema físico también permite estudiar optimizaciones específicas del algoritmo orientadas específicamente al sistema embebido y la electrónica utilizada.
+
+Además, el objetivo es brindar una herramienta a Fundación Fulgor escalable a otros grupos de investigación que trabajen sobre temáticas como:
+
+- el procesamiento digital de la información recibida a través de los sensores del robot
+- la optimización de algoritmos de navegación autónoma mediante el diseño e implementación de circuitos digitales en FPGA o SoCs.
+- la aplicación de inteligencia artificial para resolver problemas como la navegación autónoma y la visión artificial del robot
+- el estudio e implementación de técnicas modernas de fusión sensorial y control sobre el robot
+
+Se propone finalizar el proyecto con un primer prototipo funcional del robot móvil terrestre, con la capacidad de ejecutar una demostración de un algoritmo de SLAM monocular y odometría inercial.
 
 ## Entregables principales del proyecto
 
