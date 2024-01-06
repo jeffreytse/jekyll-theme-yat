@@ -100,6 +100,27 @@ Además, el objetivo es brindar una herramienta a Fundación Fulgor escalable a 
 
 Se propone finalizar el proyecto con un primer prototipo funcional del robot móvil terrestre, con la capacidad de ejecutar una demostración de un algoritmo de SLAM monocular y odometría inercial.
 
+## Alcance del proyecto
+El proyecto incluye:
+- El diseño mecánico y fabricación del robot móvil
+- La selección y adquisición de los actuadores y sensores del sistema
+- La selección y adquisión de la fuente de alimentación del sistema
+- La selección y adquisión del microcontrolador, FPGA o SoC a utilizar como sistema de supervisión y control del robot móvil
+- El desarrollo de los driver de los actuadores y sensores del sistema
+- El estudio del modelo matemático de la configuración de robot seleccionada
+- El diseño del sistema de control de los actuadores
+- La implementación de técnicas de fusión sensorial que permitan adaptar la información obtenida de los sensores al algoritmo de SLAM monocular de un tercero
+- La capacitación en el framework ROS 2
+- La documentación y comunicación del proyecto
+- La planificación y ejecución de Prácticas Profesionales Supervisadas y Proyecto Final de Estudio del equipo de colaboradores
+
+El proyecto no incluye:
+- El desarrollo de algoritmos de navegación autónoma asociados a la planificación y ejecución de trayectorias del sistema
+- El desarrollo de un algoritmo nuevo de SLAM, ni su implementación desde cero sobre el sistema.
+- La optimización de algoritmos de fusión sensorial, de control o de SLAM utilizados
+- El desarrollo ni la utilización de simulaciones en entornos virtuales del sistema
+- El diseño y fabricación de una PCB específica para el robot móvil
+
 ## Entregables principales del proyecto
 
 Los entregables del proyecto son:
