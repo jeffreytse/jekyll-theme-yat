@@ -121,6 +121,15 @@ El proyecto no incluye:
 - El desarrollo ni la utilización de simulaciones en entornos virtuales del sistema
 - El diseño y fabricación de una PCB específica para el robot móvil
 
+## Supestos del proyecto
+
+En la planificación del proyecto se considera los siguientes supuestos:
+- La adquisición de materiales no tendrá demoras meyores a una semana, asumiendo que el mercado local posee los materiales requeridos para la fabricación del prototipo y que las compras en el exterior serán recibidas en tiempo y forma.
+- No habrá cambios en el equipo de trabajo en el periodo de tiempo que comprende la planificación del proyecto.
+- El responsable del proyecto puede dedicar una cantidad mínima de 25 horas semanales a las actividades del plan.
+- El responsable del proyecto estará ausente durante dos semanas de Julio del año 2023, con fecha a definir.
+- No habrá cambios en los objetivos principales del proyecto ni nuevos requerimientos funcionales de parte del cliente.
+
 ## Entregables principales del proyecto
 
 Los entregables del proyecto son:
