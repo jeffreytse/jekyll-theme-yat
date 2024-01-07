@@ -1,5 +1,11 @@
+# Jekyll
 *.gem
 .bundle
 .sass-cache
 _site
 Gemfile.lock
+
+# Node
+node_modules/
+package-lock.json
+package.json
