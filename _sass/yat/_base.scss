@@ -42,7 +42,7 @@ h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
-  margin-bottom: calc($spacing-unit / 2);
+  margin-bottom: #{$spacing-unit / 2};
 }
 
 
@@ -128,7 +128,7 @@ a {
 blockquote {
   color: $grey-color;
   border-left: 4px solid $grey-color-light;
-  padding-left: calc($spacing-unit / 2);
+  padding-left: #{$spacing-unit / 2};
   @include relative-font-size(1.125);
   letter-spacing: -1px;
   font-style: italic;
@@ -222,7 +222,7 @@ table {
   }
 
   th, td {
-    padding: calc($spacing-unit / 3) calc($spacing-unit / 2);
+    padding: #{$spacing-unit / 3} #{$spacing-unit / 2};
   }
 
   th {
