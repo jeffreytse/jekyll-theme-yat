@@ -80,23 +80,23 @@ I will respect your crucial support and say THANK YOU!
 
 ## Features
 
-- Support beautiful **Night Mode**.
-- Modern responsive web design.
-- Full layouts `home`, `post`, `tags`, `archive` and `about`.
-- Uses font awesome 5 for icons.
-- Beautiful page banner with image and video.
-- Beautiful Syntax Highlight using [highlight.js][highlight-js].
-- Beautiful image gallery previewer using [PhotoSwipe 5][photoswipe-5].
-- RSS support using [Jekyll Feed][jekyll-feed] gem.
-- Optimized for search engines using [Jekyll Seo Tag][jekyll-seo-tag] gem.
-- Sitemap support using [Jekyll Sitemap][jekyll-sitemap] gem.
-- Complex and flexible table support using [Jekyll Spaceship][jekyll-spaceship] gem.
-- MathJAX and LaTeX optional support using [Jekyll Spaceship][jekyll-spaceship] gem.
-- Media (Youtube, Spotify, etc.) support using [Jekyll Spaceship][jekyll-spaceship] gem.
-- Diagram (PlantUML, Mermaid) support using [Jekyll Spaceship][jekyll-spaceship] gem.
-- Google Translation support.
-- New post tag support.
-- Pin post tag support.
+-   Support beautiful **Night Mode**.
+-   Modern responsive web design.
+-   Full layouts `home`, `post`, `tags`, `archive` and `about`.
+-   Uses font awesome 5 for icons.
+-   Beautiful page banner with image and video.
+-   Beautiful Syntax Highlight using [highlight.js][highlight-js].
+-   Beautiful image gallery previewer using [PhotoSwipe 5][photoswipe-5].
+-   RSS support using [Jekyll Feed][jekyll-feed] gem.
+-   Optimized for search engines using [Jekyll Seo Tag][jekyll-seo-tag] gem.
+-   Sitemap support using [Jekyll Sitemap][jekyll-sitemap] gem.
+-   Complex and flexible table support using [Jekyll Spaceship][jekyll-spaceship] gem.
+-   MathJAX and LaTeX optional support using [Jekyll Spaceship][jekyll-spaceship] gem.
+-   Media (Youtube, Spotify, etc.) support using [Jekyll Spaceship][jekyll-spaceship] gem.
+-   Diagram (PlantUML, Mermaid) support using [Jekyll Spaceship][jekyll-spaceship] gem.
+-   Google Translation support.
+-   New post tag support.
+-   Pin post tag support.
 
 Also, visit the [Live Demo][yat-live-demo] site for the theme.
 
@@ -104,9 +104,9 @@ Also, visit the [Live Demo][yat-live-demo] site for the theme.
 
 There are three ways to install:
 
-- As a [gem-based theme](https://jekyllrb.com/docs/themes/#understanding-gem-based-themes).
-- As a [remote theme](https://blog.github.com/2017-11-29-use-any-theme-with-github-pages/) (GitHub Pages compatible).
-- Forking/directly copying all of the theme files into your project.
+-   As a [gem-based theme](https://jekyllrb.com/docs/themes/#understanding-gem-based-themes).
+-   As a [remote theme](https://blog.github.com/2017-11-29-use-any-theme-with-github-pages/) (GitHub Pages compatible).
+-   Forking/directly copying all of the theme files into your project.
 
 ### Gem-based Theme Method
 

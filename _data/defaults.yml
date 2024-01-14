@@ -1,4 +1,4 @@
 home:
-  heading: "Yet Another TurtleBot"
-  subheading: "Two-wheeled mobile robot based on SoC Zynq 7000"
-  banner: "Your image url"
+    heading: "Yet Another TurtleBot"
+    subheading: "Two-wheeled mobile robot based on SoC Zynq 7000"
+    banner: "Your image url"

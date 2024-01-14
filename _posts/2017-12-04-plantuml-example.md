@@ -8,31 +8,31 @@ tags: [plantuml]
 ## My First PlantUML
 
 ### PlantUML Block-1
+
 @startuml
 Bob -> Alice : hello
 @enduml
 
-
 ### PlantUML Block-2
-``` plantuml!
+
+```plantuml!
 Bob -> Alice : hello world
 ```
 
-
 ### PlantUML Block-3
+
 @startuml
-(*) --> "Initialization"
+(\*) --> "Initialization"
 
 if "Some Test" then
-  -->[true] "Some Activity"
-  --> "Another activity"
-  -right-> (*)
+-->[true] "Some Activity"
+--> "Another activity"
+-right-> (_)
 else
-  ->[false] "Something else"
-  -->[Ending process] (*)
+->[false] "Something else"
+-->[Ending process] (_)
 endif
 @enduml
-
 
 ### PlantUML Block-4
 
@@ -40,17 +40,17 @@ endif
 skinparam handwritten true
 
 skinparam usecase {
-  BackgroundColor DarkSeaGreen
-  BorderColor DarkSlateGray
+BackgroundColor DarkSeaGreen
+BorderColor DarkSlateGray
 
-  BackgroundColor<< Main >> YellowGreen
-  BorderColor<< Main >> YellowGreen
+BackgroundColor<< Main >> YellowGreen
+BorderColor<< Main >> YellowGreen
 
-  ArrowColor Olive
-  ActorBorderColor black
-  ActorFontName Courier
+ArrowColor Olive
+ActorBorderColor black
+ActorFontName Courier
 
-  ActorBackgroundColor<< Human >> Gold
+ActorBackgroundColor<< Human >> Gold
 }
 
 User << Human >>

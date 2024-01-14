@@ -25,19 +25,18 @@ sidebar: []
 
 ## Z7-Lite 7020
 
-- FPGA Chip XC7Z010CLG400-1
-- Dual-core Cortex-A9 clocked at 667MHz
-- 85k logic cells
-- DDR3 4Gbit 1066Mbps
-- The USBJTAG circuit is carried, and no additional downloader is needed to download the program and simulation online
-- OSPI Flash of 128Mbit, suitable for storing ZYNQ system boot image files and user data
-- One channel HDMI transmitter,  also configurable as HDMI receiver
-- 10/100M self-adaptive Ethernet all the way, which can be used for network communication or related applications
-- One USB Host
-- One SD card to store the ZYNQ system startup image file and file system
-- One USB-UART connection for communication between ZYNQ and PC
-- PS Clock 33.3333MHz PL Clock 50MHz
-- One PS button, two PL buttons
-- One PS LED, two PL LEDs
-- Two 40-pin 2.54mm pitch expansion port, 72 IOs, coltage 3.3V
-
+-   FPGA Chip XC7Z010CLG400-1
+-   Dual-core Cortex-A9 clocked at 667MHz
+-   85k logic cells
+-   DDR3 4Gbit 1066Mbps
+-   The USBJTAG circuit is carried, and no additional downloader is needed to download the program and simulation online
+-   OSPI Flash of 128Mbit, suitable for storing ZYNQ system boot image files and user data
+-   One channel HDMI transmitter, also configurable as HDMI receiver
+-   10/100M self-adaptive Ethernet all the way, which can be used for network communication or related applications
+-   One USB Host
+-   One SD card to store the ZYNQ system startup image file and file system
+-   One USB-UART connection for communication between ZYNQ and PC
+-   PS Clock 33.3333MHz PL Clock 50MHz
+-   One PS button, two PL buttons
+-   One PS LED, two PL LEDs
+-   Two 40-pin 2.54mm pitch expansion port, 72 IOs, coltage 3.3V
