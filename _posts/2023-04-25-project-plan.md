@@ -22,15 +22,15 @@ top: 1
 
 _Esta planificación fue realizada en el curso de Gestión de proyectos entre el 25 de abril de 2023 y el 13 de junio de 2023_
 
-## Descripción técnica conceptual del proyecto a realizar
+## Descripción técnica conceptual del proyecto a realizar #WIP
 
 La Fundación Fulgor es una organización argentina que trabaja con la misión de generar oportunidades de desarrollo y formación en áreas estratégicas para el futuro de Argentina. Su búsqueda tiene como objetivo colaborar para que Argentina sea competitiva internacionalmente en áreas tecnológicas.
 
 Las principales herramientas de la Fundación Fulgor para cumplir su misión son el vínculo con universidades e instituciones educativas y la generación de oportunidades de capacitación, por ejemplo, a través de becas de grado y posgrado en temas estratégicos como:
 
 -   el procesamiento digital de señales
--   los sistemas de comunicación y protocolos de transporte de datos,
-    el diseño e implementación de circuitos digitales en FPGA y circuitos integrados
+-   los sistemas de comunicación y protocolos de transporte de datos
+-   el diseño e implementación de circuitos digitales en FPGA y circuitos integrados
 -   el diseño e implementación de circuitos analógicos
 -   la inteligencia artificial con aplicación en navegación autónoma y visión artificial
 -   el procesamiento de señales de radar y lidar
@@ -38,7 +38,7 @@ Las principales herramientas de la Fundación Fulgor para cumplir su misión son
 
 La navegación autónoma se refiere a la capacidad de un sistema para planificar y ejecutar sus propias acciones de forma autónoma, sin la necesidad de una intervención humana constante. Esta capacidad es crucial en una gran variedad de aplicaciones, desde los vehı́culos autónomos para transporte de personas y los drones, hasta los robots industriales y los sistemas de logı́stica.
 
-Dentro de los campos de la inteligencia artificial con aplicación en navegación autónoma, la fusión sensorial y el control de robots móviles, uno de los temas estudiados en Fundación Fulgor es la odometría visual-inercial (VIO por sus siglas en inglés) con algoritmos de SLAM (_Simultaneous Localization and Mapping_) monocular. Uno de los motivos por el cuál esta técnica es de interés, es su bajo costo económico en comparación con otros métodos donde los sensores son más complejos, inaccesibles y costosos.
+Dentro de los campos de la inteligencia artificial con aplicación en navegación autónoma, de la la fusión sensorial y del control de robots móviles, uno de los temas estudiados en Fundación Fulgor es la odometría visual-inercial (VIO por sus siglas en inglés) con algoritmos de SLAM (_Simultaneous Localization and Mapping_) monocular. Uno de los motivos por el cuál esta técnica es de interés, es su bajo costo económico en comparación con otros métodos donde los sensores son más complejos, inaccesibles y costosos.
 
 La investigación de técnicas de bajo costo es importante para permitir que la tecnologı́a sea accesible a un mayor número de aplicaciones y usuarios. Esto es especialmente importante en paı́ses en desarrollo o en áreas con recursos limitados, donde los sistemas de navegación autónoma pueden ser prohibitivamente costosos. Además, la restricción económica en el desarrollo de nuevas técnicas también colabora en mejorar la eficiencia de los sistemas de navegación autónoma, al permitir que los recursos sean utilizados de manera más efectiva y maximizar la vida útil de los componentes del sistema.
 
@@ -91,7 +91,9 @@ No esta representado por una persona particular. Una vez finalizado el proyecto 
 
 ## Propósito del proyecto
 
-El prósito del proyecto es el desarrollo de un robot móvil terrestre que permita evaluar en un entorno real el funcionamiento de algoritmos de SLAM monocular previamente simulados en un entorno virtual. El sistema físico también permite estudiar optimizaciones específicas del algoritmo orientadas específicamente al sistema embebido y la electrónica utilizada.
+[//]: # "Project goal: provide a brief description of the business need that the project will address or the reason for starting it"
+
+El prósito del proyecto es el desarrollo de un robot móvil terrestre que permita evaluar en un entorno real el funcionamiento de algoritmos de SLAM monocular previamente simulados en un entorno virtual. El sistema físico también permite estudiar optimizaciones del algoritmo orientadas específicamente al sistema embebido y la electrónica utilizada.
 
 Además, el objetivo es brindar una herramienta a Fundación Fulgor escalable a otros grupos de investigación que trabajen sobre temáticas como:
 
@@ -104,23 +106,26 @@ Se propone finalizar el proyecto con un primer prototipo funcional del robot mó
 
 ## Alcance del proyecto
 
+[//]: # "Scope description: describe the desired final product, service or result."
+
 El proyecto incluye:
 
 -   El diseño mecánico y fabricación del robot móvil
+-   El estudio del modelo matemático de la configuración de robot seleccionada
 -   La selección y adquisición de los actuadores y sensores del sistema
 -   La selección y adquisión de la fuente de alimentación del sistema
 -   La selección y adquisión del microcontrolador, FPGA o SoC a utilizar como sistema de supervisión y control del robot móvil
 -   El desarrollo de los driver de los actuadores y sensores del sistema
--   El estudio del modelo matemático de la configuración de robot seleccionada
 -   El diseño del sistema de control de los actuadores
 -   La implementación de técnicas de fusión sensorial que permitan adaptar la información obtenida de los sensores al algoritmo de SLAM monocular de un tercero
 -   La capacitación en el framework ROS 2
 -   El desarrollo del software necesario para hacer al sistema compatible con ROS 2
 -   La documentación y comunicación del proyecto
--   La planificación y ejecución de Prácticas Profesionales Supervisadas y Proyecto Final de Estudio del equipo de colaboradores
+-   La planificación, coordinación y ejecución de Prácticas Profesionales Supervisadas y Proyecto Final de Estudio del equipo de colaboradores
 
 El proyecto no incluye:
 
+-   El análisis matemático dinámico del robot desarrollado.
 -   El desarrollo de algoritmos de navegación autónoma asociados a la planificación y ejecución de trayectorias del sistema
 -   El desarrollo de un algoritmo nuevo de SLAM, ni su implementación desde cero sobre el sistema.
 -   La optimización de algoritmos de fusión sensorial, de control o de SLAM utilizados
@@ -130,6 +135,8 @@ El proyecto no incluye:
 
 ## Supestos del proyecto
 
+[//]: # "Assumptions: explain the key assumptions made that are expected to be true as the work progresses"
+
 En la planificación del proyecto se considera los siguientes supuestos:
 
 -   La adquisición de materiales no tendrá demoras meyores a una semana, asumiendo que el mercado local posee los materiales requeridos para la fabricación del prototipo y que las compras en el exterior serán recibidas en tiempo y forma.
@@ -137,23 +144,29 @@ En la planificación del proyecto se considera los siguientes supuestos:
 -   El responsable del proyecto puede dedicar una cantidad mínima de 25 horas semanales a las actividades del plan.
 -   El responsable del proyecto estará ausente durante dos semanas de Julio del año 2023, con fecha a definir.
 -   No habrá cambios en los objetivos principales del proyecto ni nuevos requerimientos funcionales de parte del cliente.
+-   Se dispondrá de documentación sobre la simulación en ROS 2 realizada previamente para la evaluación del algoritmo de SLAM.
 
 ## Requerimientos
 
 1. Requerimientos funcionales:
     1. El movimiento del prototipo desarrollado debe respetar, bajo los correpondientes márgenes de error, el modelo matemático propuesto.
-    2. La selección de los actuadores, sensores y electrónica debe realizarse en base a los materiales disponibles en stock de Fundación Fulgor
-    3. Los sensores del robot móvil deben ser los necesarios para poder ejecutar un algoritmo de SLAM monocular con odometría inercial
-    4. El sistema de control de los actuadores debe ser invisible (caja negra) al usuario del robot
-    5. El sistema desarrollado debe ser compatible con el entorno de trabajo de ROS 2
+    2. Los sensores del robot móvil deben ser los necesarios para poder ejecutar un algoritmo de SLAM monocular con odometría inercial.
+    3. El sistema de control de los actuadores debe ser invisible al usuario del robot.
+    4. El sistema de control de los actuadores debe permitir cumplir con las consignas de velocidad que el usuario envíe al robot.
+    5. El sistema desarrollado debe ser compatible con el entorno de trabajo de ROS 2.
     6. El robot móvil debe soportar comunicación inalámbrica mediante un protocolo a definir, que le permita desplazarse libremente en su entorno.
     7. El robot móvil debe poseer una fuente de alimentación que le permita desplazarse libremente en su entorno.
     8. Dado que el usuario trabajará sobre el algoritmo de navegación autónoma del robot móvil, la configuración mecánica del mismo no debe impactar en sus actividades.
-    9. El sistema embebido del robot móvil debe permitir el uso de lógica programable (hardware dedicado) para optimización de los algoritmos de navegación autónoma.
+    9. El sistema embebido del robot móvil debe permitir el uso de lógica programable (hardware dedicado) para una futura optimización de los algoritmos de navegación autónoma.
 2. Requerimientos de documentación:
-    1. Planos mecánicos de todas las piezas diseñadas como parte del proyecto
-    2. Manual de montaje del sistema macánico del robot móvil
-    3. El sistema de control de los actuadores debe estar documentado
+    1. Planos mecánicos de todas las piezas diseñadas como parte del proyecto.
+    2. Manual de montaje del sistema macánico del robot móvil.
+    3. Documentación del análisis geométrico y cinemático del robot.
+    4. Documentación del sistema de control de los actuadores.
+    5. Documentación del sistema de fusión sensorial.
+    6. Lista y documentación ténica de los sensores, actuadores y electrónica utilizada.
+    7. Documentación de la arquitectura de comunicación con ROS 2
+    8. Instrucciones para la integración de módulos desarrollados en la lógica programable en el sistema embebido
 3. Requerimientos de testing:
 4. Requerimientos de la interfaz:
     1. La interfaz que da al sistema compatibilidad con ROS 2 debe ser parte de los entregables del proyecto
@@ -163,89 +176,135 @@ En la planificación del proyecto se considera los siguientes supuestos:
 
 ## Entregables principales del proyecto
 
+[//]: # "Deliverables: list and describe all products, services, results that the project work will produce. If there are ambiguities, describe also what is NOT going to be part of the work and final output"
+
 Los entregables del proyecto son:
 
--   Plataforma de hardware, es decir, un prototipo funcional del robot móvil. Esto incluye tanto electrónica como todos los componentes mecánicos para que el robot se desempeñe cumpliendo los requerimientos funcionales.
--   Lista de materiales (BOM) con todos los elementos necesarios para montar el prototipo. Esto incluye elementos mecánicos, electrónica y cualquier otro componente necesario para el funcionamiento del robot móvil.
--   Archivos con modelos mecánicos para fabricación aditiva (impresión 3D)
--   Documentación del hardware e interconexión de los módulos componentes
--   Código fuente del driver de la IMU
--   Documentación del driver de la IMU
--   Código fuente del driver de la cámara
--   Docummentación del driver de la cámara
--   Código fuente del firmware con el algoritmo de SLAM monocular y micro-ROS
--   Código fuente del agente de ROS 2 utilizado
--   Documentación y manual para configuración y uso del entorno de ROS 2
--   Documentación del estado del arte de SLAM y del algoritmo seleccionado
--   Manual de uso del hardware
+-   Documentación de análisis matemático del robot:
+    -   Documentación del modelo geométrico.
+    -   Documentación del modelo cinemático.
+-   Estructura mecánica del robot:
+    -   Primer prototipo fabricado y funcional.
+    -   Lista de materiales para fabricación (BOM).
+    -   Archivos con modelos mecánicos para fabricación aditiva (impresión 3D).
+    -   Documentación de las piezas mecánicas diseñadas.
+    -   Documento con instrucciones para el montaje.
+-   Sistema sensorial del robot:
+    -   Módulos con los sensores seleccionados.
+    -   Diagrama de conexión de los sensores.
+    -   Especificación técnica de los sensores.
+    -   Software/hardware driver desarrollado para los sensores.
+    -   Documentación técnica y manual de usuario de los drivers.
+-   Sistema motor del robot:
+    -   Actuadores seleccionados.
+    -   Diagrama de conexión de los actuadores.
+    -   Especificación técnica de los actuadores.
+    -   Software/hardware driver desarrollado para los actuadores.
+    -   Documentación técnica y manual de usuario del sistema de control de los motores.
+-   Sistema de supervisión y control embebido:
+    -   Especificación técnica del sistema embebido seleccionado.
+    -   Software/hardware supervisor del robot.
+    -   Software/hardware con sistema de control de los actuadores.
+    -   Software/hardware con algoritmo de fusión sensorial.
+    -   Documentación sobre el sistema operativo utilizado.
+    -   Documentación de la arquitectura del sistema.
+    -   Documentación sobre comunicación con ROS 2.
+-   Sistema de alimentación del robot
+    -   Especificación técnica de la fuente de alimentación seleccionada.
+    -   Diagrama de conexión de la fuente de alimentación.
+-   Agente de ROS 2 ejemplo:
+    -   Software de agente ROS 2 ejemplo para interacción con el sistema.
+    -   Documentación sobre configuración y uso del agente de ROS 2 ejemplo.
 -   Informe final
 
 ## Desglose del trabajo en tareas
 
-1. Planificación del proyecto (70 h)
-    1. Identificación y contacto con los interesados (7 h)
+```mermaid!
+flowchart TD
+    Goal(["**Objetivo:** Desarrollo de un robot móvil terrestre que permita evaluar en un entorno real
+el funcionamiento de algoritmos de SLAM monocular"])
+    Deliverables([**Entregables:**
+- Estructura mecánica
+- Sistema sensorial
+- Sistema motor])
+
+MechanicTask([Diseño mecánico y fabricación])
+SensorialTask([Diseño de sistema sensorial])
+MotorTask([Diseño de sistema motor])
+
+    Goal --> Deliverables
+    Deliverables --> MechanicTask
+    Deliverables --> SensorialTask
+    Deliverables --> MotorTask
+```
+
+1. Planificación del proyecto
+    1. Identificación y contacto con los interesados
     2. Definición del propósito y alcance del proyecto (10 h)
-    3. Definición de los requerimientos y entregables (20 h)
-    4. Desglose del trabajo en tareas y obtención del diagrama de Gantt (20 h)
-    5. Análisis de riesgos, gestión de calidad y definición de procesos de cierre (13 h)
-2. Definición técnica del robot móvil a diseñar
+    3. Definición de los requerimientos y entregables
+    4. Desglose del trabajo en tareas y obtención del diagrama de Gantt
+    5. Análisis de riesgos, gestión de calidad y definición de procesos de cierre
+2. Configuración de herramientas para la gestión del proyecto y la coordinación del equipo de trabajo (ej. Jira)
+3. Creación y configuración de la estructura de repositorios del proyecto donde se mantendrá el software y documentación producido
+4. Definición técnica del robot móvil a diseñar
     1. Investigación del estado del arte de la robótica móvil
     2. Selección del tipo de robot móvil a desarrollar
     3. Descripción matemática del robot seleccionado
-3. [Selección y documentación del hardware necesario]({% post_url 2023-12-30-hardware-selection %})
-4. Diseño y fabricación del prototipo mecánico
+5. [Selección y documentación del hardware necesario]({% post_url 2023-12-30-hardware-selection %})
+6. Diseño y fabricación del prototipo mecánico
     1. Diseño mecánico del chasis del prototipo de robot móvil mediante herramienta CAD.
-    2. Adquisición de elementos mecánicos necesarios para la manufactura del prototipo como tornillos, tuercas, filamento plástico para impresión 3D y otros.
+    2. Adquisición de elementos mecánicos necesarios para la manufactura del prototipo.
     3. Fabricación mediante impresión 3D.
-    4. Montaje del prototipo mecánico y iteración para corregir errores de ser necesario.
-5. Setup del entorno de trabajo para desarrollo del software necesario (5 h)
-6. Elaboración del documento de Especificación de Requerimientos de SOftware (ERS)
-7. Implementación de micro-ROS en el sistema embebido (18 h)
-    1. [Introducción a micro-ROS]({% post_url 2023-05-12-microROS-and-ROS-2 %}) (4 h)
-    2. Incorporación de micro-ROS en el microcontrolador (8 h)
-    3. Setup de agente de ROS 2 y comunicación con el sistema embebido (2 h)
-    4. Documentación del proceso (4 h)
-8. Desarrollo de driver para la IMU (40 h)
-    1. Selección y adquisición de la IMU a utilizar (2 h)
-    2. Implementación de driver en lenguaje C para el sistema embebido (30 h)
-    3. Documentación del driver (8 h)
-9. Integración de la IMU en el sistema (60 h)
-    1. Integración del driver de la IMU con el sistema con micro-ROS (4 h)
-    2. Repaso (e investigación) de técnicas de fusión sensorial (8 h)
-    3. Implementación de algoritmos de fusión sensorial (30 h)
-    4. Visualizacion de la información obtenida con la IMU mediante las herramientas de ROS 2 (10 h)
-    5. Evaluación parcial y documentación de resultados (milestone) (8 h)
-10. Desarrollo de driver para la cámara (53 h)
-    1. Selección y adquisación de cámara a utilizar (3 h)
-    2. Implementación de driver en lenguaje C para el sistema embebido (40 h)
-    3. Documentación del driver (10 h)
-11. Integración de la cámara en el sistema (26 h)
-    1. Integración del driver de la cámara con el sistema con micro-ROS (6 h)
-    2. Visualización de la información obtenida con la cámara mediante las herramientas de ROS 2 (12 h)
-    3. Evaluación parcial y documentación de resultados (milestone) (8 h)
-12. Implementación de algoritmo de SLAM monocular (305 h)
-    1. Introducción a la navegación inercial y SLAM monocular, investigación de estado del arte (15 h)
-    2. Investigación de algoritmos de SLAM monocular y selección de uno de ellos (30 h)
-    3. Implementación del algoritmo seleccionado en un entorno de simulación (40 h)
-    4. Optimización del algoritmo implementado en el entorno de simulación (40 h)
-    5. Evaluación integral de los componentes del sistema (20 h)
-    6. Implementación del algoritmo seleccionado en el sistema embebido (40 h)
-    7. Optimización del algoritmo implementado en el sistema embebido (40 h)
-    8. Evaluación final de resultados (milestone) (40 h)
-    9. Documentación técnica del algoritmo sleccionado y resumen del estado del arte (40 h)
-13. Proceso de cierre (91 h)
-    1. Análisis de cumplimiento de objetivos y requerimientos con el director (2 h)
-    2. Análisis de cumplimiento del plan original (diagrama de Gantt) (2 h)
-    3. Análisis de cumplimiento de objetivos y requerimientos con el cliente (2 h)
+    4. Montaje del prototipo mecánico.
+    5. Iteración para corrección de errores de ser necesario.
+7. Setup del entorno de trabajo para desarrollo del software necesario
+8. Elaboración del documento de Especificación de Requerimientos de SOftware (ERS)
+9. Implementación de micro-ROS en el sistema embebido
+    1. [Introducción a micro-ROS]({% post_url 2023-05-12-microROS-and-ROS-2 %})
+    2. Incorporación de micro-ROS en el microcontrolador
+    3. Setup de agente de ROS 2 y comunicación con el sistema embebido
+    4. Documentación del proceso
+10. Desarrollo de driver para la IMU
+    1. Selección y adquisición de la IMU a utilizar
+    2. Implementación de driver en lenguaje C para el sistema embebido
+    3. Documentación del driver
+11. Integración de la IMU en el sistema
+    1. Integración del driver de la IMU con el sistema con micro-ROS
+    2. Repaso (e investigación) de técnicas de fusión sensorial
+    3. Implementación de algoritmos de fusión sensorial
+    4. Visualizacion de la información obtenida con la IMU mediante las herramientas de ROS 2
+    5. Evaluación parcial y documentación de resultados (milestone)
+12. Desarrollo de driver para la cámara
+    1. Selección y adquisación de cámara a utilizar
+    2. Implementación de driver en lenguaje C para el sistema embebido
+    3. Documentación del driver
+13. Integración de la cámara en el sistema
+    1. Integración del driver de la cámara con el sistema con micro-ROS
+    2. Visualización de la información obtenida con la cámara mediante las herramientas de ROS 2
+    3. Evaluación parcial y documentación de resultados
+14. Implementación de algoritmo de SLAM monocular
+    1. Introducción a la navegación inercial y SLAM monocular, investigación de estado del arte
+    2. Investigación de algoritmos de SLAM monocular y selección de uno de ellos
+    3. Implementación del algoritmo seleccionado en un entorno de simulación
+    4. Optimización del algoritmo implementado en el entorno de simulación
+    5. Evaluación integral de los componentes del sistema
+    6. Implementación del algoritmo seleccionado en el sistema embebido
+    7. Optimización del algoritmo implementado en el sistema embebido
+    8. Evaluación final de resultados (milestone)
+    9. Documentación técnica del algoritmo sleccionado y resumen del estado del arte
+15. Proceso de cierre
+    1. Análisis de cumplimiento de objetivos y requerimientos con el director
+    2. Análisis de cumplimiento del plan original (diagrama de Gantt)
+    3. Análisis de cumplimiento de objetivos y requerimientos con el cliente
     4. Capacitación del cliente sobre el prototipo realizado
-    5. Elaboración de memoria técnica (40 h)
-    6. Corrección de memoria técnica (20 h)
-    7. Preparación de defensa pública (20 h)
-    8. Defensa pública (2 h)
-    9. Reunión de cierre con el director (1 h)
-    10. Reunión de cierre con el cliente y el equipo de trabajo (2 h)
+    5. Elaboración de memoria técnica
+    6. Corrección de memoria técnica
+    7. Preparación de defensa pública
+    8. Defensa pública
+    9. Reunión de cierre con el director
+    10. Reunión de cierre con el cliente y el equipo de trabajo
 
-Cantidad total de horas: 668 h
+Cantidad total de horas: \_\_\_
 
 ## Diagrama de Activity On Node
 
@@ -254,6 +313,18 @@ Las tareas expuestas en el diagrama de _Activity On Node_, se encuentran detalla
 | Código | Predecesora | Descripción                | Duración |
 | ------ | ----------- | -------------------------- | -------- |
 | 1      |             | Planificación del proyecto | 70 h     |
+
+## Gestión de riesgos
+
+[//]: # "Challenges / Constraints: briefly explain the key limitations of the project and how will they be managed."
+
+1. Identificación de los riesgos y estimación de sus consecuencias
+2. Tabla de gestión de riesgos
+3. Plan de mitigación de los riesgos que exceden el RPN máximo establecido
+
+## Gestión de calidad
+
+[//]: # "Acceptance criteria: explain what are the success factors required, to acquire the approval for completing the project at the end. Specify who will be the Approver"
 
 ## Proceso de cierre
 
