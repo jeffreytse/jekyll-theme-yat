@@ -159,14 +159,17 @@ En la planificación del proyecto se considera los siguientes supuestos:
     8. Dado que el usuario trabajará sobre el algoritmo de navegación autónoma del robot móvil, la configuración mecánica del mismo no debe impactar en sus actividades.
     9. El sistema embebido del robot móvil debe permitir el uso de lógica programable (hardware dedicado) para una futura optimización de los algoritmos de navegación autónoma.
 2. Requerimientos de documentación:
-    1. Planos mecánicos de todas las piezas diseñadas como parte del proyecto.
-    2. Manual de montaje del sistema macánico del robot móvil.
-    3. Documentación del análisis geométrico y cinemático del robot.
-    4. Documentación del sistema de control de los actuadores.
-    5. Documentación del sistema de fusión sensorial.
-    6. Lista y documentación ténica de los sensores, actuadores y electrónica utilizada.
-    7. Documentación de la arquitectura de comunicación con ROS 2
-    8. Instrucciones para la integración de módulos desarrollados en la lógica programable en el sistema embebido
+    1. Documentación del análisis geométrico y cinemático del robot.
+    2. Lista de materiales para fabricación (BOM).
+    3. Planos mecánicos de todas las piezas diseñadas como parte del proyecto.
+    4. Manual de montaje del sistema macánico del robot móvil.
+    5. Documentación técnica y manual de usuario de los drivers del sistema sensorial del robot.
+    6. Documentación técnica y manual de usuario de los drivers de los actuadores del robot.
+    7. Documentación del sistema de control de los actuadores.
+    8. Documentación del sistema de fusión sensorial.
+    9. Lista y documentación ténica de los sensores, actuadores y electrónica utilizada.
+    10. Documentación de la arquitectura de comunicación con ROS 2
+    11. Instrucciones para la integración de módulos desarrollados en la lógica programable en el sistema embebido
 3. Requerimientos de testing:
 4. Requerimientos de la interfaz:
     1. La interfaz que da al sistema compatibilidad con ROS 2 debe ser parte de los entregables del proyecto
@@ -176,7 +179,9 @@ En la planificación del proyecto se considera los siguientes supuestos:
 
 ## Entregables principales del proyecto
 
-[//]: # "Deliverables: list and describe all products, services, results that the project work will produce. If there are ambiguities, describe also what is NOT going to be part of the work and final output"
+[//]: # "Deliverables: list and describe all products, services, results that
+the project work will produce. If there are ambiguities, describe also what is
+NOT going to be part of the work and final output"
 
 Los entregables del proyecto son:
 
@@ -187,31 +192,39 @@ Los entregables del proyecto son:
     -   Primer prototipo fabricado y funcional.
     -   Lista de materiales para fabricación (BOM).
     -   Archivos con modelos mecánicos para fabricación aditiva (impresión 3D).
-    -   Documentación de las piezas mecánicas diseñadas.
+    -   Planos mecánicos de las piezas diseñadas.
     -   Documento con instrucciones para el montaje.
 -   Sistema sensorial del robot:
     -   Módulos con los sensores seleccionados.
     -   Diagrama de conexión de los sensores.
     -   Especificación técnica de los sensores.
     -   Software/hardware driver desarrollado para los sensores.
+    -   Software/hardware con algoritmo de fusión sensorial.
     -   Documentación técnica y manual de usuario de los drivers.
--   Sistema motor del robot:
+    -   Documentación del algoritmo de fusión sensorial,
+-   Sistema motor del robot móvil:
     -   Actuadores seleccionados.
     -   Diagrama de conexión de los actuadores.
     -   Especificación técnica de los actuadores.
     -   Software/hardware driver desarrollado para los actuadores.
-    -   Documentación técnica y manual de usuario del sistema de control de los motores.
+    -   Software/hardware con sistema de control de los actuadores.
+    -   Documentación técnica y manual de usuario de los drivers.
+    -   Documentación del sistema de control de los actuadores.
 -   Sistema de supervisión y control embebido:
     -   Especificación técnica del sistema embebido seleccionado.
     -   Software/hardware supervisor del robot.
-    -   Software/hardware con sistema de control de los actuadores.
-    -   Software/hardware con algoritmo de fusión sensorial.
     -   Documentación sobre el sistema operativo utilizado.
     -   Documentación de la arquitectura del sistema.
     -   Documentación sobre comunicación con ROS 2.
+    -   Especificación de Requerimientos de Software (ERS)
 -   Sistema de alimentación del robot
     -   Especificación técnica de la fuente de alimentación seleccionada.
     -   Diagrama de conexión de la fuente de alimentación.
+-   Sistema de señalización e interacción física:
+    -   Selección de elementos de señalización e interacción física y retroalimentación al usuario.
+    -   Software/ hardware del sistema de señalización e interacción física.
+    -   Documentación del sistema de señalización e interacción física.
+    -   Diagrama de conexión del sistema de señalización e interacción física con el sistema embebido.
 -   Agente de ROS 2 ejemplo:
     -   Software de agente ROS 2 ejemplo para interacción con el sistema.
     -   Documentación sobre configuración y uso del agente de ROS 2 ejemplo.
@@ -219,80 +232,91 @@ Los entregables del proyecto son:
 
 ## Desglose del trabajo en tareas
 
-```mermaid!
-flowchart TD
-    Goal(["**Objetivo:** Desarrollo de un robot móvil terrestre que permita evaluar en un entorno real
-el funcionamiento de algoritmos de SLAM monocular"])
-    Deliverables([**Entregables:**
-- Estructura mecánica
-- Sistema sensorial
-- Sistema motor])
-
-MechanicTask([Diseño mecánico y fabricación])
-SensorialTask([Diseño de sistema sensorial])
-MotorTask([Diseño de sistema motor])
-
-    Goal --> Deliverables
-    Deliverables --> MechanicTask
-    Deliverables --> SensorialTask
-    Deliverables --> MotorTask
-```
-
-1. Planificación del proyecto
-    1. Identificación y contacto con los interesados
-    2. Definición del propósito y alcance del proyecto (10 h)
-    3. Definición de los requerimientos y entregables
-    4. Desglose del trabajo en tareas y obtención del diagrama de Gantt
-    5. Análisis de riesgos, gestión de calidad y definición de procesos de cierre
-2. Configuración de herramientas para la gestión del proyecto y la coordinación del equipo de trabajo (ej. Jira)
-3. Creación y configuración de la estructura de repositorios del proyecto donde se mantendrá el software y documentación producido
-4. Definición técnica del robot móvil a diseñar
-    1. Investigación del estado del arte de la robótica móvil
-    2. Selección del tipo de robot móvil a desarrollar
-    3. Descripción matemática del robot seleccionado
-5. [Selección y documentación del hardware necesario]({% post_url 2023-12-30-hardware-selection %})
-6. Diseño y fabricación del prototipo mecánico
-    1. Diseño mecánico del chasis del prototipo de robot móvil mediante herramienta CAD.
+1. Planificación del proyecto.
+    1. Identificación y contacto con los interesados.
+    2. Definición del propósito y alcance del proyecto.
+    3. Definición de los requerimientos y entregables.
+    4. Desglose del trabajo en tareas y obtención del diagrama de Gantt.
+    5. Análisis de riesgos, gestión de calidad y definición de procesos de cierre.
+2. Investigación del estado del arte de la odometría visual-inercial y SLAM monocular.
+3. Configuración de herramientas y entorno de trabajo.
+    1. Configuración de herramientas para la gestión del proyecto y la coordinación del equipo de trabajo (ej. Jira).
+    2. Creación y configuración de la estructura de repositorios del proyecto donde se mantendrá el software y documentación producido.
+    3. Setup del entorno de trabajo para desarrollo del software necesario.
+4. Definición técnica del robot móvil a diseñar.
+    1. Investigación del estado del arte de la robótica móvil.
+    2. Selección del tipo de robot móvil a desarrollar.
+    3. Descripción matemática del robot seleccionado.
+    4. Documentación del análisis matemático del robot.
+5. Diseño y fabricación del prototipo mecánico.
+    1. Diseño mecánico del robot móvil mediante herramienta CAD.
     2. Adquisición de elementos mecánicos necesarios para la manufactura del prototipo.
-    3. Fabricación mediante impresión 3D.
-    4. Montaje del prototipo mecánico.
-    5. Iteración para corrección de errores de ser necesario.
-7. Setup del entorno de trabajo para desarrollo del software necesario
-8. Elaboración del documento de Especificación de Requerimientos de SOftware (ERS)
-9. Implementación de micro-ROS en el sistema embebido
-    1. [Introducción a micro-ROS]({% post_url 2023-05-12-microROS-and-ROS-2 %})
-    2. Incorporación de micro-ROS en el microcontrolador
-    3. Setup de agente de ROS 2 y comunicación con el sistema embebido
-    4. Documentación del proceso
-10. Desarrollo de driver para la IMU
-    1. Selección y adquisición de la IMU a utilizar
-    2. Implementación de driver en lenguaje C para el sistema embebido
-    3. Documentación del driver
-11. Integración de la IMU en el sistema
-    1. Integración del driver de la IMU con el sistema con micro-ROS
-    2. Repaso (e investigación) de técnicas de fusión sensorial
-    3. Implementación de algoritmos de fusión sensorial
-    4. Visualizacion de la información obtenida con la IMU mediante las herramientas de ROS 2
-    5. Evaluación parcial y documentación de resultados (milestone)
-12. Desarrollo de driver para la cámara
-    1. Selección y adquisación de cámara a utilizar
-    2. Implementación de driver en lenguaje C para el sistema embebido
-    3. Documentación del driver
-13. Integración de la cámara en el sistema
-    1. Integración del driver de la cámara con el sistema con micro-ROS
-    2. Visualización de la información obtenida con la cámara mediante las herramientas de ROS 2
-    3. Evaluación parcial y documentación de resultados
-14. Implementación de algoritmo de SLAM monocular
-    1. Introducción a la navegación inercial y SLAM monocular, investigación de estado del arte
-    2. Investigación de algoritmos de SLAM monocular y selección de uno de ellos
-    3. Implementación del algoritmo seleccionado en un entorno de simulación
-    4. Optimización del algoritmo implementado en el entorno de simulación
-    5. Evaluación integral de los componentes del sistema
-    6. Implementación del algoritmo seleccionado en el sistema embebido
-    7. Optimización del algoritmo implementado en el sistema embebido
-    8. Evaluación final de resultados (milestone)
-    9. Documentación técnica del algoritmo sleccionado y resumen del estado del arte
-15. Proceso de cierre
+    3. Producción de piezas mecánicas mediante fabricación aditiva.
+    4. Montaje del prototipo fabricado.
+    5. Iteración para corrección de errores.
+    6. Generación de planos mecánicos de las piezas diseñadas.
+    7. Generación de la lista de materiales (BOM) para la construcción del prototipo.
+    8. Generación de manual de instrucciones para el montaje.
+6. Diseño del sistema sensorial del robot móvil.
+    1. Selección y adquisición de la IMU.
+    2. Conexión de la IMU al sistema embebido.
+    3. Desarrollo de software driver de la IMU sobre el microcontrolador.
+    4. Adquisición de datos obtenidos con la IMU desde el sistema ROS 2.
+    5. Integración del driver de la IMU con el algoritmo de fusión sensorial.
+    6. Migración del driver de la IMU para el microcontrolador al SoC.
+    7. Generación de documentación del driver de la IMU.
+    8. Selección y adquisión de cámara digital.
+    9. Conexión de la cámara digital al sistema embebido.
+    10. Desarrollo del software driver de la cámara digital sobre el microcontrolador.
+    11. Adquisición de datos obtenidos con la cámara digital desde el sistema ROS 2.
+    12. Investigación y selección de técnica de fusión sensorial.
+    13. Implementación del algoritmo de fusión sensorial seleccionado.
+    14. Migración del driver de la cámara digital para el microcontrolador al SoC.
+    15. Generación de documentación del driver de la cámara digital.
+    16. Generación de diagramas de conexión de la IMU, la cámara digital y el sistema embebido.
+7. Diseño del sistema motor del robot móvil.
+    1. Selección y adquisición de los actuadores y drivers de potencia.
+    2. Conexión de los actuadores y drivers al sistema embebido.
+    3. Desarrollo de software driver de los actuadores sobre el microcontrolador.
+    4. Diseño del sistema de control de los actuadores.
+    5. Integración del driver de los actuadores con el sistema de control de los mismos.
+    6. Control y monitoreo de los actuadores desde el sistema ROS 2.
+    7. Migración del driver de los actuadores para microcontrolador al SoC.
+    8. Migración del sistema de control de los actuadores al SoC.
+    9. Generación de documentación del driver de los actuadores.
+    10. Generación de docuemtnación del sistema de control de los actuadores.
+    11. Generación de diagramas de conexión de los actuadores, sus drivers y el sistema embebido.
+8. Diseño del sistema de supervisión y control embebidos.
+    1. Elaboración del documento de Especificación de Requerimientos de Software (ERS)
+    2. Diseño de la arquitectura del sistema supervisor.
+    3. Selección y adquisición del microcontrolador (placa de desarrollo) a utilizar.
+    4. Selección e incorporación del sistema operativo de tiempo real a utilizar (o selección de modalidad _bare metal_).
+    5. Implementación del sistema supervisor en el microcontrolador.
+    6. Integración del sistema sensorial en el sistema supervisor.
+    7. Integración del sistema motor en el sistema supervisor.
+    8. Capacitación sobre el uso de ROS 2 en sistemas embebidos.
+    9. Implementación de interfaz del sistema supervisor con el agente de ROS 2.
+    10. Selección y adquisición del SoC (placa de desarrollo) a utilizar.
+    11. Migración del sistema supervisor al SoC.
+    12. Documentación de la arquitectura del sistema supervisor.
+9. Diseño del sistema de alimentación
+    1. Selección y adquisición de la fuente de alimentación.
+    2. Conexión de la fuente de alimentación al sistema.
+    3. Documentación del sistema de alimentación.
+    4. Generación de diagramas de conexión de la fuente de alimentación y el sistema embebido.
+10. Diseño del sistema de señalización e interacción física.
+    1. Diseño de señales e interacción del sistema con usuario y su significado.
+    2. Selección de elementos que brindarán las señales y la posibilidad de interacción con el sistema.
+    3. Conexión de los elementos de señalización e interacción física con el sistema embebido.
+    4. Desarrollo de software para el sistema de señalización e interacción física.
+    5. Integración del sistema de señalización e interacción física con el sistema supervisor.
+    6. Migración del sistema de señalización e interacción física al SoC.
+    7. Generación de documentación del sistema de señalización e interacción física.
+    8. Generación de diagramas de conexión del sistema de señalización e interacción física y el sistema embebido.
+11. Desarrollo de agente de ROS 2 ejemplo.
+    1. Setup de agente de ROS 2 y comunicación con el sistema embebido
+    2. Generación de documentación sobre la configuración y uso del agente.
+12. Proceso de cierre
     1. Análisis de cumplimiento de objetivos y requerimientos con el director
     2. Análisis de cumplimiento del plan original (diagrama de Gantt)
     3. Análisis de cumplimiento de objetivos y requerimientos con el cliente
@@ -310,9 +334,9 @@ Cantidad total de horas: \_\_\_
 
 Las tareas expuestas en el diagrama de _Activity On Node_, se encuentran detalladas en la siguiente tabla, con su código, duración y tareas predecesoras.
 
-| Código | Predecesora | Descripción                | Duración |
-| ------ | ----------- | -------------------------- | -------- |
-| 1      |             | Planificación del proyecto | 70 h     |
+| Código | Predecesora | Descripción                | Duración | Asignado          |
+| ------ | ----------- | -------------------------- | -------- | ----------------- |
+| 1      |             | Planificación del proyecto | 70 h     | Gonzalo Fernandez |
 
 ## Gestión de riesgos
 
