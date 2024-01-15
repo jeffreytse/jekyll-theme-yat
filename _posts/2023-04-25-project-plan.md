@@ -179,9 +179,7 @@ En la planificación del proyecto se considera los siguientes supuestos:
 
 ## Entregables principales del proyecto
 
-[//]: # "Deliverables: list and describe all products, services, results that
-the project work will produce. If there are ambiguities, describe also what is
-NOT going to be part of the work and final output"
+[//]: # "Deliverables: list and describe all products, services, results that the project work will produce. If there are ambiguities, describe also what is NOT going to be part of the work and final output"
 
 Los entregables del proyecto son:
 
