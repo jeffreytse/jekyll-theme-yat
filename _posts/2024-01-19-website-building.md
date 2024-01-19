@@ -13,7 +13,7 @@ My first foray into learning some new skills this year was, of course, building 
 
 ## Jekyll
 
-The first component of this website is, of course, Jekyll. This is my first time using Jekyll, or really any Ruby at all, but it’s been quite simple to use once I got familiar with it. Jekyll is a static site generator written in Ruby that essentially takes your plain text of whatever format you choose and builds it into a site ready to be served. Jekyll has a [great step-by-step guide for building a site from scratch](https://jekyllrb.com/docs/step-by-step/01-setup/) that was really helpful for someone like me just getting started. 
+The first component of this website is Jekyll. This is my first time using Jekyll, or really any Ruby at all, but it’s been quite simple to use once I got familiar with it. Jekyll is a static site generator written in Ruby that essentially takes your plain text of whatever format you choose and builds it into a site ready to be served. Jekyll has a [great step-by-step guide for building a site from scratch](https://jekyllrb.com/docs/step-by-step/01-setup/) that was really helpful for someone like me just getting started. 
 
 Once I worked through most of that tutorial and looked around online at websites other people were building using Jekyll, I realized I really wanted a nice theme for the site. I found [this beautiful theme by Jeffrey Tse](https://github.com/jeffreytse/jekyll-theme-yat), and used that as the basis for the site. Big thank you to the open source contributors out there! I hope to join your ranks soon. 
 
