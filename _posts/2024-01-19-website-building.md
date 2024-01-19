@@ -24,11 +24,13 @@ The next piece of this puzzle was hosting and serving the site. Using Netlify CM
 Of course, I wanted the site on *my* domain, which took a little bit of tinkering for me. I had purchased my domain via Squarespace, so I had to configure my domain’s DNS settings to get the pieces connected. Netlify has documentation on how to do this, but the instructions you find on the ‘domain management’ page I found didn’t work for me. It had me set it up like so:
 
 >an A record pointing the bare domain (yoursite.com) to Netlify’s load balancer IP address
+
 >a CNAME record pointing ‘www’ to the site’s Netlify subdomain
 
 I found *for me*, this did not work and Netlify wasn’t able to provision me a TLS certificate. More snooping around online found me the way it *should* be configured:
 
 >an A record with ‘@’ in the host field pointing to Netlify’s load balancer IP address
+
 >a CNAME record pointing ‘www’ to the site’s Netlify subdomain (no change here)
 
 And that fixed it up! I only write this because it took me longer than I expected to find the solution that worked for me in my exact situation. And of course, now that I know the solution, I found it in the [Netlify documentation](https://docs.netlify.com/domains-https/custom-domains/). 🤦 I’m sure someone with more experience with these kinds of things would have had this solved in a second, but hey, I’m learning and that’s why I’m here in the first place. 
