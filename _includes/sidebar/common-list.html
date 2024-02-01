@@ -6,20 +6,24 @@
   {%- assign field = include.field -%}
 {%- endif -%}
 
+{%- assign unhidden = site.posts | where_exp: "item", "item.hidden == nil or item.hidden == false" -%}
 <div class="common-list">
   <ul>
     <li>
       <a href="{{ '/index.html' | relative_url }}">
-        All<span>{{ site.posts.size }}</span>
+        All<span>{{ unhidden.size }}</span>
       </a>
     </li>
 
     {% for key in  keys %}
+      {%- assign items = unhidden | where: field, key %}
+      {%- if items.size > 0 %}
       <li>
         <a href="{{ url }}#h-{{ key }}">
-          {{ key }} <span>{{ site.posts | where: field, key | size }}</span>
+          {{ key }} <span>{{ items | size }}</span>
         </a>
       </li>
+      {%- endif -%}
     {% endfor %}
   </ul>
 </div>
