@@ -70,23 +70,27 @@ Republic of Korea
 | Byungwook Kim  | B.S. in Chemistry, SNU                              | bwkim1324@snu.ac.kr     |
 | Hongsuk Kim    | B.S. in Chemistry, SNU                              | khs01654@snu.ac.kr      |
 | Gangeun Park   | B.S. in Chemistry, SNU                              | gangeun@snu.ac.kr       |
+| Hyeonsung Byeon| B.S. in Applied Biology and Chemistry, SNU          | hsbyeon1@snu.ac.kr      |
 
+<!--
 ## Postdoctoral Researchers
 
 | Name            | Affiliation                                                                 |
 | --------------- | --------------------------------------------------------------------------- |
-| Hyeonuk Woo     | Postdoctoral Researcher, Department of Chemistry, Seoul National University |
+|                 |                                                                             |
+-->
 
 ## Internship Members
 
 | Name            | Affiliation                                              |
 | --------------- | -------------------------------------------------------- |
-| Seungmin Yeom   | Department of Chemistry, SNU                             |
-| Hyeonsung Byeon | Department of Applied Biology and Chemistry, SNU         |
 | Younghwan Kim   | Department of Chemistry, SNU                             |
 | Jeongmoo Jun    | College of Medicine, SNU                                 |
 | Yooshin Kim     | Department of Biological Science, SNU                    |
 | Dongyun Kim     | Department of Chemistry, SNU                             |
+| Kyohyun Hwang   | Department of Chemistry, SNU                             |
+| Hyeongi Kang    | Department of Chemistry, KU                              |
+| Juhan Hong      | Department of Chemistry, SNU                             |
 
 
 
@@ -101,7 +105,7 @@ Republic of Korea
 | Name              | Current Position                                                                                     | Course in SeokLab                                           |
 | ----------------- | ---------------------------------------------------------------------------------------------------- | ----------------------------------------------------------- |
 | Jihyeon Lee    | Ph.D. student, Department of Pharmaceutical Sciences, University of Maryland                            | M.S., 2023                                                  |
-| Hyeonuk Woo    | Postdoctoral Researcher, Department of Chemistry, Seoul National University                             | Ph.D., 2023                                                 |
+| Hyeonuk Woo       | Researcher, Galux Inc.                                                                               | Ph.D., 2023                                                 |
 | Katsuhito Inui    | Researcher, Ohsong Pharm                                                                             | M.S., 2022                                                  |
 | Sohee Kwon        | Researcher, Galux Inc.                                                                               | Ph.D., 2022                                                 |
 | Sangwoo Park      | Staff Engineer, Samsung Semiconductor Lab                                                            | Ph.D., 2022                                                 |
