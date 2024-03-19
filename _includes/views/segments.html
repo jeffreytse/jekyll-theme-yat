@@ -10,7 +10,7 @@
   <ul class="page-segments-list">
     {% for key in keys %}
     <h2 id="{{ key }}" class="segment-name">{{ key }}</h2>
-      {% assign items = site.posts | where: field, key %}
+      {% assign items = site.posts | where_exp: "item", "item.hidden == nil or item.hidden == false" | where: field, key %}
       {% for item in items %}
         {% if item != nil %}
           {%- assign post_item_class = "" -%}

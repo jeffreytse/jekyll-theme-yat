@@ -2,7 +2,7 @@
 layout: framework
 banner:
 banner_html: post-header.html
-hidden: []
+hide: []
 sidebar:
   - article-menu
 ---
@@ -14,41 +14,62 @@ sidebar:
     {%- include functions.html func='get_value' -%}
     {%- assign banner = return -%}
 
-    {%- assign name = 'hidden' -%}
+    {%- assign name = 'hide' -%}
     {%- include functions.html func='get_value' -%}
-    {%- assign hidden = return -%}
+    {%- assign hide = return -%}
 
-    {%- assign result = hidden | where_exp: "item", "item == 'header'" -%}
+    {%- unless hide contains 'header' -%}
     {%- if banner == nil and result.size == 0 -%}
     {%- include views/post-header.html -%}
     {%- endif -%}
+    {%- endunless -%}
 
     {%- include views/article.html -%}
 
-    {%- assign result = hidden | where_exp: "item", "item == 'navigator'" -%}
-    {%- if result.size == 0 -%}
+    {%- unless hide contains 'navigator' -%}
     <div class="post-nav">
-      {%- if page.previous -%}
-        <a class="previous" href="{{ page.previous.url | relative_url }}" title="{{
-          page.previous.title | escape }}">{{ page.previous.title | escape | truncatewords: 6 }}</a>
+      {%- assign p = page.previous %}
+      {%- for i in (1..20) %}
+      {%- if p == nil %}
+      {%- break %}
+      {%- endif %}
+      {%- if p.hidden %}
+      {%- assign p = p.previous %}
+      {%- continue %}
+      {%- endif %}
+      {%- break %}
+      {%- endfor %}
+
+      {%- assign n = page.next %}
+      {%- for i in (1..20) %}
+      {%- if n == nil %}
+      {%- break %}
+      {%- endif %}
+      {%- if n.hidden %}
+      {%- assign n = n.next %}
+      {%- continue %}
+      {%- endif %}
+      {%- break %}
+      {%- endfor %}
+      {%- if p -%}
+        <a class="previous" href="{{ p.url | relative_url }}" title="{{ p.title | escape }}">{{ p.title | escape | truncatewords: 6 }}</a>
       {%- else -%}
       <span></span>
       {%- endif -%}
 
-      {%- if page.next -%}
-        <a class="next" href="{{ page.next.url | relative_url }}" title="{{ page.next.title | escape }}">{{ page.next.title | escape | truncatewords: 6 }}</a>
+      {%- if n -%}
+        <a class="next" href="{{ n.url | relative_url }}" title="{{ n.title | escape }}">{{ n.title | escape | truncatewords: 6 }}</a>
       {%- else -%}
       <span></span>
       {%- endif -%}
     </div>
-    {%- endif -%}
+    {%- endunless -%}
 
-    {%- assign result = hidden | where_exp: "item", "item == 'related_posts'" -%}
-    {%- if result.size == 0 -%}
+    {%- unless hide contains 'related_posts'" -%}
     <div class="post-related">
       <div>Related Articles</div>
       <ul>
-        {% assign posts = site[page.collection] | sample:4 %}
+        {% assign posts = site[page.collection] | where_exp: "item", "item.hidden == nil or item.hidden == false" | sample:4 %}
         {%- for post in posts -%}
           {%- assign post_item_class = "" -%}
           {%- if post.top -%}
@@ -65,10 +86,9 @@ sidebar:
         {%- endfor -%}
       </ul>
     </div>
-    {%- endif -%}
+    {%- endunless -%}
 
-    {%- assign result = hidden | where_exp: "item", "item == 'comments'" -%}
-    {%- if result.size == 0 -%}
+    {%- unless hide contains 'comments' -%}
     <div class="post-comments">
       {%- if page.comments != false -%}
 
@@ -86,7 +106,7 @@ sidebar:
 
       {%- endif -%}
     </div>
-    {%- endif -%}
+    {%- endunless -%}
 
   </section>
 </div>
