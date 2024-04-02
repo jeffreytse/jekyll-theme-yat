@@ -3,7 +3,7 @@ name: Github Pages
 on:
   push:
     branches:
-      - master  # Here source code branch is `master`, it could be other branch
+      - main  # Here source code branch is `master`, it could be other branch
 
 jobs:
   build_and_deploy:
