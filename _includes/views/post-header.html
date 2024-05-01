@@ -7,15 +7,25 @@
 {%- assign date_format = ydf -%}
 {%- endif -%}
 
+{%- if page.accepted_in -%}
+{%- assign prefix = "(Accepted in) " -%}
+{%- assign page_date = page.accepted_in | date: date_format -%}
+{%- assign page_date = prefix | append: page_date -%}
+{%- assign page_date_schema = page.accepted_in | date_to_xmlschema -%}
+{%- else -%}
+{%- assign page_date = page.date | date: date_format -%}
+{%- assign page_date_schema = page.date | date_to_xmlschema -%}
+{%- endif -%}
+
+
 <header class="post-header">
   <h1 class="post-title p-name" itemprop="name headline">{{ heading | default: page.title | escape }}</h1>
   <h2 class="post-subtitle">{{ subheading | default: page.subtitle | escape }}</h2>
 
   <div class="post-meta">
     <div class="post-meta-inner">
-      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        <i class="fa-solid fa-calendar-day"></i> {{ page.date | date: date_format }}
-      </time>
+      <time class="dt-published" datetime="{{ page_date_schema }}" itemprop="datePublished">
+        <i class="fa-solid fa-calendar-day"></i> {{ page_date }}</time>
       {%- if page.use_mtime -%}
       <span class="left-vsplit"><i class="fa-solid fa-pen-to-square"></i> {{ page.last_modified_at | date: ldf }}</span>
       {%- endif -%}
