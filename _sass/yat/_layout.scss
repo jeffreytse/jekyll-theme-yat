@@ -108,7 +108,7 @@ html {
 
     .site-favicon {
       display: inline-block;
-      height: calc($header-height / 1.5);
+      height: #{$header-height / 1.5};
       margin-right: 5px;
       vertical-align: middle;
     }
@@ -850,7 +850,7 @@ html {
   }
 
   @include media-query($on-palm) {
-    height: calc($banner-height / 1.5);
+    height: #{$banner-height / 1.5};
   }
 }
 
