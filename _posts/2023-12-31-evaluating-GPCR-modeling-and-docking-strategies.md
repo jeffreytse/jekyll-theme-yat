@@ -8,5 +8,4 @@ tags:
   - protein-protein docking
   - protein-ligand docking
 redirect_to: https://doi.org/10.1016/j.csbj.2022.11.057
-accepted_in: 2022-12-01
 ---

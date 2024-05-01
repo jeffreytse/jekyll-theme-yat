@@ -6,6 +6,5 @@ categories:
   - Applications
 tags:
   - with experimentalists
-accepted_in: 2023-11-25
+redirect_to: https://doi.org/10.1038/s41467-023-43983-9
 ---
-*Manuscript in press*
