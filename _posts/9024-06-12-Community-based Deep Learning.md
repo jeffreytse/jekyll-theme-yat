@@ -1,7 +1,7 @@
 ---
 title: "Protein Loop Structure Prediction by Community-based Deep Learning and its Application to Antibody CDR H3 Loop Modeling"
-authors: Hyeonuk Woo†,  Yubeen Kim†, and Chaok Seok*
-journal: PLOS Computational Biology
+authors: Hyeonuk Woo, Yubeen Kim, and Chaok Seok*
+journal: PLoS Computational Biology
 categories:
   - Applications
 tags:
