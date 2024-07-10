@@ -89,7 +89,6 @@ Republic of Korea
 | Yooshin Kim     | Department of Biological Science, SNU                    |
 | Dongyun Kim     | Department of Chemistry, SNU                             |
 | Kyohyun Hwang   | Department of Chemistry, SNU                             |
-| Hyeongi Kang    | Department of Chemistry, KU                              |
 | Juhan Hong      | Department of Chemistry, SNU                             |
 
 
