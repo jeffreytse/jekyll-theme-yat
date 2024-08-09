@@ -173,7 +173,7 @@ header_pages:
 
 header_ext_links:
   - title: photo
-    url: http://cloud.seoklab.org:999/photo
+    url: https://cloud.seoklab.org:999
   - title: GalaxyWeb
     url: https://galaxy.seoklab.org
   - title: github
