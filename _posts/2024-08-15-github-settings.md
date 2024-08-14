@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 깃허브 리포지토리 비공개하는 법
-categories: github
+categories: test
 tags: [github]
 meta: "private"
 ---
