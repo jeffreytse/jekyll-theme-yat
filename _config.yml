@@ -45,7 +45,7 @@ copyright: "qrfont (cleft) 2024-{currentYear} {author}"
 description: >- # web generator
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. https://example.com
+url: "http://qrfont.github.io" # the base hostname & protocol for your site, e.g. https://example.com
 favicon: "/assets/images/banners/qrfont.png" # the favicon for your site
 
 # Yat date format
