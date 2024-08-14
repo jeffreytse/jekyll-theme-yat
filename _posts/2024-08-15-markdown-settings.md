@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 깃허브 리포지토리 비공개하는 법
-categories: markdown
-tags: [markdown]
+categories: github
+tags: [github]
 meta: "private"
 ---
 ### **GitHub 저장소를 비공개로 변경하는 방법**
