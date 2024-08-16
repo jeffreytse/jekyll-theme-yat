@@ -84,7 +84,6 @@ Republic of Korea
 
 | Name            | Affiliation                                              |
 | --------------- | -------------------------------------------------------- |
-| Younghwan Kim   | Department of Chemistry, SNU                             |
 | Jeongmoo Jun    | College of Medicine, SNU                                 |
 | Yooshin Kim     | Department of Biological Science, SNU                    |
 | Dongyun Kim     | Department of Chemistry, SNU                             |
@@ -121,7 +120,7 @@ Republic of Korea
 | Hasup Lee         | Research Staff Member, Samsung Advanced Institute of Technology                                      | Ph.D., 2016                                                 |
 | Kyuhong Choe      | Researcher, LG Chemistry                                                                             | M.S., 2015                                                  |
 | Jaeju Ko          | Associate Professor, Indiana University of Pennsylvania                                              | Visiting Professor, 2014-2015                               |
-| Woong-Hee Shin    | Assistant Professor, Department of Chemical Education, Sunchon National University                   | Ph.D., 2014.                                                |
+| Woong-Hee Shin    | Associate Professor, College of Medicine, Korea University                   | Ph.D., 2014.                                                |
 | Dongseon Lee      | Research Staff Member, Samsung Advanced Institute of Technology                                      | Ph.D., 2013                                                 |
 | Chiwook Park      | Professor, Purdue University                                                                         | Visiting professor, 2013                                    |
 | Hahnbeom Park     | Senior Researcher, Brain Science Institute, KIST                                                     | Ph.D., 2012                                                 |
@@ -130,7 +129,7 @@ Republic of Korea
 | Juyong Lee        | Assistant Professor, College of Pharmacy, Seoul National University                                  | M.S. and Ph.D., 2011                                        |
 | Younkyoung Lee    | Assistant Professor, Electronic Materials Engineering, Jeonbuk National University                   | M.S., 2010                                                  |
 | Jungho Lee        | Assistant Professor, Department of Chemistry, Seoul National University                              | Research Assistant, 2008                                    |
-| Jungki Yoon       | School of Medicine, Seoul National University                                                        | Undergraduate Student, 2008                                 |
+| Jungki Yoon       | Assistant Professor, Department of Pulmonology, Seoul National University                                                        | Undergraduate Student, 2008                                 |
 | Sukki Kang        | Science Writer                                                                                       | Graduate Course, 2007                                       |
 | Sangwoo Shim      | Founder & Chief Data Scientist, MakinaRocks                                                          | M.S., 2007                                                  |
 | Changho Sohn      | Assistant Professor, Nano Biomedical Engineering, Y-IBS Institute, Yonsei University                 | Undergraduate Student, 2006                                 |
