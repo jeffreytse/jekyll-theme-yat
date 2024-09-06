@@ -57,7 +57,6 @@ Republic of Korea
 | Changsoo Lee   | B.S. & M.S. in Pharmacy, SNU                        | ccaa2013@snu.ac.kr      |
 | Jiho Sim       | B.S. in Chemistry, SNU                              | j2hosim@snu.ac.kr       |
 | Sumin Lee      | B.S. in Biological Sciences, SNU                    | keepthrword22@snu.ac.kr |
-| Hakjean Kim    | B.S. in Chemistry, SNU                              | hakjean@snu.ac.kr       |
 | Jayun Choi     | B.S. in Chemistry, SNU                              | jychoi9809@snu.ac.kr    |
 | Seho Lee       | B.S. in Chemistry, SNU                              | tp1928@snu.ac.kr        |
 | Seeun Kim      | B.S. in Chemistry, SNU                              | ehdqn04@snu.ac.kr       |
@@ -87,7 +86,6 @@ Republic of Korea
 | Jeongmoo Jun    | College of Medicine, SNU                                 |
 | Yooshin Kim     | Department of Biological Science, SNU                    |
 | Dongyun Kim     | Department of Chemistry, SNU                             |
-| Kyohyun Hwang   | Department of Chemistry, SNU                             |
 | Juhan Hong      | Department of Chemistry, SNU                             |
 | Yoonkeon Kim    | Department of Biological Sciences & Chemistry, SNU       |
 
@@ -103,7 +101,8 @@ Republic of Korea
 
 | Name              | Current Position                                                                                     | Course in SeokLab                                           |
 | ----------------- | ---------------------------------------------------------------------------------------------------- | ----------------------------------------------------------- |
-| Jihyeon Lee    | Ph.D. student, Department of Pharmaceutical Sciences, University of Maryland                            | M.S., 2023                                                  |
+| Hakjean Kim       | Researcher, Seoul National University                                                                | M.S., 2024                                                  |
+| Jihyeon Lee       | Ph.D. student, Department of Pharmaceutical Sciences, University of Maryland                         | M.S., 2023                                                  |
 | Hyeonuk Woo       | Researcher, Galux Inc.                                                                               | Ph.D., 2023                                                 |
 | Katsuhito Inui    | Researcher, Ohsong Pharm                                                                             | M.S., 2022                                                  |
 | Sohee Kwon        | Researcher, Galux Inc.                                                                               | Ph.D., 2022                                                 |
