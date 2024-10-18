@@ -11,11 +11,13 @@
             | replace: '(p)', '℗'
             | replace: '(cleft)', '<span class="copyleft">&copy;</span>'
         -%}
+      <div class="footer-col rss-subscribe">
+        <a href="{{ "/feed.xml" | relative_url }}" title="Feed RSS" target="_blank" rel="noopener noreferrer"><i
+        class="fa fa-solid fa-rss" aria-hidden="true"></i> RSS</a> 
+        <a href="https://twitter.com/oz_explorer" title="Twitter" target="_blank" rel="noopener noreferrer"><i
+      class="fa fa-brands fa-twitter" aria-hidden="true"></i> Twitter</a> 
+      </div>
       <div>{{ copyright }}</div>
-      <div>Powered by <a title="Jekyll is a simple, blog-aware, static site
-      generator." href="https://jekyllrb.com/">Jekyll</a> &amp; <a title="Yat, yet
-      another theme." href="https://github.com/jeffreytse/jekyll-theme-yat">Yat Theme</a>.</div>
-      <div class="footer-col rss-subscribe">Subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></div>
     </div>
   </div>
 </footer>
