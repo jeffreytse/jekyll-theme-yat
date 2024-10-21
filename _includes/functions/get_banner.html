@@ -62,6 +62,26 @@
 {%- include functions.html func='get_value' default=0 -%}
 {% assign banner_start_at = return %}
 
+{%- include functions.html func='log' level='debug' msg='Get banner_info_style value' -%}
+{% assign name = 'banner.info_style' %}
+{%- include functions.html func='get_value' -%}
+{% assign banner_info_style = return %}
+
+{%- include functions.html func='log' level='debug' msg='Get banner_info_format value' -%}
+{% assign name = 'banner.info_format' %}
+{%- include functions.html func='get_value' default='{name}' -%}
+{% assign banner_info_format = return %}
+
+{%- include functions.html func='log' level='debug' msg='Get banner_info_name value' -%}
+{% assign name = 'banner.info_name' %}
+{%- include functions.html func='get_value' -%}
+{% assign banner_info_name = return %}
+
+{%- include functions.html func='log' level='debug' msg='Get banner_info_link value' -%}
+{% assign name = 'banner.info_link' %}
+{%- include functions.html func='get_value' -%}
+{% assign banner_info_link = return %}
+
 {% if banner_image or banner_video %}
   {% assign has_banner = true %}
 {% endif %}

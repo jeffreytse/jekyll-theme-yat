@@ -181,6 +181,9 @@ yat:
 #   min_height: null        # Banner minimum height
 #   heading_style: null     # Custom heading style (e.g. "font-weight: bold; text-decoration: underline")
 #   subheading_style: null  # Custom subheading style (e.g. color: gold)
+#   info_style: null        #
+#   info_format: Background From: {link}  #
+#   info_link: null
 
 # Excerpt settings
 # excerpt:

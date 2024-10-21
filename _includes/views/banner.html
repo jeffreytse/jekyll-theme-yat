@@ -126,6 +126,18 @@
         {%- endif -%}
       </div>
     </div>
+
+    {%- if banner_info_link -%}
+    {%- assign banner_info = banner_info_format
+      | replace: '{name}', banner_info_name
+      | replace: '{link}', banner_info_link -%}
+      <a class="banner-info"
+        href="{{ banner_info_link }}"
+        style="{{ banner_info_style }}">
+      <span>{{ banner_info }}</span>
+      <i class="fa fa-angle-right"></i>
+    </a>
+    {%- endif -%}
   </section>
 {%- endif -%}
 

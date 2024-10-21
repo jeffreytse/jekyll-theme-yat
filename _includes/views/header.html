@@ -40,6 +40,11 @@
               {%- endif -%}
             {%- endfor -%}
 
+            <span class="page-link">
+              <i class="fa fa-search"></i>
+              <!-- {%- include views/search.html -%} -->
+            </span>
+
             {%- assign name = 'translate_langs' -%}
             {%- include functions.html func='get_value' -%}
             {%- assign translate_langs = return -%}
