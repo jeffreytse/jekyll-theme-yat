@@ -1,0 +1,6 @@
+#! /bin/bash
+
+set -e
+
+script/test
+bundle exec rake build

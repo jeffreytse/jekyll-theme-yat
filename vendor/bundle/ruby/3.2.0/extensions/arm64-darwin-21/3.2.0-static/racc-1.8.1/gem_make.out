@@ -1,0 +1,18 @@
+current directory: /Users/michael/Nextcloud-MPI/jekyll/visioncognitionlab.github.io/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
+/Users/michael/.rubies/ruby-3.2.2/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/michael/Nextcloud-MPI/jekyll/visioncognitionlab.github.io/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20241105-2800-a928oj sitelibdir\=./.gem.20241105-2800-a928oj clean
+
+current directory: /Users/michael/Nextcloud-MPI/jekyll/visioncognitionlab.github.io/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20241105-2800-a928oj sitelibdir\=./.gem.20241105-2800-a928oj
+compiling cparse.c
+linking shared-object racc/cparse.bundle
+
+current directory: /Users/michael/Nextcloud-MPI/jekyll/visioncognitionlab.github.io/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20241105-2800-a928oj sitelibdir\=./.gem.20241105-2800-a928oj install
+/usr/bin/install -c -m 0755 cparse.bundle ./.gem.20241105-2800-a928oj/racc
+
+current directory: /Users/michael/Nextcloud-MPI/jekyll/visioncognitionlab.github.io/vendor/bundle/ruby/3.2.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20241105-2800-a928oj sitelibdir\=./.gem.20241105-2800-a928oj clean

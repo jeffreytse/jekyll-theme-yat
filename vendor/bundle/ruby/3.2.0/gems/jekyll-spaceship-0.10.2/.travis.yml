@@ -1,0 +1,34 @@
+language: ruby
+cache: bundler
+rvm:
+  - 2.7
+  - 2.3
+env:
+  global:
+    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+  matrix:
+    - JEKYLL_VERSION="~> 3.8"
+matrix:
+  include:
+  - rvm: 2.7
+    env: JEKYLL_VERSION="~> 3.8.6"
+  - rvm: 2.7
+    env: JEKYLL_VERSION=">= 4.0.0"
+before_install:
+  - gem update --system
+  - gem install bundler
+before_script: bundle update
+script: script/cibuild
+notifications:
+  email: false
+deploy:
+  provider: rubygems
+  api_key:
+    secure: AqjHemFJsIxFuudjWzYbUGBpA5wpAB9Ate6oDZMGMnpaoSD2VgfkBDklyFfEh5uuHrh+rU6U9MPv4wknXVIV7gTTY18ATgzciLa+JCVjhAaSoPGSkORT15/kKpVp4IXIoEytj5T9D+8Wc8czd/B1+lMGGu7n7d7gMvg0HsjOLzJtAOYPrRUTaTXDLeIA+rPnsI1IzbvfHzcZvuD70XkBJWN9kiu0djlI6o51XQNumWMJrFAD/NDD3h3tZ0kkI0TalAYbWVRkZ/ZeABKAod3IRAXGt4L2MM2eYqE5KaXb/GE5wISib3I/iTCjjwrNlM+wM9a+mnOkC+elaCJm1LENqP5Ocy9wbOLYmC8i1VpPDXm2bskbj32oy1wf5zeQUf6bnPB+wDmwgCirYb7z2jQlV4BzRRkDCTftfNTa8FIi03kf+i7phjHuj18j/JC3Ww1ApRq71JAuqEnUY0wBaaN3M5abrJsYOxCRnYVPcBn/w8gfkXuhv9xvDG2OgwqIjDiECPjmbeK8Apo9kgKSrfjBQ43q62Ore6SuVCS+PZOOxVnHmfphfT4xc1atyVeMLkSvnWOa/sWTwgOSXqt1TYAEEhb734AsfXeRMzxU/LN1Y4nZ0otuEv+HVHA/XeHLA1Skq9vHhtZaORhJ58Jmwv5oMwA8KC/wPrn0gGtSBPe8zxw=
+  gem: jekyll-spaceship
+  on:
+    rvm: 2.3
+    tags: true
+    repo: jeffreytse/jekyll-spaceship
+  edge: true
+  cleanup: false
