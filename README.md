@@ -134,7 +134,7 @@ Or install it yourself as:
 $ gem install jekyll-theme-yat
 ```
 
-### Remote Theme Method with GitHub Pages
+### Remote Theme Method with Jekyll Remote Theme Plugin
 
 Remote themes are similar to Gem-based themes, but do not require `Gemfile` changes or whitelisting making them ideal for sites hosted with GitHub Pages.
 
@@ -143,7 +143,7 @@ To install:
 Add this line to your Jekyll site's `Gemfile`:
 
 ```ruby
-gem "github-pages", group: :jekyll_plugins
+gem "jekyll-remote-theme", group: :jekyll_plugins
 ```
 
 And add this line to your Jekyll site's `_config.yml`:
@@ -151,6 +151,10 @@ And add this line to your Jekyll site's `_config.yml`:
 ```yaml
 # theme: owner/name --> Don't forget to remove/comment the gem-based theme option
 remote_theme: "jeffreytse/jekyll-theme-yat"
+
+# Add the following to activate the plugin
+plugins:
+  - jekyll-remote-theme
 ```
 
 And then execute:
