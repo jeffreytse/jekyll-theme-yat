@@ -60,7 +60,7 @@ IEEE CIS UPRM is **open to all students** interested in AI and computational int
 ### 🔗 **Follow us on:**  
 - 📌 LinkedIn: [IEEE CIS UPRM](https://linkedin.com/company/cisuprm)  
 - 📌 Instagram: [@cisuprm](https://instagram.com/cisuprm)  
-- 📌 GitHub: [@cisuprm](https://github.com/github)  
+- 📌 GitHub: [@cisuprm](https://github.com/cisuprm)  
 - 📌 Official Website: [IEEE CIS UPRM](https://cisuprm-github.io/)
 
 
