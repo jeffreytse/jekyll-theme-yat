@@ -24,9 +24,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@domain.com
-author: GitHub User
+title: Geologist and Passionate Tech expert
+email: kevotumo1@gmail.com
+author: Kelvin Tumo
 
 # Copyright setting
 # You can use any html code, currently below placeholders are available:
@@ -40,12 +40,10 @@ author: GitHub User
 #   "Copyright (c) 2017-{currentYear} <a href="https://example.com">{author}</a>"
 #   "Copyright © 2017-2021 Foobar"
 #
-copyright: "Unpublished Work (cleft) 2017-{currentYear} {author}"
+copyright: "Unpublished Work (cleft) 2019-{currentYear} {author}"
 
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+ Kevin is a versatile geologist with a strong technical background, seamlessly blending his expertise in geology with advanced technological skills. With a keen understanding of geological processes and mineral resources, he leverages modern tools such as geographic information systems (GIS), remote sensing, and data modeling to enhance exploration and analysis. Kevin excels at data interpretation and can effectively integrate geological data with cutting-edge software, enabling more efficient decision-making in the field. His passion for innovation and technology, combined with his geological knowledge, makes him an invaluable asset in the geosciences sector, where he consistently pushes the boundaries of traditional methods for improved results.
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. https://example.com
