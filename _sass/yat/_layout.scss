@@ -525,12 +525,20 @@ html {
   justify-content: space-between;
   margin: 72px 0 59px;
   padding: 31px 0 0;
+  gap: 36px;
 
   a {
     @include relative-font-size(1.125);
     color: $grey-color;
-    line-height: 15px;
-    max-width: 50%;
+    max-width: 45%;
+    display: flex;
+    align-items: center;
+
+    * {
+        overflow: hidden;
+        text-wrap-mode: nowrap;
+        text-overflow: ellipsis;
+    }
   }
 
   .previous:before {
