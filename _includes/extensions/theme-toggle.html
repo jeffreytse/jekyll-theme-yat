@@ -44,6 +44,7 @@
       html.dataset.theme = nightShift ? 'dark' : 'light';
       setTimeout(function() {
         sw.checked = nightShift ? true : false;
+        document.dispatchEvent(new Event('theme-changed'));
       }, 50);
     }
 
