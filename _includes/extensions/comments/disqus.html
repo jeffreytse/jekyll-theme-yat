@@ -6,8 +6,22 @@
       this.page.identifier = '{{ page.url | absolute_url }}';
     };
 
+    // Disqus recommendations
+    (function() {
+      if ({{ site.disqus.enable_recommendations | default: false }} === false) {
+        return
+      }
+      var d = document, s = d.createElement('script');
+      s.src = 'https://{{ site.disqus.shortname }}.disqus.com/recommendations.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+
     // Disqus comments
     (function() {
+      if ({{ site.disqus.enable_comments | default: true }} === false) {
+        return
+      }
       var d = document, s = d.createElement('script');
       s.src = 'https://{{ site.disqus.shortname }}.disqus.com/embed.js';
       s.setAttribute('data-timestamp', +new Date());
@@ -18,6 +32,9 @@
     document.addEventListener('theme-changed', function (e) {
       if (document.readyState == 'complete') {
         setTimeout(function () {
+          if (window.DISQUS_RECOMMENDATIONS) {
+            window.DISQUS_RECOMMENDATIONS.reset({ reload: true });
+          }
           if (window.DISQUS) {
             window.DISQUS.reset({ reload: true, config: disqus_config });
           }
