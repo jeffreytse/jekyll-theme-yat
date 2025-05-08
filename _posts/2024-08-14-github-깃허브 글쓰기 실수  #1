@@ -1,0 +1,13 @@
+---
+layout: post
+title: 깃허브 웹에서 내 글이 안 보이는 경우
+categories: github
+tags: [github]
+meta: "github"
+---
+### **GitHub  edit에서 직접 글을 작성하고 커밋했는데 글이 안나올때
+-  md파일 작성할때는 규칙을 잘 지켜야한다
+
+- 미국시간은 한국시간과 차이가 있으므로 미국시간 기준으로 파일명을 작성해야한다
+2024-08-15 
+
