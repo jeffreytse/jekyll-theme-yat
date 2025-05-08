@@ -24,9 +24,14 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
+<<<<<<< HEAD
+title: "dlfma의 blog"
+email: 
+=======
+title: "dlfma의 블로그"
 email: your-email@domain.com
-author: GitHub User
+>>>>>>> a9699bb192f44d8b698c6dd32343e89209df20dc
+author: dlfma
 
 # Copyright setting
 # You can use any html code, currently below placeholders are available:
@@ -162,8 +167,8 @@ yat:
 # Page default value
 # defaults:
 #   home:
-#     heading: "Your awesome heading"
-#     subheading: "Your awesome subheading"
+#     heading: "Welcome to My Blog"
+#     subheading: "dlfma of Blog"
 #     banner: "Your image url"
 
 # Banner default settings
