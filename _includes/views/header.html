@@ -92,4 +92,31 @@
     storeScrollData();
   }
   document.addEventListener('DOMContentLoaded', initHeader);
+
+  function initTrigger () {
+    function uncheckNavTrigger() {
+      document.querySelector("#nav-trigger").checked = false;
+    }
+    document.addEventListener('click', uncheckNavTrigger);
+
+    var timer;
+    document.querySelector(".trigger").addEventListener('mouseleave', () => {
+      timer = setTimeout(uncheckNavTrigger, 1000);
+    });
+
+    document.querySelector(".trigger").addEventListener('mouseenter', () => {
+      if (timer) {
+        clearTimeout(timer);
+      }
+    });
+
+    document.querySelector(".trigger").addEventListener('click', (event) => {
+      event.stopPropagation();
+    });
+
+    document.querySelector(".site-nav").addEventListener('click', (event) => {
+      event.stopPropagation();
+    });
+  }
+  document.addEventListener('DOMContentLoaded', initTrigger);
 </script>
