@@ -46,6 +46,9 @@
       if (el.src.trim() == "") {
         return;
       }
+      if (el.parentElement?.tagName.toLowerCase() === "a") {
+        return;
+      }
       if (!imgEls.includes(el)) {
         imgEls.push(el);
       }
