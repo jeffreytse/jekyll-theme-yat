@@ -25,10 +25,16 @@
     // Generate post menu
     var menuHTML = '';
     for (var i = 0; i < headings.length; i++) {
-      var h = headings[i];
-      menuHTML += (
-        '<li class="h-' + h.tagName.toLowerCase() + '">'
-        + '<a href="#h-' + h.getAttribute('id') + '">' + h.textContent + '</a></li>');
+      const h = headings[i];
+      let textContent = "";
+
+      h.childNodes.forEach((value) => {
+        if (value.nodeType !== Node.ELEMENT_NODE || value.role !== "doc-noteref") {
+          textContent += value.textContent;
+        }
+      });
+
+      menuHTML += `<li class="h-${h.tagName.toLowerCase()}"><a href="#h-${h.getAttribute('id')}">${textContent}</a></li>`;
     }
 
     menuContent.innerHTML = '<ul>' + menuHTML + '</ul>';
