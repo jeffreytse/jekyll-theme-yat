@@ -24,14 +24,14 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@domain.com
-author: GitHub User
+title: Lab with AI
+email: 0.pagezero@gmail.com
+author: Pagezero
 
 # Copyright setting
 # You can use any html code, currently below placeholders are available:
-# * current year: {currentYear}
-# * author: {author} (Value is the same as site.author)
+# * current year: {2025}
+# * author: {Pagezero} (Value is the same as site.author)
 # * copyright: (c) - ©
 # * copyleft: (cleft)
 # * sound recording copyright: (p) - ℗
@@ -47,8 +47,8 @@ description: >- # this means to ignore newlines until "baseurl:"
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. https://example.com
+baseurl: "labwithai" # the subpath of your site, e.g. /blog
+url: "https://learn-slowly.github.io/" # the base hostname & protocol for your site, e.g. https://example.com
 favicon: "" # the favicon for your site
 
 # Yat date format
@@ -251,3 +251,6 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-spaceship
+  - jekyll-remote-theme
+
+remote_theme: "jeffreytse/jekyll-theme-yat"
